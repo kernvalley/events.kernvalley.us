@@ -8,8 +8,8 @@ description: |-
   'Whitewater Wednesday comes to Kernville, on the Wild & Scenic
   Kern River; Whitewater, USA!<br />It will be a fun-filled day of sunshine, water
   fights, soggy sneakers, and action packed rapids.'
-startDate: 2018-06-05 06:00
-endDate: 2018-06-05 15:00
+startDate: 2018-06-13 00:00
+endDate: 2018-06-13 00:00
 location:
   name: Riverside Park
   streetAddress: 10 Kern River Drive
