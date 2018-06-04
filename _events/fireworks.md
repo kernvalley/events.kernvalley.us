@@ -8,7 +8,7 @@ description: 'Join us at approx. 9:30 PM (depending on conditions) on the 30th o
 startDate: 2018-06-30 21:30
 endDate: 2018-06-30 23:00
 location:
-#  name: Lake Isabella
+  name: Isabella Lake
 #  streetAddress: 10 Kern River Drive
   addressLocality: Lake Isabella
   addressRegion: CA
