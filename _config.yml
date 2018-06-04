@@ -130,6 +130,13 @@ defaults:
     ads: false
     index: true
 - scope:
+    path: _events
+  values:
+    layout: page
+    comments: true
+    ads: false
+    index: true
+- scope:
     path: _drafts
   values:
     layout: post
