@@ -1,0 +1,185 @@
+author: Chris Zuber
+title: Kern Valley Events
+url: 'https://events.kernvalley.us'
+markdown: kramdown
+version: 1.0.0
+timezone: America/Los_Angeles
+lang: en
+dir: ltr
+charset: utf-8
+paginate: 8
+paginate_path: "/page-:num/"
+viewport: width=device-width
+robots: 'follow,index'
+referrer: origin-when-cross-origin
+manifest: /manifest.json
+tiles-config: /browserconfig.xml
+service_worker: /service-worker.js
+og-type: website
+description: "Events in the Kern Valley"
+mobile-web-app-capable: true
+publisher: 'https://plus.google.com/113117303106986445610'
+canonical: 'https://events.kernvalley.us'
+contextmenu: nav-menu
+body-class: 'background-primary grid border-box cursor-default font-main'
+feature-detect:
+- details
+- dialog
+keywords:
+- kern valley
+- kern river valley
+- rafting
+- whitewater
+repository:
+  username: kernvalley
+  title: events.kernvalley.us
+  url: 'https://github.com/kernvalley/events.kernvalley.us'
+twitter: kern_valley
+feed:
+  url: /feed.rss
+  type: application/rss+xml
+icons: '/img/icons.svg'
+theme-color: '#0031c6'
+background-color: '#242424'
+# discus-identifier:
+# google-analytics: UA-119717465-2
+# ad-sense:
+webmaster-verifications:
+# google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
+#  bing:
+scripts:
+  development:
+  - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
+    type: application/javascript
+    crossorigin: anonymous
+    async: true
+  - src: /js/index.js
+    type: module
+    async: true
+  - src: /js/index.min.js
+    type: application/javascript
+    async: true
+    nomodule: true
+  production:
+  - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
+    type: application/javascript
+    crossorigin: anonymous
+    async: true
+  - src: /js/index.min.js
+    type: application/javascript
+    async: true
+stylesheets:
+  development:
+  - href: /css/styles/index.css
+    media: all
+  production:
+  - href: /css/styles/index.min.css
+    media: all
+preload:
+- href: /img/icons.svg
+  as: image
+  type: image/svg+xml
+  name: icons
+- href: /img/logos/facebook.svg
+  as: image
+  type: image/svg+xml
+  name: Facebook
+- href: /img/logos/twitter.svg
+  as: image
+  type: image/svg+xml
+  name: Twitter
+- href: /img/logos/google-plus.svg
+  as: image
+  type: image/svg+xml
+  name: Google+
+- href: /img/logos/reddit.svg
+  as: image
+  type: image/svg+xml
+  name: Reddit
+- href: /img/logos/linkedin.svg
+  as: image
+  type: image/svg+xml
+  name: LinkedIn
+- href: /img/logos/gmail.svg
+  as: image
+  type: image/svg+xml
+  name: Gmail
+appicons:
+- src: /img/favicon.svg
+  sizes: any
+  type: image/svg+xml
+- src: /img/icon-512.png
+  sizes: 512x512
+  type: image/png
+- src: /img/icon-192.png
+  sizes: 192x192
+  type: image/png
+screenshots:
+- src: 'https://i.imgur.com/7Ag35D6l.png'
+  sizes: 640x297
+  type: image/png
+defaults:
+- scope:
+    path: _posts
+  values:
+    layout: post
+    author: Chris Zuber
+    permalink: /:categories/:year/:month/:day/:title/
+    comments: true
+    ads: false
+    index: true
+- scope:
+    path: _drafts
+  values:
+    layout: post
+    author: Chris Zuber
+    permalink: /posts/:categories/:year/:month/:day/:title/
+    comments: false
+    ads: false
+plugins:
+- jekyll-watch
+- jekyll-paginate
+include:
+- _headers
+- _redirects
+exclude:
+- "*.rb"
+- "*.gemspec"
+- "*.php"
+- "*.sh"
+- "*.csv"
+- "*.sfd"
+- "*.ai"
+- "*.psd"
+- "*.sketch"
+- "*.yml"
+- "*.lock"
+- "*.log"
+- "/css/*.md"
+- "/js/*.md"
+- "/img/*.md"
+- "/fonts/*.md"
+- "/js/*.json"
+- "/package.json"
+- "/package-lock.json"
+- "/js/svg4everybody/dist/"
+- "/js/svg4everybody/test/"
+- "/css/animate.css/source/"
+- docs/
+- "/css/*.json"
+- "/img/*.json"
+- "/js/*.html"
+- Gemfile
+- node_modules/
+- palette.xml
+- postcss.config.js
+- postcss.config.json
+- README.md
+- LICENSE
+- "*.config.js"
+- "/img/adwaita-icons/docs"
+- "/img/adwaita-icons/LICENSE"
+- "css/core-css/docs"
+- "css/normalize/*.html"
+- "js/std-js/docs"
+- "js/std-js/test"

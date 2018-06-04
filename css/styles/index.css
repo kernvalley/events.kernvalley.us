@@ -1,0 +1,89 @@
+@charset "UTF-8";
+@import url("./vars.css");
+@import url("../core-css/viewport.css");
+@import url("../normalize/normalize.css");
+@import url("../core-css/rem.css");
+@import url("../core-css/element.css");
+@import url("../core-css/class-rules.css");
+@import url("../core-css/animations.css");
+@import url("../core-css/fonts.css");
+@import url("../animate.css/animate.css");
+@import url("./dialog.css");
+@import url("./icons.css");
+@import url("./contact.css");
+
+html, body {
+	min-height: 100vh;
+}
+
+body {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+body[data-scene="lake"] {
+	background-image: var(--lake-background-h);
+}
+
+body[data-scene="river"] {
+	background-image: var(--river-background-h);
+}
+
+dialog {
+	border: none;
+}
+
+.directory-listings {
+	grid-template-columns: repeat(auto-fill, minmax(400px, 650px));
+	grid-gap: 0.8em;
+}
+
+.directory-listings .card {
+	line-height: 1.8;
+}
+
+.directory-listings figure {
+	max-width: 40%;
+	margin-left: 0;
+}
+
+@media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
+	body[data-scene="lake"] {
+		background-image: var(--lake-background-f);
+	}
+
+	body[data-scene="river"] {
+		background-image: var(--river-background-f);
+	}
+}
+
+@media (orientation: landscape and max-width: 640px), (orientation: portrait and max-height: 480px) {
+	body[data-scene="lake"] {
+		background-image: var(--lake-background-l);
+	}
+
+	body[data-scene="river"] {
+		background-image: var(--river-background-l);
+	}
+}
+
+@media (orientation: landscape and max-width: 320px), (orientation: portrait and max-height: 240px) {
+	body[data-scene="lake"] {
+		background-image: var(--lake-background-m);
+	}
+
+	body[data-scene="river"] {
+		background-image: var(--river-background-m);
+	}
+}
+
+@media (orientation: portrait and max-width: 160px), (orientation: portrait and max-height: 120px) {
+	body[data-scene="lake"] {
+		background-image: var(--lake-background-s);
+	}
+
+	body[data-scene="river"] {
+		background-image: var(--river-background-s);
+	}
+}

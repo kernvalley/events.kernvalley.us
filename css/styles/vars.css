@@ -1,0 +1,63 @@
+:root {
+	--desktop-rem: 1.3vw;
+	--tablet-rem: 1.5vw;
+	--mobile-rem: 3.3vw;
+
+	--font-display: optional;
+
+	--lake-background-f: url("https://i.imgur.com/vya2c7of.jpg");
+	--lake-background-h: url("https://i.imgur.com/vya2c7oh.jpg");
+	--lake-background-l: url("https://i.imgur.com/vya2c7ol.jpg");
+	--lake-background-m: url("https://i.imgur.com/vya2c7om.jpg");
+	--lake-background-s: url("https://i.imgur.com/vya2c7os.jpg");
+
+	--river-background-f: url("https://i.imgur.com/lQOh8Ej.jpg");
+	--river-background-h: url("https://i.imgur.com/lQOh8Ejh.jpg");
+	--river-background-l: url("https://i.imgur.com/lQOh8Ejl.jpg");
+	--river-background-m: url("https://i.imgur.com/lQOh8Ejm.jpg");
+	--river-background-s: url("https://i.imgur.com/lQOh8Ejs.jpg");
+
+
+	/*================= Set color vars here =================*/
+	--default-color: #010101;
+	--alt-color: #FAFAFA;
+	--primary-color: #E0E0E0;
+	--link-color: var(--accent-color);
+	--accent-color: #0031c6;
+	--accent-color-2: #002491;
+	--border-color: #2D2D2D;
+	--header-bg-color: #0031c6;
+
+	--button-background: var(--accent-color);
+	--button-active-background: var(--accent-color-2);
+	--button-disabled-background: var(--button-active-background);
+	--button-border: none;
+	--button-padding: 0.6em;
+	--button-active-color: var(--button-color);
+	--button-disabled-color: var(--button-active-color);
+	--button-disabled-border: var(--button-border);
+	--button-active-border: var(--button-disabled-border);
+	--button-color: var(--alt-color);
+	--button-active-color: var(--button-color);
+	--button-border-radius: 4px;
+
+	/*==================== Set fonts here ====================*/
+	--main-font: 'Roboto';
+	--title-font: 'Alice', cursive;
+	--header-font: 'Alice', cursive;
+	--article-font: 'Ubuntu';
+	--article-header-font: var(--header-font);
+
+	/*================== Animation properties ==================*/
+	--animation-stagger: 150ms;
+
+	/* ================= Syntax Highlighting ====================*/
+	--highlight-color: black;
+	--highlight-background: #efefef;
+	--highlight-literal-number-color: #CCA418;
+	--backdrop-background: rgba(0,0,0,0.3);
+}
+
+::backdrop {
+	--backdrop-background: rgba(0,0,0,0.3);
+}

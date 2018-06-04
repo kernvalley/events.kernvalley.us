@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://jolly-noyce-ad4630.netlify.com/* https://rafting.kernvalley.us/:splat 301!

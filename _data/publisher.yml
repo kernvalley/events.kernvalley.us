@@ -1,0 +1,14 @@
+'@type': Organization
+'@context': 'http://schema.org'
+name: KernValley.us
+email: 'admin@kernvalley.us'
+sameAs:
+  twitter: kern_valley
+  linkedin: kernvalley-us
+url: 'https://kernvalley.us/'
+logo:
+  '@type': ImageObject
+  url: 'https://kernvalley.us/img/icon-512.png'
+  width: 512
+  height: 512
+  encodingFormat: png
