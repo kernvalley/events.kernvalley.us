@@ -4,7 +4,7 @@ layout: default
 ---
 <section id="events-calendar" class="grid">
 	{% assign now= 'now' | date_to_xmlschema %}
-	{% assign events=site.events | where_exp: 'event', 'event.startDate >= now' %}
+	{% assign events=site.events | where_exp: 'event', 'event.startDate >= now' | sort: 'startDate' %}
 	{% for event in events %}
 		<div class="card shadow">{% include event.html event=event %}</div>
 	{% endfor %}
