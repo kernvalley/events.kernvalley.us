@@ -1,8 +1,10 @@
 ---
 # See https://schema.org/Event
 name: 27th Annual Whitewater Wednesday
+date: 2018-06-13
 layout: page
 image: 'https://imgur.com/ijNr6eW'
+index: true
 # url:
 description: |-
   'Whitewater Wednesday comes to Kernville, on the Wild & Scenic
