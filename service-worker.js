@@ -31,6 +31,7 @@ const config = {
 		'/img/',
 		'/fonts/',
 		'/posts/',
+		'/events/',
 		'/contact/',
 	],
 	hosts: [
