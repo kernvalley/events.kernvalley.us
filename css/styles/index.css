@@ -34,16 +34,12 @@ dialog {
 	border: none;
 }
 
-.directory-listings {
+#events-calendar {
 	grid-template-columns: repeat(auto-fill, minmax(400px, 650px));
 	grid-gap: 0.8em;
 }
 
-.directory-listings .card {
-	line-height: 1.8;
-}
-
-.directory-listings figure {
+#events-calendar figure {
 	max-width: 40%;
 	margin-left: 0;
 }

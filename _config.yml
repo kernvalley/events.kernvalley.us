@@ -39,6 +39,7 @@ feed:
   url: /feed.rss
   type: application/rss+xml
 icons: '/img/icons.svg'
+logo: events
 theme-color: '#4688f4'
 background-color: '#5b46f4'
 discus-identifier: kernvalley-us
@@ -136,6 +137,10 @@ defaults:
     permalink: /posts/:categories/:year/:month/:day/:title/
     comments: false
     ads: false
+collections:
+  events:
+    output: true
+    permalink: /:collection/:name/
 plugins:
 - jekyll-watch
 - jekyll-paginate
