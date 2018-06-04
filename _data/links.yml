@@ -2,3 +2,6 @@ footer:
   - text: Contact
     href: /contact/
     icon: address-book
+  - text: Rafting
+    href: 'https://rafting.kernvalley.us'
+    icon: rafting
