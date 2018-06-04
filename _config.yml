@@ -45,7 +45,7 @@ background-color: '#5b46f4'
 google-analytics: UA-119717465-3
 # ad-sense:
 webmaster-verifications:
-google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
+  google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
 #  bing:
 scripts:
   development:
