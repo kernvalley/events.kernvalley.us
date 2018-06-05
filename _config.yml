@@ -16,7 +16,7 @@ manifest: /manifest.json
 tiles-config: /browserconfig.xml
 service_worker: /service-worker.js
 og-type: website
-description: "Events in the Kern Valley"
+description: "Calendar of events for the Kern River Valley"
 mobile-web-app-capable: true
 publisher: 'https://plus.google.com/113117303106986445610'
 canonical: 'https://events.kernvalley.us'
