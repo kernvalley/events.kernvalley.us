@@ -147,7 +147,7 @@ defaults:
 collections:
   events:
     output: true
-    permalink: /:collection/:year/:month/:day/:name/
+    permalink: /:collection/:name/
 plugins:
 - jekyll-watch
 - jekyll-paginate
