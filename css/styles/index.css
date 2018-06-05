@@ -34,14 +34,14 @@ dialog {
 	border: none;
 }
 
-#events-calendar {
-	grid-template-columns: repeat(auto-fill, minmax(400px, 650px));
-	grid-gap: 0.8em;
+summary[role="button"] {
+	display: list-item;
 }
 
-#events-calendar figure {
-	max-width: 40%;
-	margin-left: 0;
+#events-calendar {
+	grid-template-columns: repeat(auto-fill, minmax(320px, 500px));
+	grid-gap: 0.8em;
+	justify-content: center;
 }
 
 @media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
