@@ -1,7 +1,6 @@
 ---
 # See https://schema.org/Event
 name: Lake Isabella Fireworks Extravaganza
-date: 2018-06-30
 layout: page
 image: 'https://imgur.com/flAWE8C'
 # url:

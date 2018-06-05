@@ -1,7 +1,6 @@
 ---
 # See https://schema.org/Event
 name: Coding For Kids
-date: 2018-06-11
 image: 'https://imgur.com/sVjMtGL'
 url: 'http://www.kernvillecowork.com/en/events/view/607819446/coding-for-kids--introductory'
 description: |-

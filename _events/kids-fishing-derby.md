@@ -1,7 +1,6 @@
 ---
 # See https://schema.org/Event
 name: "31st Annual Kid's Fishing Derby"
-date: 2018-06-05
 image: 'https://imgur.com/HTI8sJd'
 # url:
 description: Free to kids 4 To 15 years. trophies, prizes, free kids lunch & free drawing
