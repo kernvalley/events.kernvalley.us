@@ -18,3 +18,8 @@ organizer:
   name: Fish and Game Habitat Club
 #  url:
 ---
+# {{ page.name }}
+
+{% include imgur.html url=page.image %}
+
+{{ page.description }}
