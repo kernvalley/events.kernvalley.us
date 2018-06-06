@@ -22,6 +22,12 @@ body {
 	background-position: center;
 }
 
+main.card {
+	width: 80%;
+	padding: 2em;
+	margin-left: 10%
+}
+
 body[data-scene="lake"] {
 	background-image: var(--lake-background-h);
 }
