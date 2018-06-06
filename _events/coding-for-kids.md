@@ -13,6 +13,14 @@ description: |-
     <li>Cost $96 per student for two weeks</li>
   </ul>
   <ins>Please let us know ahead of time if you do not have access to a laptop</ins>
+tags:
+- programming
+- coding class
+- coding for kids
+- kern valley
+- kern river valley
+- events
+- kernville cowork
 startDate: 2018-06-11 14:00
 endDate: 2018-06-11 16:00
 offers:
