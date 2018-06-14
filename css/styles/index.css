@@ -20,6 +20,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-attachment: fixed;
 }
 
 main.card {
@@ -28,11 +29,11 @@ main.card {
 	margin-left: 10%
 }
 
-body[data-scene="lake"] {
+[data-scene="lake"] {
 	background-image: var(--lake-background-h);
 }
 
-body[data-scene="river"] {
+[data-scene="river"] {
 	background-image: var(--river-background-h);
 }
 
@@ -51,41 +52,41 @@ summary[role="button"] {
 }
 
 @media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
-	body[data-scene="lake"] {
+	[data-scene="lake"] {
 		background-image: var(--lake-background-f);
 	}
 
-	body[data-scene="river"] {
+	[data-scene="river"] {
 		background-image: var(--river-background-f);
 	}
 }
 
 @media (orientation: landscape and max-width: 640px), (orientation: portrait and max-height: 480px) {
-	body[data-scene="lake"] {
+	[data-scene="lake"] {
 		background-image: var(--lake-background-l);
 	}
 
-	body[data-scene="river"] {
+	[data-scene="river"] {
 		background-image: var(--river-background-l);
 	}
 }
 
 @media (orientation: landscape and max-width: 320px), (orientation: portrait and max-height: 240px) {
-	body[data-scene="lake"] {
+	[data-scene="lake"] {
 		background-image: var(--lake-background-m);
 	}
 
-	body[data-scene="river"] {
+	[data-scene="river"] {
 		background-image: var(--river-background-m);
 	}
 }
 
 @media (orientation: portrait and max-width: 160px), (orientation: portrait and max-height: 120px) {
-	body[data-scene="lake"] {
+	[data-scene="lake"] {
 		background-image: var(--lake-background-s);
 	}
 
-	body[data-scene="river"] {
+	[data-scene="river"] {
 		background-image: var(--river-background-s);
 	}
 }
