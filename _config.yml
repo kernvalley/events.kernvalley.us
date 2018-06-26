@@ -35,6 +35,7 @@ repository:
   title: events.kernvalley.us
   url: 'https://github.com/kernvalley/events.kernvalley.us'
 twitter: kern_valley
+facebook: 2123017744629045
 feed:
   url: /feed.rss
   type: application/rss+xml
