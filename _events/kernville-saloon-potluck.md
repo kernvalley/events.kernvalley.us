@@ -12,7 +12,7 @@ startDate: 2018-09-13 17:00
 endDate: 2018-09-13 21:00
 location:
   name: Kernville Saloon
-  streetAddress: 22 Tobias Street
+  streetAddress: 20 Tobias Street
   addressLocality: Kernville
   addressRegion: CA
   postalCode: 93238
