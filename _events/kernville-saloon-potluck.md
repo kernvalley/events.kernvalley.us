@@ -22,9 +22,12 @@ organizer:
   name: Kernville Saloon
   url: 'https://www.facebook.com/Kernville-Saloon-185002471557497/'
 ---
+# {{ page.name }}
 {% include imgur.html url=page.image %}
 
 ## Ravens vs. Bengals
+
+> {{ page.description }}
 
 ### Main course by your host, Ashley
 #### Italian Beef Subs
