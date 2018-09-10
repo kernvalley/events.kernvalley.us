@@ -22,12 +22,36 @@ organizer:
   url: 'https://www.facebook.com/Kernville-Saloon-185002471557497/'
 ---
 # {{ page.name }}
-{% include imgur.html url=page.image %}
 
 ## Ravens vs. Bengals
 
+{% include imgur.html url=page.image %}
+
+<br />
+<time class="event-begin" itemprop="startDate" datetime="{{ include.event.startDate | date_to_xmlschema }}">
+	{% include icon.html icon='events' %}
+	{{ page.startDate | date: '%a %b %-d, %Y %l:%M %p' }}
+</time>
+<br />
+<div class="event-location" itemprop="location" itemtype="http://schema.org/Place" itemscope="">
+	{% include address.html address=page.location itemprop='address' %}
+</div>
+<hr />
 > {{ page.description }}
 
 **$10 pitchers and football on TV**
 
 ### Main course: Italian Beef Subs (made by Ashley)
+
+<h5>
+	<span>Organized by</span>
+	<span itemprop="name">
+		{% if page.organizer.url %}
+			<a href="{{ page.organizer.url | absolute_url }}" class="event-organizer-url underline" target="_blank" rel="noopener external">
+				{{ page.organizer.name }}
+			</a>
+		{% else %}
+			{{ page.organizer.name }}
+		{% endif %}
+	</span>
+</h5>
