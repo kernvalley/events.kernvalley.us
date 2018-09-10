@@ -1,10 +1,9 @@
 ---
 # See https://schema.org/Event
-name: Potluck at the Kernville Saloon
+name: Kick Off Thursday
 image: 'https://imgur.com/ssQ7EVV'
-description: Bring a dish and join us for food and football.
+description: Food and drink specials at the Kernville Saloon
 tags:
-- potluck
 - saloon
 - kernville
 - football
@@ -29,9 +28,4 @@ organizer:
 
 > {{ page.description }}
 
-### Main course by your host, Ashley
-#### Italian Beef Subs
-
-If you are bringing food, please have it to the saloon by <time>4:45 PM</time>
-so we have time to setup. Please have at least 20+ servings of food so that all
-guests can have some.
+**$10 pitchers and football on TV**
