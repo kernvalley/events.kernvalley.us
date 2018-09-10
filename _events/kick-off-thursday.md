@@ -29,3 +29,5 @@ organizer:
 > {{ page.description }}
 
 **$10 pitchers and football on TV**
+
+### Main course: Italian Beef Subs (made by Ashley)
