@@ -2,7 +2,7 @@
 [build]
   base = "./"
   publish = "./_site"
-  command = "JEKYLL_ENV=production bundle exec jekyll build"
+  command = "npm run build:site"
   [build.environment]
     GIT_LFS_ENABLED = "1"
 # [[headers]]
