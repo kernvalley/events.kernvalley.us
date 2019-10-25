@@ -24,7 +24,7 @@
     "lint:css": "stylelint ${npm_package_config_dir_css}",
     "test": "npm run lint",
     "start": "npm run netlify:serve",
-    "build": "npm run build:icons && npm run build:site",
+    "build": "npm run build:icons",
     "build:site": "JEKYLL_ENV=production bundle exec jekyll build",
     "build:site:dev": "bundle exec jekyll build --drafts --unpublished --future --profile --trace --strict_front_matter",
     "postinstall": "npm run git:submodules && npm run build",
