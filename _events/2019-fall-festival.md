@@ -9,7 +9,7 @@ location:
   addressRegion: CA
   postalCode: 93238
   url: 'https://goo.gl/maps/RSJah9aQnnn'
-image: 'https://imgur.com/YnsugoM'
+imgur: 'https://imgur.com/YnsugoM'
 description: During the last weekend of October, Kernville presents the Kernville Fall Festival!
 tags:
 - Kernville Fall Festival
