@@ -2,10 +2,10 @@
 *.patch
 /node_modules/
 /vendor/
-/_site/
 /npm-debug.log
 /img/icons.svg
-/_site/
+/_site/*
+!/_site/.gitkeep
 *.min*
 *.map
 
@@ -226,3 +226,6 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 .buildconfig
+
+# Local Netlify folder
+.netlify

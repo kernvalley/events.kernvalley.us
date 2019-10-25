@@ -6,7 +6,7 @@ layout: null
 	"name": "{{ site.title }}",
 	"short_name": "{{ site.short-name | default: site.title}}",
 	"description": "{{ site.description }}",
-	"start_url": "{{ page.url | absolute_url | replace: 'manifest.json', '' }}",
+	"start_url": "{{ page.url  | replace: 'manifest.json', '' }}",
 	"lang": "{{ site.lang }}",
 	"display": "{{ site.display | default: 'standalone' }}",
 	"theme_color": "{{ site.theme-color }}",

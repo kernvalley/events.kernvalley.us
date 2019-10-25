@@ -1,14 +1,14 @@
 @charset "UTF-8";
 @import url("./vars.css");
-@import url("../core-css/viewport.css");
-@import url("../normalize/normalize.css");
-@import url("../core-css/rem.css");
-@import url("../core-css/element.css");
-@import url("../core-css/class-rules.css");
-@import url("../core-css/animations.css");
-@import url("../core-css/fonts.css");
-@import url("../animate.css/animate.css");
-@import url("./dialog.css");
+@import url("https://cdn.kernvalley.us/css/core-css/viewport.css");
+@import url("https://cdn.kernvalley.us/css/normalize/normalize.css");
+@import url("https://cdn.kernvalley.us/css/core-css/rem.css");
+@import url("https://cdn.kernvalley.us/css/core-css/element.css");
+@import url("https://cdn.kernvalley.us/css/core-css/class-rules.css");
+@import url("https://cdn.kernvalley.us/css/core-css/animations.css");
+@import url("https://cdn.kernvalley.us/css/core-css/fonts.css");
+@import url("https://cdn.kernvalley.us/css/animate.css/animate.css");
+@import url("https://cdn.kernvalley.us/css/core-css/layout/shared.css");
 @import url("./icons.css");
 @import url("./contact.css");
 @import url("./header.css");
@@ -19,10 +19,17 @@ html, body {
 }
 
 body {
+	min-height: 100vh;
+	background-color: var(--primary-color);
 	background-size: cover;
-	background-repeat: no-repeat;
 	background-position: center;
-	background-attachment: fixed;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	color: var(--default-color);
+}
+
+body {
+	display: grid;
 }
 
 main.card {
