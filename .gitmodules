@@ -4,12 +4,6 @@
 [submodule "_layouts"]
 	path = _layouts
 	url = https://github.com/kernvalley/jekyll-layouts.git
-[submodule "css/core-css"]
-	path = css/core-css
-	url = https://github.com/shgysk8zer0/core-css.git
-[submodule "js/std-js"]
-	path = js/std-js
-	url = https://github.com/shgysk8zer0/std-js.git
 [submodule "img/logos"]
 	path = img/logos
 	url = https://github.com/shgysk8zer0/logos.git
@@ -22,12 +16,6 @@
 [submodule "img/octicons"]
 	path = img/octicons
 	url = https://github.com/shgysk8zer0/octicons-svg.git
-[submodule "css/animate.css"]
-	path = css/animate.css
-	url = https://github.com/daneden/animate.css.git
-[submodule "css/normalize"]
-	path = css/normalize
-	url = https://github.com/necolas/normalize.css.git
 [submodule "img/kernvalley-icons"]
 	path = img/kernvalley-icons
 	url = https://github.com/kernvalley/kernvalley-icons.git

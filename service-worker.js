@@ -1,102 +1,63 @@
-const config = {
-	version: 'events.kernvalley',
-	caches: [
-		// Main assets
-		'/',
-		'/contact/',
-		'/js/index.min.js',
-		'/css/styles/index.min.css',
-		'/img/icons.svg',
-		'/img/favicon.svg',
+'use strict';
+/*eslint no-undef: 0*/
+/* 2019-10-25T09:39 */
+self.importScripts('/sw-config.js');
 
-		// Logos
-		'/img/logos/facebook.svg',
-		'/img/logos/twitter.svg',
-		'/img/logos/linkedin.svg',
-		'/img/logos/google-plus.svg',
-		'/img/logos/reddit.svg',
-		'/img/logos/gmail.svg',
-
-		// Fonts
-		'/fonts/Alice.woff2',
-		'/fonts/roboto.woff2',
-	],
-	ignored: [
-		'/service-worker.js',
-		'/manifest.json',
-	],
-	paths: [
-		'/js/',
-		'/css/',
-		'/img/',
-		'/fonts/',
-		'/posts/',
-		'/events/',
-		'/contact/',
-	],
-	hosts: [
-		'secure.gravatar.com',
-		'i.imgur.com',
-		'cdn.polyfill.io',
-	],
-};
-
-addEventListener('install', async () => {
-	const cache = await caches.open(config.version);
-	await cache.addAll(config.caches);
-	skipWaiting();
-
-});
-
-addEventListener('activate', event => {
-	event.waitUntil(async function() {
-		clients.claim();
-	}());
-});
-
-addEventListener('fetch', async event => {
-	function isValid(req) {
+self.addEventListener('install', async event => {
+	event.waitUntil((async () => {
 		try {
-			const url = new URL(req.url);
-			const isGet = req.method === 'GET';
-			const allowedHost = config.hosts.includes(url.host);
-			const isHome = ['/', '/index.html', '/index.php'].some(path => url.pathname === path);
-			const notIgnored = config.ignored.every(path => url.pathname !== path);
-			const allowedPath = config.paths.some(path => url.pathname.startsWith(path));
-
-			return isGet && (allowedHost || (isHome || (allowedPath && notIgnored)));
-		} catch(err) {
-			console.error(err);
-			return false;
-		}
-	}
-
-	async function get(request) {
-		const cache = await caches.open(config.version);
-		const cached = await cache.match(request);
-
-		if (navigator.onLine) {
-			const fetched = fetch(request).then(async resp => {
-				if (resp instanceof Response && resp.ok) {
-					const respClone = await resp.clone();
-					await cache.put(event.request, respClone);
-				}
-				return resp;
-			});
-
-			if (cached instanceof Response) {
-				return cached;
-			} else {
-				const resp = await fetched;
-				return resp;
+			for (const key of await caches.keys()) {
+				await caches.delete(key);
 			}
-		} else {
-			return cached;
-		}
-	}
 
-	if (isValid(event.request)) {
-		// console.log(event.request.url);
-		event.respondWith(get(event.request));
+			const cache = await caches.open(config.version);
+			await cache.addAll(config.stale);
+		} catch (err) {
+			console.error(err);
+		}
+	})());
+});
+
+self.addEventListener('activate', event => event.waitUntil(clients.claim()));
+
+self.addEventListener('fetch', event => {
+	if (event.request.method === 'GET' && event.request.url.startsWith(location.origin)) {
+		event.respondWith((async () => {
+			const url = new URL(event.request.url);
+			url.hash = '';
+
+			if (Array.isArray(config.stale) && config.stale.includes(url.href)) {
+				const cached = await caches.match(url);
+				if (cached instanceof Response) {
+					return cached;
+				}
+			} else if (Array.isArray(config.fresh) && config.fresh.includes(url.href)) {
+				if (navigator.onLine) {
+					const resp = await fetch(url.href);
+					const cache = await caches.open(config.version);
+
+					if (resp.ok) {
+						cache.add(resp.clone());
+					}
+					return resp;
+				} else {
+					return caches.match(event.request);
+				}
+			} else if (Array.isArray(config.allowed) && config.allowed.some(host => new URL(event.request.url).host === host)) {
+				const resp = await caches.match(event.request);
+				if (resp instanceof Response) {
+					return resp;
+				} else if (navigator.onLine) {
+					const resp = await fetch(event.request);
+					const cache = await caches.open(config.version);
+					cache.add(resp.clone());
+					return resp;
+				}
+			} else {
+				return fetch(event.request.url);
+			}
+		})());
 	}
 });
+
+self.addEventListener('error', console.error);

@@ -1,23 +1,17 @@
-import './std-js/shims.js';
-import './std-js/deprefixer.js';
-import {loaded, $, registerServiceWorker} from './std-js/functions.js';
-import webShareApi from './std-js/webShareApi.js';
-import {
-	facebook,
-	twitter,
-	googlePlus,
-	linkedIn,
-	reddit,
-	gmail,
-} from './std-js/share-config.js';
+import 'https://cdn.kernvalley.us/js/std-js/shims.js';
+import 'https://cdn.kernvalley.us/js/std-js/deprefixer.js';
+import 'https://cdn.kernvalley.us/components/share-button.js';
+import {ready, $, registerServiceWorker} from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 
-webShareApi(facebook, twitter, googlePlus, linkedIn, reddit, gmail);
+document.documentElement.classList.toggle('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
+document.documentElement.classList.toggle('no-details', document.createElement('details') instanceof HTMLUnknownElement);
+document.documentElement.classList.replace('no-js', 'js');
 
-loaded().then(async () => {
-	if (document.documentElement.dataset.hasOwnProperty('serviceWorker')) {
-		registerServiceWorker(document.documentElement.dataset.serviceWorker);
-	}
+if (document.documentElement.dataset.hasOwnProperty('serviceWorker')) {
+	registerServiceWorker(document.documentElement.dataset.serviceWorker).catch(console.error);
+}
 
+ready().then(async () => {
 	$('[data-show-modal]').click(event => {
 		const target = event.target.closest('[data-show-modal]');
 		const dialog = document.querySelector(target.dataset.showModal);
@@ -31,14 +25,5 @@ loaded().then(async () => {
 		if (dialog instanceof HTMLElement) {
 			dialog.close();
 		}
-	});
-	$('[data-share]').click(event => {
-		event.preventDefault();
-		event.stopPropagation();
-		navigator.share({
-			title: document.title,
-			url: location.href,
-			text: document.querySelector('meta[name="description"][content]').getAttribute('content'),
-		});
 	});
 });
