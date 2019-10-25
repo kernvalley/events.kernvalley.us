@@ -10,10 +10,9 @@
       "port": 8888
     },
     "dir": {
-      "css": "css/ components/",
-      "js": "js/ components/",
-      "img": "img/",
-      "html": "components/"
+      "css": "css/",
+      "js": "js/",
+      "img": "img/"
     }
   },
   "scripts": {
