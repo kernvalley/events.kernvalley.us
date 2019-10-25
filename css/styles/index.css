@@ -18,6 +18,20 @@ html, body {
 	min-height: 100vh;
 }
 
+body {
+	min-height: 100vh;
+	background-color: var(--primary-color);
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	color: var(--default-color);
+}
+
+body {
+	display: grid;
+}
+
 main.card {
 	width: 80%;
 	padding: 2em;
