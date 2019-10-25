@@ -7,7 +7,7 @@ url: 'https://shgysk8zer0.github.io'
 sameAs:
   twitter: shgysk8zer0
   github: shgysk8zer0
-  google_plus: +ChrisZuber
+  # google_plus: +ChrisZuber
   youtube: shgysk8zer0
   facebook: shgysk8zer0
   codepen: shgysk8zer0
@@ -54,7 +54,7 @@ homeLocation:
     '@type': PostalAddress
     addressLocality: Lake Isabella
     addressRegion: California
-    postalCode: 93240
+    postalCode: 93238
     addressCountry: United States
   geo:
     '@type': GeoCoordinates

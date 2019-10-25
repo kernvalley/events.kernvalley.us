@@ -47,7 +47,7 @@ organizer:
 	<span>Organized by</span>
 	<span itemprop="name">
 		{% if page.organizer.url %}
-			<a href="{{ page.organizer.url | absolute_url }}" class="event-organizer-url underline" target="_blank" rel="noopener external">
+			<a href="{{ page.organizer.url  }}" class="event-organizer-url underline" target="_blank" rel="noopener external">
 				{{ page.organizer.name }}
 			</a>
 		{% else %}

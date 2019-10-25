@@ -58,54 +58,26 @@ scripts:
   - src: /js/index.js
     type: module
     async: true
-  - src: /js/index.min.js
-    type: application/javascript
-    async: true
-    nomodule: true
   production:
   - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
     type: application/javascript
     crossorigin: anonymous
     async: true
-  - src: /js/index.min.js
-    type: application/javascript
+  - src: /js/index.js
+    type: module
     async: true
 stylesheets:
   development:
   - href: /css/styles/index.css
     media: all
   production:
-  - href: /css/styles/index.min.css
+  - href: /css/styles/index.css
     media: all
 preload:
 - href: /img/icons.svg
   as: image
   type: image/svg+xml
   name: icons
-- href: /img/logos/facebook.svg
-  as: image
-  type: image/svg+xml
-  name: Facebook
-- href: /img/logos/twitter.svg
-  as: image
-  type: image/svg+xml
-  name: Twitter
-- href: /img/logos/google-plus.svg
-  as: image
-  type: image/svg+xml
-  name: Google+
-- href: /img/logos/reddit.svg
-  as: image
-  type: image/svg+xml
-  name: Reddit
-- href: /img/logos/linkedin.svg
-  as: image
-  type: image/svg+xml
-  name: LinkedIn
-- href: /img/logos/gmail.svg
-  as: image
-  type: image/svg+xml
-  name: Gmail
 appicons:
 - src: /img/favicon.svg
   sizes: any

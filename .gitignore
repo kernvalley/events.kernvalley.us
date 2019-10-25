@@ -226,3 +226,6 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 .buildconfig
+
+# Local Netlify folder
+.netlify

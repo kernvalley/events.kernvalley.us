@@ -2,7 +2,7 @@
 [build]
   base = "./"
   publish = "./_site"
-  command = "npm run build:site"
+  command = "npm run build"
   [build.environment]
     GIT_LFS_ENABLED = "1"
 # [[headers]]

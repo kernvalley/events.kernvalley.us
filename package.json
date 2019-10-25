@@ -8,19 +8,20 @@
     "git:submodules": "git submodule update --init --recursive",
     "lint": "npm run lint:all",
     "lint:all": "npm run lint:js && npm run lint:css",
-    "lint:js": "eslint .",
-    "lint:css": "stylelint css/",
+    "lint:js": "eslint ${npm_package_config_dir_js}",
+    "lint:css": "stylelint ${npm_package_config_dir_css}",
     "test": "npm run lint",
+    "start": "npm run netlify:serve",
     "build": "npm run build:icons",
-    "build:css": "postcss css/styles/index.css -o css/styles/index.min.css",
-    "build:js": "webpack",
-    "build:icons": "svg-sprite-generate -c img/icons.csv -o img/icons.svg",
-    "build:site": "npm install && JEKYLL_ENV=production bundle exec jekyll build",
-    "build:site:dev": "bundle exec jekyll build --drafts --unpublished --future --profile --trace --strict_front_matter",
-    "postinstall": "npm run build",
-    "start": "npm run serve:dev",
-    "serve:production": "npm run build && JEKYLL_ENV=production bundle exec jekyll serve",
-    "serve:dev": "bundle exec jekyll serve --drafts --unpublished --future --profile --trace --strict_front_matter"
+    "build:all": "npm run build:js && npm run build:css && npm run build:icons",
+    "build:css": "postcss css/index.css -o css/index.min.css",
+    "build:js": "rollup --config",
+    "build:icons": "svg-sprite-generate -c icons.csv -o img/icons.svg",
+    "fix:css": "stylelint ${npm_package_config_dir_css} --fix",
+    "fix:js": "eslint ${npm_package_config_dir_js} --fix",
+    "netlify:deploy": "netlify deploy",
+    "netlify:serve": "netlify dev",
+    "netlify:live": "netlify dev --live"
   },
   "repository": {
     "type": "git",
@@ -32,7 +33,28 @@
     "url": "https://github.com/kernvalley/events.kernvalley.us/issues"
   },
   "homepage": "https://shgysk8zer0.github.io",
-  "dependencies": {
-    "node-purist": "github:shgysk8zer0/node-purist"
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "cssnano": "^4.1.10",
+    "cssnano-preset-default": "^4.0.7",
+    "eslint": "^5.16.0",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "netlify-cli": "^2.19.3",
+    "postcss": "^7.0.20",
+    "postcss-cli": "^6.1.3",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-discard-comments": "^4.0.2",
+    "postcss-import": "^12.0.1",
+    "postcss-import-url": "^4.0.0",
+    "postcss-url": "^8.0.0",
+    "rollup": "^1.25.2",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-url-resolve": "^0.1.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-config-standard": "^18.3.0",
+    "svgo": "^1.2.2"
   }
 }
