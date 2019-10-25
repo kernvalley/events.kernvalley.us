@@ -2,10 +2,10 @@
 *.patch
 /node_modules/
 /vendor/
-/_site/
 /npm-debug.log
 /img/icons.svg
-/_site/
+/_site/*
+!/_site/.gitkeep
 *.min*
 *.map
 
