@@ -3,6 +3,19 @@
   "version": "1.0.0",
   "description": "Events in the Kern Valley",
   "private": true,
+  "config": {
+    "serve": {
+      "domain": "localhost",
+      "path": "./_site",
+      "port": 8888
+    },
+    "dir": {
+      "css": "css/ components/",
+      "js": "js/ components/",
+      "img": "img/",
+      "html": "components/"
+    }
+  },
   "scripts": {
     "git:fetch": "git fetch --prune --tags",
     "git:submodules": "git submodule update --init --recursive",
