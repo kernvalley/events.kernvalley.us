@@ -11,7 +11,7 @@ location:
   url: 'https://maps.app.goo.gl/HVWHpMbThDxfobj18'
 image: 'https://i.imgur.com/MJlEyGJl.png'
 imgur: 'https://i.imgur.com/MJlEyGJ.png'
-description: During the last weekend of October, Kernville presents the Kernville Fall Festival!
+description: These deliciously disturbing ground & mobile haunt entries will unleash your deepest terrors!
 tags:
 - Horror House
 - Halloween
