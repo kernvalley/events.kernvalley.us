@@ -37,7 +37,6 @@ Trick-or-Treaters: Come check out our FREE haunted escape attraction on October
 Individually sealed candy handed out while supplies last. Set up your own scary
 Halloween display on our lot! Enter to win the competition for scariest! Use EZ-ups
 or other walls, haul it in on a flatbed or trailer, etc. or just show up in your
-costume & scare people in the walk zone. For registration forms, go to
-[facebook.com/killerkernghostsandlegends](https://facebook.com/killerkernghostsandlegends).
+costume & scare people in the walk zone. For registration forms, go to [{% include icon.html icon='facebook' %} Facebook](https://facebook.com/killerkernghostsandlegends).
 
 *p.s. Liability waiver required for entry.*
