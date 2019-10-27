@@ -9,8 +9,8 @@ location:
   addressRegion: CA
   postalCode: 93285
   url: 'https://maps.app.goo.gl/HVWHpMbThDxfobj18'
-image: 'https://i.imgur.com/MJlEyGJl.png'
-imgur: 'https://i.imgur.com/MJlEyGJ.png'
+image: 'https://imgur.com/MJlEyGJ'
+imgur: 'https://imgur.com/MJlEyGJ'
 description: These deliciously disturbing ground & mobile haunt entries will unleash your deepest terrors!
 tags:
 - Horror House
