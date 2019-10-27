@@ -10,7 +10,7 @@ location:
   postalCode: 93285
   url: 'https://maps.app.goo.gl/HVWHpMbThDxfobj18'
 image: 'https://i.imgur.com/MJlEyGJl.png'
-imgur: 'https://i.imgur.com/MJlEyGJ'
+imgur: 'https://i.imgur.com/MJlEyGJ.png'
 description: During the last weekend of October, Kernville presents the Kernville Fall Festival!
 tags:
 - Horror House
@@ -21,7 +21,7 @@ organizer:
   url: 'https://facebook.com/killerkernghostsandlegends'
 ---
 # {{ page.name }}
-{% include imgur.html url=page.imgur %}
+{% include imgur.html url=page.image %}
 FREE 1st Annual KRV Haunt (Haunted House/Maze) Competition!
 
 **WARNING!** Not suitable for all ages. Visitor discretion advised.
