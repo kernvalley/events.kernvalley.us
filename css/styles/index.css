@@ -14,22 +14,13 @@
 @import url("./header.css");
 @import url("./footer.css");
 
-html, body {
-	min-height: 100vh;
-}
-
 body {
 	min-height: 100vh;
-	background-color: var(--primary-color);
-	background-size: cover;
-	background-position: center;
-	background-attachment: scroll;
+	background-size: 100vw;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	color: var(--default-color);
-}
-
-body {
-	display: grid;
+	grid-template-areas: 'header' 'main' 'footer';
+	grid-template-rows: 17vh minmax(70vh, auto), auto;
 }
 
 main.card {
