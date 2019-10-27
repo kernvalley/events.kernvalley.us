@@ -21,7 +21,7 @@ organizer:
   url: 'https://facebook.com/killerkernghostsandlegends'
 ---
 # {{ page.name }}
-{% include imgur.html url=page.image %}
+{% include imgur.html url=page.imgur %}
 FREE 1st Annual KRV Haunt (Haunted House/Maze) Competition!
 
 **WARNING!** Not suitable for all ages. Visitor discretion advised.
