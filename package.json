@@ -10,7 +10,7 @@
       "port": 8888
     },
     "dir": {
-      "css": "css/",
+      "css": "css/styles/",
       "js": "js/",
       "img": "img/"
     }
@@ -27,9 +27,9 @@
     "build": "npm run build:icons",
     "build:site": "JEKYLL_ENV=production bundle exec jekyll build",
     "build:site:dev": "bundle exec jekyll build --drafts --unpublished --future --profile --trace --strict_front_matter",
-    "postinstall": "npm run git:submodules && npm run build",
+    "postinstall": "npm run build",
     "build:all": "npm run build:js && npm run build:css && npm run build:icons",
-    "build:css": "postcss css/index.css -o css/index.min.css",
+    "build:css": "postcss ${npm_package_config_dir_css}index.css -o ${npm_package_config_dir_css}index.min.css",
     "build:js": "rollup --config",
     "build:icons": "svg-sprite-generate -c icons.csv -o img/icons.svg",
     "fix:css": "stylelint ${npm_package_config_dir_css} --fix",
