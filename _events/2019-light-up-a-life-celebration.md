@@ -11,8 +11,7 @@ location:
   url: 'https://goo.gl/maps/gWqG5QHmZsXtxYTs8'
 image: 'https://imgur.com/xI10oa1'
 imgur: 'https://imgur.com/xI10oa1'
-description: All proceeds from light donations help provide hospice services in your local community.
-hospice care.
+description: 'All proceeds from light donations help provide hospice services in your local community.'
 tags:
 - light up a life
 - optimal hospice
