@@ -1,6 +1,6 @@
 'use strict';
 /*eslint no-undef: 0*/
-/* 2019-10-27T19:48 */
+/* 2019-10-31T16:45 */
 self.importScripts('/sw-config.js');
 
 self.addEventListener('install', async event => {
@@ -54,6 +54,7 @@ self.addEventListener('fetch', event => {
 					return resp;
 				}
 			} else {
+				console.log(`Fetching uncached URL: ${event.request.url}`);
 				return fetch(event.request.url);
 			}
 		})());
