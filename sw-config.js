@@ -1,7 +1,7 @@
 'use strict';
 /*eslint no-unused-vars: 0*/
 const config = {
-	version: '1.1.0-a07',
+	version: '1.1.0-a08',
 	stale: [
 		/* Root document */
 		'/',
