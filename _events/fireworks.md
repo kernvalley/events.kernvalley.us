@@ -27,10 +27,6 @@ organizer:
   name: Kern River Valley Chamber of Commerce
   url: 'https://www.kernrivervalley.com/'
 ---
-# {{ page.name }}
-
-{% include imgur.html url=page.image %}
-
 The festivities began at 10AM at Tank Park in Lake Isabella! The Stars & Stripes
 Celebration brings fun, music, Inflatable Water Park, food, vendors, games, free
 contests and much more! Fun for the whole family. To be a vendor/contestant next

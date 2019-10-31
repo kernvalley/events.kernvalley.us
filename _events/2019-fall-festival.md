@@ -26,8 +26,6 @@ organizer:
   name: Kernville Chamber of Commerce
   url: 'http://www.gotokernville.com/'
 ---
-# {{ page.name }}
-{% include imgur.html url=page.imgur %}
 During the last weekend of October, Kernville presents the Kernville Fall Festival!
 Our festival features live music, Trick or Trot 5K Run/Walk, Lawn Mower Racing,
 Dachshund Races, Pumpkin Pie Eating Contest, Costume Contest, Pet Costume Contest,

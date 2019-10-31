@@ -25,10 +25,6 @@ organizer:
   url: 'http://kernvalley.com/elks2358/'
 #  url:
 ---
-# {{ page.name }}
-
-{% include imgur.html url=page.image %}
-
 KRV Elks Lodge 2358 presents the Annual Free Kids Fishing Derby on June 23 at
 the Tillie Creek boat launch.
 
