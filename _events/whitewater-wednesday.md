@@ -35,7 +35,6 @@ organizer:
 ## Whitewater Wednesday June 13, 2018
 ### Wet your Pants on the Kern!
 
-{% include imgur.html url=page.image %}
 Whitewater Wednesday comes to Kernville, on the Wild & Scenic Kern River; Whitewater,
 USA!  It will be a fun-filled day of sunshine, water fights, soggy sneakers, and
 action packed rapids.

@@ -1,5 +1,6 @@
 ---
 name: Light Up a Life Celebration
+date: 2019-10-29
 startDate: '2019-12-08 17:00'
 endDate: '2019-12-08 19:00'
 location:
@@ -22,8 +23,6 @@ organizer:
   name: Optimal Hospice Foundation
   url: 'http://www.optimalhospicefoundation.com'
 ---
-# {{ page.name }}
-{% include imgur.html url=page.imgur %}
 Each year Optimal Hospice Foundation hosts several local remembrance celebrations
 throughout California during the   month of December and invites the community to
 sponsor a light on a tree in memory of a loved one or to honor someone living.

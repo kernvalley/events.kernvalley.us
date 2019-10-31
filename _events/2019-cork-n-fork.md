@@ -1,5 +1,6 @@
 ---
 name: Cork N Fork
+date: 2019-10-28
 startDate: '2019-11-09 12:00'
 endDate: '2019-11-09 16:00'
 location:
@@ -11,6 +12,9 @@ location:
   url: 'https://goo.gl/maps/7621RwUbwXqCMmFg8'
 offers:
   - price: 40
+    name: Pre-Sale Tickets
+  - price: 50
+    name: At Gate (if available)
 image: 'https://i.imgur.com/6OAftGz'
 imgur: 'https://i.imgur.com/6OAftGz'
 description: It's our FOURTH Annual Wine, Food & Music Festival... That's right, Winos,  CORK N FORK is BACK!
@@ -25,8 +29,6 @@ organizer:
   name: Starlite Lounge
   url: 'http://starliteloungewinebar.com/'
 ---
-# {{ page.name }}
-{% include imgur.html url=page.imgur %}
 It’s our Fourth Annual Wine, Food & Music Festival… That’s right, Winos,  CORK N FORK is BACK!
 
 This exclusive Kern Valley event will be held on Saturday, November 9, 2019 from 12-4pm

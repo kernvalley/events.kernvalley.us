@@ -21,13 +21,7 @@ organizer:
   name: Kernville Saloon
   url: 'https://www.facebook.com/Kernville-Saloon-185002471557497/'
 ---
-# {{ page.name }}
-
 ## Ravens vs. Bengals
-
-{% include imgur.html url=page.image %}
-
-<br />
 <time class="event-begin" itemprop="startDate" datetime="{{ include.event.startDate | date_to_xmlschema }}">
 	{% include icon.html icon='events' %}
 	{{ page.startDate | date: '%a %b %-d, %Y %l:%M %p' }}

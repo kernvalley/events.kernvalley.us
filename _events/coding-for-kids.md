@@ -38,11 +38,9 @@ organizer:
   name: Justin Powers
   url: 'https://www.kernvillecowork.com'
 ---
-# {{ page.name }}
-
-{% include imgur.html url=page.image %}
-
-Come learn the basics of computer programming in a way that is simple and fun!  No experience necessary.  Bring your own laptop.  This class is designed for students ages 10-15, but is open to all.
+Come learn the basics of computer programming in a way that is simple and fun! 
+No experience necessary.  Bring your own laptop.  This class is designed for
+students ages 10-15, but is open to all.
 
  
 

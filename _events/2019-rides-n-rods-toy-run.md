@@ -1,5 +1,6 @@
 ---
 name: Rides N Rods Toy Run
+date: 2019-10-29
 startDate: '2019-11-16 10:00'
 endDate: '2019-11-16 16:00'
 location:

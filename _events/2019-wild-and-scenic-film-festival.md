@@ -2,6 +2,7 @@
 name: Wild & Scenic Film Festival
 startDate: '2019-11-02 16:00'
 endDate: '2019-11-09 19:30'
+date: 2019-10-28
 location:
   name: Rivernook Campground
   streetAddress: 14001 Sierra Way
@@ -10,7 +11,12 @@ location:
   postalCode: 93238
   url: 'https://goo.gl/maps/7621RwUbwXqCMmFg8'
 offers:
+  - price: 15
+    name: Pre-Sale General Admission
   - price: 20
+    label: General Admission Door
+  - price: 5
+    label: Kid\'s Admission
 image: 'https://imgur.com/v2N7hJH'
 imgur: 'https://imgur.com/v2N7hJH'
 description: Join us for our annual Wild & Scenic Film Festical right here on the Kern River.
@@ -25,8 +31,6 @@ organizer:
   name: Kern River Conservancy
   url: 'https://www.kernriverconservancy.org'
 ---
-# {{ page.name }}
-{% include imgur.html url=page.imgur %}
 JOIN US FOR OUR annual WILD & SCENIC FILM FESTIVAL RIGHT HERE ON THE KERN RIVER.
 
 The Wild & Scenic Film Festival is the largest film festival of its kind,

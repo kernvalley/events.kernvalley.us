@@ -28,10 +28,6 @@ organizer:
   telephone: +1-760-376-2705
   url: https://rivernookcampground.com/
 ---
-# {{ page.name }}
-
-{% include imgur.html url=page.image %}
-
 Join us for our 3rd Annual 100% Independent Craft Beer Festival in Kernville Ca!
 
 We decided that camping and beer go hand in hand, and we can raise money for a non

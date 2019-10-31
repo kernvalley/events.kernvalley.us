@@ -1,5 +1,6 @@
 ---
 name: Horror House Challenge
+date: 2019-10-26
 startDate: '2019-10-31 19:00'
 endDate: '2019-10-31 22:00'
 location:
@@ -20,8 +21,6 @@ organizer:
   name: Killer Kern Ghosts & Legends, LLC
   url: 'https://facebook.com/killerkernghostsandlegends'
 ---
-# {{ page.name }}
-{% include imgur.html url=page.imgur %}
 FREE 1st Annual KRV Haunt (Haunted House/Maze) Competition!
 
 **WARNING!** Not suitable for all ages. Visitor discretion advised.
