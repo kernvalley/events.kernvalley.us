@@ -13,10 +13,13 @@ location:
 offers:
   - price: 15
     name: Pre-Sale General Admission
+    availability: InStock
   - price: 20
     label: General Admission Door
+    availability: InStock
   - price: 5
     label: Kid\'s Admission
+    availability: InStock
 image: 'https://imgur.com/v2N7hJH'
 imgur: 'https://imgur.com/v2N7hJH'
 description: Join us for our annual Wild & Scenic Film Festical right here on the Kern River.
