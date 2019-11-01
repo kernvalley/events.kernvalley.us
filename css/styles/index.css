@@ -29,12 +29,24 @@ main.card {
 	margin-left: 2.5%;
 }
 
+.event-page-offers.flex, .event-details.flex.row {
+	justify-content: space-around;
+}
+
+button.btn.event-offer-btn {
+	cursor: default;
+}
+
 @media (min-width: 800px) {
 	main.card {
 		width: 80%;
 		padding: 2em;
 		margin-left: 10%
 	}
+}
+
+button:disabled.btn {
+	background: var(--button-disabled-background);
 }
 
 [data-scene="lake"] {
