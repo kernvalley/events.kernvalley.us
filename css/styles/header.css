@@ -2,3 +2,6 @@
 	margin-bottom: 1.2rem;
 }
 
+#header a.float-left[title="Home"] {
+	margin-left: 0.4rem;
+}

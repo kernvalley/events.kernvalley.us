@@ -20,13 +20,21 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	grid-template-areas: 'header' 'main' 'footer';
-	grid-template-rows: 17vh minmax(70vh, auto), auto;
+	grid-template-rows: 17vh minmax(70vh, auto) auto;
 }
 
 main.card {
-	width: 80%;
 	padding: 2em;
-	margin-left: 10%
+	width: 95vw;
+	margin-left: 2.5%;
+}
+
+@media (min-width: 800px) {
+	main.card {
+		width: 80%;
+		padding: 2em;
+		margin-left: 10%
+	}
 }
 
 [data-scene="lake"] {
