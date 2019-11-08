@@ -1,7 +1,7 @@
 ---
 name: Wild & Scenic Film Festival
 startDate: '2019-11-02 16:00'
-endDate: '2019-11-09 19:30'
+endDate: '2019-11-02 19:30'
 date: 2019-10-28
 location:
   name: Rivernook Campground
