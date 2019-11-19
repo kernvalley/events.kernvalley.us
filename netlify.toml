@@ -26,7 +26,7 @@
       connect-src 'self' https://cdn.kernvalley.us https://api.kernvalley.us https://disqus.com wss://realtime.services.disqus.com;
       font-src 'self' https://cdn.kernvalley.us;
       media-src *;
-      child-src 'self' https://www.youtube.com https://www.youtube-nocookie.com https://disqus.com;
+      frame-src https://www.youtube.com https://www.youtube-nocookie.com https://disqus.com;
       form-action 'self';
       manifest-src 'self';
       worker-src 'self';
