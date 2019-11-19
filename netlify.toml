@@ -21,7 +21,7 @@
     Content-Security-Policy = '''
       default-src 'self';
       img-src * blob: data:;
-      script-src 'self' https://cdn.kernvalley.us https://cdn.polyfill.io https://www.google-analytics.com https://gist.github.com https://production-assets.codepen.io https://codepen.io/ https://*.disqus.com/embed.js https://disqus.com/ https://c.disquscdn.com/ https://www.googletagmanager.com https://www.google-analytics.com/analytics.js pagead2.googlesyndication.com https://adservice.google.com/ 'sha256-uv9ihhWV1/99Lna4PlyzJ4Ji2ofiXKU9ak+GUXMN0gw=' 'sha256-YCSlybv0BJeWnGWF8JCyQMs1TUOxVjFyr5upfHiDysc=' 'sha256-YmEu57ZRfDpDDhMApyHsyE3PA6DSf2V+9bIVooFPFHw=';
+      script-src 'self' moz-extension: https://cdn.kernvalley.us https://cdn.polyfill.io https://www.google-analytics.com https://gist.github.com https://production-assets.codepen.io https://codepen.io/ https://*.disqus.com/embed.js https://disqus.com/ https://c.disquscdn.com/ https://www.googletagmanager.com https://www.google-analytics.com/analytics.js pagead2.googlesyndication.com https://adservice.google.com/ 'sha256-uv9ihhWV1/99Lna4PlyzJ4Ji2ofiXKU9ak+GUXMN0gw=' 'sha256-YCSlybv0BJeWnGWF8JCyQMs1TUOxVjFyr5upfHiDysc=' 'sha256-YmEu57ZRfDpDDhMApyHsyE3PA6DSf2V+9bIVooFPFHw=';
       style-src 'self' 'unsafe-inline' https://cdn.kernvalley.us https://www.youtube.com https://www.youtube-nocookie.com;
       connect-src 'self' https://cdn.kernvalley.us https://api.kernvalley.us https://disqus.com wss://realtime.services.disqus.com;
       font-src 'self' https://cdn.kernvalley.us;
