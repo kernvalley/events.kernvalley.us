@@ -33,4 +33,6 @@
 	--highlight-literal-number-color: #CCA418;
 	--backdrop-background: rgba(0,0,0,0.3);
 	--button-disabled-color: #898989;
+
+	--map-width: 300px;
 }
