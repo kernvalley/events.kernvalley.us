@@ -13,14 +13,13 @@
 @import url("./contact.css");
 @import url("./header.css");
 @import url("./footer.css");
+@import url("./home-layout.css");
 
 body {
 	min-height: 100vh;
 	background-size: 100vw;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	grid-template-areas: 'header' 'main' 'footer';
-	grid-template-rows: 17vh minmax(70vh, auto) auto;
 }
 
 .flex > .grow-0 {
