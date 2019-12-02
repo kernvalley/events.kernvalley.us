@@ -39,3 +39,10 @@
 	--map-width: 25vw;
 	--nav-height: 0;
 }
+
+@media (max-width: 800px) {
+	:root {
+		--map-width: 100%;
+	}
+}
+
