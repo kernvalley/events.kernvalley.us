@@ -34,5 +34,8 @@
 	--backdrop-background: rgba(0,0,0,0.3);
 	--button-disabled-color: #898989;
 
-	--map-width: 300px;
+	--header-height: 3rem;
+	--sidebar-max-width: 30vw;
+	--map-width: 25vw;
+	--nav-height: 0;
 }
