@@ -3,6 +3,7 @@ name: Christams Candlelight Stroll
 date: 2019-12-02
 startDate: '2019-12-13 18:00'
 endDate: '2019-12-13 20:00'
+pinned: true
 location:
   name: Circle Park
   streetAddress: 6 Tobias St
