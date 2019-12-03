@@ -3,7 +3,6 @@ name: 59 Days of Code Grand Expo
 date: 2019-11-08
 startDate: '2019-11-16 12:00'
 endDate: '2019-11-16 17:00'
-pinned: true
 location:
   name: World Records
   streetAddress: 2815 F Street

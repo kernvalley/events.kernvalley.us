@@ -5,18 +5,21 @@ layout: null
 /*eslint no-unused-vars: 0*/
 const config = {
 	version: '{{ site.version }}',
-	stale: [
+	fresh: [
 		/* Root document */
-		'/',
-
+		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
+		'{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
+	].map(path => new URL(path, location.origin).href),
+	stale: [
 		/* Other HTML */
-		'/contact/',
+		'/css/styles/index.css',
+		'/js/index.js',
+		'/img/icons.svg',
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/login-form/login-form.html',
 		'https://cdn.kernvalley.us/components/registration-form/registration-form.html',
 
 		/* JS, `customElements`, etc. */
-		'/js/index.js',
 		'https://cdn.kernvalley.us/components/share-button.js',
 		'https://cdn.kernvalley.us/js/std-js/share-config.js',
 		'https://cdn.kernvalley.us/components/current-year.js',
@@ -50,12 +53,17 @@ const config = {
 		'https://cdn.kernvalley.us/components/payment-form/payment-form.js',
 
 		/* CSS */
-		'/css/styles/index.css',
 		'/css/styles/vars.css',
 		'/css/styles/icons.css',
 		'/css/styles/header.css',
 		'/css/styles/contact.css',
 		'/css/styles/footer.css',
+		'/css/styles/home-layout.css',
+		'https://cdn.kernvalley.us/css/core-css/layout/index.css',
+		'https://cdn.kernvalley.us/css/core-css/layout/wide/index.css',
+		'https://cdn.kernvalley.us/css/core-css/layout/left-sidebar/index.css',
+		'https://cdn.kernvalley.us/css/core-css/layout/right-sidebar/index.css',
+		'https://cdn.kernvalley.us/css/core-css/layout/multi-column.css',
 		'https://cdn.kernvalley.us/css/core-css/layout/default/index.css',
 		'https://cdn.kernvalley.us/css/core-css/layout/shared.css',
 		'https://cdn.kernvalley.us/css/core-css/theme/default/index.css',
@@ -74,7 +82,6 @@ const config = {
 		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
 
 		/* Images & Icons */
-		'/img/icons.svg',
 		'/img/apple-touch-icon.png',
 		'/img/icon-192.png',
 		'/img/favicon.svg',
@@ -95,10 +102,12 @@ const config = {
 		/* Fonts */
 		'https://cdn.kernvalley.us/fonts/roboto.woff2',
 		'https://cdn.kernvalley.us/fonts/Libertine.woff',
-
+		'https://cdn.kernvalley.us/fonts/ubuntu.woff2',
 		/* Other */
 	].map(path => new URL(path, location.origin).href),
-	fresh: [
-	].map(path => new URL(path, location.origin).href),
-	allowed: [],
+	allowed: [
+		/https:\/\/secure\.gravatar\.com\/avatar\/*/,
+		/https:\/\/i\.imgur\.com\/*/,
+		/https:\/\/maps\.wikimedia\.org\/osm-intl\/*/,
+	],
 };
