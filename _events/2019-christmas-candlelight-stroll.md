@@ -1,5 +1,5 @@
 ---
-name: Christams Candlelight Stroll
+name: Christmas Candlelight Stroll
 date: 2019-12-02
 startDate: '2019-12-13 18:00'
 endDate: '2019-12-13 20:00'
