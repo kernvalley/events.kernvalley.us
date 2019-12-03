@@ -15,6 +15,7 @@ const config = {
 		'/css/styles/index.css',
 		'/js/index.js',
 		'/img/icons.svg',
+		'https://unpkg.com/@webcomponents/custom-elements@1.3.1/custom-elements.min.js',
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/login-form/login-form.html',
 		'https://cdn.kernvalley.us/components/registration-form/registration-form.html',

@@ -1,5 +1,6 @@
 import 'https://cdn.kernvalley.us/js/std-js/shims.js';
 import 'https://cdn.kernvalley.us/js/std-js/deprefixer.js';
+import 'https://unpkg.com/@webcomponents/custom-elements@1.3.1/custom-elements.min.js';
 import 'https://cdn.kernvalley.us/components/share-button.js';
 import {ready, $, registerServiceWorker} from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 import HTMLOpenStreetMapElement from 'https://cdn.kernvalley.us/components/open-street-map.js';

@@ -14,8 +14,8 @@ location:
   geo:
     latitude: 35.755262
     longitude: -118.424992
-image: 'https://i.imgur.com/lbIBZHk.jpg'
-imgur: 'https://i.imgur.com/lbIBZHk'
+image: 'https://i.imgur.com/qeZOZ01.jpg'
+imgur: 'https://i.imgur.com/qeZOZ01'
 description: Candlelight Stroll lead by Kern Valley Chorus
 tags:
 - christmas
