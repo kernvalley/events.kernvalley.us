@@ -8,19 +8,39 @@
 @import url("https://cdn.kernvalley.us/css/core-css/animations.css");
 @import url("https://cdn.kernvalley.us/css/core-css/fonts.css");
 @import url("https://cdn.kernvalley.us/css/animate.css/animate.css");
-@import url("https://cdn.kernvalley.us/css/core-css/layout/shared.css");
+@import url("https://cdn.kernvalley.us/css/core-css/layout/index.css");
 @import url("./icons.css");
 @import url("./contact.css");
 @import url("./header.css");
 @import url("./footer.css");
+@import url("./home-layout.css");
 
 body {
 	min-height: 100vh;
 	background-size: 100vw;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	grid-template-areas: 'header' 'main' 'footer';
-	grid-template-rows: 17vh minmax(70vh, auto) auto;
+}
+
+.flex > .grow-0 {
+	flex-grow: 0;
+}
+
+.flex > .grow-1 {
+	flex-grow: 1;
+}
+
+.flex > .grow-2 {
+	flex-grow: 2;
+}
+
+.flex > .grow-3 {
+	flex-grow: 3;
+}
+
+.event-details > .card {
+	max-width: 100%;
+	width: 650px;
 }
 
 main.card {

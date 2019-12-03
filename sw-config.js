@@ -36,6 +36,11 @@ const config = {
 		'https://cdn.kernvalley.us/js/User.js',
 		'https://cdn.kernvalley.us/components/login-form/login-form.js',
 		'https://cdn.kernvalley.us/components/registration-form/registration-form.js',
+		'https://unpkg.com/leaflet@1.6.0/dist/leaflet-src.esm.js',
+		'https://cdn.kernvalley.us/components/open-street-map.js',
+		'https://cdn.kernvalley.us/components/open-street-map.html',
+		'https://cdn.kernvalley.us/components/map-marker.js',
+		'https://cdn.kernvalley.us/components/image-overlay.js',
 		'https://cdn.kernvalley.us/js/PaymentAPI/PaymentRequest.js',
 		'https://cdn.kernvalley.us/js/PaymentAPI/PaymentRequestUpdateEvent.js',
 		'https://cdn.kernvalley.us/js/PaymentAPI/PaymentAddress.js',
@@ -66,6 +71,7 @@ const config = {
 		'https://cdn.kernvalley.us/css/core-css/animations.css',
 		'https://cdn.kernvalley.us/css/normalize/normalize.css',
 		'https://cdn.kernvalley.us/css/animate.css/animate.css',
+		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
 
 		/* Images & Icons */
 		'/img/icons.svg',
@@ -73,6 +79,7 @@ const config = {
 		'/img/icon-192.png',
 		'/img/favicon.svg',
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mail-send.svg',
+		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mark-location.svg',
 		'https://cdn.kernvalley.us/img/octicons/file-media.svg',
 
 		/* Social Icons for Web Share API shim */

@@ -10,6 +10,9 @@ location:
   addressRegion: CA
   postalCode: 93238
   url: 'https://goo.gl/maps/gWqG5QHmZsXtxYTs8'
+  geo:
+    latitude: 35.755262
+    longitude: -118.424992
 image: 'https://imgur.com/xI10oa1'
 imgur: 'https://imgur.com/xI10oa1'
 description: 'All proceeds from light donations help provide hospice services in your local community.'

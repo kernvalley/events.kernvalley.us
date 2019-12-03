@@ -38,10 +38,19 @@ organizer:
   name: Justin Powers
   url: 'https://www.kernvillecowork.com'
 ---
+<script type="module">
+  import HTMLOpenStreetMapElement from 'https://cdn.kernvalley.us/components/open-street-map.js';
+
+  customElements.define(HTMLOpenStreetMapElement.tagName, HTMLOpenStreetMapElement);
+</script>
 Come learn the basics of computer programming in a way that is simple and fun! 
 No experience necessary.  Bring your own laptop.  This class is designed for
 students ages 10-15, but is open to all.
-
- 
+<open-street-map>
+  <map-marker slot="markers" longitude="-118.4206114" latitude="35.756003" title="Kernville Cowork" icon="https://cdn.kernvalley.us/img/octicons/organization.svg"></map-marker>
+    <div slot="popup">
+			KernVille Cowork
+		</div>
+</open-street-map>
 
 Each session is two hours, 2-4PM, Mon-Thurs.  Space is limited, so sign up now!

@@ -2,7 +2,7 @@ author: Chris Zuber
 title: Kern Valley Events
 url: 'https://events.kernvalley.us'
 markdown: kramdown
-version: 1.1.04
+version: 1.2.1
 timezone: America/Los_Angeles
 lang: en
 dir: ltr
@@ -45,6 +45,8 @@ theme-color: '#4688f4'
 background-color: '#5b46f4'
 discus-identifier: kernvalley-us
 google-analytics: UA-119717465-3
+data-layout: 'home'
+data-theme: 'auto'
 # ad-sense:
 webmaster-verifications:
   google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY

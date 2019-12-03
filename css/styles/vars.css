@@ -33,4 +33,16 @@
 	--highlight-literal-number-color: #CCA418;
 	--backdrop-background: rgba(0,0,0,0.3);
 	--button-disabled-color: #898989;
+
+	--header-height: 3rem;
+	--sidebar-max-width: 30vw;
+	--map-width: 25vw;
+	--nav-height: 0;
 }
+
+@media (max-width: 800px) {
+	:root {
+		--map-width: 100%;
+	}
+}
+
