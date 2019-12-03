@@ -9,12 +9,12 @@ const config = {
 		/* Root document */
 		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
 		'{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
-		'/css/styles/index.css',
-		'/js/index.js',
-		'/img/icons.svg',
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		/* Other HTML */
+		'/css/styles/index.css',
+		'/js/index.js',
+		'/img/icons.svg',
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/login-form/login-form.html',
 		'https://cdn.kernvalley.us/components/registration-form/registration-form.html',
