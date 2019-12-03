@@ -70,7 +70,6 @@ self.addEventListener('fetch', event => {
 					console.error('Offline');
 				}
 			} else {
-				console.info(`Requesting ${event.request.url}`);
 				return fetch(event.request);
 			}
 		})());
