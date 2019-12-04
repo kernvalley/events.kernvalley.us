@@ -21,6 +21,8 @@ tags:
 - light up a life
 - optimal hospice
 - kernville
+- events
+- kern valley
 - hospice
 organizer:
   '@type': 'Organization'

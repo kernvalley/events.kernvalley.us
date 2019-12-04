@@ -23,6 +23,8 @@ tags:
 - stroll
 - circle park
 - kernville
+- kern valley
+- events
 organizer:
   '@type': 'Organization'
   name: Kernville Chamber of Commerce
