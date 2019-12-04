@@ -20,6 +20,9 @@ description: Join us as we Honor our Nation’s fallen Veterans
 tags:
 - wreaths across america
 - "Sarge’s Wreaths for Vets"
+- events
+- kern valley
+- wofford heights
 - veterans
 - Christmas
 organizer:
