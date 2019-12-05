@@ -47,6 +47,6 @@ Booths, Epitaph, Costume & Whiskerino Contests, Line Dancing, Pet Parade, Blue G
 
 Parade: Saturday February 15, 2020. 10:00am.
 
-[Vendor Application](https://131305ad-dd58-a58c-aaeb-6d62129454d9.filesusr.com/ugd/0bde5a_644790b5e420493299028facd61d2426.pdf)
+<a href="https://131305ad-dd58-a58c-aaeb-6d62129454d9.filesusr.com/ugd/0bde5a_644790b5e420493299028facd61d2426.pdf" class="btn btn-primary" rel="noopener external" role="button">{% include icon.html icon='documents' %}Vendor Application</a>
 
-[Food Vendors](https://131305ad-dd58-a58c-aaeb-6d62129454d9.filesusr.com/ugd/0bde5a_0c3f16da8bc64f3f9f6366bfd6ec1904.pdf)
+<a href="https://131305ad-dd58-a58c-aaeb-6d62129454d9.filesusr.com/ugd/0bde5a_0c3f16da8bc64f3f9f6366bfd6ec1904.pdf" class="btn btn-primary" rel="noopener external" role="button">{% include icon.html icon='documents' %}Food Vendors</a>

@@ -45,7 +45,7 @@ Also on November 30 is the Lake Isabella Christmas Parade! Enjoy the parade and
 then come up to Kernville after the parade. At 2PM we start our Shop Hop. So look
 for some incredible Small Business Saturday Deals around the town.  Our local
 farmers market and vendors will be in downtown from 9am-1pm.  More info on the
-Lake Isabella Parade can be found [here](https://www.kernrivervalley.com/christmas-parade).
+Lake Isabella Parade can be found <a href="https://www.kernrivervalley.com/christmas-parade" class="underline link-color" rel="noopener external"> {% include icon.html icon='web-browser' %}here</a>
 
 Nov. 30 will also be the Parade of Giving Toy Drive where Santa heads out with
 the local car club at 3PM to collect toys for the Christmas in Kernville Toy Drive.
@@ -63,4 +63,4 @@ On Saturday, December 21nd at 11AM-2pm Santa will be handing out gifts to the
 local children at the Kernville Chamber Community Hall. **Children must be on the
 list provided by Kernville Elementary School**.
 
-Become a sponsor for this event,  Contact us today for details: [760-376-2629](tel:+1-760-376-2629).
+Become a sponsor for this event,  Contact us today for details: <a href="tel:+1-760-376-2629" class="underline link-color">{% include icon.html icon='call-start' %}760-376-2629</a>.
