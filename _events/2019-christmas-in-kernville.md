@@ -1,8 +1,8 @@
 ---
 name: Christmas in Kernville
 date: 2019-12-05
-startDate: '2019-11-30 00:00'
-endDate: '2019-12-31 23:59'
+startDate: '2019-11-30 10:00'
+endDate: '2019-12-31 16:00'
 pinned: true
 location:
   name: Kernville
