@@ -10,7 +10,7 @@
   [headers.values]
     Link = '''
       </css/styles/index.css>; rel=preload; as=style, \
-      </css/js/index.js>; rel=preload; as=script, \
+      </js/index.js>; rel=preload; as=script, \
       </img/icons.svg>; rel=preload; as=image
     '''
     X-Frame-Options = "DENY"
