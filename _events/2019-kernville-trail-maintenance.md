@@ -3,6 +3,7 @@ name: Kernville Nature Walk (Trail Maintenance)
 date: 2019-12-04
 startDate: '2019-12-07 10:00'
 endDate: '2019-12-07 14:00'
+eventStatus: Rescheduled
 pinned: true
 location:
   name: Kernville Park Recreation Area
