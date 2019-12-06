@@ -3,6 +3,7 @@ name: Kernville Nature Walk (Trail Maintenance)
 date: 2019-12-04
 startDate: '2019-12-07 10:00'
 endDate: '2019-12-07 14:00'
+eventStatus: Rescheduled
 pinned: true
 location:
   name: Kernville Park Recreation Area
@@ -24,8 +25,8 @@ tags:
 - kernville
 organizer:
   '@type': 'Organization'
-  name: Kernville Chamber of Commerce
-  url: 'https://gotokernville.com'
+  name: Kern River Conservancy
+  url: 'http://www.kernriverconservancy.org/'
 ---
 Join Kern River Conservancy and the Kernville Chamber of Commerce as we partner
 up to create and open a looped nature walk. The trail will run parallel with the
