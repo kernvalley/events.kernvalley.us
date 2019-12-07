@@ -1,8 +1,9 @@
 ---
 name: Christmas Candlelight Stroll
 date: 2019-12-02
-startDate: '2019-12-13 18:00'
-endDate: '2019-12-13 20:00'
+startDate: '2019-12-06 18:00'
+endDate: '2019-12-06 20:00'
+eventStatus: Rescheduled
 pinned: true
 location:
   name: Circle Park
@@ -34,4 +35,3 @@ Candle Light Stroll starting at 6pm in Circle Park. It will be led by the
 Kern Valley Chorus. Refreshments will be available.
 
 For more information, call [760-376-2629](tel:+1-760-376-2629).
-
