@@ -132,3 +132,7 @@ summary[role="button"] {
 		background-image: var(--river-background-s);
 	}
 }
+
+#main a {
+	text-decoration: underline;
+}
