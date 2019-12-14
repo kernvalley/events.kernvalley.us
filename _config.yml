@@ -50,7 +50,7 @@ data-theme: 'auto'
 # ad-sense:
 webmaster-verifications:
   google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
-#  bing:
+  bing: 14343D3F998AB3FEE56B299A7F3E5CDB
 scripts:
   development:
   - src: 'https://cdn.polyfill.io/v2/polyfill.min.js?unknown=polyfill&features=es6,MutationObserver,IntersectionObserver,IntersectionObserverEntry,Object.values,Object.entries,NodeList.prototype.@@iterator,Array.prototype.@@iterator&flags=gated'
