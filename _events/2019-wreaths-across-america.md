@@ -1,7 +1,6 @@
 ---
 name: "Wreaths Across America: Sarge’s Wreaths for Vets"
 date: 2019-12-02
-pinned: true
 startDate: '2019-12-14 09:00'
 endDate: '2019-12-14 12:00'
 location:

@@ -4,7 +4,6 @@ date: 2019-12-04
 startDate: '2019-12-14 10:00'
 endDate: '2019-12-14 14:00'
 eventStatus: Rescheduled
-pinned: true
 location:
   name: Kernville Park Recreation Area
   addressLocality: Kernville
