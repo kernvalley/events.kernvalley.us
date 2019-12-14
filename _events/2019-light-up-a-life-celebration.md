@@ -3,7 +3,6 @@ name: Light Up a Life Celebration
 date: 2019-10-29
 startDate: '2019-12-08 17:00'
 endDate: '2019-12-08 19:00'
-pinned: true
 location:
   name: Circle Park
   streetAddress: 6 Tobias St

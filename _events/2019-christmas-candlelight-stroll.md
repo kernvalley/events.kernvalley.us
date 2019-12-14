@@ -4,7 +4,6 @@ date: 2019-12-02
 startDate: '2019-12-06 18:00'
 endDate: '2019-12-06 20:00'
 eventStatus: Rescheduled
-pinned: true
 location:
   name: Circle Park
   streetAddress: 6 Tobias St
