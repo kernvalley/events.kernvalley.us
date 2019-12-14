@@ -22,7 +22,7 @@ tags:
 - kern valley
 - kernville
 - christmas
-- carolling
+- caroling
 - singing
 - music
 - mra
