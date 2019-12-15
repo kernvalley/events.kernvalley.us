@@ -1,5 +1,6 @@
 ---
 name: Bicycle Caroling in Kernville
+title: Bicycle Caroling in Kernville
 date: 2019-12-05
 startDate: '2019-12-18 17:30'
 endDate: '2019-12-18 19:30'
