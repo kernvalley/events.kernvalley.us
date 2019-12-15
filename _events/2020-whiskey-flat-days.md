@@ -45,8 +45,13 @@ Booths, Epitaph, Costume & Whiskerino Contests, Line Dancing, Pet Parade, Blue G
 & Country Western Music, Art Show, Gunfighter Skits, Kids Activities, Games,
 & much more!
 
+[{% include icon.html icon='events' %} Whiskey Flat Days Kick Off Dinner](/events/2020-whiskey-flat-days-kickoff-dinner/)
+
 Parade: Saturday February 15, 2020. 10:00am.
 
 <a href="https://131305ad-dd58-a58c-aaeb-6d62129454d9.filesusr.com/ugd/0bde5a_644790b5e420493299028facd61d2426.pdf" class="btn btn-primary" rel="noopener external" role="button">{% include icon.html icon='documents' %}Vendor Application</a>
 
 <a href="https://131305ad-dd58-a58c-aaeb-6d62129454d9.filesusr.com/ugd/0bde5a_0c3f16da8bc64f3f9f6366bfd6ec1904.pdf" class="btn btn-primary" rel="noopener external" role="button">{% include icon.html icon='documents' %}Food Vendors</a>
+
+<a href="https://131305ad-dd58-a58c-aaeb-6d62129454d9.filesusr.com/ugd/0bde5a_3ba2d07a38ea40c892933ce2880195c4.pdf" class="btn btn-primary" rel="noopener external" role="button">{% include icon.html icon='documents' %}Parade Registration</a>
+

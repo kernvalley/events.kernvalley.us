@@ -38,16 +38,16 @@ offers:
     name: Dinner Ticket
     url: 'https://squareup.com/store/kernville-chamber-of-commerce-2/item/whiskey-flat-kick-off-dinner'
 ---
-Howdy Pard'ner, and greeting from Whiskey Flat.  We invite you to join us on Friday,
+Howdy Pard'ner, and greeting from [Whiskey Flat](/events/2020-whiskey-flat-days/).  We invite you to join us on Friday,
 January 3rd, 2020 for the Whiskey Flat Days Official Kick Off Dinner.  This yearly
 event serves as the launch of the infamous Whiskey Flat Mayor Race! Our two candidates
 will be presenting their non-profits and they will try to earn, or bribe, every
 vote they can get! We will have a wonderful evening full of laughs, raffles, dancing,
 and more good ol' western fun!
 
-Our venue, Ewing's of the Kern, is newly remodeled with an open floor plan so
+Our venue, [Ewing's of the Kern](https://www.ewingsonthekern.com/), is newly remodeled with an open floor plan so
 everyone can enjoy the fun! Get yer tickets pard'ner at [www.gotokernville.com](www.gotokernville.com) or
-at Ewing's on the Kern. Dinner will be yer choice of Chicken or Tri Tip.  Price
+at Ewing's on the Kern. Dinner will be yer choice of Chicken or Tri Tip. Price
 is $32 dollars which includes tip.
 
 - 5pm: Social
