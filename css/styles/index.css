@@ -136,3 +136,11 @@ summary[role="button"] {
 #main a {
 	text-decoration: underline;
 }
+
+.input-group input, .input-group textarea, .input-group select {
+	background: transparent;
+	color: inherit;
+	border-style: none none solid none;
+	padding: 0.3em;
+	margin-bottom: 0.3em;
+}
