@@ -1,0 +1,8 @@
+<button
+	title="{{ include.title | default: page.title }}"
+	url="{{ include.url | default: page.url }}"
+	class="{{ include.position | default: 'fixed' }} round shadow-dark color-alt border-hidden background-accent z-top"
+	aria-label="{{ include.title | default: 'Share Page' }}"
+	hidden=""
+	is="share-button"
+>{% include icon.html icon='share' %}</button>

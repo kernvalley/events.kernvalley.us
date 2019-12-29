@@ -1,0 +1,22 @@
+{% assign footer-icon-class="icon current-color icon-twirl transition-speed-normal transition-overshoot transition-transform" %}
+<footer id="footer" class="color-alt no-text-decoration optimize-speed" role="contentinfo">
+	<div class="flex row">
+		<ul class="footer-links">
+			{% for link in site.data.links.footer %}
+				<li class="footer-link">
+					<a class="color-inherit" href="{{ link.href  }}" target="{{ link.target | default: '_self' }}"{% if link.external %} rel="external noopener"{% endif %}  referrerpolicy="{{ link.referrerpolicy | default: 'origin-when-cross-origin' }}">
+						{% if link.icon %}{% include icon.html icon=link.icon class=footer-icon-class %}{% endif %}
+						<span>{{ link.text }}</span>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+	<p>
+		<span>&copy;</span>
+		<time itemprop="copyrightYear">{{ 'now' | date: "%Y" }}</time>
+		<a href="{{ site.data.publisher.url }}" class="color-inherit">
+			<span itemprop="copyrightHolder">{{ site.data.publisher.name }}</span>
+		</a>
+	</p>
+</footer>
