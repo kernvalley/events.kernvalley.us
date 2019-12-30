@@ -29,7 +29,7 @@ worksFor:
   email: admin@kernvalley.us
   telephone: +1-661-619-6712
   address:
-    addressLocality: Lake Isabella
+    addressLocality: Kernville
     addressRegion: California
   logo:
     '@type': ImageObject
@@ -52,7 +52,7 @@ homeLocation:
   '@type': Place
   address:
     '@type': PostalAddress
-    addressLocality: Lake Isabella
+    addressLocality: Kernville
     addressRegion: California
     postalCode: 93238
     addressCountry: United States
