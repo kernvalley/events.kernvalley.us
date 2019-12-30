@@ -24,6 +24,7 @@ ready().then(async () => {
 			dialog.showModal();
 		}
 	});
+
 	$('[data-close]').click(event => {
 		const target = event.target.closest('[data-close]');
 		const dialog = document.querySelector(target.dataset.close);
@@ -31,4 +32,6 @@ ready().then(async () => {
 			dialog.close();
 		}
 	});
+
+	$('dialog.form form').reset(({target}) => target.closest('dialog').close());
 });
