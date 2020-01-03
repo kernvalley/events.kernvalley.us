@@ -36,7 +36,8 @@ organizer:
 offers:
   - price: 32
     name: Dinner Ticket
-    url: 'https://squareup.com/store/kernville-chamber-of-commerce-2/item/whiskey-flat-kick-off-dinner'
+    availability: InStoreOnly
+#    url: 'https://squareup.com/store/kernville-chamber-of-commerce-2/item/whiskey-flat-kick-off-dinner'
 ---
 Howdy Pard'ner, and greeting from [Whiskey Flat](/events/2020-whiskey-flat-days/).  We invite you to join us on Friday,
 January 3rd, 2020 for the Whiskey Flat Days Official Kick Off Dinner.  This yearly
@@ -46,15 +47,16 @@ vote they can get! We will have a wonderful evening full of laughs, raffles, dan
 and more good ol' western fun!
 
 Our venue, [Ewing's of the Kern](https://www.ewingsonthekern.com/), is newly remodeled with an open floor plan so
-everyone can enjoy the fun! Get yer tickets pard'ner at [www.gotokernville.com](www.gotokernville.com) or
+everyone can enjoy the fun! Get yer tickets pard'ner at ~~[www.gotokernville.com](https://www.gotokernville.com) or~~
 at Ewing's on the Kern. Dinner will be yer choice of Chicken or Tri Tip. Price
 is $32 dollars which includes tip.
+
+> **Tickets arew no longer available for purchase online. Please check with Ewings
+for the availability of the remaining tickets.**
 
 - 5pm: Social
 - 6pm: Dinner
 - 6:30 Program
-- 7:30 Rivertown Hoedown Dance with live music 
-
-<a href="https://squareup.com/store/kernville-chamber-of-commerce-2/item/whiskey-flat-kick-off-dinner" rel="noopener external" role="button" class="btn btn-primary">Purchase Tickets Here</a>
+- 7:30 Rivertown Hoedown Dance with live music
 
 **The Race is ON!!**
