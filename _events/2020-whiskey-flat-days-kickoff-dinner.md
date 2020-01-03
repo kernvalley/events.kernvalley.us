@@ -1,6 +1,7 @@
 ---
 name: Whiskey Flat Days Kick Off Dinner
 title: Whiskey Flat Days Kick Off Dinner
+updated: 2020-01-02 17:39
 date: 2019-12-12
 startDate: '2020-01-03 17:00'
 endDate: '2020-01-03 22:00'
@@ -51,7 +52,7 @@ everyone can enjoy the fun! Get yer tickets pard'ner at ~~[www.gotokernville.com
 at Ewing's on the Kern. Dinner will be yer choice of Chicken or Tri Tip. Price
 is $32 dollars which includes tip.
 
-> **Tickets arew no longer available for purchase online. Please check with Ewings
+> **Tickets are no longer available for purchase online. Please check with Ewings
 for the availability of the remaining tickets.**
 
 - 5pm: Social
