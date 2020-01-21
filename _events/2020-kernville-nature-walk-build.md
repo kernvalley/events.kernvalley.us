@@ -1,6 +1,6 @@
 ---
 name: Kernville Nature Walk Build
-date: 2019-12-04
+date: 2020-01-21
 startDate: '2020-02-01 10:00'
 endDate: '2020-02-01 13:00'
 location:
