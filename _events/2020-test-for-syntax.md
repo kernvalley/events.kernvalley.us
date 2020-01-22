@@ -21,10 +21,13 @@ tags:
 - kern valley
 - test page
 - Lake Isabella
+offers:
+  -price: 420.69
+  currency: USD
 organizer:
   '@type': 'Organization'
-  name: Daneil Learing inc
-  url: 'http://www.no.ne'
+  name: Daniel Moore
+  url: 'https://www.facebook.com/barrett.moore.750'
 ---
 This is only a test page to verify that the syntax of my page is correct [{% include icon.html icon="call-start" %} 555 555-5555](tel:+1-555-555-5555)
 
