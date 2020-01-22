@@ -14,8 +14,8 @@ tags:
 startDate: 2019-10-19 12:00
 endDate: 2019-10-19 17:00
 offers:
-  - price: 55.00
-    currency: USD
+  -price: 55.00
+   currency: USD
 location:
   name: Rivernook Campground
   streetAddress: 14001 Sierra Way
@@ -44,7 +44,7 @@ For $55.00
 
 This is a 21 and older event only, rain or shine all sales are final.
 
-We will have live bands, food vendors, craft vendors and over 30 Independent Craft Breweries!!!!! 
+We will have live bands, food vendors, craft vendors and over 30 Independent Craft Breweries!!!!!
 
 Located at 14001 Sierra Way
 
