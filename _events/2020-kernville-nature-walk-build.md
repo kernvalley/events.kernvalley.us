@@ -1,6 +1,7 @@
 ---
 name: Kernville Nature Walk Build
 date: 2020-01-21
+updated: 2020-01-22 14:40
 startDate: '2020-02-01 10:00'
 endDate: '2020-02-01 13:00'
 location:
@@ -12,9 +13,9 @@ location:
   geo:
     latitude: 35.76067
     longitude: -118.424131
-image: 'https://i.imgur.com/ep1ijH0.jpg'
-imgur: 'https://i.imgur.com/ep1ijH0'
-description: 'We will create and enhance sections of trail, clear dead brush and post interpretive signs around the area for residents and visitors to experience'
+image: 'https://i.imgur.com/ZqwOOKR.jpg'
+imgur: 'https://i.imgur.com/ZqwOOKR.jpg'
+description: 'Let’s get together and finish building Kernville’s Nature Walk. We will meet at 10:00am and begin building the remaining half of the trail.'
 tags:
 - events
 - kern valley
