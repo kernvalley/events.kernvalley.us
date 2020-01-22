@@ -22,7 +22,7 @@ tags:
 - test page
 - Lake Isabella
 offers:
-  - price: 420.69
+  - price: 100.50
     name: Gun Show
     currency: USD
 organizer:
