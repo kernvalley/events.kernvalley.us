@@ -26,7 +26,7 @@ offers:
     name: Gun Show
     currency: USD
 organizer:
-  '@type': 'Organization'
+  '@type': 'Person'
   name: Daniel Moore
   url: 'https://www.facebook.com/barrett.moore.750'
 ---
