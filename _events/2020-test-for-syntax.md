@@ -23,7 +23,8 @@ tags:
 - Lake Isabella
 offers:
   - price: 420.69
-  currency: USD
+    name: Gun Show
+    currency: USD
 organizer:
   '@type': 'Organization'
   name: Daniel Moore
