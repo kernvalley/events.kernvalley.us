@@ -31,4 +31,6 @@ Let’s get together and finish building Kernville’s Nature Walk. We will meet
 Weather is looking to be warm so dress accordingly. Hats, sunscreen and boots recommended. This event is family friendly.
 We will provide all equipment.
 
-Any questions please contact Gary Ananian for info [tel:+1-818-984-8505]({% include icon.html icon="call-start" %} 818 984-8505)
+Any questions please contact Gary Ananian for info [{% include icon.html icon="call-start" %} 818 984-8505](tel:+1-818-984-8505)
+
+See [{% include icon.html icon="facebook" %} Facebook Event](https://www.facebook.com/events/611959366306417/)
