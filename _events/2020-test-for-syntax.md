@@ -22,7 +22,7 @@ tags:
 - test page
 - Lake Isabella
 offers:
-  -price: 420.69
+  - price: 420.69
   currency: USD
 organizer:
   '@type': 'Organization'
