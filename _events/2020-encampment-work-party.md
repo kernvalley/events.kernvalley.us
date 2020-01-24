@@ -1,7 +1,6 @@
 ---
 name: Encampment Work Party
 title: Encampment Work Party
-updated: 2020-01-24 17:39
 date: 2020-01-24
 startDate: '2020-01-25 08:30'
 endDate: '2020-01-25 12:00'
@@ -17,7 +16,7 @@ location:
     longitude: -118.424131
 image: 'https://i.imgur.com/mhfGbqc.jpg'
 imgur: 'https://i.imgur.com/mhfGbqc'
-description: 'Helping Horse and Kate with vandal damage from last week.'
+description: 'Community welcome to help Encampment reenactors put some finishing touches on the entire area.'
 tags:
 - events
 - kern valley
@@ -33,6 +32,6 @@ organizer:
 ---
 Community welcome to help Encampment reenactors put some finishing touches on the entire area and helping Horse and Kate with vandal damage from last week.
 
-Get with Rob, Horse or me and we will do the wood split/ put in trailer thing once again. See you there, Mike
+Get with Rob, Horse or Mike and we will do the wood split/ put in trailer thing once again. See you there, Mike
 
 See [{% include icon.html icon="facebook" %} Facebook Event](https://www.facebook.com/events/1047956735583373/)
