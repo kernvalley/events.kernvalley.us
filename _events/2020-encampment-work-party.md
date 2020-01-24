@@ -24,6 +24,7 @@ tags:
 - kernville
 - whiskey flat
 - whiskey flat days
+- whiskey flat encampment
 organizer:
   '@type': 'Organization'
   name: Whiskey Flat Encampment
