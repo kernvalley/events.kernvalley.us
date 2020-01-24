@@ -30,8 +30,7 @@ organizer:
   url: 'https://www.facebook.com/whiskeyflatencampment/'
 
 ---
-Community welcome to help Encampment reenactors put some finishing touches on the entire area and helping Horse and Kate with vandal damage from last week.
-
-Get with Rob, Horse or Mike and we will do the wood split/ put in trailer thing once again. See you there, Mike
+Community welcome to help Encampment reenactors put some finishing touches on the
+entire area and helping Horse and Kate with vandal damage from last week.
 
 See [{% include icon.html icon="facebook" %} Facebook Event](https://www.facebook.com/events/1047956735583373/)
