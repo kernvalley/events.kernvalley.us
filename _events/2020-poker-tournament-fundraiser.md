@@ -2,7 +2,7 @@
 name: Poker Tournament Fundraiser
 date: 2020-01-29 11:20
 pinned: true
-description: Texas Holdem Tournament, Sielnt Auction, & Street Tacos at Kernville Saloon
+description: Texas Holdem Tournament, Silent Auction, & Street Tacos at Kernville Saloon
 tags:
 - events
 - saloon
