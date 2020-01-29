@@ -41,3 +41,5 @@ texting or calling Skyrocket Jami at [{% include icon.html icon="call-start" %}7
 
 Poker Tournament in the side room, with a silent auction in the main bar. This
 is a night with fun for all the Ladies and Gents!
+
+See [{% include icon.html icon="facebook" %} Facebook  Event](https://www.facebook.com/events/2247927828833310/).
