@@ -24,8 +24,8 @@ location:
   postalCode: 93238
   url: 'https://goo.gl/maps/VaKJjy2Bmt32'
   geo:
-    latitude: 35.755614
-    longitude: -118.424748
+    latitude: 35.755727
+    longitude: -118.424971
 image: https://imgur.com/I6dvzzN.jpg
 imgur: https://imgur.com/I6dvzzN
 organizer:
