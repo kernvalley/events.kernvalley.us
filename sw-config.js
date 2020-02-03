@@ -78,6 +78,7 @@ const config = {
 		'https://cdn.kernvalley.us/css/core-css/class-rules.css',
 		'https://cdn.kernvalley.us/css/core-css/utility.css',
 		'https://cdn.kernvalley.us/css/core-css/fonts.css',
+		'https://cdn.kernvalley.us/css/core-css/scrollbar.css',
 		'https://cdn.kernvalley.us/css/core-css/animations.css',
 		'https://cdn.kernvalley.us/css/normalize/normalize.css',
 		'https://cdn.kernvalley.us/css/animate.css/animate.css',

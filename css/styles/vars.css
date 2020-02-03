@@ -38,11 +38,16 @@
 	--sidebar-max-width: 30vw;
 	--map-width: 25vw;
 	--nav-height: 0;
+
+	--scrollbar-color: var(--accent-color);
+	--scrollbar-track: var(--primary-color);
+	--scrollbar-width: thin;
 }
 
 @media (max-width: 800px) {
 	:root {
 		--map-width: 100%;
+		--scrollbar-width: auto;
 	}
 }
 
