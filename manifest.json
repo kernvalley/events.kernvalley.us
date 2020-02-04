@@ -13,8 +13,13 @@ layout: null
 	"background_color": "{{ site.background-color | default: '#FEFEFE' }}",
 	"icons": {{ site.appicons | jsonify }},
 	"screenshots": {{ site.screenshots | jsonify }},
+  "categories": [
+    "lifestyle",
+    "news",
+    "social"
+  ],
 	"developer": {
 		"name": "Chris Zuber",
-		"url": "http://chriszuber.com"
+		"url": "https://kernvalley.us"
 	}
 }
