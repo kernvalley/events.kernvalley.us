@@ -33,7 +33,9 @@ organizer:
 ### President's Day Weekend * February 14-17, 2020
 One of the most popular Festivals in all of Southern California.
 
-> Just a short 3 hour drive from Los Angeles to the Lake Isabella recreation area,
+See more at [{% include icon.html icon="web-browser" %} WhiskeyFlatDays.com](https://whiskeyflatdays.com/events/).
+
+Just a short 3 hour drive from Los Angeles to the Lake Isabella recreation area,
 you will find the quaint town of Kernville, home to Whiskey Flat Days
 (50 miles east of Bakersfield on Hwy 178).  Whiskey Flat Days is held every
 Presidents Day Weekend. It is a leap back to the good ol' wild west days when the
