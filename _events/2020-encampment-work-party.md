@@ -4,7 +4,7 @@ title: Encampment Work Party
 date: 2020-01-24
 startDate: '2020-01-25 08:30'
 endDate: '2020-01-25 12:00'
-pinned: true
+pinned: false
 location:
   name: Kernville Park Recreation Area
   addressLocality: Kernville
@@ -29,7 +29,6 @@ organizer:
   '@type': 'Organization'
   name: Whiskey Flat Encampment
   url: 'https://www.facebook.com/whiskeyflatencampment/'
-
 ---
 Community welcome to help Encampment reenactors put some finishing touches on the
 entire area and helping Horse and Kate with vandal damage from last week.

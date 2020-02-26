@@ -5,7 +5,7 @@ updated: 2020-01-02 17:39
 date: 2019-12-12
 startDate: '2020-01-03 17:00'
 endDate: '2020-01-03 22:00'
-pinned: true
+pinned: false
 location:
   name: Ewings on the Kern
   streetAddress: 125 Buena Vista Drive
