@@ -11,10 +11,11 @@ location:
   addressLocality: Lake Isabella
   addressRegion: CA
   postalCode: 93240
-  url: 'https://goo.gl/maps/Y8tsP1htneWGUSnV8'
+  url: 'https://goo.gl/maps/Po4jkJ9R394jizEB7'
   geo:
     latitude: 35.608389
     longitude: -118.465404
+    url: 'https://goo.gl/maps/Po4jkJ9R394jizEB7'
 image: 'https://i.imgur.com/Ru9suK0.jpg'
 imgur: 'https://i.imgur.com/Ru9suK0'
 description: 'The Jeanette Rogers-Erickson Heart Walk raises Funds for a positive impact on patients, employees and community of the Kern River Valley.'
