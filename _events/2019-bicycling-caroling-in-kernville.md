@@ -4,7 +4,7 @@ title: Bicycle Caroling in Kernville
 date: 2019-12-05
 startDate: '2019-12-18 17:30'
 endDate: '2019-12-18 19:30'
-pinned: true
+pinned: false
 location:
   name: Kernville Methodist Church
   streetAddress: 251 Big Blue Road

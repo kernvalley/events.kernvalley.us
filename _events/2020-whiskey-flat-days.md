@@ -3,7 +3,7 @@ name: Whiskey Flat Days
 date: 2019-12-05
 startDate: '2020-02-14 10:00'
 endDate: '2020-02-17 18:00'
-pinned: true
+pinned: false
 location:
   name: Kernville
   addressLocality: Kernville

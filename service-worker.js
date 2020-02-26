@@ -25,17 +25,14 @@ self.addEventListener('activate', event => event.waitUntil(clients.claim()));
 self.addEventListener('fetch', event => {
 	if (event.request.method === 'GET') {
 		event.respondWith((async () => {
-			const url = new URL(event.request.url);
-			url.hash = '';
-
-			if (Array.isArray(config.stale) && config.stale.includes(url.href)) {
-				const cached = await caches.match(url);
+			if (Array.isArray(config.stale) && config.stale.includes(event.request.url)) {
+				const cached = await caches.match(event.request);
 				if (cached instanceof Response) {
 					return cached;
 				}
-			} else if (Array.isArray(config.fresh) && config.fresh.includes(url.href)) {
+			} else if (Array.isArray(config.fresh) && config.fresh.includes(event.request.url)) {
 				if (navigator.onLine) {
-					const resp = await fetch(url.href);
+					const resp = await fetch(event.request);
 					const cache = await caches.open(config.version);
 
 					if (resp.ok) {
@@ -43,25 +40,25 @@ self.addEventListener('fetch', event => {
 					}
 					return resp;
 				} else {
-					return caches.match(event.request.url);
+					return caches.match(event.request);
 				}
 			} else if (Array.isArray(config.allowed) && config.allowed.some(entry => (
 				entry instanceof RegExp
 					? entry.test(event.request.url)
 					: url.host === entry
 			))) {
-				const resp = await caches.match(event.request.url);
+				const resp = await caches.match(event.request);
+
 				if (resp instanceof Response) {
 					return resp;
 				} else if (navigator.onLine) {
-					const resp = await fetch(event.request.url, {
-						mode: 'cors',
-						headers: event.request.headers,
-					});
+					const resp = await fetch(event.request);
 
 					if (resp instanceof Response) {
-						const cache = await caches.open(config.version);
-						cache.put(event.request.url, resp.clone());
+						if (resp.ok) {
+							const cache = await caches.open(config.version);
+							cache.put(event.request, resp.clone());
+						}
 						return resp;
 					} else {
 						console.error(`Failed in request for ${event.request.url}`);
@@ -72,7 +69,7 @@ self.addEventListener('fetch', event => {
 			} else {
 				return fetch(event.request);
 			}
-		})());
+		})().catch(console.error));
 	}
 });
 
