@@ -45,8 +45,8 @@ Class 1 e-bike class.
 ### Friday, March 13, 2020
 Recreation area and all trails are open to public use
 
-- **12:00 – 4:00 pm**: SD and XC Courses available for practice
-- **3:00 pm-6:00 pm**: Race Packet pickup on site.
+- **12:00 pm – 4:00 pm**: SD and XC Courses available for practice
+- **3:00 pm – 6:00 pm**: Race Packet pickup on site.
 
 ### Saturday, March 14, 2020
 - **7:00 am- 4:00 pm**: Registration is open
