@@ -4,6 +4,7 @@ name: 31st Annual Isabella Lake Fishing Derby
 date: 2020-03-04 09:00
 startDate: '2020-04-04 07:00'
 endDate: '2020-04-06 20:00'
+draft: true
 pinned: true
 location:
   name: Isabella Lake
