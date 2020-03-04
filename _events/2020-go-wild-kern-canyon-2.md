@@ -34,15 +34,19 @@ offers:
   - price: 20
     name: 2 hr
     availability: PreRegister
+    url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
   - price: 40
     name: 4 hr
     availability: PreRegister
+    url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
   - price: 10
     name: 2 hr (students)
     availability: PreRegister
+    url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
   - price: 20
     name: 4hr (students)
     availability: PreRegister
+    url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
 ---
 **Prices listed are for pre-registration until April 13. Prices vary afterwards.**
 

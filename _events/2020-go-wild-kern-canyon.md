@@ -34,15 +34,19 @@ offers:
   - price: 15
     name: 5k
     availability: PreRegister
+    url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
   - price: 20
     name: 10k
     availability: PreRegister
+    url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
   - price: 7
     name: 5k (students)
     availability: PreRegister
+    url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
   - price: 10
     name: 10k (students)
     availability: PreRegister
+    url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
 ---
 **Prices listed are for pre-registration until April 13. Prices vary afterwards.**
 
