@@ -31,6 +31,8 @@ organizer:
   name: Team Action Dad
   url: 'https://keyesvilleclassic.com/'
 ---
+{% include imgur.html url="https://i.imgur.com/VUoZx3A.jpg" %}
+
 For 30 years from 1988 to 2018, the Keyesville Classic has drawn casual riders,
 pro mountain bike racers and their friends and families to participate in a fun-filled
 weekend of bike-related events and activities. From the entertaining Vintage class
@@ -91,9 +93,7 @@ Top 3 in each category for podiums. It will be fast! Be there if you place.
 
 Created by the founding members of the Southern Sierra Fat Tire Association, The
 Keyesville Classic is one of the longest running and BEST mountain bike races in the nation.
-
-{% include imgur.html url="https://i.imgur.com/VUoZx3A.jpg" %}
-
+- - -
 We’re proud to announce that Team Action Dad will be producing the Keyesville
 Classic in 2020 and beyond. Follow us on Facebook and Instagram for updates and
 contest.
