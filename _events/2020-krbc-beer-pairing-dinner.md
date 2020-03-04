@@ -32,6 +32,7 @@ organizer:
   url: https://kernriverbrewing.com/
 offers:
   - price: 45
+    name: Tickets
     availability: PreSale
 ---
 Join us for our final Beer Pairing Dinner before our busy season! And just in
@@ -46,4 +47,4 @@ Dinner starts at 6pm March 12th, but feel free to join us at 5:30 for Happy Hou
 - 3rd Course: Cajun Corned Beef and Cabbage
 - 4th Course: Irish Apple Cake with Custard Sauce
 
-[KRBC Event Page](https://kernriverbrewing.com/event/beer-pairing-dinner/)
+[KRBC Event Page {% include icon.html icon="link-external" %}](https://kernriverbrewing.com/event/beer-pairing-dinner/)
