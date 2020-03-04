@@ -42,9 +42,9 @@ soon. We are now taking reservations, and payment is due upon reservation.
 Dinner starts at 6pm March 12th, but feel free to join us at 5:30 for Happy Hou
  before grub. Cheers!
 
-- 1st Course: Greens and Grain Salad
-- 2nd Course: Cauliflower Croquettes and Irish Whiskey Drunken Onions
-- 3rd Course: Cajun Corned Beef and Cabbage
-- 4th Course: Irish Apple Cake with Custard Sauce
+- **1<sup>st</sup> Course**: Greens and Grain Salad
+- **2<sup>nd</sup> Course**: Cauliflower Croquettes and Irish Whiskey Drunken Onions
+- **<sup>3rd</sup> Course**: Cajun Corned Beef and Cabbage
+- **4<sup>th</sup> Course**: Irish Apple Cake with Custard Sauce
 
 [KRBC Event Page {% include icon.html icon="link-external" %}](https://kernriverbrewing.com/event/beer-pairing-dinner/)
