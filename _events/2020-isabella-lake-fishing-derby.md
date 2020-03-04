@@ -27,7 +27,7 @@ tags:
 - fishing derby
 organizer:
   '@type': 'Organization'
-  name: Kern Valley Chamber of Commerce
+  name: Kern River Valley Chamber of Commerce
   url: 'https://www.kernrivervalley.com/'
 offers:
   - price: 40
