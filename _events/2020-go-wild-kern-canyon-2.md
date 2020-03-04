@@ -64,3 +64,8 @@ Camping available on site. Preregister for a [discounted](https://docs.google.co
 - 03:15 P.M. Courses close
 
 **Please see [terraloco's website {% include icon.html icon="link-external" %}](https://go-terraloco.blogspot.com/2020/01/0418-19-kern-canyon.html) for more info.**
+
+####  Event Contact
+Rex Winterbottom: [{% include icon.html icon="call-start" %} 510-681-6181](tel:+1-510-681-6181)
+[{% include icon.html icon="mail-unread" %} rex@terraloco.com](mailto:rex@terraloco.com?subject=Go Wild Kern Canyon)
+[{% include icon.html icon="web-browser" %} terraloco](https://go-terraloco.blogspot.com)
