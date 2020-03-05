@@ -15,8 +15,8 @@ location:
   geo:
     latitude: 35.757508
     longitude: -118.419230
-image: 'https://i.imgur.com/Q3SMnRQ.jpg'
-imgur: 'https://i.imgur.com/Q3SMnRQ.jpg'
+image: 'https://i.imgur.com/HyuKx0h.jpg'
+imgur: 'https://i.imgur.com/HyuKx0h.jpg'
 description: Join us for our final Beer Pairing Dinner before our busy season!
 tags:
 - events
