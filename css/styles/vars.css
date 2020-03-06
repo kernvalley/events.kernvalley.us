@@ -41,7 +41,7 @@
 
 	--scrollbar-color: var(--accent-color);
 	--scrollbar-track: var(--primary-color);
-	--scrollbar-width:
+	--scrollbar-width: thin;
 }
 
 @media (max-width: 800px) {
