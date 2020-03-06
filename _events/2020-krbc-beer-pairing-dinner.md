@@ -15,8 +15,8 @@ location:
   geo:
     latitude: 35.757508
     longitude: -118.419230
-image: 'https://i.imgur.com/Q3SMnRQ.jpg'
-imgur: 'https://i.imgur.com/Q3SMnRQ.jpg'
+image: 'https://i.imgur.com/HyuKx0h.jpg'
+imgur: 'https://i.imgur.com/HyuKx0h.jpg'
 description: Join us for our final Beer Pairing Dinner before our busy season!
 tags:
 - events
@@ -42,9 +42,21 @@ soon. We are now taking reservations, and payment is due upon reservation.
 Dinner starts at 6pm March 12th, but feel free to join us at 5:30 for Happy Hou
  before grub. Cheers!
 
-- **1<sup>st</sup> Course**: Greens and Grain Salad
-- **2<sup>nd</sup> Course**: Cauliflower Croquettes and Irish Whiskey Drunken Onions
-- **<sup>3rd</sup> Course**: Cajun Corned Beef and Cabbage
-- **4<sup>th</sup> Course**: Irish Apple Cake with Custard Sauce
+- **1<sup>st</sup> Course**: Greens & Grain Salad w/ Nènette Belgian Style Blonde
+- **2<sup>nd</sup> Course**: Cauliflower Croquettes and Irish Whiskey Drunken Onions w/ Rye Down the Line Rye IPA
+- **<sup>3rd</sup> Course**: Cajun Corned Beef and Cabbage w/ Chuuurch! West Coast IPA
+- **4<sup>th</sup> Course**: Irish Apple Cake with Custard Sauce w/ Side Hike Hoppy Red
+
+<div class="center">
+<b>🍺 Bonus intermission beer 🍺</b>
+<br />
+<b>Citra DIPA</b>
+</div>
+
+> Beer Pairing Dinners are by reservation only.  
+> Payment due upon reservation. Please let your server know about food allergies at
+> the time of reservation.
 
 [KRBC Event Page {% include icon.html icon="link-external" %}](https://kernriverbrewing.com/event/beer-pairing-dinner/)
+
+<a href="tel:+1-760-376-2337" role="button" class="btn btn-primary btn-wide" title="Call to make reservations">{% include icon.html icon="call-start" %}<span>Call now <span class="mobile-hidden">to make reservations.</span></span></a>
