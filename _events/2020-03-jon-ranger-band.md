@@ -18,13 +18,15 @@ location:
     longitude: -118.420566
 image: 'https://i.imgur.com/fZEJfQE.jpg'
 imgur: 'https://i.imgur.com/fZEJfQE.jpg'
-description: This still needs a description
+description: Jon Ranger Band is coming to Ewings on the Kern
 tags:
 - events
 - kern valley
 - kern river valley
 - kernville
 - jon ranger band
+- lonely aveneue
+- band
 - music
 - musician
 organizer:
@@ -32,4 +34,9 @@ organizer:
   name: Jon Ranger Band
   url: https://jonranger.com/
 ---
-This still needs content
+[Jon Ranger Band {% include icon.html icon="link-external" %}](https://jonranger.com/)
+is coming to [Ewings on the Kern {% include icon.html icon="link-external" %}](https://www.ewingsonthekern.com/)
+on Saturday, March 14<sup>th</sup>.
+<div class="center card">{% include youtube.html id="VTmWVWm9leE" width=560 height=315 %}</div>
+
+See [Facebook Event {% include icon.html icon="link-external" %}](https://www.facebook.com/events/1538179286349049/?active_tab=about).
