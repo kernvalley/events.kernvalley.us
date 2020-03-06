@@ -45,6 +45,8 @@ Honda Generator & two $500 cash prize raffle. Along with the kids give away item
 rod and reel combos, terminal tackle, Berkeley Powerbait & youth tackle boxes but
 note once they are gone they are gone.
 
+{% include imgur.html url="https://i.imgur.com/pbU38uL.jpg" %}
+
 ## Prize Opportunities
 
 ### Tagged Trout:
