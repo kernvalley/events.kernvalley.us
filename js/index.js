@@ -31,6 +31,7 @@ ready().then(() => {
 				current.classList.remove('step-active');
 				fieldset.classList.add('step-active');
 			} else {
+				invalid.scrollIntoView({block: 'start', behavior: 'smooth'});
 				invalid.focus();
 			}
 		}, {
