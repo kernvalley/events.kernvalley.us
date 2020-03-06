@@ -65,9 +65,9 @@ layout: default
 				{% include icon.html icon="location" %}
 				<span>Location</span>
 			</label>
-			<input type="text" class="block" name="location[name]" autocomplete="off" id="event-location-name" placeholder="Location name" />
-			<input type="text" class="block" name="location[streetAddress]" autocomplete="off" placeholder="123 Some St." />
-			<input type="text" name="location[addressLocality]" autocomplete="off" list="cities-list" placeholder="City" required="" />
+			<input type="text" class="block" name="location-name" autocomplete="off" id="event-location-name" placeholder="Location name" />
+			<input type="text" class="block" name="location-streetAddress" autocomplete="off" placeholder="123 Some St." />
+			<input type="text" name="location-addressLocality" autocomplete="off" list="cities-list" placeholder="City" required="" />
 		</div>
 		<button type="button" class="btn btn-primary" data-to-step="1">
 			{% include icon.html icon="prev" %}
@@ -83,12 +83,12 @@ layout: default
 		<div class="input-group">
 			<div class="input-label">Organizer Type</div>
 			<label role="button">
-				<input type="radio" name="organizer[@type]" value="https://schema.org/Person" checked="" />
+				<input type="radio" name="organizer-@type" value="https://schema.org/Person" checked="" />
 				{% include icon.html icon="avatar-default" %}
 				<span>Individual</span>
 			</label>
 			<label role="button">
-				<input type="radio" name="organizer[@type]" value="https://schema.org/Organization" />
+				<input type="radio" name="organizer-@type" value="https://schema.org/Organization" />
 				{% include icon.html icon="organization" %}
 				<span>Organization</span>
 			</label>
@@ -96,15 +96,15 @@ layout: default
 		<div class="input-group">
 			<label>
 				<div>Name</div>
-				<input type="text" name="organizer[name]" autocomplete="name" placeholder="Contact name" required="" />
+				<input type="text" name="organizer-name" autocomplete="name" placeholder="Contact name" required="" />
 				<br />
-				<input type="text" name="organizer[org]" autocomplete="organization" placeholder="Optional name of Organization" />
+				<input type="text" name="organizer-orgName" autocomplete="organization" placeholder="Optional name of Organization" />
 			</label>
 		</div>
 		<div class="input-group">
 			<label>
 				<div>{% include icon.html icon="link" %} URL</div>
-				<input type="url" name="organizer[url]" autocomplete="url" placeholder="https://example.com" required="" />
+				<input type="url" name="organizer-url" autocomplete="url" placeholder="https://example.com" required="" />
 				<br />
 				<i class="info-text">
 					{% include icon.html icon="info" %}
@@ -115,13 +115,13 @@ layout: default
 		<div class="input-group">
 			<label>
 				<div>{% include icon.html icon="mail-unread" %} Email</div>
-				<input type="email" name="organizer[email]" autocomplete="email" placeholder="user@example.com" required="" />
+				<input type="email" name="organizer-email" autocomplete="email" placeholder="user@example.com" required="" />
 			</label>
 		</div>
 		<div class="input-group">
 			<label>
 				<div>{% include icon.html icon="call-start" %} Phone</div>
-				<input type="tel" name="organizer[phone]" autocomplete="phone" placeholder="+1-555-555-5555" required="" />
+				<input type="tel" name="organizer-phone" autocomplete="phone" placeholder="+1-555-555-5555" required="" />
 			</label>
 		</div>
 		<div class="btns flex row no-wrap">
