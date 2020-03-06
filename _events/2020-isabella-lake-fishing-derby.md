@@ -1,7 +1,7 @@
 ---
 title: 31st Annual Isabella Lake Fishing Derby
 name: 31st Annual Isabella Lake Fishing Derby
-date: 2020-03-04 09:00
+date: 2020-03-04
 startDate: '2020-04-04 07:00'
 endDate: '2020-04-06 20:00'
 draft: true
@@ -17,7 +17,7 @@ location:
     longitude: -118.449643
 image: 'https://i.imgur.com/RFsYGwx.jpg'
 imgur: 'https://i.imgur.com/RFsYGwx.jpg'
-description: 'Join us on April 4 - 6 for the 31st annual Isabella Lake Fishing Derby. Inexpensive family fun with loads of prizes!'
+description: 'We will have over $40,000 in tagged trout in our lake waiting for our anglers along with multiple other ways to win cash and prize'
 tags:
 - events
 - kern valley
@@ -32,20 +32,44 @@ organizer:
 offers:
   - price: 40
     name: Individual
-    url: https://www.kernrivervalley.com/product-page/adult-angler-16-years-and-older-1
     availability: InStoreOnly
   - price: 15
     name: Youth (15 & Under)
-    url: https://www.kernrivervalley.com/product-page/additional-child-for-family-pack
     availability: InStoreOnly
 ---
-The 31<sup>st</sup> Annual Isabella Lake Fishing Derby is shaping up to be a good time this
-April 4 - 6, 2020. Our first Trout are being delivered to the fish rearing pens
-at Red's Marina in November and will growing fast, They are fed three times a day
-by an all volunteer crew organized by Kern River Valley Chamber of Commerce and
-derby committee member Mark Chambers. Thank you everyone involved for all the hard
-work, these fish eat a lot and have to be fed rain or shine, sleet or sun, and it's
-getting cold out there! By the time these Trout are released right before the
-tournament they will all be fat and happy and ready to bite a line.
+April 4 - 6, 2020 will be our 31<sup>st</sup> Annual Isabella Lake Fishing Derby.
+We will have over $40,000 in tagged trout in our lake waiting for our anglers along
+with multiple other ways to win cash and prizes. Blind Boogie Drawings, Bobber Bowl,
+Longest fish in Men, Women and Youth Divisions, Tracker Marine Classic XL Raffle item,
+Honda Generator & two $500 cash prize raffle. Along with the kids give away items,
+rod and reel combos, terminal tackle, Berkeley Powerbait & youth tackle boxes but
+note once they are gone they are gone.
+
+## Prize Opportunities
+
+### Tagged Trout:
+500 tagged trout with dollar amounts ranging from $20 to $5,000.
+
+<mark>Only the $5,000 tagged trout doubles to <b>$10,000 <a href="{{ page.url }}#footnotes" class="footnotes"><sup>*</sup></a></b> if you purchased the official
+derby T-Shirt prior to catching the fish.</mark>
+
+#### Longest Trout:
+- Men
+- Women
+- Youth (age 15 & under)
+- 1st place for Men and Women Divisions pay $500 but doubles to $1000<a href="{{ page.url }}#footnotes" class="footnotes"><sup>*</sup></a> with t-shirt
+- 1st place for Youth Division pay $500 but it doubles to $1000<a href="{{ page.url }}#footnotes" class="footnotes"><sup>*</sup></a> with t-shirt
+
+#### Derby Games:
+- Bobber Bowl Trout Prizes
+- Blind Bogey
+- Lake Trout Lotto
+- 50/50
+- Drawing Prizes
+
+<b id="footnotes">* Must purchase Derby T-shirt</b>
+
+See the [Kern River Valley Chamber of Commerce page {% include icon.html icon="link-external" %}](https://www.kernrivervalley.com/2020-isabella-lake-fishing-derby)
+for fishing derby news and more info.
 
 **{% include icon.html icon="device-camera" %} Photo by [David~O](https://www.flickr.com/photos/8106459@N07/) on [Flickr.](https://www.flickr.com/photos/8106459@N07/7040942387/in/photostream/)<br />[Some rights reserved (CC-BY 2.0)](https://creativecommons.org/licenses/by/2.0/)**
