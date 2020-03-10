@@ -18,7 +18,8 @@ tags:
 startDate: 2020-04-20 16:00
 endDate: 2020-04-20 17:30
 offers:
-  - price: 96
+  - name: Tickets
+    price: 99
     currency: USD
     url: https://kernvillecowork.simpletix.com/e/52860
 location:
@@ -39,11 +40,14 @@ organizer:
 Start your child on a journey creating games & art using the latest technology!
 Learn and apply the building blocks that power our digital world!
 
+This class begins on April 20<sup>th</sup> at 4:00PM and continues Mon.
+&mdash; Thur. until April 30<sup>th</sup>, taking two weeks to complete.
+
 Taught by former eBay Chief Engineer, Josh Gordon, who spent 25 years in the
 programming industry beginning at the dawn of the home computer business. This is
 truly a great opportunity!
 
-- Monday through Thursday
+- Monday through Thursday for two weeks, starting on April 20<sup>th</sup>
 - 4:00pm to 5:30pm
 - Ages 8 through 18, no experience required
 - $99 per student
