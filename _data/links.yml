@@ -6,3 +6,6 @@ footer:
     href: 'https://rafting.kernvalley.us'
     icon: rafting
     target: _blank
+  - text: Submit Event
+    href: /add-event/
+    icon: events

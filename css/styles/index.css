@@ -149,3 +149,11 @@ summary[role="button"] {
 .full-width {
 	width: 100%;
 }
+
+.info-text {
+	color: #6c6565;
+}
+
+.stepped-form > .form-step:not(.step-active) {
+	display: none;
+}
