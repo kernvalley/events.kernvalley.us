@@ -1,8 +1,8 @@
 ---
-# See https://schema.org/Event
 name: Coding For Kids
 title: Coding For Kids
 date: 2020-03-10
+pinned: true
 image: 'https://i.imgur.com/7nNmRJW.png'
 imgur: 'https://i.imgur.com/7nNmRJW.png'
 url: 'http://www.kernvillecowork.com/en/events/view/607819446/coding-for-kids--introductory'
@@ -48,9 +48,9 @@ truly a great opportunity!
 - Ages 8 through 18, no experience required
 - $99 per student
 - Limited seats available
-- Bring your own computer <a href="{{ './#footnote' | absolute_url }}"><sup>*</sup></a>
+- Bring your own computer <a href="{{ page.url }}#footnote"><sup>*</sup></a>
 
 For more details or to register, visit [kernvillecowork.com {% include icon.html icon="link-external" %}](https://www.kernvillecowork.com/en/events/view/1284488223/coding-for-kids)
-or call: [{% include icon.html icon="call-start" %} 760-549-0423](tel:+1-760-549-0423)
+or call [{% include icon.html icon="call-start" %} 760-549-0423](tel:+1-760-549-0423)
 
-<div id="disclaimer"><sup>*</sup> Let us know ahead of time if you don't have a laptop.</div>
+<div id="footnote"><sup>*</sup> Let us know ahead of time if you don't have a laptop.</div>
