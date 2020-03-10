@@ -6,7 +6,7 @@
 		</h4>
 		{% if include.event.url %}</a>{% endif %}
 		{% if include.event.imgur %}
-			<figure class="event-thumb center" itemprop="image" itemtype="http://schema.org/ImageObejct" itemscope="">
+			<figure class="event-thumb center" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
 				{% include imgur.html
 					url=include.event.image
 					itemprop='url'
@@ -14,7 +14,7 @@
 				%}
 			</figure>
 		{% elsif include.event.image %}
-			<figure class="event-thumb center" itemprop="image" itemtype="http://schema.org/ImageObejct" itemscope="">
+			<figure class="event-thumb center" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
 				<img src="{{ include.event.image }}" class="card shadow" alt="" title="" crossorigin="anonymous" referrerpolicy="origin-when-cross-origin" decoding="auto" itemprop="url" />
 			</figure>
 		{% endif %}
