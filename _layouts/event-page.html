@@ -63,6 +63,7 @@ main-itemtype: Event
 			{% endif %}
 			{% if page.organizer.url %}<meta itemprop="url" content="{{ page.organizer.url }}">{% endif %}
 		</div>
+		<br />
 		{% if page.description %}
 			<meta itemprop="description" content="{{ page.description }}" />
 		{% endif %}
@@ -97,6 +98,7 @@ main-itemtype: Event
 		{% else %}
 			<meta itemprop="dateModified" content="{{ page.date | date: data_to_xmlschema }}" />
 		{% endif %}
+		<br />
 		<section itemtype="articleBody">{{ content }}</section>
 		<footer itemprop="publisher" itemtype="https://schema.org/{{ site.data.publisher['@type'] | default: 'Organization' }}" itemscope="" hidden="">
 			<a href="{{ site.data.publisher.url }}" rel="external noopener" itemprop="url">
