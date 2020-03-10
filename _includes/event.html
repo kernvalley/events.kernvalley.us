@@ -44,7 +44,7 @@
 		{% if include.event.offers %}<div>{% for offer in include.event.offers %}
 			<hr />
 			{% if offer.url %}
-				<a href="{{ offer.url }}" role="button" rel="noopener external" class="center btn btn-primary event-offer-btn" itemprop="offers" itemtype="http://schema.org/Offer" itemscope=""{% if offer.availability and offer.availability != 'InStock' %} title="Unavailable" disabled=""{% endif %}>
+				<a href="{{ offer.url }}" role="button" rel="noopener external" class="center btn btn-primary block event-offer-btn" itemprop="offers" itemtype="http://schema.org/Offer" itemscope=""{% if offer.availability and offer.availability != 'InStock' %} title="Unavailable" disabled=""{% endif %}>
 					<meta itemprop="url" content="{{ offer.url }}" />
 					<b class="event-price">
 						<span itemprop="name">{{ offer.name | default: 'General Admission' }}</span>:
