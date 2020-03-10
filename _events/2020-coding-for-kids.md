@@ -15,8 +15,8 @@ tags:
 - kern river valley
 - events
 - kernville cowork
-startDate: 2020-04-28 16:00
-endDate: 2020-04-28 17:30
+startDate: 2020-04-20 16:00
+endDate: 2020-04-20 17:30
 offers:
   - price: 96
     currency: USD
