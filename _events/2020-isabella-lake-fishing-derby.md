@@ -2,8 +2,10 @@
 title: 31st Annual Isabella Lake Fishing Derby
 name: 31st Annual Isabella Lake Fishing Derby
 date: 2020-03-04
-startDate: '2020-04-04 07:00'
-endDate: '2020-04-06 20:00'
+updated: 2020-03-14
+startDate: '2020-05-09 07:00'
+endDate: '2020-05-11 20:00'
+eventStatus: EventPostponed
 draft: true
 pinned: true
 location:
@@ -37,7 +39,37 @@ offers:
     name: Youth (15 & Under)
     availability: InStoreOnly
 ---
-April 4 - 6, 2020 will be our 31<sup>st</sup> Annual Isabella Lake Fishing Derby.
+**Important Note from Kern River Valley Chamber of Commerce**
+<blockquote>
+<p>There is no higher priority to the Kern River Valley Chamber of Commerce than
+our visitors, patrons, promoters, sponsors and local community residents.</p>
+<p>On Thursday, March 12, 2020 Govenor Gavin Newsom issued an executive order
+directing Californians to follow public health directives which include postponing
+or canceling large gatherings of more than 250 people of indoor or outdoor events.</p>
+<p>After multiple communications with Kern County Public Health officials we have
+no option at this time but to postpone the 31st Annual Isabella Lake Fishing
+Derby for the safety of our anglers, their families and the residents of the
+Kern River Valley</p>
+<p>Under the direction of the State of California, Kern County and partnership
+with the Unites States Forest Service, we have postponed the April 4-6, 2020
+Isabella Lake Fishing Derby to May 9-11, 2020 to do our part to protect the public
+health and slow the spread of the COVID-19.</p>
+<p>Please stay tuned as we progress thru this change and for further updates.</p>
+<p>I ask you to direct any and all questions to the email address at
+<a href="mailto:office@kernrivervalley.com">{% include icon.html icon="mail-unread" %}&nbsp;office@kernrivervalley.com</a>,
+I will answer everything email we recieve.</p>
+
+Sincerely,
+<cite>
+Fred Clark
+<br />
+President Kern River Valley Chamber of Commerce
+<br />
+Chairman Isabella Lake Fishing Derby
+</cite>
+</blockquote>
+
+~~April 4 - 6~~ *May 9 - 11*, 2020 will be our 31<sup>st</sup> Annual Isabella Lake Fishing Derby.
 We will have over $40,000 in tagged trout in our lake waiting for our anglers along
 with multiple other ways to win cash and prizes. Blind Boogie Drawings, Bobber Bowl,
 Longest fish in Men, Women and Youth Divisions, Tracker Marine Classic XL Raffle item,
