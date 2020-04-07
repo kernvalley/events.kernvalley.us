@@ -16,7 +16,7 @@ location:
     longitude: -118.449643
 image: 'https://i.imgur.com/eOXjdfY.jpg'
 imgur: 'https://i.imgur.com/eOXjdfY.jpg'
-description: 'Let\'s take some time to appreciate the people keeping this country going'
+description: "Let's take some time to appreciate the people keeping this country going"
 tags:
 - events
 - kern valley
@@ -24,10 +24,10 @@ tags:
 - lake isabella
 - essential worker
 - appreciation
-- covid-19
+- 'covid-19'
 organizer:
   '@type': 'Organization'
-  name: KernValley.US
+  name: 'KernValley.US'
   url: 'https://kernvalley.us/'
 ---
 **What**: Essential Worker Appreciation Week.
