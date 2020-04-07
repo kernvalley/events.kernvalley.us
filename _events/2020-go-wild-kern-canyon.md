@@ -49,6 +49,7 @@ offers:
     availability: PreRegister
     url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
 ---
+## Postponed Until Further Notice
 **Prices listed are for pre-registration until April 13. Prices vary afterwards.**
 
 For the Keyesville event on Saturday, see [Go Wild! Kern Canyon (Keyesville) {% include icon.html icon="link" %}](/events/2020-go-wild-kern-canyon-2/)

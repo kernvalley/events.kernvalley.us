@@ -39,6 +39,7 @@ offers:
     name: Youth (15 & Under)
     availability: InStoreOnly
 ---
+## This Event has been Cancelled
 **Important Note from Kern River Valley Chamber of Commerce**
 <blockquote>
 <p>There is no higher priority to the Kern River Valley Chamber of Commerce than

@@ -38,6 +38,7 @@ organizer:
   name: Kernville Cowork
   url: 'https://www.kernvillecowork.com'
 ---
+## Postponed Until Further Notice
 Start your child on a journey creating games & art using the latest technology!
 Learn and apply the building blocks that power our digital world!
 
