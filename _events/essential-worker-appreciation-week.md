@@ -38,8 +38,8 @@ organizer:
 
 **Why:** The same people who are keeping the world going right now are also the
 most exposed to the virus and, instead of being thanked for what they do, too often
-they are yelled at for store policies that help prevent hoarding or have Lysol
-sprayed in their faces.
+they are yelled at for store policies that help prevent hoarding or having customers
+verbally or physically assault them.
 
 **How:** On the corresponding day of the week, bring in a thank you card, flyer,
 poster, or whatever you come up to hang on a wall or in a window to let the employees
@@ -50,6 +50,9 @@ Each day of the week, let's make extra effort to appreciate the work and sacrifi
 of our friends, family, and neighbors. Go out of your way to show them gratitude
 and to not make their jobs any more difficult or stressful than they need to be.
 Just that we're trying to avoid putting them in any more risk of being infected.
+Businesses may want to have a pin board or designated place for cards so that
+employees do not have things handed to them, putting them at risk and distracting
+them from their job.
 
 - **Mon. (4/13)**: Grocery & Convenience Stores Workers
 - **Tue. (4/14)**: Food Industry Workers
