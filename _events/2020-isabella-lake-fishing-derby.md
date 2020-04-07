@@ -5,7 +5,7 @@ date: 2020-03-04
 updated: 2020-03-14
 startDate: '2020-05-09 07:00'
 endDate: '2020-05-11 20:00'
-# eventStatus: EventPostponed
+eventStatus: EventCancelled
 draft: true
 pinned: true
 location:
@@ -39,6 +39,7 @@ offers:
     name: Youth (15 & Under)
     availability: InStoreOnly
 ---
+## This Event has been Cancelled
 **Important Note from Kern River Valley Chamber of Commerce**
 <blockquote>
 <p>There is no higher priority to the Kern River Valley Chamber of Commerce than

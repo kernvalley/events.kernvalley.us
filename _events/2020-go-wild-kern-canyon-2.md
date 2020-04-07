@@ -4,6 +4,7 @@ title: Go Wild! Kern Canyon (Keyesville)
 date: 2020-03-04
 startDate: '2020-04-19 12:00'
 endDate: '2020-04-19 15:15:00'
+eventStatus: EventPostponed
 pinned: true
 location:
   name: BLM Staging Area
@@ -48,6 +49,7 @@ offers:
     availability: PreRegister
     url: https://docs.google.com/spreadsheet/viewform?formkey=dHpnLV9PWFFzLUV2WkRwekV5TURjdnc6MQ&ifq
 ---
+## Postponed Until Further Notice
 **Prices listed are for pre-registration until April 13. Prices vary afterwards.**
 
 For the Keyesville event on Sunday, see [Go Wild! Kern Canyon (Lake Isabella) {% include icon.html icon="link" %}](/events/2020-go-wild-kern-canyon/)
