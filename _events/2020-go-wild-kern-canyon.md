@@ -4,6 +4,7 @@ title: Go Wild! Kern Canyon (Lake Isabella)
 date: 2020-03-04
 startDate: '2020-04-18 12:00'
 endDate: '2020-04-18 15:15:00'
+eventStatus: EventPostponed
 pinned: true
 location:
   name: South Side Boat Launch

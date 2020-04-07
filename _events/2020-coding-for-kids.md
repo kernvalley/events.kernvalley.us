@@ -3,6 +3,7 @@ name: Coding For Kids
 title: Coding For Kids
 date: 2020-03-10
 pinned: true
+eventStatus: EventPostponed
 image: 'https://i.imgur.com/7nNmRJW.png'
 imgur: 'https://i.imgur.com/7nNmRJW.png'
 url: 'http://www.kernvillecowork.com/en/events/view/607819446/coding-for-kids--introductory'
