@@ -2,6 +2,7 @@
 title: Essential Worker Appreciation Week
 name: Essential Worker Appreciation Week
 date: 2020-04-06
+updated: 2020-04-08 09:52
 startDate: '2020-04-13 00:00'
 endDate: '2020-04-17 23:59'
 pinned: true
@@ -16,7 +17,7 @@ location:
     longitude: -118.449643
 image: 'https://i.imgur.com/eOXjdfY.jpg'
 imgur: 'https://i.imgur.com/eOXjdfY.jpg'
-description: "Let's take some time to appreciate the people keeping this country going"
+description: "Let's take some time to appreciate the people keeping this country going."
 tags:
 - events
 - kern valley
@@ -54,8 +55,20 @@ Businesses may want to have a pin board or designated place for cards so that
 employees do not have things handed to them, putting them at risk and distracting
 them from their job.
 
+You may also share photos, stories, and other forms of showing appreciation
+on social networks, but please do so in a way that makes your post visible to
+the employees you are thanking.
+
+**Note:** The entire work week from April 13 - 17 is for appreciating essential
+workers of all kinds. The days highlighting particular categories are special
+attention being given to those who experience cruelty and abuse instead of gratitude.
+
+By no means should the omission of any group or category be taken as a lack of
+appreciation or recognition. It is just not possible to be specific enough to focus
+on a distinct category while also being generic enough to cover everything.
+
 - **Mon. (4/13)**: Grocery & Convenience Stores Workers
 - **Tue. (4/14)**: Food Industry Workers
 - **Wed. (4/15)**: Customer Service Employees
-- **Thu. (4/16)**: Law Enforcement
+- **Thu. (4/16)**: Public Safety
 - **Fri. (4/17)**: Medical & Pharmacy Workers
