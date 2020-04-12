@@ -138,6 +138,21 @@ summary[role="button"] {
 	}
 }
 
+@media (max-width: 600px) {
+	.share-btns share-to-button::part(text),
+	.share-btns share-to-button::part(spacer) {
+		display: none;
+	}
+
+	.share-btns share-to-button::part(container) {
+		min-width: 4em;
+		min-height: 4em;
+		padding: 0.8em;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
 #main a {
 	text-decoration: underline;
 }
