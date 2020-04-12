@@ -53,6 +53,8 @@ main-itemtype: Event
 				<link itemprop="availability" href="https://schema.org/{{ offer.availability | default: 'InStock' }}" />
 			</span>
 		{% endif %}
+		<br />
+		{% include share-buttons.html %}
 	</header>
 	<article itemprop="about" itemtype="https://schema.org/Article" itemscope="">
 		<div itemprop="author" itemtype="https://schema.org/{{ page.organizer['@type'] | default: 'Organization' }}" itemscope="" hidden="">

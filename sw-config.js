@@ -18,6 +18,7 @@ const config = {
 		'https://polyfill.io/v3/polyfill.min.js',
 		'https://unpkg.com/@webcomponents/custom-elements@1.3.1/custom-elements.min.js',
 		'https://cdn.kernvalley.us/components/toast-message.html',
+		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
 		'https://cdn.kernvalley.us/components/login-form/login-form.html',
 		'https://cdn.kernvalley.us/components/registration-form/registration-form.html',
 
@@ -25,6 +26,7 @@ const config = {
 		'https://cdn.kernvalley.us/components/share-button.js',
 		'https://cdn.kernvalley.us/js/std-js/share-config.js',
 		'https://cdn.kernvalley.us/components/current-year.js',
+		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.js',
 		'https://cdn.kernvalley.us/js/std-js/deprefixer.js',
 		'https://cdn.kernvalley.us/js/std-js/shims.js',
 		'https://cdn.kernvalley.us/js/std-js/md5.js',
