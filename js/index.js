@@ -2,6 +2,7 @@ import 'https://cdn.kernvalley.us/js/std-js/shims.js';
 import 'https://cdn.kernvalley.us/js/std-js/deprefixer.js';
 import 'https://polyfill.io/v3/polyfill.min.js';
 import 'https://unpkg.com/@webcomponents/custom-elements@1.3.1/custom-elements.min.js';
+import 'https://cdn.kernvalley.us/components/share-to-button/share-to-button.js';
 import 'https://cdn.kernvalley.us/components/share-button.js';
 import 'https://cdn.kernvalley.us/components/leaflet/map.js';
 import 'https://cdn.kernvalley.us/components/leaflet/marker.js';
