@@ -6,6 +6,7 @@
 		<h4 class="event-title center underline" itemprop="name">
 			{{ include.event.name }}
 		</h4>
+		<!-- {{ include.eventStatus }} -->
 		{% if include.eventStatus != "EventScheduled" %}
 			{% case include.eventStatus %}
 				{% when "EventPostponed" %}
