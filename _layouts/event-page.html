@@ -12,6 +12,7 @@ main-itemtype: Event
 {% include header.html %}
 <main id="main" class="card shadow" itemtype="https://schema.org/Event" itemscope="" itemref="time-card place-card">
 	<link itemprop="eventStatus" content="https://schema.org/{{ page.eventStatus | default: 'EventScheduled' }}" />
+	<link itemprop="eventAttendanceMode" content="https://schema.org/{{ page.eventAttendanceMode }}" />
 	<header class="event-page-header">
 		{% if page.description %}
 			<meta itemprop="description" content="{{ page.description }}" />
