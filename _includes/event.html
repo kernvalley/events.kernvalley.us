@@ -1,5 +1,7 @@
 <div id="{{ include.event.name | slugify }}" class="{{ include.itemprop | default: 'event' }}" itemtype="http://schema.org/Event" itemscope="">
 	<div>
+		<link itemprop="eventStatus" content="https://schema.org/{{ include.eventStatus | default: 'EventScheduled' }}" />
+		<link itemprop="eventAttendanceMode" content="https://schema.org/{{ include.eventAttendanceMode }}" />
 		{% if include.event.url %}<a href="{{ include.event.url  }}">{% endif %}
 		<h4 class="event-title center underline" itemprop="name">
 			{{ include.event.name }}

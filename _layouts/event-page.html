@@ -12,11 +12,26 @@ main-itemtype: Event
 {% include header.html %}
 <main id="main" class="card shadow" itemtype="https://schema.org/Event" itemscope="" itemref="time-card place-card">
 	<link itemprop="eventStatus" content="https://schema.org/{{ page.eventStatus | default: 'EventScheduled' }}" />
+	<link itemprop="eventAttendanceMode" content="https://schema.org/{{ page.eventAttendanceMode }}" />
 	<header class="event-page-header">
 		{% if page.description %}
 			<meta itemprop="description" content="{{ page.description }}" />
 		{% endif %}
 		<h1 itemprop="name" class="center">{{ page.name | default: page.title }}</h1>
+		{% if page.eventStatus != "EventScheduled" %}
+			<h2 class="event-status-container">
+				{% case page.eventStatus %}
+					{% when "EventPostponed" %}
+						<div class="status-box alert">This event has been postponed.</div>
+					{% when "EventCancelled" %}
+						<div class="status-box alert">This event has been cancelled.</div>
+					{% when "EventRescheduled" %}
+						<div class="status-box warn">This event has been rescheduled.</div>
+					{% when "EventMovedOnline" %}
+						<div class="status-box warn">This event has moved online.</div>
+				{% endcase %}
+			</h2>
+		{% endif %}
 		<!-- <div itemtype="https://schema.org/Place" itemprop="location" itemref="place-card" hidden=""></div> -->
 		<figure class="center" itemprop="image" itemtype="https://schema.org/ImageObject" itemscope="">
 			{% include imgur.html url=page.imgur itemprop="url" class="imgur" %}
