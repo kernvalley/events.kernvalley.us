@@ -22,13 +22,13 @@ main-itemtype: Event
 			<h2 class="event-status-container">
 				{% case page.eventStatus %}
 					{% when "EventPostponed" %}
-						<div class="event-status alert">This event has been postponed.</div>
+						<div class="status-box alert">This event has been postponed.</div>
 					{% when "EventCancelled" %}
-						<div class="event-status alert">This event has been cancelled.</div>
+						<div class="status-box alert">This event has been cancelled.</div>
 					{% when "EventRescheduled" %}
-						<div class="event-status warn">This event has been rescheduled.</div>
+						<div class="status-box warn">This event has been rescheduled.</div>
 					{% when "EventMovedOnline" %}
-						<div class="event-status warn">This event has moved online.</div>
+						<div class="status-box warn">This event has moved online.</div>
 				{% endcase %}
 			</h2>
 		{% endif %}

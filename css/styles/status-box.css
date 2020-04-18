@@ -1,0 +1,27 @@
+.status-box {
+	padding: 1.2em;
+	border: 1px dashed currentColor;
+	text-align: center;
+	margin-top: 0.7em;
+	border-radius: 8px;
+}
+
+.status-box.alert {
+	color: #6f0606;
+	background-color: #e88a8a;
+}
+
+.status-box.warn {
+	color: #51430c;
+	background-color: #f0d155;
+}
+
+.status-box.info {
+	color: #555553;
+	background-color: #d2d2d2;
+}
+
+.status-box.success {
+	color: #1d4f01;
+	background-color: #8cee69;
+}
