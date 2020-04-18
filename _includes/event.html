@@ -6,6 +6,18 @@
 		<h4 class="event-title center underline" itemprop="name">
 			{{ include.event.name }}
 		</h4>
+		{% if page.eventStatus != "EventScheduled" %}
+			{% case page.eventStatus %}
+				{% when "EventPostponed" %}
+					<div class="status-box alert">This event has been postponed.</div>
+				{% when "EventCancelled" %}
+					<div class="status-box alert">This event has been cancelled.</div>
+				{% when "EventRescheduled" %}
+					<div class="status-box warn">This event has been rescheduled.</div>
+				{% when "EventMovedOnline" %}
+					<div class="status-box warn">This event has moved online.</div>
+			{% endcase %}
+		{% endif %}
 		{% if include.event.url %}</a>{% endif %}
 		{% if include.event.imgur %}
 			<figure class="event-thumb center" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
