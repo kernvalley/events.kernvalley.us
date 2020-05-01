@@ -69,7 +69,6 @@ main-itemtype: Event
 			</span>
 		{% endif %}
 		<br />
-		{% include share-buttons.html %}
 	</header>
 	<article itemprop="about" itemtype="https://schema.org/Article" itemscope="">
 		<div itemprop="author" itemtype="https://schema.org/{{ page.organizer['@type'] | default: 'Organization' }}" itemscope="" hidden="">
@@ -139,21 +138,21 @@ main-itemtype: Event
 		</div>
 	</div>
 	<br />
-	<div class="clearfix card" itemprop="location" itemtype="https://schema.org/Place" id="place-card" itemscope="">
+	<div class="clearfix card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" id="place-card" itemscope="">
 		<h4 class="center">Where</h4>
 		{% include icon.html icon='location' class='current-color icon float-left' %}
 		<span class="float-left">&nbsp;</span>
+		{% if page.location.url %}
+			<a href="{{ page.location.url }}" class="location-link" rel="noopener external" itemprop="url">
+			{% include icon.html icon="link-external" %}
+		{% endif %}
 		{% if page.location.name %}
 			<b class="float-left" itemprop="name">{{ page.location.name }}</b>
 		{% endif %}
-		<address itemprop="address" itemtype="https://schema.org/PostalAddress" itemscope="">
-			<span itemprop="streetAddress">{{ page.location.streetAddress }}</span>
-			<br />
-			<span itemprop="addressLocality">{{ page.location.addressLocality }}</span>,
-			<span itemprop="addressRegion">{{ page.location.addressRegion | default: 'CA' }}</span>
-			<meta itemprop="postalCode" content="{{  page.location.postalCode }}" />
-			<meta itemprop="addressCountry" content="{{ page.location.addressCountry | default: 'USA' }}" />
-		</address>
+		{% if page.location.url %}</a>{% endif %}
+		{% if page.location.addressLocality %}
+			{% include address.html address=page.location %}
+		{% endif %}
 		{% if page.location.geo %}
 			<leaflet-map center="{{ page.location.geo.latitude }},{{ page.location.geo.longitude }}" zoom="15" crossorigin="annonymous" detectretina="" itemprop="geo" itemtype="https://schema.org/GeoCoordinates" itemscope="">
 				<meta itemprop="longitude" content="{{ page.location.geo.longitude }}" />
