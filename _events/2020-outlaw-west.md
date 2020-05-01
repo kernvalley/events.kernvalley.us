@@ -9,9 +9,10 @@ location:
   '@type': VirtualLocation
   name: Outlaw West Website
   url: 'https://www.outlawwestkernville.com/'
-description: The way it's supposed to be! Long bearded, red neck, boot kickin', beer drinking, hotties n pickup trucks.
+description: Outlaw Country Music the way it's supposed to be! Long bearded, red neck, boot kickin', beer drinking, hotties n pickup trucks.
 tags:
 - outlaw west
+- outlaw country music
 - country music
 - kern valley
 - kern river valley
