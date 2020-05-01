@@ -143,7 +143,7 @@ main-itemtype: Event
 		{% include icon.html icon='location' class='current-color icon float-left' %}
 		<span class="float-left">&nbsp;</span>
 		{% if page.location.url %}
-			<a href="{{ page.location.url }}" class="location-link" rel="noopener external">
+			<a href="{{ page.location.url }}" class="location-link" rel="noopener external" itemprop="url">
 			{% include icon.html icon="link-external" %}
 		{% endif %}
 		{% if page.location.name %}
