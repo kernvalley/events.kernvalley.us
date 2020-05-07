@@ -19,8 +19,8 @@ tags:
 - covid-19
 - business
 - rountable
-imgur: https://i.imgur.com/UJZhQAV.jpg
-image: https://i.imgur.com/UJZhQAV.jpg
+imgur: https://i.imgur.com/LEg2VPy.jpg
+image: https://i.imgur.com/LEg2VPy.jpg
 organizer:
   '@type': 'Organization'
   name: Kernville Cowork
