@@ -41,7 +41,7 @@ new systems that will help them thrive even after the shutdown is entirely lifte
 Please share with other businesses in the Kern River Valley so they can join the
 discussion, regardless of membership. There is no fee or membership requirement
 for this event. Share this link when inviting others to join:
-<span>https://us02web.zoom.us/meeting/register/tZwud-ipqD8sGtXYFDuiwyoLE8BI7B8D-LHE</span>
+<span>https://us02web.zoom.us<wbr />/meeting<wbr />/register<wbr />/tZwud-ipqD8sGtXYFDuiwyoLE8BI7B8D-LHE</span>
 
 {% include share-buttons.html
   heading="Copy Link"
