@@ -43,13 +43,7 @@ discussion, regardless of membership. There is no fee or membership requirement
 for this event. Share this link when inviting others to join:
 <span>https://us02web.zoom.us<wbr />/meeting<wbr />/register<wbr />/tZwud-ipqD8sGtXYFDuiwyoLE8BI7B8D-LHE</span>
 
-{% include share-buttons.html
-  heading="Copy Link"
-  clipboard=true
-  title=page.title
-  text=page.description
-  url="https://us02web.zoom.us/meeting/register/tZwud-ipqD8sGtXYFDuiwyoLE8BI7B8D-LHE"
-%}
+<button type="button" is="copy-button" class="btn btn-primary btn-big" text="{{ page.location.url }}">{% include icon.html icon="clippy" %}<span>Copy link</span></button>
 
 The meeting will be recorded and shared by [{% include icon.html icon="link-external" %} Kernville Cowork](https://www.kernvillecowork.com/en)
 for those that are unable to attend.
