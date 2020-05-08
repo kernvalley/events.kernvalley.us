@@ -29,7 +29,7 @@
 		</share-to-button>
 	{% endif %}
 	{% if include.clipboard %}
-		<share-to-button target="clipboard" class="custom-element share-target if-defined" text="{{ include.text }}" url="{{ include.url | default: page.url }}" title="Share on LinkedIn">
+		<share-to-button target="clipboard" class="custom-element share-target if-defined" text="{{ include.text }}" url="{{ include.url | default: page.url }}" title="Copy to Clipboard">
 			<span slot="text">
 				<span>{{ include.clipboard_text | default: 'Copy' }}</span>
 			</span>
