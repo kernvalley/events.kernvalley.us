@@ -31,7 +31,6 @@
       manifest-src 'self';
       worker-src 'self';
       reflected-xss block;
-      report-uri https://api.kernvalley.us/Errors/CSP/;
       upgrade-insecure-requests;
       block-all-mixed-content;
       disown-opener;'''
