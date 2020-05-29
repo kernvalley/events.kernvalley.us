@@ -5,7 +5,7 @@ date: 2020-03-04
 startDate: '2020-04-18 12:00'
 endDate: '2020-04-18 15:15:00'
 eventStatus: EventPostponed
-pinned: true
+pinned: false
 location:
   name: South Side Boat Launch
   addressLocality: Lake Isabella

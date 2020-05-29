@@ -4,7 +4,7 @@ title: KRBC Beer Pairing Dinner
 date: 2020-03-04
 startDate: '2020-03-12 18:00'
 endDate: '2020-03-12 20:00'
-pinned: true
+pinned: false
 location:
   name: Kern River Brewing Company - Backyard
   streetAddress: 13415 Sierra Way

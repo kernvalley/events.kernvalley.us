@@ -4,7 +4,7 @@ title: 22nd Annual Jeanette Rogers-Erickson Heart Walk 2020
 date: 2020-02-26
 startDate: '2020-02-29 09:00'
 endDate: '2020-02-29 10:45'
-pinned: true
+pinned: false
 location:
   name: Kern Valley High
   streetAddress: 3340 Erskine Creek Road

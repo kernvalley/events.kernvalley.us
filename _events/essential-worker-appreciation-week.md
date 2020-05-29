@@ -5,7 +5,7 @@ date: 2020-04-06
 updated: 2020-04-08 09:52
 startDate: '2020-04-13 00:00'
 endDate: '2020-04-17 23:59'
-pinned: true
+pinned: false
 location:
   name: Kern River Valley
   addressLocality: Lake Isabella

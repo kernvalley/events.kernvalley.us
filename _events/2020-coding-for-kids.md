@@ -2,7 +2,7 @@
 name: Coding For Kids
 title: Coding For Kids
 date: 2020-03-10
-pinned: true
+pinned: false
 eventStatus: EventPostponed
 image: 'https://i.imgur.com/7nNmRJW.png'
 imgur: 'https://i.imgur.com/7nNmRJW.png'

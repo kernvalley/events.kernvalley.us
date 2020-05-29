@@ -7,7 +7,7 @@ startDate: '2020-05-09 07:00'
 endDate: '2020-05-11 20:00'
 eventStatus: EventCancelled
 draft: true
-pinned: true
+pinned: false
 location:
   name: Isabella Lake
   addressLocality: Lake Isabella
