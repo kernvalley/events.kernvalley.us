@@ -4,6 +4,7 @@
   "description": "Events in the Kern Valley",
   "private": true,
   "config": {
+    "icons": "_dir/icons.csv",
     "serve": {
       "domain": "localhost",
       "path": "./_site",
