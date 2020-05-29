@@ -189,6 +189,7 @@ main-itemtype: Event
 			</leaflet-map>
 		{% endif %}
 	</div>
+	{% include weather.html appId = site.data.apikeys.openweathermap postalCode = page.location.postalCode %}
 </aside>
 {% include footer.html %}
 {% include share-button.html text=page.description %}

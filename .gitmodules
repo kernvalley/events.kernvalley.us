@@ -7,9 +7,6 @@
 [submodule "img/adwaita-icons"]
 	path = img/adwaita-icons
 	url = https://github.com/shgysk8zer0/adwaita-icons.git
-[submodule "fonts"]
-	path = fonts
-	url = https://github.com/shgysk8zer0/fonts.git
 [submodule "img/octicons"]
 	path = img/octicons
 	url = https://github.com/shgysk8zer0/octicons-svg.git
