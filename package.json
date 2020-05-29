@@ -10,7 +10,7 @@
       "port": 8888
     },
     "dir": {
-      "css": "css/styles/",
+      "css": "css/",
       "js": "js/",
       "img": "img/"
     }
