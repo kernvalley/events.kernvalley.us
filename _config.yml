@@ -87,6 +87,10 @@ plugins:
 - jekyll-watch
 - jekyll-paginate
 include:
+# Folders with dotfiles are ignored by default.
+include:
+# Folders with dotfiles are ignored by default.
+- .well-known
 - _headers
 - _redirects
 exclude:
