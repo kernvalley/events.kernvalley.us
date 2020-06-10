@@ -1,120 +1,122 @@
 <head>
-	<meta charset="{{ page.charset | default: site.charset }}" />
-	<meta name="viewport" content="{{ page.viewport | default: site.viewport }}" />
-	<meta http-equiv="x-ua-compatible" content="ie=edge" />
-	<title itemprop="headline">{{ page.title }} | {{ site.title }}</title>
 	<base href="/" />
-	{% if page.fb-og-type %}
-		<meta property="og:type" content="{{ page.fb-og-type }}" />
-	{% elsif page.layout == 'post' %}
-		<meta property="og:type" content="article" />
-	{% else %}
-		<meta property="og:type" content="{{ page.og-type | default: site.og-type }}" />
-	{% endif %}
-	<meta property="og:url" content="{{ page.url }}" />
-	<meta property="og:title" content="{{ page.title }} | {{ site.title }}" />
-	<meta property="og:site_name" content="{{ site.title }}" />
-	<meta property="og:locale" content="{{ site.lang | default: 'en' }}" />
+	<meta charset="{{ site.charset }}" />
+	<meta name="viewport" content="{{ page.viewport | default: site.viewport }}" />
+	<meta name="robots" content="{{ page.robots | default: site.robots }}" />
+	<meta name="description" content="{{ page.description }}" />
+	<meta itemprop="description" content="{{ page.description }}" />
+	<meta name="keywords" content="{{ page.tags | join: ', ' }}" />
+	<meta itemprop="keywords" content="{{ page.tags | join: ', ' }}" />
+	<meta name="referrer" content="{{ page.referrer | default: site.referrer }}"/>
+	<meta name="mobile-web-app-capable" content="yes" />
+	<meta itemprop="thumbnailUrl" content="{{ page.thumbnail.url | default: site.thumbnail.url }}" />
+	<!-- Social data -->
+	<!-- Facebook | OpenGraph -->
+	<meta property="og:type" content="{{ page.og-type | default: layout.og-type }}" />
+	<meta property="og:title" content="{{ page.title | default: 'Home' }} | {{ site.title }}" />
+	<meta property="og:url" content="{{ page.url | absolute_url }}" />
+	<meta property="og:description" content="{{ page.description }}" />
+	<meta property="og:keywords" content="{{ page.tags | join: ', ' }}" />
+	<meta property="og:image" content="{{ page.thumbnail.url | default: site.thumbnail.url }}" />
 	{% if site.facebook-id %}
 		<meta property="og:app_id" content="{{ site.facebook-id }}" />
 	{% endif %}
-	<meta name="twitter:card" content="summary">
-	{% if site.twitter %}
-		<meta name="twitter:site" content="@{{ site.data.publisher.sameAs.twitter | replace: '@', '' }}" />
+	{% if site.facebook-site-name %}
+		<meta name="og:site_name" content="{{ site.facebook-site-name }}" />
 	{% endif %}
-	{% if page.author %}
-		<meta name="author" content="{{ page.author | capitalize }}"/>
-		{% assign author = page.author | downcase | replace: ' ', '-' %}
-		{% if site.data.authors contains author %}
-			{% if site.data.authors[author].sameAs.twitter %}
-				<meta name="twitter:creator" content="@{{ site.data.authors[author].sameAs.twitter | replace: '@', '' }}" />
-			{% endif %}
-			{% if site.data.authors[author].sameAs.google_plus %}
-				<link rel="author" href="https://plus.google.com/{{ site.data.authors[author].sameAs.google_plus }}" />
-			{% endif %}
-		{% endif %}
+	<!-- /Facebook | OpenGraph -->
+	<!-- Twitter -->
+	<meta name="twitter:card" content="{{ page.twitter_card | default: 'summary' }}" />
+	{% if page.twitter_creator %}
+		<meta name="twitter:creator" content="{{ page.twitter_creator}}" />
 	{% endif %}
-	{% if site.publisher %}
-		<link rel="publisher" href="{{ site.publisher }}" />
-	{% endif %}
-	<meta itemprop="url" content="{{ page.url  }}" />
-	<meta name="twitter:url" content="{{ page.url  }}" />
-	<meta name="twitter:title" content="{{ page.title }} | {{ site.title }}" />
-	<meta name="referrer" content="{{ site.referrer | default: 'no-referrer-when-downgrade' }}"/>
-	<meta name="robots" content="{{ page.robots | default: site.robots }}" />
-	{% if site.mobile-web-app-capable %}<meta name="mobile-web-app-capable" content="yes" />{% endif %}
-	<meta name="description" content="{{ page.description | default: site.description }}" />
-	<meta itemprop="description" content="{{ page.description | default: site.description }}" />
-	<meta property="og:description" content="{{ page.description | default: site.description }}" />
-	<meta name="twitter:description" content="{{ page.description | default: site.description }}" />
-	{% if page.tags %}
-		<meta name="keywords" content="{{ page.tags | join: ', ' }}" />
-		<meta itemprop="keywords" content="{{ page.tags | join: ', ' }}" />
-	{% else %}
-		<meta name="keywords" content="{{ site.keywords | join: ', ' }}" />
-		<meta itemprop="keywords" content="{{ site.keywords | join: ', ' }}" />
-	{% endif %}
-	{% if page.imgur %}
-		{% capture hash %}{{ page.imgur | replace: 'https://i.imgur.com/', '' | replace: 'https://imgur.com/', '' | replace: '.png', '' | replace: '.jpg', '' }}{% endcapture %}
-		<meta itemprop="thumbnailUrl" content="{{ hash | prepend: 'https://i.imgur.com/' | append: 'l.png' }}" />
-		<meta property="og:image" content="{{ hash | prepend: 'https://i.imgur.com/' | append: 'l.png' }}" />
-		<meta name="twitter:image" content="{{ hash | prepend: 'https://i.imgur.com/' | append: 'l.png' }}" />
-	{% elsif page.image %}
-		<meta itemprop="thumbnailUrl" content="{{ page.image  }}" />
-		<meta property="og:image" content="{{ page.image  }}" />
-		<meta name="twitter:image" content="{{ page.image  }}" />
-	{% elsif site.screenshots %}
-		{% for screenshot in site.screenshots %}
-			<meta itemprop="thumbnailUrl" content="{{ screenshot.src }}" />
-			<meta property="og:image" content="{{ screenshot.src  }}" />
-			<meta name="twitter:image" content="{{ screenshot.src  }}" />
-		{% endfor %}
-	{% endif %}
-	{% if site.theme-color %}
-		<meta name="theme-color" content="{{ site.theme-color }}" />
-		<meta name="msapplication-TileColor" content="{{ site.theme-color }}" />
-	{% endif %}
+	<meta name="twitter:description" content="{{ page.description }}" />
+	<meta name="twitter:image" content="{{ page.thumbnail.url | default: site.thumbnail.url }}" />
+	<!-- /Twitter -->
+	<!-- /Social data -->
+	<meta name="msapplication-TileColor" content="{{ site.data.app.theme.color | default: '#528ff9' }}" />
+	<meta name="msapplication-config" content="{{ site.tiles-config }}" />
+	<meta name="theme-color" content="{{ site.data.app.theme.color | default: '#528ff9' }}" />
 	{% if site.webmaster-verifications.google %}
 		<meta name="google-site-verification" content="{{ site.webmaster-verifications.google }}" />
 	{% endif %}
 	{% if site.webmaster-verifications.bing %}
 		<meta name="msvalidate.01" content="{{ site.webmaster-verifications.bing }}" />
 	{% endif %}
-	<!--[if IE]>
-		<script src="{{ '/js/svg4everybody/dist/svg4everybody.min.js'  }}"></script>
-		<script>svg4everybody();</script>
-	<![endif]-->
-	<script type="module" src="/js/index.js" async=""></script>
 	{% if site.google-analytics %}
 		{% include google-analytics.html %}
 	{% endif %}
 	{% if page.ads and site.ad-sense %}
 		{% include adsense.html %}
 	{% endif %}
-	<link rel="stylesheet" href="/css/styles/index.css" media="all" />
-	{% if  site.canonical %}<link rel="canonical" href="{{ site.canonical | append: page.url }}" />{% endif %}
-	{% if site.data.icons.icons %}{% for icon in site.data.icons.icons %}
-		<link rel="icon" href="{{ icon.href }}" type="{{ icon.type }}" sizes="{{ icon.sizes }}" />
+	<title itemprop="headline">{{ page.title | default: 'Home' }} | {{ site.title }}</title>
+	{% if site.data.scripts %}{% for script in site.data.scripts[jekyll.environment] %}
+		{% include script.html src=script.src type=script.type async=script.async defer=script.defer crossorigin=script.crossorigin integrity=script.integrity nomodule=script.nomodule %}
 	{% endfor %}{% endif %}
-	{% if site.data.icons.touch-icons %}{% for icon in site.data.icons.touch-icons %}
-		<link rel="apple-touch-icon" href="{{ icon.href }}" sizes="{{ icon.sizes }}" />
+	<!-- <script type="module" src="/js/index.js" async=""></script> -->
+	{% if layout.scripts %}{% for script in layout.scripts %}
+		{% include script.html src=script.src type=script.type async=script.async defer=script.defer crossorigin=script.crossorigin integrity=script.integrity nomodule=script.nomodule %}
 	{% endfor %}{% endif %}
-	{% if site.data.icons.mask-icon %}
-		<link rel="mask-icon" href="{{ site.data.icons.mask-icon.href }}" color="{{ site.data.icons.mask-icon.color }}"/>
+	{% if page.scripts %}{% for script in page.scripts %}
+		{% include script.html src=script.src type=script.type async=script.async defer=script.defer crossorigin=script.crossorigin integrity=script.integrity nomodule=script.nomodule %}
+	{% endfor %}{% endif %}
+	{% if site.manifest %}
+		<link rel="manifest" href="{{ site.manifest }}" />
 	{% endif %}
-	{% if site.tiles-config %}
-		<meta name="msapplication-config" content="{{ site.tiles-config }}" />
-	{% endif %}
-	{% if site.data.icons.windows-tile %}
-		<meta name="msapplication-TileImage" content="{{ site.data.icons.windows-tile }}" />
-	{% endif %}
-	{% if page.preload %}{% for preload in page.preload %}
-		<link rel="preload" href="{{ preload.href }}" as="{{ preload.as }}" type="{{ preload.type }}" name="{{ preload.name }}" />
+	<link rel="license" href="/LICENSE" />
+	{% for icon in site.data.app.icons %}
+		<link rel="{{ icon.rel | default: 'icon' }}" href="{{ icon.src }}" type="{{ icon.type }}" sizes="{{ icon.sizes }}">
 	{% endfor %}
-	{% elsif site.preload %}{% for preload in site.preload %}
-		<link rel="preload" href="{{ preload.href  }}" as="{{ preload.as }}" type="{{ preload.type }}" name="{{ preload.name }}" />
+	<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="{{ site.data.app.theme.color | default: '#528ff9' }}" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	{% if site.data.preload %}{% for link in site.data.preload %}
+		<link rel="preload" href="{{ link.href }}" as="{{ link.as | default: 'fetch' }}" type="{{ link.type }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" integrity="{{ link.integrity }}" importance="{{ link.importance | default: 'auto' }}" />
 	{% endfor %}{% endif %}
-	{% if site.feed %}<link rel="alternate" href="{{ site.feed.url }}" type="{{ site.feed.type | default: 'application/rss+xml' }}" title="{{ page.feed.title | default: 'Feed' }}" />{% endif %}
+	{% if layout.preload %}{% for link in layout.preload %}
+		<link rel="preload" href="{{ link.href }}" as="{{ link.as | default: 'fetch' }}" type="{{ link.type }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}"  importance="{{ link.importance | default: 'auto' }}" />
+	{% endfor %}{% endif %}
+	{% if page.preload %}{% for link in page.preload %}
+		<link rel="preload" href="{{ link.href }}" as="{{ link.as | default: 'fetch' }}" type="{{ link.type }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" integrity="{{ link.integrity }}" importance="{{ link.importance | default: 'auto' }}" />
+	{% endfor %}{% endif %}
+	{% if site.data.prefetch %}{% for link in site.data.prefetch %}
+		<link rel="prefetch" href="{{ link.href }}" as="{{ link.as | default: 'fetch' }}" type="{{ link.type }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" integrity="{{ link.integrity }}" importance="{{ link.importance | default: 'auto' }}" />
+	{% endfor %}{% endif %}
+	{% if layout.prefetch %}{% for link in layout.prefetch %}
+		<link rel="prefetch" href="{{ link.href }}" as="{{ link.as | default: 'fetch' }}" type="{{ link.type }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}"  importance="{{ link.importance | default: 'auto' }}" />
+	{% endfor %}{% endif %}
+	{% if page.prefetch %}{% for link in page.prefetch %}
+		<link rel="prefetch" href="{{ link.href }}" as="{{ link.as | default: 'fetch' }}" type="{{ link.type }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" integrity="{{ link.integrity }}" importance="{{ link.importance | default: 'auto' }}" />
+	{% endfor %}{% endif %}
+	{% if site.data.dns-prefetch %}{% for link in site.data.dns-prefetch %}
+		<link rel="dns-prefetch" href="{{ link.href }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" />
+	{% endfor %}{% endif %}
+	{% if layout.dns-prefetch %}{% for link in layout.dns-prefetch %}
+		<link rel="dns-prefetch" href="{{ link.href }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" />
+	{% endfor %}{% endif %}
+	{% if page.dns-prefetch %}{% for link in page.dns-prefetch %}
+		<link rel="dns-prefetch" href="{{ link.href }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" />
+	{% endfor %}{% endif %}
+	{% if site.data.preconnect %}{% for link in site.data.preconnect %}
+		<link rel="preconnect" href="{{ link.href }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" />
+	{% endfor %}{% endif %}
+	{% if layout.preconnect %}{% for link in layout.dns-prefetch %}
+		<link rel="preconnect" href="{{ link.href }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" />
+	{% endfor %}{% endif %}
+	{% if page.preconnect %}{% for link in page.preconnect %}
+		<link rel="preconnect" href="{{ link.href }}" crossorigin="{{ link.crossorigin | default: 'anonymous' }}" referrerpolicy="{{ link.referrerPolicy | default: 'origin-when-crossorigin' }}" />
+	{% endfor %}{% endif %}
+	{% if page.prerender %}{% for link in page.prerender %}
+			<link rel="prerender" href="{{ link.href }}" />
+	{% endfor %}{% endif %}
+	{% if site.data.stylesheets %}{% for stylesheet in site.data.stylesheets[jekyll.environment] %}
+		{% include stylesheet.html href=stylesheet.href crossorigin=stylesheet.crossorigin integrity=crossorigin.integrity %}
+	{% endfor %}{% endif %}
+	{% if layout.stylesheets %}{% for stylesheet in layout.stylesheets %}
+		{% include stylesheet.html href=stylesheet.href crossorigin=stylesheet.crossorigin integrity=crossorigin.integrity %}
+	{% endfor %}{% endif %}
+	{% if page.stylesheets %}{% for stylesheet in page.stylesheets %}
+		{% include stylesheet.html href=stylesheet.href crossorigin=stylesheet.crossorigin integrity=crossorigin.integrity %}
+	{% endfor %}{% endif %}
+	{% if site.feed %}<link rel="alternate" href="{{ site.feed.url }}" type="{{ site.feed.type | default: 'application/rss+xml' }}" title="{{ site.feed.title | default: 'Feed' }}" />{% endif %}
 	{% if page.feed %}<link rel="alternate" href="{{ page.feed.url }}" type="{{ page.feed.type | default: 'application/rss+xml' }}" title="{{ page.feed.title | default: 'Page Feed' }}" />{% endif %}
-	{% if site.manifest %}<link rel="manifest" href="{{ site.manifest }}" />{% endif %}
 </head>

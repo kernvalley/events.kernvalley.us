@@ -2,17 +2,18 @@
 layout: null
 ---
 {
-	"version": "{{ site.version }}",
-	"name": "{{ site.title }}",
-	"short_name": "{{ site.short-name | default: site.title}}",
-	"description": "{{ site.description }}",
+	"version": "{{ site.data.app.vertion | default: site.version }}",
+	"name": "{{ site.data.app.name | default: site.title }}",
+	"short_name": "{{ site.data.app.short_name | default: site.title}}",
+	"description": "{{ site.data.app.description | default: site.description }}",
 	"start_url": "{{ page.url  | replace: 'manifest.json', '' }}",
 	"lang": "{{ site.lang }}",
-	"display": "{{ site.display | default: 'standalone' }}",
-	"theme_color": "{{ site.theme-color }}",
-	"background_color": "{{ site.background-color | default: '#FEFEFE' }}",
-	"icons": {{ site.appicons | jsonify }},
-	"screenshots": {{ site.screenshots | jsonify }},
+	"display": "{{ site.data.app.display | default: 'standalone' }}",
+	"theme_color": "{{ site.data.app.color }}",
+	"background_color": "{{ site.data.app.background | default: '#FEFEFE' }}",
+	"icons": {{ site.data.app.icons | jsonify }},
+	"screenshots": {{ site.data.app.screenshots | jsonify }},
+	"features": {{ site.data.app.features | jsonify }},
   "categories": [
     "lifestyle",
     "news",

@@ -2,6 +2,6 @@
 	rel="stylesheet"
 	href="{{ include.href }}"
 	media="{{ include.media | default: 'all' }}"
-	crossorigin="{{ include.crossorigin | default: 'anonymous' }}"
-	referrerpolicy="{{ include.referrerpolicy | default: 'origin-when-cross-origin' }}"
+	{% if include.crossorigin %}crossorigin="{{ include.crossorigin }}"{% endif %}
+	{% if include.referrerpolicy %}referrerpolicy="{{ include.referrerpolicy | default: 'origin-when-cross-origin' }}"{% endif %}
 	{% if stylesheet.integrity %}integrity="{{ include.integrity }}"{% endif %} />

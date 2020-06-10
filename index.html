@@ -16,9 +16,21 @@ tags:
 - weldon
 ---
 {% assign now= 'now' | date_to_xmlschema %}
-<section id="events-calendar" class="grid">
-	{% assign events=site.events | where_exp: 'event', 'event.endDate >= now' | sort: 'startDate' %}
-	{% for event in events %}
-		<div class="card shadow">{% include event.html event=event %}</div>
-	{% endfor %}
-</section>
+{% assign events=site.events | where_exp: 'event', 'event.endDate >= now' | sort: 'startDate' %}
+{% if events.size > %}
+	<section id="events-calendar" class="grid">
+		{% for event in events %}
+			<div class="card shadow">{% include event.html event=event %}</div>
+		{% endfor %}
+	</section>
+{% else %}
+	<section id="no-events" class="center">
+		<div class="status-box warn inline-block">
+			<span>No Events to display.</span>
+			<p>We're sorry, but there are currently no known events taking place in the
+				Kern River Valley. If you are organizing an event that you would like
+				to list on this site, please enter the event information <a href="https://cloud.kernvalley.us/apps/forms/0UQlZK4CHU0QT05f" title="KRV Event Submission form" rel="noopener external">here {% include icon.html icon="link-external" %}</a>.
+			</p>
+		</div>
+	</section>
+{% endif %}
