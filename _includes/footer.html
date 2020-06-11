@@ -15,8 +15,9 @@
 	<p>
 		<span>&copy;</span>
 		<time itemprop="copyrightYear">{{ 'now' | date: "%Y" }}</time>
-		<a href="{{ site.data.publisher.url }}" class="color-inherit">
+		<a href="{{ site.data.publisher.url }}" class="color-inherit underline">
 			<span itemprop="copyrightHolder">{{ site.data.publisher.name }}</span>
+			{% include icon.html icon="link-external" %}
 		</a>
 	</p>
 	<div>

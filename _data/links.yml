@@ -2,10 +2,13 @@ footer:
   - text: Contact
     href: /contact/
     icon: address-book
+  - text: Privacy Policy
+    href: /privacy/
+    icon: eye
+  - text: Submit Event
+    href: "https://cloud.kernvalley.us/apps/forms/0UQlZK4CHU0QT05f"
+    icon: events
   - text: Rafting
     href: 'https://rafting.kernvalley.us'
     icon: rafting
     target: _blank
-  - text: Submit Event
-    href: "https://cloud.kernvalley.us/apps/forms/0UQlZK4CHU0QT05f"
-    icon: events

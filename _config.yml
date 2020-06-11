@@ -70,7 +70,7 @@ defaults:
     comments: true
     ads: false
     index: true
-    referrer: annonymous
+    referrer: no-origin
 - scope:
     path: _drafts
   values:

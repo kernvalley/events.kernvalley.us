@@ -17,7 +17,7 @@ tags:
 ---
 {% assign now= 'now' | date_to_xmlschema %}
 {% assign events=site.events | where_exp: 'event', 'event.endDate >= now' | sort: 'startDate' %}
-{% if events.size > %}
+{% if events.size != 0 %}
 	<section id="events-calendar" class="grid">
 		{% for event in events %}
 			<div class="card shadow">{% include event.html event=event %}</div>
