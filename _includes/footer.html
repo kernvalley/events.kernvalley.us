@@ -21,6 +21,9 @@
 		</a>
 	</p>
 	<div>
-		<button type="button" is="pwa-install" class="btn btn-primary cursor-pointer" tabindex="0" src="./service-worker.js" reloadonupdate="" hidden="">Install App</pwa-install>
+		<button type="button" is="pwa-install" class="btn btn-primary cursor-pointer" tabindex="0" src="./service-worker.js" reloadonupdate="" hidden="">
+			{% include icon.html icon="system-software-install" %}
+			<span>Install App</span>
+		</pwa-install>
 	</div>
 </footer>
