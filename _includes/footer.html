@@ -15,11 +15,15 @@
 	<p>
 		<span>&copy;</span>
 		<time itemprop="copyrightYear">{{ 'now' | date: "%Y" }}</time>
-		<a href="{{ site.data.publisher.url }}" class="color-inherit">
+		<a href="{{ site.data.publisher.url }}" class="color-inherit underline">
 			<span itemprop="copyrightHolder">{{ site.data.publisher.name }}</span>
+			{% include icon.html icon="link-external" %}
 		</a>
 	</p>
 	<div>
-		<button type="button" is="pwa-install" class="btn btn-primary cursor-pointer" tabindex="0" src="./service-worker.js" reloadonupdate="" hidden="">Install App</pwa-install>
+		<button type="button" is="pwa-install" class="btn btn-primary cursor-pointer" tabindex="0" src="./service-worker.js" reloadonupdate="" hidden="">
+			{% include icon.html icon="system-software-install" %}
+			<span>Install App</span>
+		</pwa-install>
 	</div>
 </footer>

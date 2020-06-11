@@ -3,3 +3,8 @@
 	padding: 1.5rem;
 	margin-top: 1.2rem;
 }
+
+#footer .footer-links {
+	line-height: 1.8;
+	list-style: none;
+}

@@ -2,6 +2,7 @@
 	<h1 class="center filter-shadow-dark clearfix">
 		{% if page.url != '/' %}<a href="/" title="Home" class="float-left">{% include icon.html icon='home' %}</a>{% endif %}
 		{% include icon.html icon=site.logo %}
-		<span>{{ site.title }}</span>
+		<span class="site-name">{{ site.title }}</span>
+		<span class="site-short-name">{{ site.data.app.shortName | default: site.title }}</span>
 	</h1>
 </header>
