@@ -4,7 +4,8 @@
     "namespace": "android_app",
     "package_name": "com.kern_valley_events.twa",
     "sha256_cert_fingerprints": [
-      "1B:20:94:D7:91:BB:44:B1:F5:5E:C1:3F:F5:D0:9F:9A:56:27:5C:84:2F:FD:88:10:FC:FB:13:1F:44:77:9E:AD"
+      "1B:20:94:D7:91:BB:44:B1:F5:5E:C1:3F:F5:D0:9F:9A:56:27:5C:84:2F:FD:88:10:FC:FB:13:1F:44:77:9E:AD",
+      "2C:1B:F2:70:29:40:7E:A5:EF:05:D0:4A:68:7A:CB:BE:96:E9:CF:B6:3E:BC:7E:AD:26:7C:7D:A9:6E:69:3C:D3"
     ]
   }
 }]
