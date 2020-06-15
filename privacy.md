@@ -29,7 +29,7 @@ place.
 
 ## Third-Party content
 KernValley Events uses the following third party resources:
-- Google Ads
+- Google Analytics
 - OpenWeatherMap
 - Leaflet Maps
 - Wikimedia (for map titles)
