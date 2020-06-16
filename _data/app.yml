@@ -1,12 +1,17 @@
 name: Kern Valley Events
 shortName: KRV Events
-version: 1.3.2
+version: 1.3.3
 display: standalone
 description: "The best events in the Kern River Valley and without the clutter"
 icons-file: /img/icons.svg
 theme:
   color: '#528ff9'
   background: '#242424'
+categories:
+- events
+- lifestyle
+- news
+- social
 features:
   - Listing of events throughout the Kern River Valley
   - All events are open to the public (ticket prices listed if applicable)
