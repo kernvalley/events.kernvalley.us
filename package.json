@@ -54,7 +54,7 @@
   "homepage": "https://shgysk8zer0.github.io",
   "dependencies": {},
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
+    "babel-eslint": "^10.1.0",
     "cssnano": "^4.1.10",
     "cssnano-preset-default": "^4.0.7",
     "eslint": "^5.16.0",
