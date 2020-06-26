@@ -2,7 +2,6 @@
 Events for the Kern River Valley
 - - -
 [![Node CI](https://github.com/kernvalley/events.kernvalley.us/workflows/Node%20CI/badge.svg)](https://github.com/kernvalley/events.kernvalley.us/actions?query=workflow%3A%22Node+CI%22)
-[![Lint Code Base](https://github.com/kernvalley/events.kernvalley.us/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/kernvalley/events.kernvalley.us/actions?query=workflow%3A%22Lint+Code+Base%22)
 [![GitHub license](https://img.shields.io/github/license/kernvalley/events.kernvalley.us.svg)](https://github.com/kernvalley/events.kernvalley.us/blob/master/LICENSE)
 ![GitHub last commit](https://img.shields.io/github/last-commit/kernvalley/events.kernvalley.us.svg)
 ![GitHub release](https://img.shields.io/github/release/kernvalley/events.kernvalley.us.svg)
