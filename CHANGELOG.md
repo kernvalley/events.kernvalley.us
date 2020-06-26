@@ -12,6 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Dependabot config
 - CHANGELOG
 
+### Changed
+- Update README with badges & website link
+
+### Removed
+- Traivs-CI config file (Just use GitHub Actions & Netlify)
+
 ## [1.0.0] 2020-06-16
 Initial Version Release
 <!-- markdownlint-restore -->
