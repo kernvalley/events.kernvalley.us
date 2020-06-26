@@ -11,7 +11,7 @@ ruby RUBY_VERSION
 # Happy Jekylling!
 
 # Added at 2018-05-30 14:52:25 -0700 by shgysk8zer0:
-gem "jekyll", "~> 3.8"
+gem "jekyll", "~> 4.1"
 
 # Added at 2018-05-30 14:54:22 -0700 by shgysk8zer0:
 gem "jekyll-paginate", "~> 1.1"
