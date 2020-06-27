@@ -6,7 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 <!-- markdownlint-disable -->
-## [1.0.1] 2020-06-25
+## [v1.0.2] - 2020-06-27
+
+### Fixed
+- Removed unused submodule in config
+
+## [1.0.1] - 2020-06-25
 
 ### Added
 - Dependabot config
@@ -18,6 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Traivs-CI config file (Just use GitHub Actions & Netlify)
 
-## [1.0.0] 2020-06-16
+## [1.0.0] - 2020-06-16
 Initial Version Release
 <!-- markdownlint-restore -->
