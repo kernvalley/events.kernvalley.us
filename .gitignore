@@ -1,3 +1,4 @@
+/.jekyll-cache/
 /patches/
 *.patch
 /node_modules/
