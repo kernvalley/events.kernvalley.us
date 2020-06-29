@@ -16,4 +16,4 @@ gem "jekyll", "~> 3.8"
 # Added at 2018-05-30 14:54:22 -0700 by shgysk8zer0:
 gem "jekyll-paginate", "~> 1.1"
 
-gem "ffi", "= 1.11.1"
+gem "ffi", "1.13.1"
