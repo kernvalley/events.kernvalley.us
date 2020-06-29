@@ -34,7 +34,10 @@
         }]
     },
     "globals": {
+        "URLSearchParams": false,
         "ga": false,
+        "skipWaiting": false,
+        "clients": false,
         "PasswordCredential": false
     }
 }
