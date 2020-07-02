@@ -9,6 +9,7 @@ import 'https://cdn.kernvalley.us/components/leaflet/marker.js';
 import 'https://cdn.kernvalley.us/components/copy-button.js';
 import 'https://cdn.kernvalley.us/components/pwa/install.js';
 import 'https://cdn.kernvalley.us/components/weather-current.js';
+import 'https://cdn.kernvalley.us/components/github/user.js';
 import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 
 document.documentElement.classList.toggle('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);

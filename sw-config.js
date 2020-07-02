@@ -21,6 +21,7 @@ const config = {
 		'https://cdn.kernvalley.us/components/leaflet/map.html',
 		'https://cdn.kernvalley.us/components/pwa/prompt.html',
 		'https://cdn.kernvalley.us/components/weather-current.html',
+		'https://cdn.kernvalley.us/components/github/user.js',
 
 		/* JS, `customElements`, etc. */
 
@@ -56,5 +57,7 @@ const config = {
 		/https:\/\/i\.imgur\.com\/*/,
 		/https:\/\/maps\.wikimedia\.org\/osm-intl\/*/,
 		/https:\/\/events\.kernvalley\.us\/events\/*/,
+		/https:\/\/api\.github\.com\/users/,
+		/https:\/\/*\.githubusercontent\.com\/u/,
 	],
 };

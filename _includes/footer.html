@@ -1,29 +1,65 @@
-{% assign footer-icon-class="icon current-color icon-twirl transition-speed-normal transition-overshoot transition-transform" %}
-<footer id="footer" class="color-alt no-text-decoration optimize-speed" role="contentinfo">
-	<div class="flex row">
-		<ul class="footer-links">
-			{% for link in site.data.links.footer %}
-				<li class="footer-link">
-					<a class="color-inherit" href="{{ link.href  }}" target="{{ link.target | default: '_self' }}"{% if link.external %} rel="external noopener"{% endif %}  referrerpolicy="{{ link.referrerpolicy | default: 'origin-when-cross-origin' }}">
-						{% if link.icon %}{% include icon.html icon=link.icon class=footer-icon-class %}{% endif %}
-						<span>{{ link.text }}</span>
-					</a>
-				</li>
-			{% endfor %}
-		</ul>
+<footer id="footer">
+	<div class="social-links cols-2">
+		{% if site.repository %}
+			<div class="cols inline-block">
+				<a class="block" href="https://github.com/{{ site.repository.username }}/" target="_blank" rel="external noopener">
+					{% include icon.html icon="mark-github" class="current-color icon social-icon" %}
+					<span>GitHub Profile</span>
+				</a>
+				<a class="block" href="https://github.com/{{ site.repository.username }}/{{ site.repository.project }}" target="_blank" rel="external noopener">
+					{% include icon.html icon="repo" class="current-color icon social-icon" %}
+					<span>GitHub Repo</span>
+				</a>
+				<a class="block" href="https://github.com/{{ site.repository.username }}/{{ site.repository.project }}/issues" target="_blank" rel="external noopener">
+					{% include icon.html icon="issue-opened" class="current-color icon social-icon" %}
+					<span>Report a Problem</span>
+				</a>
+			</div>
+		{% endif %}
+		<div class="cols inline-block">
+			<a class="block" href="https://kernvalley.us" target="_blank" rel="external noopener" itemprop="sameAs">
+				{% include icon.html icon="web-browser" class="current-color icon social-icon" %}
+				<span>KernValley.US</span>
+			</a>
+			<a class="block" href="/contact/">
+				{% include icon.html icon="address-book" class="current-color icon social-icon" %}
+				<span>Contact</span>
+			</a>
+			<a class="block" href="/privacy/">
+				{% include icon.html icon="eye" class="current-color icon social-icon" %}
+				<span>Privacy Policy</span>
+			</a>
+			<a class="block" href="https://twitter.com/kern_valley" target="_blank" rel="external noopener" itemprop="sameAs">
+				{% include icon.html icon="twitter" class="icon social-icon" %}
+				<span>On Twitter</span>
+			</a>
+			<a class="block" href="https://www.linkedin.com/in/chris-zuber-455346141/" target="_blank" rel="external noopener" itemprop="sameAs">
+				{% include icon.html icon="linkedin" class="icon social-icon" %}
+				<span>LinkedIn</span>
+			</a>
+		</div>
 	</div>
-	<p>
-		<span>&copy;</span>
-		<time itemprop="copyrightYear">{{ 'now' | date: "%Y" }}</time>
-		<a href="{{ site.data.publisher.url }}" class="color-inherit underline">
-			<span itemprop="copyrightHolder">{{ site.data.publisher.name }}</span>
-			{% include icon.html icon="link-external" %}
-		</a>
-	</p>
-	<div>
-		<button type="button" is="pwa-install" class="btn btn-primary cursor-pointer" tabindex="0" src="./service-worker.js" reloadonupdate="" hidden="">
-			{% include icon.html icon="system-software-install" %}
-			<span>Install App</span>
-		</pwa-install>
+	{% if site.service_worker %}
+		<div class="flex row center">
+			<button is="pwa-install" class="btn btn-primary btn-big btn-wide" src="{{ site.service_worker }}" scope="/" title="Install Web App" reloadonupdate="">
+				{% include icon.html icon="system-software-install" %}
+				<span>Install</span>
+			</button>
+		</div>
+	{% endif %}
+	<hr />
+	<div class="copyright">
+		<github-user user="{{ site.repository.username }}">
+			<h3 slot="header" class="center">Created By</h3>
+			<div slot="footer">
+				<span>&copy;</span>
+				<time itemprop="copyrightYear">{{ 'now' | date: '%Y' }}</time>
+				<span itemprop="copyrightHolder" itemtype="https://schema.org/Organization" itemscope="" hidden="">
+					<a href="https://kernvalley.us" target="_blank" rel="external noopener" itemprop="url">
+						<span itemprop="name">KernValley.US</span>
+					</a>
+				</span>
+			</div>
+		</github-user>
 	</div>
 </footer>
