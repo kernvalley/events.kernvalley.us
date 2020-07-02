@@ -56,5 +56,7 @@ const config = {
 		/https:\/\/i\.imgur\.com\/*/,
 		/https:\/\/maps\.wikimedia\.org\/osm-intl\/*/,
 		/https:\/\/events\.kernvalley\.us\/events\/*/,
+		/https:\/\/api\.github\.com\/users/,
+		/https:\/\/*\.githubusercontent\.com\/u/,
 	],
 };
