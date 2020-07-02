@@ -21,6 +21,7 @@ const config = {
 		'https://cdn.kernvalley.us/components/leaflet/map.html',
 		'https://cdn.kernvalley.us/components/pwa/prompt.html',
 		'https://cdn.kernvalley.us/components/weather-current.html',
+		'https://cdn.kernvalley.us/components/github/user.js',
 
 		/* JS, `customElements`, etc. */
 
