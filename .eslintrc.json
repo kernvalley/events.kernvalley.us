@@ -9,7 +9,10 @@
         "sourceType": "module",
         "ecmaVersion": 2018
     },
-    "plugins": ["async-await"],
+    "plugins": [
+      "async-await",
+      "frontmatter"
+    ],
     "rules": {
         "indent": [
             2,
@@ -33,11 +36,5 @@
             "method": {"before": true, "after": false}
         }]
     },
-    "globals": {
-        "URLSearchParams": false,
-        "ga": false,
-        "skipWaiting": false,
-        "clients": false,
-        "PasswordCredential": false
-    }
+    "globals": {}
 }
