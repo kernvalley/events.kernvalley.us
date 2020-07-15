@@ -6,11 +6,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 <!-- markdownlint-disable -->
+## [v1.3.5] - 2020-07-15
+
 ### Added
 - Git submodules watched by dependabot
 
 ### Changed
+- Update component handling for external stylesheets
 - GitHub Actions now checked weekly for updates
+- Match CHANGELOG version to project version
 
 ### Fixed
 - Correctly set repo info for footer

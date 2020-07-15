@@ -11,10 +11,10 @@ const config = {
 		'{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
 	].map(path => new URL(path, location.origin).href),
 	stale: [
-		/* Other HTML */
 		'/css/index.min.css',
 		'/js/index.min.js',
 		'/img/icons.svg',
+		/* Other HTML */
 		'https://cdn.polyfill.io/v3/polyfill.min.js',
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
@@ -26,6 +26,11 @@ const config = {
 
 		/* CSS */
 		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
+		'https://cdn.kernvalley.us/components/toast-message.css',
+		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
+		'https://cdn.kernvalley.us/components/leaflet/map.css',
+		'https://cdn.kernvalley.us/components/pwa/prompt.css',
+		'https://cdn.kernvalley.us/components/weather-current.css',
 
 		/* Images & Icons */
 		'/img/apple-touch-icon.png',
