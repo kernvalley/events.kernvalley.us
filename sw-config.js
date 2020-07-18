@@ -14,15 +14,14 @@ const config = {
 		'/css/index.min.css',
 		'/js/index.min.js',
 		'/img/icons.svg',
-		/* Other HTML */
+
+		/* JS, `customElements`, etc. */
 		'https://cdn.polyfill.io/v3/polyfill.min.js',
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
 		'https://cdn.kernvalley.us/components/leaflet/map.html',
 		'https://cdn.kernvalley.us/components/pwa/prompt.html',
 		'https://cdn.kernvalley.us/components/weather-current.html',
-
-		/* JS, `customElements`, etc. */
 
 		/* CSS */
 		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',

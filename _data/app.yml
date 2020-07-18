@@ -1,7 +1,10 @@
 name: Kern Valley Events
 shortName: KRV Events
-version: 1.3.5
+version: 1.3.6
+lang: en
+dir: ltr
 display: standalone
+orientation: any
 description: "The best events in the Kern River Valley and without the clutter"
 icons-file: /img/icons.svg
 theme:
@@ -12,6 +15,7 @@ categories:
 - lifestyle
 - news
 - social
+shortcuts: []
 features:
   - Listing of events throughout the Kern River Valley
   - All events are open to the public (ticket prices listed if applicable)
@@ -22,7 +26,8 @@ features:
 icons:
 - src: /img/favicon.svg
   type: image/svg+xml
-  sizes: any
+  sizes: 192x192
+  purpose: maskable any
 - src: /img/apple-touch-icon.png
   rel: apple-touch-icon
   type: image/png
@@ -30,9 +35,11 @@ icons:
 - src: /img/icon-512.png
   type: image/png
   sizes: 512x512
+  purpose: maskable any
 - src: /img/icon-192.png
   type: image/png
   sizes: 192x192
+  purpose: maskable any
 - src: /img/icon-32.png
   type: image/png
   sizes: 32x32
@@ -42,6 +49,12 @@ icons:
 screenshots:
 - src: 'https://i.imgur.com/5H246qcl.png'
   sizes: 640x313
+  type: image/png
+- src: 'https://i.imgur.com/5H246qcm.png'
+  sizes: 320x157
+  type: image/png
+- src: 'https://i.imgur.com/5H246qct.png'
+  sizes: 160x778
   type: image/png
 related_applications:
 - platform: play
