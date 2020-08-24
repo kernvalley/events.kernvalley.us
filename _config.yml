@@ -1,3 +1,4 @@
+---
 author: Chris Zuber
 title: Kern Valley Events
 url: 'https://events.kernvalley.us'
@@ -9,8 +10,8 @@ dir: ltr
 charset: utf-8
 paginate: 8
 paginate_path: "/page-:num/"
-viewport: width=device-width
-robots: 'follow,index'
+viewport: width=device-width, viewport-fit=cover
+robots: 'follow, index'
 referrer: same-origin
 manifest: /manifest.json
 tiles-config: /browserconfig.xml
@@ -23,13 +24,13 @@ canonical: 'https://events.kernvalley.us'
 contextmenu: nav-menu
 body-class: 'background-primary grid border-box cursor-default font-main'
 feature-detect:
-- details
-- dialog
+  - details
+  - dialog
 keywords:
-- kern valley
-- kern river valley
-- events
-- calendar
+  - kern valley
+  - kern river valley
+  - events
+  - calendar
 repository:
   username: kernvalley
   project: events.kernvalley.us
@@ -52,85 +53,89 @@ webmaster-verifications:
   google: Ki2pY_ejBGKRgpRxNYH5GZgOBLHqfD2krm7uF30ItKY
   bing: 14343D3F998AB3FEE56B299A7F3E5CDB
 defaults:
-- scope:
-    path: _posts
-  values:
-    layout: post
-    author: Chris Zuber
-    permalink: /:categories/:year/:month/:day/:title/
-    comments: true
-    ads: false
-    index: true
-- scope:
-    path: _events
-  values:
-    layout: event-page
-    eventStatus: EventScheduled
-    eventAttendanceMode: OfflineEventAttendanceMode
-    comments: true
-    ads: false
-    index: true
-    referrer: no-referrer
-- scope:
-    path: _drafts
-  values:
-    layout: post
-    author: Chris Zuber
-    permalink: /posts/:categories/:year/:month/:day/:title/
-    comments: false
-    ads: false
+  - scope:
+      path: _posts
+    values:
+      layout: post
+      author: Chris Zuber
+      permalink: /:categories/:year/:month/:day/:title/
+      comments: true
+      ads: false
+      index: true
+  - scope:
+      path: _events
+    values:
+      layout: event-page
+      eventStatus: EventScheduled
+      eventAttendanceMode: OfflineEventAttendanceMode
+      comments: true
+      ads: false
+      index: true
+      referrer: no-referrer
+  - scope:
+      path: _drafts
+    values:
+      layout: post
+      author: Chris Zuber
+      permalink: /posts/:categories/:year/:month/:day/:title/
+      comments: false
+      ads: false
 collections:
   events:
     output: true
     permalink: /:collection/:name/
 plugins:
-- jekyll-watch
-- jekyll-paginate
+  - jekyll-gist
+  - jekyll-youtube
+  - jekyll-admin
+  - jekyll-watch
+  - jekyll-paginate
 include:
 # Folders with dotfiles are ignored by default.
 include:
 # Folders with dotfiles are ignored by default.
-- .well-known
-- _headers
-- _redirects
+  - .well-known
+  - _headers
+  - _redirects
 exclude:
-- "*.rb"
-- "*.gemspec"
-- "*.php"
-- "*.sh"
-- "*.csv"
-- "*.sfd"
-- "*.ai"
-- "*.psd"
-- "*.sketch"
-- "*.yml"
-- "*.lock"
-- "*.log"
-- "/css/*.md"
-- "/js/*.md"
-- "/img/*.md"
-- "/fonts/*.md"
-- "/js/*.json"
-- "/package.json"
-- "/package-lock.json"
-- "/js/svg4everybody/dist/"
-- "/js/svg4everybody/test/"
-- "/css/animate.css/source/"
-- docs/
-- "/css/*.json"
-- "/img/*.json"
-- "/js/*.html"
-- Gemfile
-- node_modules/
-- palette.xml
-- postcss.config.js
-- postcss.config.json
-- README.md
-- LICENSE
-- "*.config.js"
-- "/img/adwaita-icons/docs"
-- "/img/adwaita-icons/LICENSE"
-- "css/core-css/docs"
-- "css/normalize/*.html"
-- "js/std-js/docs"
-- "js/std-js/test"
+  - ".gitkeep"
+  - "*.rb"
+  - "*.gemspec"
+  - "*.php"
+  - "*.sh"
+  - "*.csv"
+  - "*.sfd"
+  - "*.ai"
+  - "*.psd"
+  - "*.sketch"
+  - "*.yml"
+  - "*.lock"
+  - "*.log"
+  - "/css/*.md"
+  - "/js/*.md"
+  - "/img/*.md"
+  - "/fonts/*.md"
+  - "/js/*.json"
+  - "/package.json"
+  - "/package-lock.json"
+  - "/js/svg4everybody/dist/"
+  - "/js/svg4everybody/test/"
+  - "/css/animate.css/source/"
+  - docs/
+  - "/css/*.json"
+  - "/img/*.json"
+  - "/js/*.html"
+  - Gemfile
+  - node_modules/
+  - palette.xml
+  - postcss.config.js
+  - postcss.config.json
+  - README.md
+  - LICENSE
+  - "*.config.js"
+  - "/img/adwaita-icons/docs"
+  - "/img/adwaita-icons/LICENSE"
+  - "css/core-css/docs"
+  - "css/normalize/*.html"
+  - "js/std-js/docs"
+  - "js/std-js/test"
