@@ -67,7 +67,7 @@ After all AMSR riders, (approx. 1:30 pm) the Super D only riders will start thei
 
 The Super D will start at approximately 1:30pm. Riders will leave in 30 second intervals
 
-## 3 Awards, Podiums:
+## 3 Awards, Podiums
 Please listen up and make the podium. Short Track and Super D podiums will take
 place at The Main Venue ASAP after the last Super D rider ﬁnishes; approximately
 4pm. Results are ﬁnal after 15 minutes. Results will be posted on the podium trailer.
