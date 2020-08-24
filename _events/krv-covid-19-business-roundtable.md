@@ -45,8 +45,10 @@ for this event. Share this link when inviting others to join:
 
 <button type="button" is="copy-button" class="btn btn-primary btn-big" text="{{ page.location.url }}">{% include icon.html icon="clippy" %}<span>Copy link</span></button>
 
+<!-- markdownlint-disable -->
 The meeting will be recorded and shared by [{% include icon.html icon="link-external" %} Kernville Cowork](https://www.kernvillecowork.com/en)
 for those that are unable to attend.
+<!-- markdownlint-restore -->
 
 [{% include icon.html icon="facebook" %} Facebook Event](https://www.facebook.com/events/2944857462288301)
 

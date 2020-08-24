@@ -82,7 +82,7 @@ note once they are gone they are gone.
 
 ## Prize Opportunities
 
-### Tagged Trout:
+### Tagged Trout
 500 tagged trout with dollar amounts ranging from $20 to $5,000.
 
 <mark>Only the $5,000 tagged trout doubles to <b>$10,000 <a href="{{ page.url }}#footnotes" class="footnotes"><sup>*</sup></a></b> if you purchased the official
