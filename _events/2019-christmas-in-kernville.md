@@ -39,7 +39,7 @@ Circle Park transforms into Santa's Village. Starting Nov. 30 -Dec. 31.  Santa
 arrives in the park weekly starting
 
 Nov.30 - Dec. 21. Times are as follows: Wednesday's from 5PM-7PM, and Saturday's
-3PM-5pm. Parents, bring your cameras! 
+3PM-5pm. Parents, bring your cameras!
 
 Also on November 30 is the Lake Isabella Christmas Parade! Enjoy the parade and
 then come up to Kernville after the parade. At 2PM we start our Shop Hop. So look
