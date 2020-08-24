@@ -14,6 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Enable Super Linter
+
+### Fixed
+- Fix linting issues and update linter rules
+
 ## [v1.3.7] - 2020-08-17
 
 ### Changed

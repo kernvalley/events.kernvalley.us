@@ -50,7 +50,7 @@ Songs to print out or learn include:
 - [Deck the Halls](https://www.lyricsmode.com/lyrics/c/christmas_songs/deck_the_halls.html)
 
 Elise & Kathleen have secured the Methodist Church as our meeting location, in
-the Social Hall. 
+the Social Hall.
 
 **Weather note**:  Plan for rain, plan for snow, and let's bring some joy to our
 neighbors!

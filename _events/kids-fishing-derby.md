@@ -31,7 +31,7 @@ the Tillie Creek boat launch.
 **There will be three categories:**
 - Ages 5 and under
 - Ages 6 to 10
-- Ages 11 to 15 
+- Ages 11 to 15
 
 Pre-registration is June 22 from 3-6 p.m. at Tillie Creek. The Derby is Saturday,
 June 23, from 6 a.m. to noon. There will be lots of prizes and free lunch for

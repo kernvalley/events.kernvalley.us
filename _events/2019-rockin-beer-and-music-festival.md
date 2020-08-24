@@ -44,7 +44,7 @@ For $55.00
 
 This is a 21 and older event only, rain or shine all sales are final.
 
-We will have live bands, food vendors, craft vendors and over 30 Independent Craft Breweries!!!!! 
+We will have live bands, food vendors, craft vendors and over 30 Independent Craft Breweries!!!!!
 
 Located at 14001 Sierra Way
 

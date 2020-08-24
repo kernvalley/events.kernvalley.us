@@ -29,7 +29,7 @@ organizer:
   name: Kernville Chamber of Commerce
   url: 'https://gotokernville.com'
 ---
-## 63rd Annual Whiskey Flat Days 
+## 63rd Annual Whiskey Flat Days
 ### President's Day Weekend * February 14-17, 2020
 One of the most popular Festivals in all of Southern California.
 

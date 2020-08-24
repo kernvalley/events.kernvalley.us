@@ -25,7 +25,7 @@ FREE 1st Annual KRV Haunt (Haunted House/Maze) Competition!
 
 **WARNING!** Not suitable for all ages. Visitor discretion advised.
 These deliciously disturbing ground & mobile haunt entries will unleash your deepest terrors!
- 
+
 - No contact walk thru
 - Expect to be scared
 - Flashlight recommended.

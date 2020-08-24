@@ -82,20 +82,20 @@ note once they are gone they are gone.
 
 ## Prize Opportunities
 
-### Tagged Trout:
+### Tagged Trout
 500 tagged trout with dollar amounts ranging from $20 to $5,000.
 
 <mark>Only the $5,000 tagged trout doubles to <b>$10,000 <a href="{{ page.url }}#footnotes" class="footnotes"><sup>*</sup></a></b> if you purchased the official
 derby T-Shirt prior to catching the fish.</mark>
 
-#### Longest Trout:
+#### Longest Trout
 - Men
 - Women
 - Youth (age 15 & under)
 - 1st place for Men and Women Divisions pay $500 but doubles to $1000<a href="{{ page.url }}#footnotes" class="footnotes"><sup>*</sup></a> with t-shirt
 - 1st place for Youth Division pay $500 but it doubles to $1000<a href="{{ page.url }}#footnotes" class="footnotes"><sup>*</sup></a> with t-shirt
 
-#### Derby Games:
+#### Derby Games
 - Bobber Bowl Trout Prizes
 - Blind Bogey
 - Lake Trout Lotto

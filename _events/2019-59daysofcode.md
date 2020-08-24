@@ -43,6 +43,6 @@ People's Choice Award.**
 This is a huge day for the community of Kern County to support these entrepreneurs
 and celebrate the beginning of a new chapter for technology in Kern County!
 
-- **The Arena**: 12pm 
+- **The Arena**: 12pm
 - **Finalist Pitches**: 2:45pm
 - **Awards Presentation**: 4:30pm

@@ -41,12 +41,16 @@ new systems that will help them thrive even after the shutdown is entirely lifte
 Please share with other businesses in the Kern River Valley so they can join the
 discussion, regardless of membership. There is no fee or membership requirement
 for this event. Share this link when inviting others to join:
+<!-- markdownlint-disable -->
 <span>https://us02web.zoom.us<wbr />/meeting<wbr />/register<wbr />/tZwud-ipqD8sGtXYFDuiwyoLE8BI7B8D-LHE</span>
+<!-- markdownlint-restore -->
 
 <button type="button" is="copy-button" class="btn btn-primary btn-big" text="{{ page.location.url }}">{% include icon.html icon="clippy" %}<span>Copy link</span></button>
 
+<!-- markdownlint-disable -->
 The meeting will be recorded and shared by [{% include icon.html icon="link-external" %} Kernville Cowork](https://www.kernvillecowork.com/en)
 for those that are unable to attend.
+<!-- markdownlint-restore -->
 
 [{% include icon.html icon="facebook" %} Facebook Event](https://www.facebook.com/events/2944857462288301)
 
