@@ -10,6 +10,7 @@
 @import url("https://cdn.kernvalley.us/css/animate.css/animate.css");
 @import url("https://cdn.kernvalley.us/css/core-css/layout/index.css");
 @import url("https://cdn.kernvalley.us/css/core-css/scrollbar.css");
+@import url("https://cdn.kernvalley.us/css/core-css/accordion.css");
 @import url("./icons.css");
 @import url("./contact.css");
 @import url("./header.css");
@@ -23,6 +24,11 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	overflow-x: hidden;
+}
+
+#events-calendar details.event-details summary.btn {
+	display: block;
+	width: 100%;
 }
 
 .flex > .grow-0 {

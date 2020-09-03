@@ -72,6 +72,45 @@ defaults:
       ads: false
       index: true
       referrer: no-referrer
+      preload:
+        - href: "https://cdn.kernvalley.us/components/weather-current.html"
+          as: fetch
+          type: text/html
+          referrerpolicy: no-referrer
+        - href: "https://cdn.kernvalley.us/components/weather-current.css"
+          as: style
+          type: text/css
+          crossorigin: anonymous
+          referrerpolicy: no-referrer
+        - href: "https://cdn.kernvalley.us/components/leaflet/map.html"
+          as: fetch
+          type: text/html
+          referrerpolicy: no-referrer
+        - href: "https://cdn.kernvalley.us/components/leaflet/map.css"
+          as: style
+          type: text/css
+          crossorigin: anonymous
+          referrerpolicy: no-referrer
+        - href: "https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          as: style
+          type: text/css
+          crossorigin: anonymous
+          referrerpolicy: no-referrer
+          integrity: sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==
+        - href: "https://cdn.kernvalley.us/components/share-to-button/share-to-button.html"
+          as: fetch
+          type: text/html
+          crossorigin: anonymous
+          referrerpolicy: no-referrer
+        - href: "https://cdn.kernvalley.us/components/share-to-button/share-to-button.css"
+          as: style
+          type: text/css
+          crossorigin: anonymous
+          referrerpolicy: no-referrer
+      preconnect:
+        - href: 'https://maps.wikimedia.com'
+          crossorigin: anonymous
+          referrerPolicy: no-referrer
   - scope:
       path: _drafts
     values:
