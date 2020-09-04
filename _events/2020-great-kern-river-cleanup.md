@@ -30,6 +30,7 @@ organizer:
   name: Kern River Conservancy
   url: https://www.kernriverconservancy.org/
 ---
+
 The Great Kern River Cleanup is the premier volunteer event focused on removing
 trash and restoring the health of the Mighty Kern throughout Sequoia National Forest.
 This cleanup is an annual event coordinated by the [Sierra Nevada Conservancy](http://www.sierranevada.ca.gov/)
@@ -44,5 +45,12 @@ to highlight the importance of the Sierra Nevada Region to the entire state. Mor
 than 60% of California’s developed water supply originates in the Sierra Nevada
 and millions of visitors travel to the Sierra to hike, camp, and sightsee. Whether
 you think of Tahoe, Yosemite, Mammoth, or the Giant Sequoias — the Sierra connects us all.
+
+Register [here {% include icon.html icon="link-external" %}](https://www.kernriverconservancy.org/great-kern-river-cleanup).
+
+{% include imgur.html url="https://i.imgur.com/VcJko3u.jpg" %}
+
+> Due to Covid guidelines, we will set up a drive-thru kiosk for volunteers to register
+> and pick up supplies. Once registered, you will be sent to a designated location for cleanup
 
 Also see the [Facebook Event {% include icon.html icon="facebook" height="16" width="16" %}](https://www.facebook.com/events/954788688372892).
