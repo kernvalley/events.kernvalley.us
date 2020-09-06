@@ -18,8 +18,37 @@ document.documentElement.classList.toggle('no-dialog', document.createElement('d
 document.documentElement.classList.toggle('no-details', document.createElement('details') instanceof HTMLUnknownElement);
 document.documentElement.classList.replace('no-js', 'js');
 
-if (typeof GA === 'string' && GA !== '') {
-	importGa(GA);
+if (typeof GA === 'string' && GA.length !== 0) {
+	importGa(GA).then(async () => {
+		/* global ga */
+		ga('create', GA, 'auto');
+		ga('set', 'transport', 'beacon');
+		ga('send', 'pageview');
+
+		function outbound() {
+			ga('send', {
+				hitType: 'event',
+				eventCategory: 'outbound',
+				eventAction: 'click',
+				eventLabel: this.href,
+				transport: 'beacon',
+			});
+		}
+
+		function madeCall() {
+			ga('send', {
+				hitType: 'event',
+				eventCategory: 'call',
+				eventLabel: 'Called',
+				transport: 'beacon',
+			});
+		}
+
+		await ready();
+
+		$('a[rel~="external"]').click(outbound, { passive: true, capture: true });
+		$('a[href^="tel:"]').click(madeCall, { passive: true, capture: true });
+	});
 }
 
 Promise.all([
