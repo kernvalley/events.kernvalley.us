@@ -1,6 +1,6 @@
 - href: "https://api.github.com"
-  crossorigin: anonymous
+  crossOrigin: anonymous
   referrerPolicy: no-referrer
 - href: "https://cdn.kernvalley.us"
-  crossorigin: anonymous
+  crossOrigin: anonymous
   referrerPolicy: no-referrer

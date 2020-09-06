@@ -14,11 +14,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.3.8] - 2020-09-06
+
 ### Added
 - Enable Super Linter
+- Track external link clicks with GA
+
+### Changed
+- Make properties for preloading, etc. consistent
+- Update components/`_includes/`
+- Use `"no-referrer"` as default referrer policy
 
 ### Fixed
 - Fix linting issues and update linter rules
+- Disable bash script linting for issue with `.rvmrc`
 
 ## [v1.3.7] - 2020-08-17
 
