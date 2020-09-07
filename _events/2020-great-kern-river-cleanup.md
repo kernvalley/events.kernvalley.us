@@ -5,6 +5,7 @@ date: 2020-08-30
 startDate: '2020-09-12 10:00'
 endDate: '2020-09-12 14:00'
 pinned: true
+eventStatus: EventCancelled
 location:
   name: Kernville Chamber of Commerce
   streetAddress: 11447 Kernville Rd.
@@ -30,6 +31,11 @@ organizer:
   name: Kern River Conservancy
   url: https://www.kernriverconservancy.org/
 ---
+<blockquote class="status-box warn"><b>From Kern River Conservancy:</b>
+Due to the current extreme fire conditions  and closures of all SoCal forests, we
+will be suspending all volunteer operations till further notice including this
+Saturday’s Great Kern River Cleanup. We will monitor the situation daily and stay
+in communication with the Forest Service to bring you updates as they happen.</blockquote>
 
 The Great Kern River Cleanup is the premier volunteer event focused on removing
 trash and restoring the health of the Mighty Kern throughout Sequoia National Forest.
