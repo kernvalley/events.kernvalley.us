@@ -13,45 +13,29 @@ import { loadScript } from 'https://cdn.kernvalley.us/js/std-js/loader.js';
 import { importGa } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
 import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 import { GA } from './consts.js';
+import { outbound, madeCall } from './analytics.js';
 
 document.documentElement.classList.toggle('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
 document.documentElement.classList.toggle('no-details', document.createElement('details') instanceof HTMLUnknownElement);
 document.documentElement.classList.replace('no-js', 'js');
 
 if (typeof GA === 'string' && GA.length !== 0) {
-	importGa(GA).then(async () => {
-		/* global ga */
-		ga('create', GA, 'auto');
-		ga('set', 'transport', 'beacon');
-		ga('send', 'pageview');
+	requestIdleCallback(() => {
+		importGa(GA).then(async () => {
+			/* global ga */
+			ga('create', GA, 'auto');
+			ga('set', 'transport', 'beacon');
+			ga('send', 'pageview');
 
-		function outbound() {
-			ga('send', {
-				hitType: 'event',
-				eventCategory: 'outbound',
-				eventAction: 'click',
-				eventLabel: this.href,
-				transport: 'beacon',
-			});
-		}
+			await ready();
 
-		function madeCall() {
-			ga('send', {
-				hitType: 'event',
-				eventCategory: 'call',
-				eventLabel: 'Called',
-				transport: 'beacon',
-			});
-		}
-
-		await ready();
-
-		$('a[rel~="external"]').click(outbound, { passive: true, capture: true });
-		$('a[href^="tel:"]').click(madeCall, { passive: true, capture: true });
+			$('a[rel~="external"]').click(outbound, { passive: true, capture: true });
+			$('a[href^="tel:"]').click(madeCall, { passive: true, capture: true });
+		});
 	});
 }
 
-Promise.all([
+Promise.allSettled([
 	ready(),
 	loadScript('https://cdn.polyfill.io/v3/polyfill.min.js'),
 ]).then(async () => {
