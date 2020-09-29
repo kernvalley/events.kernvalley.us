@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Update Leaflet to [1.7.1](https://leafletjs.com/2020/09/04/leaflet-1.7.1.html)
+
 ## [v1.3.8] - 2020-09-06
 
 ### Added

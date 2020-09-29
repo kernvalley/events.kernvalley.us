@@ -24,7 +24,7 @@ const config = {
 		'https://cdn.kernvalley.us/components/weather-current.html',
 
 		/* CSS */
-		'https://unpkg.com/leaflet@1.6.0/dist/leaflet.css',
+		'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css',
 		'https://cdn.kernvalley.us/components/toast-message.css',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
 		'https://cdn.kernvalley.us/components/leaflet/map.css',
