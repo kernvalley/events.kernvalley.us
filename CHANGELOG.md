@@ -14,7 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Implemented basics of ads
+
 ### Changed
+- Use `_header` to set HTTP headers
+- Update setting CSP to not be so permissive on `connect-source` except in service worker
 - Update Leaflet to [1.7.1](https://leafletjs.com/2020/09/04/leaflet-1.7.1.html)
 
 ## [v1.3.8] - 2020-09-06

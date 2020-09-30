@@ -190,6 +190,15 @@ main-itemtype: Event
 		{% endif %}
 	</div>
 	{% include weather.html appId = site.data.apikeys.openweathermap postalCode = page.location.postalCode %}
+	{% for ad in site.data.ads %}
+		{% include ad.html
+			label=ad.label
+			url=ad.url
+			description=ad.description
+			image=ad.image
+			callToAction=ad.callToAction
+		%}
+	{% endfor %}
 </aside>
 {% include footer.html %}
 {% include share-button.html text=page.description %}
