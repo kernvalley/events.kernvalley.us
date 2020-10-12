@@ -1,8 +1,3 @@
-- href: "https://cdn.kernvalley.us/components/github/user.html"
-  as: fetch
-  type: text/html
-  referrerOolicy: no-referrer
-  crossOrigin: anonymous
 - href: "https://cdn.kernvalley.us/components/github/user.css"
   as: style
   type: text/css
