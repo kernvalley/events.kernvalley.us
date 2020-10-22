@@ -1,21 +1,20 @@
 ---
 name: The Great Kern River Cleanup
 title: The Great Kern River Cleanup
-date: 2020-08-30
-startDate: '2020-09-12 10:00'
-endDate: '2020-09-12 14:00'
+date: 2020-10-22
+startDate: '2020-11-07 10:00'
+endDate: '2020-11-07 14:00'
 pinned: true
-eventStatus: EventRescheduled
+eventStatus: EventScheduled
 location:
-  name: Kernville Chamber of Commerce
-  streetAddress: 11447 Kernville Rd.
-  addressLocality: Kernville
+  name: Upper Richbar Picnic Area
+  addressLocality: Lake Isabella
   addressRegion: CA
-  postalCode: 93238
-  url: 'https://goo.gl/maps/nTcU4m8STwrwZt9K6'
+  postalCode: 93240
+  url: https://goo.gl/maps/mDvdiSNeipe2o8NE9
   geo:
-    latitude: 35.755794
-    longitude: -118.418143
+    latitude: 35.476032
+    longitude: -118.722563
 image: 'https://i.imgur.com/qyif9eI.jpg'
 imgur: 'https://i.imgur.com/qyif9eI.jpg'
 description: The Great Kern River Cleanup is the premier volunteer event focused on removing trash and restoring the health of the Mighty Kern throughout Sequoia National Forest
@@ -30,17 +29,11 @@ organizer:
   '@type': 'Organization'
   name: Kern River Conservancy
   url: https://www.kernriverconservancy.org/
+offers:
+- name: Registration
+  price: 0.00
+  url: https://www.kernriverconservancy.org/great-kern-river-cleanup?utm_source=kern-valley-events&utm_medium=referral
 ---
-<blockquote class="status-box warn"><b>From Kern River Conservancy:</b>
-Due to the current extreme fire conditions  and closures of all SoCal forests, we
-will be suspending all volunteer operations till further notice including this
-Saturday’s Great Kern River Cleanup. We will monitor the situation daily and stay
-in communication with the Forest Service to bring you updates as they happen.</blockquote>
-
-<div class="status-box info">
-This event has been rescheduled. Here is the <a href="https://youthful-dijkstra-321f5b-a3e210.netlify.live/events/2020-great-kern-river-cleanup-2/">rescheduled event page.</a>
-</div>
-
 The Great Kern River Cleanup is the premier volunteer event focused on removing
 trash and restoring the health of the Mighty Kern throughout Sequoia National Forest.
 This cleanup is an annual event coordinated by the [Sierra Nevada Conservancy](http://www.sierranevada.ca.gov/)
@@ -56,11 +49,11 @@ than 60% of California’s developed water supply originates in the Sierra Nevad
 and millions of visitors travel to the Sierra to hike, camp, and sightsee. Whether
 you think of Tahoe, Yosemite, Mammoth, or the Giant Sequoias — the Sierra connects us all.
 
-Register [here {% include icon.html icon="link-external" %}](https://www.kernriverconservancy.org/great-kern-river-cleanup).
+<a href="https://www.kernriverconservancy.org/great-kern-river-cleanup?utm_source=kern-valley-events&utm_medium=referral" rel="external noopener">Register here {% include icon.html icon="link-external" %}.</a>
 
 {% include imgur.html url="https://i.imgur.com/VcJko3u.jpg" %}
 
 > Due to Covid guidelines, we will set up a drive-thru kiosk for volunteers to register
-> and pick up supplies. Once registered, you will be sent to a designated location for cleanup
+> and pick up supplies. Once registered, you will be sent to a designated location for cleanup.
 
-Also see the [Facebook Event {% include icon.html icon="facebook" height="16" width="16" %}](https://www.facebook.com/events/954788688372892).
+Also see the [Facebook Event {% include icon.html icon="facebook" height="16" width="16" %}](https://www.facebook.com/events/650714055628629/).
