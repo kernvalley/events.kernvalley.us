@@ -38,7 +38,7 @@ Saturday’s Great Kern River Cleanup. We will monitor the situation daily and s
 in communication with the Forest Service to bring you updates as they happen.</blockquote>
 
 <div class="status-box info">
-This event has been rescheduled. Here is the <a href="https://youthful-dijkstra-321f5b-a3e210.netlify.live/events/2020-great-kern-river-cleanup-2/">rescheduled event page.</a>
+This event has been rescheduled. Here is the <a href="/events/2020-great-kern-river-cleanup-2/">rescheduled event page.</a>
 </div>
 
 The Great Kern River Cleanup is the premier volunteer event focused on removing
