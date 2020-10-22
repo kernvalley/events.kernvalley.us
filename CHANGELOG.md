@@ -14,8 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### [v1.4.0] - 2020-10-22
+
 ### Added
 - Implemented basics of ads
+- Create rescheduled Great Kern River Cleanup event
+
+### Changed
+- Update to typical site designs instead of having custom backgrounds and layout
+- Update various components/`_include/`s from template repo
 
 ### Changed
 - Use `_header` to set HTTP headers

@@ -5,8 +5,8 @@
 	class="no-js scroll-smooth background-primary color-default font-main border-box"
 	{% if page.ads %}data-ad-sense-id="{{ site.ad-sense }}"{% endif %}
 	{% if page.pageLevelAds %}data-page-level-ads="{{ page.pageLevelAds }}"{% endif %}
-	data-layout="{{ layout.data-layout | default: site.data-layout }}"
-	data-theme="{{ layout.data-theme | default: site.data-theme }}"
+	data-layout="{{ page.data-layout | default: layout.data-layout | default: layout.name }}"
+	data-theme="{{ page.theme | default: layout.theme }}"
 	itemtype="{{ page.itemtype | default: 'http://schema.org/WebPage' }}"
 	itemscope=""
 >
