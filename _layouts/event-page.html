@@ -3,7 +3,7 @@ name: event
 theme: default
 og-type: website
 data-layout: 'default'
-data-theme: auto
+theme: dark
 itemtype: 'https://schema.org/WebPage'
 layout: base
 sidebar: true
@@ -104,9 +104,9 @@ main-itemtype: Event
 		<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}" />
 		<meta itemprop="headline" content="{{ page.title }}">
 		{% if page.date %}
-			<b class="meta-date-posted">
+			<b class="meta-date-posted" hidden="">
 				<span>Posted on</span>
-				<time itemprop="datePublished" datetime="{{ page.date | date: data_to_xmlschema }}">
+				<time itemprop="datePublished" datetime="{{ page.date | date: date_to_xmlschema }}">
 					{{ page.date | date: '%a, %B %e, %Y' }}
 				</time>
 			</b>

@@ -1,47 +1,52 @@
 @import url("https://cdn.kernvalley.us/css/core-css/theme/default/index.css");
 
-:root {
-	--lake-background-f: url("https://i.imgur.com/vya2c7of.jpg");
-	--lake-background-h: url("https://i.imgur.com/vya2c7oh.jpg");
-	--lake-background-l: url("https://i.imgur.com/vya2c7ol.jpg");
-	--lake-background-m: url("https://i.imgur.com/vya2c7om.jpg");
-	--lake-background-s: url("https://i.imgur.com/vya2c7os.jpg");
+@media all {
+	:root[theme], :root:not([theme]) {
+		--lake-background-f: url("https://i.imgur.com/vya2c7of.jpg");
+		--lake-background-h: url("https://i.imgur.com/vya2c7oh.jpg");
+		--lake-background-l: url("https://i.imgur.com/vya2c7ol.jpg");
+		--lake-background-m: url("https://i.imgur.com/vya2c7om.jpg");
+		--lake-background-s: url("https://i.imgur.com/vya2c7os.jpg");
 
-	--river-background-f: url("https://i.imgur.com/lQOh8Ej.jpg");
-	--river-background-h: url("https://i.imgur.com/lQOh8Ejh.jpg");
-	--river-background-l: url("https://i.imgur.com/lQOh8Ejl.jpg");
-	--river-background-m: url("https://i.imgur.com/lQOh8Ejm.jpg");
-	--river-background-s: url("https://i.imgur.com/lQOh8Ejs.jpg");
+		--river-background-f: url("https://i.imgur.com/lQOh8Ej.jpg");
+		--river-background-h: url("https://i.imgur.com/lQOh8Ejh.jpg");
+		--river-background-l: url("https://i.imgur.com/lQOh8Ejl.jpg");
+		--river-background-m: url("https://i.imgur.com/lQOh8Ejm.jpg");
+		--river-background-s: url("https://i.imgur.com/lQOh8Ejs.jpg");
 
 
-	/*================= Set color vars here =================*/
-	--header-bg-color: #0031c6;
+		/*================= Set color vars here =================*/
+		--accent-color-dark: #ff4800;
+		--accent-color-light: var(--accent-color-dark);
+		--button-primary-active-background-dark: #BA3500;
+		--button-primary-active-background-light: var(---button-primary-active-background-dark);
 
-	/*==================== Set fonts here ====================*/
-	--main-font: 'Roboto';
-	--title-font: 'Alice', cursive;
-	--header-font: 'Alice', cursive;
-	--article-font: 'Ubuntu';
-	--article-header-font: var(--header-font);
+		/*==================== Set fonts here ====================*/
+		--main-font: 'Roboto';
+		--title-font: 'Alice', cursive;
+		--header-font: 'Alice', cursive;
+		--article-font: 'Ubuntu';
+		--article-header-font: var(--header-font);
 
-	/*================== Animation properties ==================*/
-	--animation-stagger: 150ms;
+		/*================== Animation properties ==================*/
+		--animation-stagger: 150ms;
 
-	/* ================= Syntax Highlighting ====================*/
-	--highlight-color: black;
-	--highlight-background: #efefef;
-	--highlight-literal-number-color: #CCA418;
-	--backdrop-background: rgba(0,0,0,0.3);
-	--button-disabled-color: #898989;
+		/* ================= Syntax Highlighting ====================*/
+		--highlight-color: black;
+		--highlight-background: #efefef;
+		--highlight-literal-number-color: #CCA418;
+		--backdrop-background: rgba(0,0,0,0.3);
+		--button-disabled-color: #898989;
 
-	--header-height: 3rem;
-	--sidebar-max-width: 30vw;
-	--map-width: 25vw;
-	--nav-height: 0;
+		--header-height: 3rem;
+		--sidebar-max-width: 30vw;
+		--map-width: 25vw;
+		--nav-height: 0;
 
-	--scrollbar-color: var(--accent-color);
-	--scrollbar-track: var(--primary-color);
-	--scrollbar-width: thin;
+		--scrollbar-color: var(--accent-color);
+		--scrollbar-track: var(--primary-color);
+		--scrollbar-width: thin;
+	}
 }
 
 @media (max-width: 800px) {
