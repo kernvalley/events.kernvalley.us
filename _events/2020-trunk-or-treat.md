@@ -1,7 +1,7 @@
 ---
 name: Trunk or Treat
 title: Trunk or Treat
-description: On Haloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a moview in the meadow
+description: On Halloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a moview in the meadow
 date: 2020-10-27
 startDate: '2020-10-31 15:00'
 endDate: '2020-10-31 22:00'
@@ -23,7 +23,7 @@ tags:
   - Kern Valley
   - Kern River Valley
   - Kernville
-  - Haloween
+  - Halloween
   - movie
   - Rivernook
   - scavenger hunt
@@ -35,7 +35,9 @@ organizer:
   name: Rivernook Campgrounds
   url: https://rivernookcampground.com/
 ---
-Need content here.
+## Need content here.
+
+On Halloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a moview in the meadow
 
 - Golf Cart Parade (starts at 3 PM)
 - Costume Contest
