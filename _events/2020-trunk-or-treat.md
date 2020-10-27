@@ -1,7 +1,7 @@
 ---
 name: Trunk or Treat
 title: Trunk or Treat
-description: On Halloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a moview in the meadow
+description: On Halloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a movie in the meadow
 date: 2020-10-27
 startDate: '2020-10-31 15:00'
 endDate: '2020-10-31 22:00'
@@ -37,7 +37,7 @@ organizer:
 ---
 ## Need content here.
 
-On Halloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a moview in the meadow
+On Halloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a movie in the meadow
 
 - Golf Cart Parade (starts at 3 PM)
 - Costume Contest
