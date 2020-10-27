@@ -9,10 +9,11 @@ sidebar:
     description: Advertise on websites throughout the Kern River Valley
     callToAction: Click here to get started
     layout: card
-    theme: auto
+    theme: dark
   - uuid: 3a99a3fb-e828-4814-832c-4fb7798b9429
     label: Whiskey Flat Days
     url: https://whiskeyflatdays.com
     image: /img/wfd.svg
     description: Every President's Day Weekend in Kernville, CA
     callToAction: Click to learn more!
+    theme: dark
