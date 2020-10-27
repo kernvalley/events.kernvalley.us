@@ -1,7 +1,7 @@
 ---
 name: Trunk or Treat
 title: Trunk or Treat
-description: On Haloween Night, join us at Rivernook Campground for candy, a costume contest, and a moview in the meadow
+description: On Haloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a moview in the meadow
 date: 2020-10-27
 startDate: '2020-10-31 15:00'
 endDate: '2020-10-31 22:00'
@@ -9,7 +9,7 @@ image: 'https://i.imgur.com/KycknpI.jpg'
 imgur: 'https://i.imgur.com/KycknpI.jpg'
 pinned: true
 location:
-  name: Rivernook Campground
+  name: Rivernook Campgrounds
   streetAddress: 14001 Sierra Way
   addressLocality: Kernville
   addressRegion: CA
@@ -32,7 +32,7 @@ tags:
   - trunk or treat
 organizer:
   '@type': Organization
-  name: Rivernook Campground
+  name: Rivernook Campgrounds
   url: https://rivernookcampground.com/
 ---
 Need content here.
