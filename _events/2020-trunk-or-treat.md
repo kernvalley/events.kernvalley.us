@@ -5,8 +5,8 @@ description: On Halloween Night, join us at Rivernook Campgrounds for candy, a c
 date: 2020-10-27
 startDate: '2020-10-31 15:00'
 endDate: '2020-10-31 22:00'
-image: 'https://i.imgur.com/KycknpI.jpg'
-imgur: 'https://i.imgur.com/KycknpI.jpg'
+image: 'https://i.imgur.com/1mVcTDY.png'
+imgur: 'https://i.imgur.com/1mVcTDY.png'
 pinned: true
 location:
   name: Rivernook Campgrounds
@@ -35,9 +35,7 @@ organizer:
   name: Rivernook Campgrounds
   url: https://rivernookcampground.com/
 ---
-## Need content here.
-
-On Halloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a movie in the meadow
+On Halloween Night, join us at <a href="https://rivernookcampground.com/" rel="external noopener noreferrer">{% include icon.html icon="link-external" %} Rivernook Campgrounds</a> for:
 
 - Golf Cart Parade (starts at 3 PM)
 - Costume Contest
