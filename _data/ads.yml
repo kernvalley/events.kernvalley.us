@@ -10,6 +10,17 @@ sidebar:
     callToAction: Click here to get started
     layout: card
     theme: dark
+  - uuid: 342bd190-ffd7-4568-b7c6-191f7f300de8
+    label: The Reel Cinema
+    description: |-
+      Playing this week - "The War With Grandpa".
+      Directed by Tim Hill. With Robert De Niro, Uma Thurman, Rob Riggle
+    callToAction: Buy your tickets now!
+    image: https://i.imgur.com/ADVr1s7m.jpg
+    imageFit: contain
+    url: https://ourreelcinema.com
+    layout: card
+    theme: dark
   - uuid: 3a99a3fb-e828-4814-832c-4fb7798b9429
     label: Whiskey Flat Days
     url: https://whiskeyflatdays.com
