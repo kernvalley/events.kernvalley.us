@@ -1,6 +1,6 @@
 ---
-name: Trunk or Treat
-title: Trunk or Treat
+name: 👻 Trunk or Treat 👻
+title: 👻 Trunk or Treat 👻
 description: On Halloween Night, join us at Rivernook Campgrounds for candy, a costume contest, and a movie in the meadow
 date: 2020-10-27
 startDate: '2020-10-31 15:00'
