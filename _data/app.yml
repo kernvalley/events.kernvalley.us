@@ -1,6 +1,6 @@
 name: Kern Valley Events
 shortName: KRV Events
-version: 1.4.0-2020-10-27
+version: 1.4.0-2020-11-01
 lang: en
 dir: ltr
 display: standalone
@@ -8,9 +8,7 @@ orientation: any
 description: "The best events in the Kern River Valley and without the clutter"
 icons-file: /img/icons.svg
 theme:
-  color: '#ff4800'
-  # color: '#528ff9'
-  background: '#242424'
+  color: '#528ff9'
 categories:
 - events
 - lifestyle
