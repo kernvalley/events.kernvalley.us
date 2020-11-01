@@ -16,10 +16,6 @@
 
 
 		/*================= Set color vars here =================*/
-		--accent-color-dark: #ff4800;
-		--accent-color-light: var(--accent-color-dark);
-		--button-primary-active-background-dark: #BA3500;
-		--button-primary-active-background-light: var(---button-primary-active-background-dark);
 
 		/*==================== Set fonts here ====================*/
 		--main-font: 'Roboto';

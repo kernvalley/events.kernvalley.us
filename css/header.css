@@ -19,3 +19,9 @@
 #header a.float-left[title="Home"] {
 	margin-left: 0.4rem;
 }
+
+#header svg {
+	vertical-align: middle;
+	height: 1em;
+	width: 1em;
+}
