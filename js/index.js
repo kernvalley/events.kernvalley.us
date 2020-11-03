@@ -64,17 +64,36 @@ Promise.allSettled([
 		});
 	});
 
-	if ('TimestampTrigger' in window) {
+	if (location.pathname.startsWith('/events/') && 'TimestampTrigger' in window) {
 		navigator.serviceWorker.ready.then(reg => {
-			$('.schedule-notification').unhide();
-			$('.schedule-notification').click(async ({ target }) => {
-				target = target.closest('.schedule-notification');
+			$('.schedule-notification[data-uuid][data-time]').each(async el => {
+				const cookie = await await cookieStore.get({ name: `notification-${el.dataset.uuid}` });
+				console.info({ cookie, el });
+				if (! cookie) {
+					el.hidden = false;
 
-				await new Promise((resolve, reject) => {
-					switch(Notification.permission) {
-						case 'default':
-							Notification.requestPermission().then(resp => {
-								switch(resp) {
+					el.addEventListener('click', async () => {
+						if (confirm('Schedule reminder for 1 hour before event?')) {
+							await new Promise((resolve, reject) => {
+								switch(Notification.permission) {
+									case 'default':
+										Notification.requestPermission().then(resp => {
+											switch(resp) {
+												case 'granted':
+													resolve();
+													break;
+
+												case 'denied':
+													reject('Notification permission denied');
+													break;
+
+												default:
+													reject('Notification permission dismissed');
+													break;
+											}
+										});
+										break;
+
 									case 'granted':
 										resolve();
 										break;
@@ -82,52 +101,46 @@ Promise.allSettled([
 									case 'denied':
 										reject('Notification permission denied');
 										break;
-
-									default:
-										reject('Notification permission dismissed');
-										break;
 								}
 							});
-							break;
 
-						case 'granted':
-							resolve();
-							break;
+							await reg.showNotification(el.dataset.title, {
+								body: el.dataset.body,
+								tag: el.dataset.tag || 'event-reminder',
+								icon: el.dataset.icon || '/img/icon-192.png',
+								image: el.dataset.image,
+								// Schedule for an hour before the event
+								showTrigger: new TimestampTrigger(new Date(el.dataset.time) - 3600000),
+								vibrate: [800, 0, 800],
+								requireInteraction: true,
+								data: {
+									url: location.href,
+									locationUrl: el.dataset.locationUrl,
+								},
+								actions: [{
+									title: 'View Event',
+									action: 'open',
+								}, {
+									title: 'Open in Maps',
+									action: 'map',
+								}, {
+									title: 'Dismiss',
+									action: 'dismiss'
+								}]
+							});
 
-						case 'denied':
-							reject('Notification permission denied');
-							break;
-					}
-				});
+							await cookieStore.set({
+								name: `notification-${el.dataset.uuid}`,
+								value: 'scheduled',
+								secure: true,
+								expires: new Date(el.dataset.time),
+								sameSite: 'strict',
+							});
 
-				reg.showNotification(target.dataset.title, {
-					body: target.dataset.body,
-					tag: target.dataset.tag || 'event-reminder',
-					icon: target.dataset.icon || '/img/icon-192.png',
-					image: target.dataset.image,
-					// Schedule for an hour before the event
-					showTrigger: new TimestampTrigger(new Date(target.dataset.time) - 3600000),
-					vibrate: [800, 0, 800],
-					requireInteraction: true,
-					data: {
-						url: location.href,
-						locationUrl: target.dataset.locationUrl,
-					},
-					actions: [{
-						title: 'View Event',
-						action: 'open',
-					}, {
-						title: 'Open in Maps',
-						action: 'map',
-					}, {
-						title: 'Dismiss',
-						action: 'dismiss'
-					}]
-				});
-
-				target.hidden = true;
-
-				alert('Scheduled reminder for 1 hour before event');
+							$(`.schedule-notification[data-uuid=${CSS.escape(el.dataset.uuid)}]`).hide();
+						}
+					});
+				}
 			});
 		});
 	}
