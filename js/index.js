@@ -63,4 +63,72 @@ Promise.allSettled([
 			passive: true,
 		});
 	});
+
+	if ('TimestampTrigger' in window) {
+		navigator.serviceWorker.ready.then(reg => {
+			$('.schedule-notification').unhide();
+			$('.schedule-notification').click(async ({ target }) => {
+				target = target.closest('.schedule-notification');
+
+				await new Promise((resolve, reject) => {
+					switch(Notification.permission) {
+						case 'default':
+							Notification.requestPermission().then(resp => {
+								switch(resp) {
+									case 'granted':
+										resolve();
+										break;
+
+									case 'denied':
+										reject('Notification permission denied');
+										break;
+
+									default:
+										reject('Notification permission dismissed');
+										break;
+								}
+							});
+							break;
+
+						case 'granted':
+							resolve();
+							break;
+
+						case 'denied':
+							reject('Notification permission denied');
+							break;
+					}
+				});
+
+				reg.showNotification(target.dataset.title, {
+					body: target.dataset.body,
+					tag: target.dataset.tag || 'event-reminder',
+					icon: target.dataset.icon || '/img/icon-192.png',
+					image: target.dataset.image,
+					// Schedule for an hour before the event
+					showTrigger: new TimestampTrigger(new Date(target.dataset.time) - 3600000),
+					vibrate: [800, 0, 800],
+					requireInteraction: true,
+					data: {
+						url: location.href,
+						locationUrl: target.dataset.locationUrl,
+					},
+					actions: [{
+						title: 'View Event',
+						action: 'open',
+					}, {
+						title: 'Open in Maps',
+						action: 'map',
+					}, {
+						title: 'Dismiss',
+						action: 'dismiss'
+					}]
+				});
+
+				target.hidden = true;
+
+				alert('Scheduled reminder for 1 hour before event');
+			});
+		});
+	}
 });
