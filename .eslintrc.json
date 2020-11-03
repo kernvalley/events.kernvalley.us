@@ -41,6 +41,7 @@
         }]
     },
     "globals": {
-      "cookieStore": "readonly"
+      "cookieStore": "readonly",
+      "TimestampTrigger": "readonly"
     }
 }
