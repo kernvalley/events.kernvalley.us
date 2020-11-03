@@ -27,6 +27,43 @@ self.addEventListener('install', async event => {
 
 self.addEventListener('activate', event => event.waitUntil(clients.claim()));
 
+self.addEventListener('notificationclick', async event => {
+	const notification = event.notification;
+	const data = notification.data;
+	switch(event.action) {
+		case 'open':
+			notification.close();
+
+			event.waitUntil(clients.matchAll({
+				type: 'window'
+			}).then(function(clientList) {
+				for (let i = 0; i < clientList.length; i++) {
+					const  client = clientList[i];
+
+					if (client.url == data.url && 'focus' in client) {
+						return client.focus();
+					}
+				}
+				if (clients.openWindow) {
+					return clients.openWindow(data.url);
+				}
+			}));
+			break;
+
+		case 'map':
+			notification.close();
+
+			if (typeof data.locationUrl === 'string') {
+				return clients.openWindow(data.locationUrl);
+			}
+			break;
+
+		case 'dismiss':
+			notification.close();
+			break;
+	}
+});
+
 self.addEventListener('fetch', event => {
 	if (event.request.method === 'GET') {
 		event.respondWith((async () => {

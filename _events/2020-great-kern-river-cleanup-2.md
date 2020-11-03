@@ -2,8 +2,8 @@
 name: The Great Kern River Cleanup
 title: The Great Kern River Cleanup
 date: 2020-10-22
-startDate: '2020-11-07 10:00'
-endDate: '2020-11-07 14:00'
+startDate: '2020-11-03 14:03'
+endDate: '2020-11-07 14:05'
 pinned: true
 eventStatus: EventScheduled
 location:
