@@ -69,10 +69,12 @@ main-itemtype: Event
 			</span>
 		{% endif %}
 		<br />
-		<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" hidden="">
-			{% include icon.html icon="appointment-new" %}
-			<span>Add Reminder</span>
-		</button>
+		<div class="center">
+			<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" hidden="">
+				{% include icon.html icon="appointment-new" %}
+				<span>Add Reminder</span>
+			</button>
+		</div>
 		<br />
 		{% include share-buttons.html
 			text=page.description
