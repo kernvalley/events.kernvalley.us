@@ -35,8 +35,10 @@ offers:
   url: https://www.kernriverconservancy.org/great-kern-river-cleanup?utm_source=kern-valley-events&utm_medium=referral
 ---
 <div class="status-box info">
+<div class="align-left">
 {% include icon.html icon="info" %}
-<blockquote>We’re sorry to a announce that we have canceled the Great Kern River Cleanup that was scheduled for this Saturday. We are expecting our first winter storm forecasted to bring rain and possible snow. With that, the safety of our volunteers is extremely important and we will decide and notify you all on a new date soon.</blockquote>
+<blockquote>We’re sorry to a announce that we have canceled the Great Kern River Cleanup that was scheduled for this Saturday. We are expecting our first winter storm forecasted to bring rain and possible snow. With that, the safety of our volunteers is extremely important and we will decide and notify you all on a new date soon.<cite>Kern River Conservancy</cite></blockquote>
+</div>
 </div>
 The Great Kern River Cleanup is the premier volunteer event focused on removing
 trash and restoring the health of the Mighty Kern throughout Sequoia National Forest.
