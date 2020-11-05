@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Implemented basics of ads
 - Create rescheduled Great Kern River Cleanup event
 - Scheduled Notifications via [Notification Trigger API](https://github.com/rknoll/notification-triggers)
+- Allow user to select time for these notifications
 
 ### Changed
 - Update to typical site designs instead of having custom backgrounds and layout

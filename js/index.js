@@ -10,7 +10,10 @@ import 'https://cdn.kernvalley.us/components/pwa/install.js';
 import 'https://cdn.kernvalley.us/components/weather-current.js';
 import 'https://cdn.kernvalley.us/components/github/user.js';
 import 'https://cdn.kernvalley.us/components/ad/block.js';
+import { HTMLNotificationElement } from 'https://cdn.kernvalley.us/components/notification/html-notification.js';
 import { loadScript } from 'https://cdn.kernvalley.us/js/std-js/loader.js';
+import { dialogForm } from 'https://cdn.kernvalley.us/js/std-js/dialogForm.js';
+import { MINUTES, HOURS, DAYS } from 'https://cdn.kernvalley.us/js/std-js/timeIntervals.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
 import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 import { GA } from './consts.js';
@@ -66,52 +69,66 @@ Promise.allSettled([
 
 	if (location.pathname.startsWith('/events/') && 'TimestampTrigger' in window) {
 		navigator.serviceWorker.ready.then(reg => {
-			$('.schedule-notification[data-uuid][data-time]').each(async el => {
+			$('.schedule-notification[data-uuid][data-time][data-location-url]').each(async el => {
 				const cookie = await await cookieStore.get({ name: `notification-${el.dataset.uuid}` });
-				console.info({ cookie, el });
 				if (! cookie) {
 					el.hidden = false;
 
 					el.addEventListener('click', async () => {
-						if (confirm('Schedule reminder for 1 hour before event?')) {
-							await new Promise((resolve, reject) => {
-								switch(Notification.permission) {
-									case 'default':
-										Notification.requestPermission().then(resp => {
-											switch(resp) {
-												case 'granted':
-													resolve();
-													break;
+						await new Promise((resolve, reject) => {
+							switch(Notification.permission) {
+								case 'default':
+									Notification.requestPermission().then(resp => {
+										switch(resp) {
+											case 'granted':
+												resolve();
+												break;
 
-												case 'denied':
-													reject('Notification permission denied');
-													break;
+											case 'denied':
+												reject('Notification permission denied');
+												break;
 
-												default:
-													reject('Notification permission dismissed');
-													break;
-											}
-										});
-										break;
+											default:
+												reject('Notification permission dismissed');
+												break;
+										}
+									});
+									break;
 
-									case 'granted':
-										resolve();
-										break;
+								case 'granted':
+									resolve();
+									break;
 
-									case 'denied':
-										reject('Notification permission denied');
-										break;
-								}
-							});
+								case 'denied':
+									reject('Notification permission denied');
+									break;
+							}
+						});
 
+						const interval = parseInt(await dialogForm('When would you like to be reminded?', {
+							text: '30 min. before',
+							value: 30 * MINUTES,
+						}, {
+							text: '1 hour before',
+							value: HOURS,
+						}, {
+							text: '3 hours before',
+							value: 3 * HOURS,
+						}, {
+							text: '1 day before',
+							value: DAYS,
+						}));
+
+						if (! Number.isNaN(interval)) {
+							const reminder = new Date(Date.parse(el.dataset.time) - interval);
 							await reg.showNotification(el.dataset.title, {
 								body: el.dataset.body,
 								tag: el.dataset.tag || 'event-reminder',
 								icon: el.dataset.icon || '/img/icon-192.png',
 								image: el.dataset.image,
-								// Schedule for an hour before the event
-								showTrigger: new TimestampTrigger(new Date(el.dataset.time) - 3600000),
+								showTrigger: new TimestampTrigger(reminder),
 								vibrate: [800, 0, 800],
+								timestamp: Date.now(),
 								requireInteraction: true,
 								data: {
 									url: location.href,
@@ -137,11 +154,75 @@ Promise.allSettled([
 								sameSite: 'strict',
 							});
 
+							new HTMLNotificationElement('Reminder Scheduled', {
+								body: `You will be reminded at ${reminder.toLocaleString()}`,
+								icon: '/img/icon-192.png',
+								vibrate: [],
+							});
+
 							$(`.schedule-notification[data-uuid=${CSS.escape(el.dataset.uuid)}]`).hide();
 						}
 					});
 				}
 			});
+		});
+	} else if (location.pathname === '/') {
+		$('#schedule').showModal();
+		document.forms.schedule.addEventListener('submit', async event => {
+			event.preventDefault();
+			const data = new FormData(event.target);
+			const reg = await navigator.serviceWorker.ready;
+
+			await new Promise((resolve, reject) => {
+				switch(Notification.permission) {
+					case 'default':
+						Notification.requestPermission().then(resp => {
+							switch(resp) {
+								case 'granted':
+									resolve();
+									break;
+
+								case 'denied':
+									reject('Notification permission denied');
+									break;
+
+								default:
+									reject('Notification permission dismissed');
+									break;
+							}
+						});
+						break;
+
+					case 'granted':
+						resolve();
+						break;
+
+					case 'denied':
+						reject('Notification permission denied');
+						break;
+				}
+			});
+
+			await reg.showNotification(data.get('title'), {
+				body: data.get('body'),
+				icon: '/img/icon-32.png',
+				vibrate: [800, 0, 800],
+				requireInteraction: data.has('requireInteraction'),
+				data: {
+					url: data.get('url'),
+					form: Object.fromEntries(data.entries()),
+				},
+				showTrigger: new TimestampTrigger(new Date(`${data.get('date')}T${data.get('time')}`)),
+				actions: [{
+					title: 'Open',
+					action: 'open',
+				},{
+					title: 'Dismiss',
+					action: 'dismiss',
+				}]
+			});
+
+			navigator.setAppBadge(1);
 		});
 	}
 });
