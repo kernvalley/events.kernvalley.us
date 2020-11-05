@@ -9,14 +9,26 @@
 		{% if include.event.eventStatus != "EventScheduled" %}
 			{% case include.event.eventStatus %}
 				{% when "EventPostponed" %}
-					<div class="status-box alert">This event has been postponed.</div>
-				{% when "EventCancelled" %}
-					<div class="status-box alert">This event has been cancelled.</div>
-				{% when "EventRescheduled" %}
-					<div class="status-box warn">This event has been rescheduled.</div>
-				{% when "EventMovedOnline" %}
-					<div class="status-box warn">This event has moved online.</div>
-			{% endcase %}
+						<div class="status-box alert">
+							{% include icon.html icon="dialog-warning" %}
+							<span>This event has been postponed.</span>
+						</div>
+					{% when "EventCancelled" %}
+						<div class="status-box alert">
+							{% include icon.html icon="dialog-warning" %}
+							<span>This event has been cancelled.</span>
+						</div>
+					{% when "EventRescheduled" %}
+						<div class="status-box warn">
+							{% include icon.html icon="dialog-warning" %}
+							<span>This event has been rescheduled.</span>
+						</div>
+					{% when "EventMovedOnline" %}
+						<div class="status-box info">
+							{% include icon.html icon="info" %}
+							<span>This event has moved online.</span>
+						</div>
+				{% endcase %}
 		{% endif %}
 		{% if include.event.url %}</a>{% endif %}
 		{% if include.event.imgur %}

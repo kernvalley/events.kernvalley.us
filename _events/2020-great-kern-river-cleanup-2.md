@@ -5,7 +5,7 @@ date: 2020-10-22
 startDate: '2020-11-07 10:00'
 endDate: '2020-11-07 14:00'
 pinned: true
-eventStatus: EventScheduled
+eventStatus: EventPostponed
 location:
   name: Upper Richbar Picnic Area
   addressLocality: Lake Isabella
@@ -34,6 +34,12 @@ offers:
   price: 0.00
   url: https://www.kernriverconservancy.org/great-kern-river-cleanup?utm_source=kern-valley-events&utm_medium=referral
 ---
+<div class="status-box info">
+<div class="align-left">
+{% include icon.html icon="info" %}
+<blockquote>We’re sorry to a announce that we have canceled the Great Kern River Cleanup that was scheduled for this Saturday. We are expecting our first winter storm forecasted to bring rain and possible snow. With that, the safety of our volunteers is extremely important and we will decide and notify you all on a new date soon.<cite>Kern River Conservancy</cite></blockquote>
+</div>
+</div>
 The Great Kern River Cleanup is the premier volunteer event focused on removing
 trash and restoring the health of the Mighty Kern throughout Sequoia National Forest.
 This cleanup is an annual event coordinated by the [Sierra Nevada Conservancy](http://www.sierranevada.ca.gov/)
