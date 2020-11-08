@@ -24,8 +24,7 @@ document.documentElement.classList.replace('no-js', 'js');
 
 if (typeof GA === 'string' && GA.length !== 0) {
 	requestIdleCallback(() => {
-		importGa(GA).then(async () => {
-			/* global ga */
+		importGa(GA).then(async ({ ga }) => {
 			ga('create', GA, 'auto');
 			ga('set', 'transport', 'beacon');
 			ga('send', 'pageview');
@@ -69,9 +68,12 @@ Promise.allSettled([
 
 	if (location.pathname.startsWith('/events/') && 'TimestampTrigger' in window) {
 		navigator.serviceWorker.ready.then(reg => {
+			const now = Date.now();
+
 			$('.schedule-notification[data-uuid][data-time][data-location-url]').each(async el => {
 				const cookie = await await cookieStore.get({ name: `notification-${el.dataset.uuid}` });
-				if (! cookie) {
+				const date = Date.parse(el.dataset.time);
+				if (date > now && ! cookie) {
 					el.hidden = false;
 
 					el.addEventListener('click', async () => {
@@ -120,7 +122,8 @@ Promise.allSettled([
 						}));
 
 						if (! Number.isNaN(interval)) {
-							const reminder = new Date(Date.parse(el.dataset.time) - interval);
+							const reminder = new Date(date - interval);
+
 							await reg.showNotification(el.dataset.title, {
 								body: el.dataset.body,
 								tag: el.dataset.tag || 'event-reminder',
@@ -165,64 +168,6 @@ Promise.allSettled([
 					});
 				}
 			});
-		});
-	} else if (location.pathname === '/') {
-		$('#schedule').showModal();
-		document.forms.schedule.addEventListener('submit', async event => {
-			event.preventDefault();
-			const data = new FormData(event.target);
-			const reg = await navigator.serviceWorker.ready;
-
-			await new Promise((resolve, reject) => {
-				switch(Notification.permission) {
-					case 'default':
-						Notification.requestPermission().then(resp => {
-							switch(resp) {
-								case 'granted':
-									resolve();
-									break;
-
-								case 'denied':
-									reject('Notification permission denied');
-									break;
-
-								default:
-									reject('Notification permission dismissed');
-									break;
-							}
-						});
-						break;
-
-					case 'granted':
-						resolve();
-						break;
-
-					case 'denied':
-						reject('Notification permission denied');
-						break;
-				}
-			});
-
-			await reg.showNotification(data.get('title'), {
-				body: data.get('body'),
-				icon: '/img/icon-32.png',
-				vibrate: [800, 0, 800],
-				requireInteraction: data.has('requireInteraction'),
-				data: {
-					url: data.get('url'),
-					form: Object.fromEntries(data.entries()),
-				},
-				showTrigger: new TimestampTrigger(new Date(`${data.get('date')}T${data.get('time')}`)),
-				actions: [{
-					title: 'Open',
-					action: 'open',
-				},{
-					title: 'Dismiss',
-					action: 'dismiss',
-				}]
-			});
-
-			navigator.setAppBadge(1);
 		});
 	}
 });
