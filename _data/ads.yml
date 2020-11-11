@@ -13,6 +13,7 @@ sidebar:
     theme: auto
   - uuid: 342bd190-ffd7-4568-b7c6-191f7f300de8
     label: The Reel Cinema
+    disabled: true
     description: |-
       Playing this week - "The War With Grandpa".
       Directed by Tim Hill. With Robert De Niro, Uma Thurman, Rob Riggle

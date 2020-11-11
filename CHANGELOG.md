@@ -14,6 +14,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add ability to disable ads
+
+### Changed
+- Disable Reel Cinema ad due to closure
+
 ### [v1.4.0] - 2020-10-22
 
 ### Added
