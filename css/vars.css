@@ -1,4 +1,5 @@
 @import url("https://cdn.kernvalley.us/css/core-css/theme/default/index.css");
+@import url("https://cdn.kernvalley.us/css/core-css/theme/properties.css");
 
 @media all {
 	:root[theme], :root:not([theme]) {
@@ -24,23 +25,11 @@
 		--article-font: 'Ubuntu';
 		--article-header-font: var(--header-font);
 
-		/*================== Animation properties ==================*/
-		--animation-stagger: 150ms;
-
-		/* ================= Syntax Highlighting ====================*/
-		--highlight-color: black;
-		--highlight-background: #efefef;
-		--highlight-literal-number-color: #CCA418;
-		--backdrop-background: rgba(0,0,0,0.3);
-		--button-disabled-color: #898989;
-
 		--header-height: 3rem;
 		--sidebar-max-width: 30vw;
 		--map-width: 25vw;
 		--nav-height: 0;
 
-		--scrollbar-color: var(--accent-color);
-		--scrollbar-track: var(--primary-color);
 		--scrollbar-width: thin;
 	}
 }
