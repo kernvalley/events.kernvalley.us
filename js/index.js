@@ -15,7 +15,7 @@ import { loadScript } from 'https://cdn.kernvalley.us/js/std-js/loader.js';
 import { dialogForm } from 'https://cdn.kernvalley.us/js/std-js/dialogForm.js';
 import { MINUTES, HOURS, DAYS } from 'https://cdn.kernvalley.us/js/std-js/timeIntervals.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
-import { $, ready } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
+import { $, ready, notificationsAllowed } from 'https://cdn.kernvalley.us/js/std-js/functions.js';
 import { GA } from './consts.js';
 
 document.documentElement.classList.toggle('no-dialog', document.createElement('dialog') instanceof HTMLUnknownElement);
@@ -42,30 +42,6 @@ Promise.allSettled([
 	ready(),
 	loadScript('https://cdn.polyfill.io/v3/polyfill.min.js'),
 ]).then(async () => {
-	$('form.stepped-form').each(form => {
-		form.hidden = false;
-
-		$('fieldset.form-step[data-step] [data-to-step]', form).click(({target}) => {
-			const btn = target.closest('[data-to-step]');
-			const current = btn.closest('[data-step]');
-			const currentStep = parseInt(current.dataset.step);
-			const step = parseInt(btn.dataset.toStep);
-			const fieldset = form.querySelector(`[data-step="${step}"]`);
-			const inputs = [...current.querySelectorAll('input, select, textarea')];
-			const invalid = inputs.find(input => ! input.validity.valid);
-
-			if (! (invalid instanceof HTMLElement) || step < currentStep) {
-				current.classList.remove('step-active');
-				fieldset.classList.add('step-active');
-			} else {
-				invalid.scrollIntoView({block: 'start', behavior: 'smooth'});
-				invalid.focus();
-			}
-		}, {
-			passive: true,
-		});
-	});
-
 	if (location.pathname.startsWith('/events/') && 'TimestampTrigger' in window) {
 		navigator.serviceWorker.ready.then(reg => {
 			const now = Date.now();
@@ -73,97 +49,70 @@ Promise.allSettled([
 			$('.schedule-notification[data-uuid][data-time][data-location-url]').each(async el => {
 				const cookie = await await cookieStore.get({ name: `notification-${el.dataset.uuid}` });
 				const date = Date.parse(el.dataset.time);
+
 				if (date > now && ! cookie) {
 					el.hidden = false;
 
 					el.addEventListener('click', async () => {
-						await new Promise((resolve, reject) => {
-							switch(Notification.permission) {
-								case 'default':
-									Notification.requestPermission().then(resp => {
-										switch(resp) {
-											case 'granted':
-												resolve();
-												break;
+						if (await notificationsAllowed()) {
+							const interval = parseInt(await dialogForm('When would you like to be reminded?', {
+								text: '30 min. before',
+								value: 30 * MINUTES,
+							}, {
+								text: '1 hour before',
+								value: HOURS,
+							}, {
+								text: '3 hours before',
+								value: 3 * HOURS,
+							}, {
+								text: '1 day before',
+								value: DAYS,
+							}));
 
-											case 'denied':
-												reject('Notification permission denied');
-												break;
+							if (! Number.isNaN(interval)) {
+								const reminder = new Date(date - interval);
 
-											default:
-												reject('Notification permission dismissed');
-												break;
-										}
-									});
-									break;
+								await reg.showNotification(el.dataset.title, {
+									body: el.dataset.body,
+									tag: el.dataset.tag || 'event-reminder',
+									icon: el.dataset.icon || '/img/icon-192.png',
+									image: el.dataset.image,
+									showTrigger: new TimestampTrigger(reminder),
+									vibrate: [800, 0, 800],
+									timestamp: Date.now(),
+									requireInteraction: true,
+									data: {
+										url: location.href,
+										locationUrl: el.dataset.locationUrl,
+									},
+									actions: [{
+										title: 'View Event',
+										action: 'open',
+									}, {
+										title: 'Open in Maps',
+										action: 'map',
+									}, {
+										title: 'Dismiss',
+										action: 'dismiss'
+									}]
+								});
 
-								case 'granted':
-									resolve();
-									break;
+								await cookieStore.set({
+									name: `notification-${el.dataset.uuid}`,
+									value: reminder.toISOString(),
+									secure: true,
+									expires: new Date(el.dataset.time),
+									sameSite: 'strict',
+								});
 
-								case 'denied':
-									reject('Notification permission denied');
-									break;
+								new HTMLNotificationElement('Reminder Scheduled', {
+									body: `You will be reminded at ${reminder.toLocaleString()}`,
+									icon: '/img/icon-192.png',
+									vibrate: [],
+								});
+
+								$(`.schedule-notification[data-uuid=${CSS.escape(el.dataset.uuid)}]`).hide();
 							}
-						});
-
-						const interval = parseInt(await dialogForm('When would you like to be reminded?', {
-							text: '30 min. before',
-							value: 30 * MINUTES,
-						}, {
-							text: '1 hour before',
-							value: HOURS,
-						}, {
-							text: '3 hours before',
-							value: 3 * HOURS,
-						}, {
-							text: '1 day before',
-							value: DAYS,
-						}));
-
-						if (! Number.isNaN(interval)) {
-							const reminder = new Date(date - interval);
-
-							await reg.showNotification(el.dataset.title, {
-								body: el.dataset.body,
-								tag: el.dataset.tag || 'event-reminder',
-								icon: el.dataset.icon || '/img/icon-192.png',
-								image: el.dataset.image,
-								showTrigger: new TimestampTrigger(reminder),
-								vibrate: [800, 0, 800],
-								timestamp: Date.now(),
-								requireInteraction: true,
-								data: {
-									url: location.href,
-									locationUrl: el.dataset.locationUrl,
-								},
-								actions: [{
-									title: 'View Event',
-									action: 'open',
-								}, {
-									title: 'Open in Maps',
-									action: 'map',
-								}, {
-									title: 'Dismiss',
-									action: 'dismiss'
-								}]
-							});
-
-							await cookieStore.set({
-								name: `notification-${el.dataset.uuid}`,
-								value: 'scheduled',
-								secure: true,
-								expires: new Date(el.dataset.time),
-								sameSite: 'strict',
-							});
-
-							new HTMLNotificationElement('Reminder Scheduled', {
-								body: `You will be reminded at ${reminder.toLocaleString()}`,
-								icon: '/img/icon-192.png',
-								vibrate: [],
-							});
-
-							$(`.schedule-notification[data-uuid=${CSS.escape(el.dataset.uuid)}]`).hide();
 						}
 					});
 				}
