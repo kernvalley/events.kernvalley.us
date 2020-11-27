@@ -6,7 +6,7 @@ sidebar:
   - uuid: 57c7036d-f128-4506-962b-373b8fb5ea78
     label: Kern Valley Ads
     url: https://ads.kernvalley.us
-    image: https://ads.kernvalley.us/img/favicon.svg
+    image: https://cdn.kernvalley.us/img/branding/ads.kernvalley.us.svg
     description: Advertise on websites throughout the Kern River Valley
     callToAction: Click here to get started
     layout: card
@@ -26,7 +26,7 @@ sidebar:
   - uuid: 3a99a3fb-e828-4814-832c-4fb7798b9429
     label: Whiskey Flat Days
     url: https://whiskeyflatdays.com
-    image: /img/wfd.svg
+    image: https://cdn.kernvalley.us/img/branding/whiskeyflatdays.com.svg
     description: Every President's Day Weekend in Kernville, CA
     callToAction: Click to learn more!
     theme: auto
