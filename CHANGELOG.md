@@ -14,8 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.4.1] - 2020-12-13
+
 ### Added
 - Add ability to disable ads
+- Handle theme cookie via `cookieStore`
+- Add `<button is="app-list">`
+
+### Changed
+- Move PWA install button
 
 ### Changed
 - Disable Reel Cinema ad due to closure

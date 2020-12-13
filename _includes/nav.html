@@ -1,4 +1,7 @@
 <nav id="nav" class="sticky top shadow-dark color-alt flex row title-font center no-text-decoration z-3" role="navigation" itemtype="http://schema.org/SiteNavigationElement" itemscope="">
+	<button type="button" is="app-list" id="app-menu" class="btn no-background no-border color-inherit float-left" source="{{ site.data.ads.source }}">
+		{% include icon.html icon="apps" fill="currentColor" height="22" width="22" %}
+	</button>
 	{% if page.url != '/' %}
 		<a href="{{ '/'  }}" rel="bookmark" title="Home" class="color-inherit">
 			{% include icon.html icon='home' %}
