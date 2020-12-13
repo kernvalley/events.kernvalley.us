@@ -7,6 +7,7 @@ const config = {
 	version: '{{ site.data.app.version | default: site.version }}',
 	fresh: [
 		/* Root document */
+		'https://apps.kernvalley.us/apps.json',
 		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
 		'{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
 	].map(path => new URL(path, location.origin).href),
