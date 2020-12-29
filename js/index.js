@@ -1,7 +1,6 @@
 import 'https://cdn.kernvalley.us/js/std-js/shims.js';
 import 'https://cdn.kernvalley.us/js/std-js/deprefixer.js';
 import 'https://cdn.kernvalley.us/js/std-js/theme-cookie.js';
-import 'https://unpkg.com/@webcomponents/custom-elements@1.4.2/custom-elements.min.js';
 import 'https://cdn.kernvalley.us/components/share-to-button/share-to-button.js';
 import 'https://cdn.kernvalley.us/components/share-button.js';
 import 'https://cdn.kernvalley.us/components/leaflet/map.js';
@@ -13,7 +12,6 @@ import 'https://cdn.kernvalley.us/components/github/user.js';
 import 'https://cdn.kernvalley.us/components/ad/block.js';
 import 'https://cdn.kernvalley.us/components/app/list-button.js';
 import { HTMLNotificationElement } from 'https://cdn.kernvalley.us/components/notification/html-notification.js';
-import { loadScript } from 'https://cdn.kernvalley.us/js/std-js/loader.js';
 import { dialogForm } from 'https://cdn.kernvalley.us/js/std-js/dialogForm.js';
 import { MINUTES, HOURS, DAYS } from 'https://cdn.kernvalley.us/js/std-js/timeIntervals.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
@@ -45,7 +43,6 @@ if (typeof GA === 'string' && GA.length !== 0) {
 
 Promise.allSettled([
 	ready(),
-	loadScript('https://cdn.polyfill.io/v3/polyfill.min.js'),
 ]).then(async () => {
 	if (location.pathname.startsWith('/events/') && 'TimestampTrigger' in window) {
 		navigator.serviceWorker.ready.then(reg => {
