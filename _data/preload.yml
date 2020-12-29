@@ -3,12 +3,6 @@
   type: text/css
   crossOrigin: anonymous
   referrerPolify: no-referrer
-- href: "https://cdn.polyfill.io/v3/polyfill.min.js"
-  as: script
-  type: text/javascript
-  importance: high
-  crossOrigin: anonymous
-  referrerPolicy: no-referrer
 - href: "https://cdn.kernvalley.us/fonts/roboto.woff2"
   as: font
   type: font/woff2
