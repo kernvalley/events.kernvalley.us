@@ -4,3 +4,5 @@ https://youthful-dijkstra-321f5b.netlify.com/* https://events.kernvalley.us/:spl
 # These extra rules are required because HTTPS is not forced
 http://youthful-dijkstra-321f5b.netlify.com/* https://events.kernvalley.us/:splat 301!
 http://events.kernvalley.us/* https://events.kernvalley.us/:splat 301!
+
+/contact/	https://contact.kernvalley.us/ 301
