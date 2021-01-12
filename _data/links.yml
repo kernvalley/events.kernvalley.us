@@ -1,14 +1,32 @@
 footer:
-  - text: Contact
+  - label: KernValley.US
+    icon: web-browser
+    href: https://kernvalley.us
+    rel:
+      - noopener
+      - noreferrer
+      - external
+  - label: Contact
     href: /contact/
     icon: address-book
-  - text: Privacy Policy
+    rel:
+      - noopener
+      - external
+      - noreferrer
+  - label: All Apps
+    icon: apps
+    href: https://apps.kernvalley.us
+    rel:
+      - noopener
+      - noreferrer
+      - external
+  - label: Privacy Policy
     href: /privacy/
     icon: eye
-  - text: Submit Event
-    href: "https://cloud.kernvalley.us/apps/forms/0UQlZK4CHU0QT05f"
+  - label: Submit Event
+    href: https://forms.gle/9NPNcvcjLDoVw52w7
     icon: events
-  - text: Rafting
-    href: 'https://rafting.kernvalley.us'
-    icon: rafting
-    target: _blank
+    rel:
+      - noopener
+      - external
+      - noreferrer

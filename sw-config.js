@@ -17,7 +17,6 @@ const config = {
 		'/img/icons.svg',
 
 		/* JS, `customElements`, etc. */
-		'https://cdn.polyfill.io/v3/polyfill.min.js',
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
 		'https://cdn.kernvalley.us/components/leaflet/map.html',
@@ -39,6 +38,7 @@ const config = {
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mail-send.svg',
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mark-location.svg',
 		'https://cdn.kernvalley.us/img/octicons/file-media.svg',
+		'https://cdn.kernvalley.us/img/logos/play-badge.svg',
 
 		/* Social Icons for Web Share API shim */
 		'https://cdn.kernvalley.us/img/octicons/mail.svg',
