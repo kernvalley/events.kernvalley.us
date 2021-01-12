@@ -1,4 +1,11 @@
 footer:
+  - label: KernValley.US
+    icon: web-browser
+    href: https://kernvalley.us
+    rel:
+      - noopener
+      - noreferrer
+      - external
   - label: Contact
     href: /contact/
     icon: address-book
@@ -6,6 +13,13 @@ footer:
       - noopener
       - external
       - noreferrer
+  - label: All Apps
+    icon: apps
+    href: https://apps.kernvalley.us
+    rel:
+      - noopener
+      - noreferrer
+      - external
   - label: Privacy Policy
     href: /privacy/
     icon: eye
