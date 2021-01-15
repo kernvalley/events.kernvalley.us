@@ -1,44 +1,18 @@
-<nav id="nav" class="sticky top shadow-dark color-alt flex row title-font center no-text-decoration z-3" role="navigation" itemtype="http://schema.org/SiteNavigationElement" itemscope="">
-	<button type="button" is="app-list" id="app-menu" class="btn no-background no-border color-inherit float-left" source="{{ site.data.ads.source }}">
-		{% include icon.html icon="apps" fill="currentColor" height="22" width="22" %}
+<nav id="nav" class="sticky top shadow background-accent color-alt z-3 flex row nowrap overflow-x-auto">
+	<button type="button" is="app-list" id="app-menu" class="btn nav-btn" source="{{ site.data.ads.source | default: site.title | escape }}" title="Show KRV Apps Menu" hidden="">
+		{% include icon.html icon="apps" height="22" width="22" fill="currentColor" %}
 	</button>
-	{% if page.url != '/' %}
-		<a href="{{ '/'  }}" rel="bookmark" title="Home" class="color-inherit">
-			{% include icon.html icon='home' %}
-			<span class="mobile-hidden">Home</span>
+	{% for link in site.data.links.nav %}{% unless link.disabled == true %}
+		<a href="{{ link.href }}" class="nav-link center inline-block{% if link.href == page.url %} active no-pointer-events{% endif %}" title="{{ link.label | escape }}" rel="{{ link.rel | join: ' ' }}" target="{{ link.target | default: '_self' }}">
+			{% if link.icon %}{% include icon.html icon=link.icon fill="currentColor" width="22" height="22" %}<br />{% endif %}
+			<span class="nav-link-label">{{ link.label }}</span>
 		</a>
-	{% endif %}
-	<a href="{{ '#top' | prepend: page.url  }}" title="Top" class="color-inherit">
-		{% include icon.html icon='top' %}
-		<span class="mobile-hidden">Top</span>
-	</a>
-	{% if page.comments %}
-		<a href="{{ page.url | append: '#disqus_thread'  }}" title="Comments">
-			{% include icon.html icon='comments' %}
-			<span class="mobile-hidden">Comments</span>
-		</a>
-	{% endif %}
-	<a href="{{ page.url | append: '#about-dialog'  }}" class="color-inherit" title="About">
-		{% include icon.html icon='avatar-default' %}
-		<span class="mobile-hidden">About</span>
-	</a>
-	{% if page.layout != 'full-width' %}
-	<a href="{{ '#pinned-posts' | prepend: page.url  }}" title="Pinned Posts" class="color-inherit">
-		{% include icon.html icon='pin' %}
-		<span class="mobile-hidden">Pinned Posts</span>
-	</a>
-	<a href="{{ '#calendar' | prepend: page.url  }}" title="Calendar" class="color-inherit">
-		{% include icon.html icon='calendar' %}
-		<span class="mobile-hidden">Calendar</span>
-	</a>
-	{% else %}
-		<a href="{{ '/posts/javascript/'  }}" class="color-inherit">
-			<img src="{{ '/img/logos/javascript.svg'  }}" class="icon" alt="" />
-			JavaScript
-		</a>
-		<a href="{{ '/posts/php/'  }}" class="color-inherit">
-			<img src="{{ '/img/logos/php.svg'  }}" class="icon" alt="" />
-			PHP
-		</a>
+	{% endunless %}{% endfor %}
+	<span class="grow-4"></span>
+	{% if site.service_worker %}
+		<button type="button" is="pwa-install" id="install-btn" class="btn nav-btn" src="{{ site.service_worker }}" scope="/" title="Install Web App" reloadonupdate="" hidden="">
+			{% include icon.html height="22" width="22" fill="currentColor" icon="system-software-install" %}
+			<span class="mobile-hidden">Install</span>
+		</button>
 	{% endif %}
 </nav>
