@@ -10,11 +10,11 @@ icons-file: /img/icons.svg
 theme:
   color: '#007bff'
 categories:
-- events
-- lifestyle
-- news
-- social
-shortcuts: []
+  - events
+  - lifestyle
+  - news
+  - social
+# shortcuts: []
 features:
   - Listing of events throughout the Kern River Valley
   - All events are open to the public (ticket prices listed if applicable)
@@ -23,39 +23,42 @@ features:
   - Maps to events (with directions on Google Maps)
   - Local weather so you know whether to pack sunscreen or an umbrella
 icons:
-- src: /img/favicon.svg
-  type: image/svg+xml
-  sizes: 192x192
-  purpose: maskable any
-- src: /img/apple-touch-icon.png
-  rel: apple-touch-icon
-  type: image/png
-  sizes: 180x180
-- src: /img/icon-512.png
-  type: image/png
-  sizes: 512x512
-  purpose: maskable any
-- src: /img/icon-192.png
-  type: image/png
-  sizes: 192x192
-  purpose: maskable any
-- src: /img/icon-32.png
-  type: image/png
-  sizes: 32x32
-- src: /img/icon-16.png
-  type: image/png
-  sizes: 16x16
+  - src: /img/favicon.svg
+    type: image/svg+xml
+    sizes: 192x192
+    purpose: maskable any
+  - src: /img/apple-touch-icon.png
+    rel: apple-touch-icon
+    type: image/png
+    sizes: 180x180
+  - src: /img/icon-512.png
+    type: image/png
+    sizes: 512x512
+    purpose: maskable any
+  - src: /img/icon-192.png
+    type: image/png
+    sizes: 192x192
+    purpose: maskable any
+  - src: /img/icon-32.png
+    type: image/png
+    sizes: 32x32
+  - src: /img/icon-16.png
+    type: image/png
+    sizes: 16x16
 screenshots:
-- src: 'https://i.imgur.com/5H246qcl.png'
-  sizes: 640x313
-  type: image/png
-- src: 'https://i.imgur.com/5H246qcm.png'
-  sizes: 320x157
-  type: image/png
-- src: 'https://i.imgur.com/5H246qct.png'
-  sizes: 160x778
-  type: image/png
+  - src: 'https://i.imgur.com/5H246qcl.png'
+    sizes: 640x313
+    type: image/png
+  - src: 'https://i.imgur.com/5H246qcm.png'
+    sizes: 320x157
+    type: image/png
+  - src: 'https://i.imgur.com/5H246qct.png'
+    sizes: 160x778
+    type: image/png
+iarc_rating_id: 9c0e041d-7199-4821-bc90-7c6e07b3feea
 related_applications:
-- platform: play
-  url: "https://play.google.com/store/apps/details?id=com.kern_valley_events.twa"
-  id: com.kern_valley_events.twa
+  - platform: play
+    url: "https://play.google.com/store/apps/details?id=com.kern_valley_events.twa"
+    id: com.kern_valley_events.twa
+  - platform: webapp
+    url: https://events.kernvalley.us/manifest.json

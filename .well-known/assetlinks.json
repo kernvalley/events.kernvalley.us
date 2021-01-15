@@ -9,4 +9,10 @@
       "2C:1B:F2:70:29:40:7E:A5:EF:05:D0:4A:68:7A:CB:BE:96:E9:CF:B6:3E:BC:7E:AD:26:7C:7D:A9:6E:69:3C:D3"
     ]
   }
+}, {
+  "relation": ["delegate_permission/common.query_webapk"],
+  "target": {
+    "namespace": "web",
+    "site": "https://events.kernvalley.us/manifest.json"
+  }
 }]

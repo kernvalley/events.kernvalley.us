@@ -8,9 +8,9 @@
 		<span class="site-name">{{ site.title }}</span>
 		<span class="site-short-name">{{ site.data.app.shortName | default: site.title }}</span>
 		{% if site.service_worker %}
-			<button is="pwa-install" id="install-btn" class="float-right" src="{{ site.service_worker }}" scope="/" title="Install Web App" reloadonupdate="">
+			<button is="pwa-install" id="install-btn" class="float-right" src="{{ site.service_worker }}" scope="/" title="Install Web App" reloadonupdate="" hidden="">
 				{% include icon.html icon="system-software-install" height="22" width="22" fill="currentColor" %}
-				<span>Install</span>
+				<span class="mobile-hidden">Install</span>
 			</button>
 		{% endif %}
 	</h1>

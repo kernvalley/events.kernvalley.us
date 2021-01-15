@@ -6,10 +6,10 @@ layout: null
 const config = {
 	version: '{{ site.data.app.version | default: site.version }}',
 	fresh: [
-		/* Root document */
-		'https://apps.kernvalley.us/apps.json',
 		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
 		'{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
+		'https://apps.kernvalley.us/apps.json',
+		'/manifest.json',
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		'/css/index.min.css',
@@ -39,15 +39,6 @@ const config = {
 		'https://cdn.kernvalley.us/img/adwaita-icons/actions/mark-location.svg',
 		'https://cdn.kernvalley.us/img/octicons/file-media.svg',
 		'https://cdn.kernvalley.us/img/logos/play-badge.svg',
-
-		/* Social Icons for Web Share API shim */
-		'https://cdn.kernvalley.us/img/octicons/mail.svg',
-		'https://cdn.kernvalley.us/img/logos/facebook.svg',
-		'https://cdn.kernvalley.us/img/logos/twitter.svg',
-		'https://cdn.kernvalley.us/img/logos/google-plus.svg',
-		'https://cdn.kernvalley.us/img/logos/linkedin.svg',
-		'https://cdn.kernvalley.us/img/logos/reddit.svg',
-		'https://cdn.kernvalley.us/img/logos/gmail.svg',
 		'https://cdn.kernvalley.us/img/logos/instagram.svg',
 
 		/* Fonts */
