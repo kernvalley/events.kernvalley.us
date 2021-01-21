@@ -9,7 +9,7 @@ layout: base
 sidebar: true
 main-itemtype: Event
 ---
-{% include header.html %}
+{% include common/nav.html %}
 <main id="main" class="card shadow" itemtype="https://schema.org/Event" itemscope="" itemref="time-card place-card">
 	<link itemprop="eventStatus" content="https://schema.org/{{ page.eventStatus | default: 'EventScheduled' }}" />
 	<link itemprop="eventAttendanceMode" content="https://schema.org/{{ page.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
@@ -23,22 +23,22 @@ main-itemtype: Event
 				{% case page.eventStatus %}
 					{% when "EventPostponed" %}
 						<div class="status-box alert">
-							{% include icon.html icon="dialog-warning" %}
+							{% include common/icon.html icon="dialog-warning" %}
 							<span>This event has been postponed.</span>
 						</div>
 					{% when "EventCancelled" %}
 						<div class="status-box alert">
-							{% include icon.html icon="dialog-warning" %}
+							{% include common/icon.html icon="dialog-warning" %}
 							<span>This event has been cancelled.</span>
 						</div>
 					{% when "EventRescheduled" %}
 						<div class="status-box warn">
-							{% include icon.html icon="dialog-warning" %}
+							{% include common/icon.html icon="dialog-warning" %}
 							<span>This event has been rescheduled.</span>
 						</div>
 					{% when "EventMovedOnline" %}
 						<div class="status-box warn">
-							{% include icon.html icon="dialog-warning" %}
+							{% include common/icon.html icon="dialog-warning" %}
 							<span>This event has moved online.</span>
 						</div>
 				{% endcase %}
@@ -46,7 +46,7 @@ main-itemtype: Event
 		{% endif %}
 		<!-- <div itemtype="https://schema.org/Place" itemprop="location" itemref="place-card" hidden=""></div> -->
 		<figure class="center" itemprop="image" itemtype="https://schema.org/ImageObject" itemscope="">
-			{% include imgur.html url=page.imgur itemprop="url" class="imgur" %}
+			{% include common/imgur.html url=page.imgur itemprop="url" class="imgur" %}
 		</figure>
 		{% if page.offers %}<hr /><div class="flex row wrap event-page-offers">{% for offer in page.offers %}
 			{% if offer.url %}
@@ -83,12 +83,12 @@ main-itemtype: Event
 		<br />
 		<div class="center">
 			<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" data-uuid="{{ page.title | sluggify }}" hidden="">
-				{% include icon.html icon="appointment-new" %}
+				{% include common/icon.html icon="appointment-new" %}
 				<span>Add Reminder</span>
 			</button>
 		</div>
 		<br />
-		{% include share-buttons.html
+		{% include common/share-buttons.html
 			text=page.description
 			facebook=true
 			twitter=true
@@ -155,7 +155,7 @@ main-itemtype: Event
 <aside id="sidebar" class="card contain-content">
 	<div class="card clearfix" id="time-card">
 		<h4 class="center">When</h4>
-		{% include icon.html icon='events' class="current-color icon float-left" %}
+		{% include common/icon.html icon='events' class="current-color icon float-left" %}
 		<span class="float-left"> </span>
 		<div class="float-left">
 			<time datetime="{{ page.startDate | date_to_xmlschema }}" itemprop="startDate">{{ page.startDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
@@ -163,25 +163,25 @@ main-itemtype: Event
 			<time datetime="{{ page.endDate | date_to_xmlschema }}" itemprop="endDate">{{ page.endDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
 		</div>
 		<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" data-uuid="{{ page.title | sluggify }}" hidden="">
-			{% include icon.html icon="appointment-new" %}
+			{% include common/icon.html icon="appointment-new" %}
 			<span>Add Reminder</span>
 		</button>
 	</div>
 	<br />
 	<div class="clearfix card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" id="place-card" itemscope="">
 		<h4 class="center">Where</h4>
-		{% include icon.html icon='location' class='current-color icon float-left' %}
+		{% include common/icon.html icon='location' class='current-color icon float-left' %}
 		<span class="float-left">&nbsp;</span>
 		{% if page.location.url %}
 			<a href="{{ page.location.url }}" class="location-link" rel="noopener external" itemprop="url">
-			{% include icon.html icon="link-external" %}
+			{% include common/icon.html icon="link-external" %}
 		{% endif %}
 		{% if page.location.name %}
 			<b class="float-left" itemprop="name">{{ page.location.name }}</b>
 		{% endif %}
 		{% if page.location.url %}</a>{% endif %}
 		{% if page.location.addressLocality %}
-			{% include address.html address=page.location %}
+			{% include common/address.html address=page.location %}
 		{% endif %}
 		{% if page.location.geo %}
 			<leaflet-map center="{{ page.location.geo.latitude }},{{ page.location.geo.longitude }}" zoom="15" crossorigin="annonymous" loading="lazy" detectretina="" itemprop="geo" itemtype="https://schema.org/GeoCoordinates" itemscope="">
@@ -215,42 +215,14 @@ main-itemtype: Event
 	<br />
 	{% if site.data.weather.appid %}
 		<div class="center card">
-			{% include weather.html appId = site.data.weather.appid postalCode = page.location.postalCode %}
+			{% include common/weather.html appId = site.data.weather.appid postalCode = page.location.postalCode %}
 		</div>
 	{% endif %}
-	{% if page.ads.sidebar %}{% for ad in page.ads.sidebar %}{% include ad.html
-		id=ad.uuid
-		label=ad.label
-		image=ad.image
-		description=ad.description
-		url=ad.url
-		callToAction=ad.callToAction
-		theme=ad.theme
-		layout=ad.layout
-		imageFit=ad.imageFit
-		imagePosition=ad.imagePosition
-		classList=ad.classList
-		campaign=ad.campaign
-		content='sidebar-ad'
-		loading='lazy'
-		media=ad.media
-	%}{% endfor %}{% else %}{% for ad in site.data.ads.sidebar %}{% include ad.html
-		id=ad.uuid
-		label=ad.label
-		image=ad.image
-		description=ad.description
-		url=ad.url
-		callToAction=ad.callToAction
-		theme=ad.theme
-		layout=ad.layout
-		imageFit=ad.imageFit
-		imagePosition=ad.imagePosition
-		classList=ad.classList
-		campaign=ad.campaign
-		content='sidebar-ad'
-		loading='lazy'
-		media=ad.media
-	%}{% endfor %}{% endif %}
+	{% if page.ads.sidebar %}{% for ad in page.ads.sidebar %}
+		{% include common/ad.html ad=ad content="sidebar" %}
+	{% endfor %}{% else %}{% for ad in site.data.ads.sidebar %}
+		{% include common/ad.html ad=ad content="sidebar" %}
+	{% endfor %}{% endif %}
 </aside>
-{% include footer.html %}
-{% include share-button.html text=page.description %}
+{% include common/footer.html keep-kern-clean=site.keep-kern-clean %}
+{% include common/share-button.html text=page.description %}

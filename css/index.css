@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("./vars.css");
 @import url("https://cdn.kernvalley.us/css/core-css/viewport.css");
 @import url("https://cdn.kernvalley.us/css/normalize/normalize.css");
 @import url("https://cdn.kernvalley.us/css/core-css/rem.css");
@@ -7,45 +6,15 @@
 @import url("https://cdn.kernvalley.us/css/core-css/class-rules.css");
 @import url("https://cdn.kernvalley.us/css/core-css/animations.css");
 @import url("https://cdn.kernvalley.us/css/core-css/cdn-fonts.css");
-@import url("https://cdn.kernvalley.us/css/animate.css/animate.css");
-@import url("https://cdn.kernvalley.us/css/core-css/layout/index.css");
+/* @import url("https://cdn.kernvalley.us/css/core-css/layout/index.css"); */
 @import url("https://cdn.kernvalley.us/css/core-css/scrollbar.css");
 @import url("https://cdn.kernvalley.us/css/core-css/accordion.css");
-@import url("./icons.css");
-@import url("./contact.css");
-@import url("./header.css");
-@import url("./nav.css");
-@import url("./sidebar.css");
-@import url("./footer.css");
-
-body {
-	min-height: 100vh;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	overflow-x: hidden;
-}
+@import url("./layout.css");
+@import url("./vars.css");
 
 #events-calendar details.event-details summary.btn {
 	display: block;
 	width: 100%;
-}
-
-.flex > .grow-0 {
-	flex-grow: 0;
-}
-
-.flex > .grow-1 {
-	flex-grow: 1;
-}
-
-.flex > .grow-2 {
-	flex-grow: 2;
-}
-
-.flex > .grow-3 {
-	flex-grow: 3;
 }
 
 .event-details > .card {
@@ -84,14 +53,6 @@ button:disabled.btn {
 	background: var(--button-disabled-background);
 }
 
-[data-scene="lake"] {
-	background-image: var(--lake-background-h);
-}
-
-[data-scene="river"] {
-	background-image: var(--river-background-h);
-}
-
 dialog {
 	border: none;
 }
@@ -110,46 +71,6 @@ summary[role="button"] {
 	justify-content: center;
 }
 
-@media (orientation: landscape and min-width: 1025), (orientation: portrait and max-height: 768px) {
-	[data-scene="lake"] {
-		background-image: var(--lake-background-f);
-	}
-
-	[data-scene="river"] {
-		background-image: var(--river-background-f);
-	}
-}
-
-@media (orientation: landscape and max-width: 640px), (orientation: portrait and max-height: 480px) {
-	[data-scene="lake"] {
-		background-image: var(--lake-background-l);
-	}
-
-	[data-scene="river"] {
-		background-image: var(--river-background-l);
-	}
-}
-
-@media (orientation: landscape and max-width: 320px), (orientation: portrait and max-height: 240px) {
-	[data-scene="lake"] {
-		background-image: var(--lake-background-m);
-	}
-
-	[data-scene="river"] {
-		background-image: var(--river-background-m);
-	}
-}
-
-@media (orientation: portrait and max-width: 160px), (orientation: portrait and max-height: 120px) {
-	[data-scene="lake"] {
-		background-image: var(--lake-background-s);
-	}
-
-	[data-scene="river"] {
-		background-image: var(--river-background-s);
-	}
-}
-
 @media (max-width: 600px) {
 	.share-btns share-to-button::part(text),
 	.share-btns share-to-button::part(spacer) {
@@ -163,18 +84,6 @@ summary[role="button"] {
 		justify-content: center;
 		align-items: center;
 	}
-}
-
-#main a {
-	text-decoration: underline;
-}
-
-.input-group input, .input-group textarea, .input-group select {
-	background: transparent;
-	color: inherit;
-	border-style: none none solid none;
-	padding: 0.3em;
-	margin-bottom: 0.3em;
 }
 
 .full-width {

@@ -9,7 +9,7 @@
 		<span class="underline color-accent project-keywords">{{ include.project.keywords }}</span>
 		<blockquote class="text-align-right block font-article">{{ include.project.description }}</blockquote>
 		<a href="{{ include.project.url }}" target="_{{ include.project.target | default: 'blank' }}" class="underline" rel="noopener external" title="{{ include.project.name }}">
-			{% include icon.html icon='link' %}
+			{% include common/icon.html icon='link' %}
 			<span>Link</span>
 		</a>
 	</details>

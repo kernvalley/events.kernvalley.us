@@ -3,17 +3,8 @@
 
 @media all {
 	:root[theme], :root:not([theme]) {
-		--lake-background-f: url("https://i.imgur.com/vya2c7of.jpg");
-		--lake-background-h: url("https://i.imgur.com/vya2c7oh.jpg");
-		--lake-background-l: url("https://i.imgur.com/vya2c7ol.jpg");
-		--lake-background-m: url("https://i.imgur.com/vya2c7om.jpg");
-		--lake-background-s: url("https://i.imgur.com/vya2c7os.jpg");
-
-		--river-background-f: url("https://i.imgur.com/lQOh8Ej.jpg");
-		--river-background-h: url("https://i.imgur.com/lQOh8Ejh.jpg");
-		--river-background-l: url("https://i.imgur.com/lQOh8Ejl.jpg");
-		--river-background-m: url("https://i.imgur.com/lQOh8Ejm.jpg");
-		--river-background-s: url("https://i.imgur.com/lQOh8Ejs.jpg");
+		--header-height: 0;
+		--nav-height: 4rem;
 
 
 		/*================= Set color vars here =================*/
@@ -24,11 +15,8 @@
 		--header-font: 'Alice', cursive;
 		--article-font: 'Ubuntu';
 		--article-header-font: var(--header-font);
-
-		--header-height: 3rem;
 		--sidebar-max-width: 30vw;
 		--map-width: 25vw;
-		--nav-height: 0;
 
 		--scrollbar-width: thin;
 	}

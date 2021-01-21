@@ -2,14 +2,14 @@
 	<form name="login" method="post" action="{{ include.action | default: '/login/'  }}">
 		<fieldset>
 			<legend>Login</legend>
-			<label for="email">{% include icon.html icon='mail-unread' %}</label>
+			<label for="email">{% include common/icon.html icon='mail-unread' %}</label>
 			<input type="email" name="email" id="email" autocomplete="email" placeholder="user@example.com" required="" />
 			<br />
-			<label for="password">{% include icon.html icon='password' %}</label>
+			<label for="password">{% include common/icon.html icon='password' %}</label>
 			<input type="password" name="password" id="password" autocomplete="current-password" minlength="8" placeholder="********" required="" />
 		</fieldset>
 		<br />
-		<button type="submit">{% include icon.html icon='check' %}</button>
-		<button type="reset" data-close="#login-dialog">{% include icon.html icon='close' %}</button>
+		<button type="submit">{% include common/icon.html icon='check' %}</button>
+		<button type="reset" data-close="#login-dialog">{% include common/icon.html icon='close' %}</button>
 	</form>
 </dialog>
