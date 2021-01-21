@@ -26,8 +26,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Use service worker from CDN
 - Generally, update for consistency with other projects
 
-### Added
-
 ## [v1.4.1] - 2020-12-13
 
 ### Added
