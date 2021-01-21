@@ -48,7 +48,6 @@ const config = {
 		/* Other */
 	].map(path => new URL(path, location.origin).href),
 	allowed: [
-		/https:\/\/secure\.gravatar\.com\/avatar\/*/,
 		/https:\/\/i\.imgur\.com\/*/,
 		/https:\/\/maps\.wikimedia\.org\/osm-intl\/*/,
 		/https:\/\/events\.kernvalley\.us\/events\/*/,
