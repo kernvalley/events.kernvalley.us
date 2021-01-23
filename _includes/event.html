@@ -67,7 +67,7 @@
 			{% if event.location.name %}<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>{% endif %}
 			{% if event.location.url %}</a>{% endif %}
 			{% if include.event.location.addressRegion %}
-				{% include address.html address=include.event.location itemprop='address' %}
+				{% include common/address.html address=include.event.location itemprop='address' %}
 			{% endif %}
 		</div>
 		<hr />
