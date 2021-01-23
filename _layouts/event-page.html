@@ -170,46 +170,26 @@ main-itemtype: Event
 	<br />
 	<div class="clearfix card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" id="place-card" itemscope="">
 		<h4 class="center">Where</h4>
+		{% if page.location.geo %}
+			<div itemprop="geo" itemtype="https://schema.org/GeoCoordinates" hidden="">
+				<meta itemprop="longitude" content="{{ page.location.geo.longitude }}" />
+				<meta itemprop="latitude" content="{{ page.location.geo.latitude }}" />
+			</div>
+			<iframe class="leaflet-map" src="https://maps.kernvalley.us/embed?latitude={{ page.location.geo.latitude }}&amp;longitude={{ page.location.geo.longitude }}&amp;zoom=15&amp;markerLatitude={{ page.location.geo.latitude }}&amp;markerLongitude={{ page.location.geo.longitude }}&amp;popup=&lt;h3&gt;{{ page.location.name | default: page.name | url_encode }}&lt;/h3&gt;&amp;icon=map-marker" loading="lazy" name="krvMaps" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+		{% endif %}
+		{% if page.location.name %}
 		{% include common/icon.html icon='location' class='current-color icon float-left' %}
 		<span class="float-left">&nbsp;</span>
 		{% if page.location.url %}
 			<a href="{{ page.location.url }}" class="location-link" rel="noopener external" itemprop="url">
 			{% include common/icon.html icon="link-external" %}
 		{% endif %}
-		{% if page.location.name %}
 			<b class="float-left" itemprop="name">{{ page.location.name }}</b>
 		{% endif %}
 		{% if page.location.url %}</a>{% endif %}
+		<div class="clearfix"></div>
 		{% if page.location.addressLocality %}
 			{% include common/address.html address=page.location %}
-		{% endif %}
-		{% if page.location.geo %}
-			<leaflet-map center="{{ page.location.geo.latitude }},{{ page.location.geo.longitude }}" zoom="15" crossorigin="annonymous" loading="lazy" detectretina="" itemprop="geo" itemtype="https://schema.org/GeoCoordinates" itemscope="">
-				<meta itemprop="longitude" content="{{ page.location.geo.longitude }}" />
-				<meta itemprop="latitude" content="{{ page.location.geo.latitude }}" />
-				<leaflet-marker slot="markers" longitude="{{ page.location.geo.longitude }}" latitude="{{ page.location.geo.latitude }}" title="{{ page.location.name }}" open="">
-					<img src="https://cdn.kernvalley.us/img/adwaita-icons/actions/mark-location.svg" height="32" width="32" slot="icon" />
-					<div slot="popup">
-						{% if page.location.name %}
-							<h4>{{ page.location.name }}</h4>
-						{% endif %}
-						{% if page.location.image %}
-							<img src="{{ page.location.image.url }}" alt="{{ page.location.image.alt }}" height="{{ page.location.image.height }}" width="{{ page.location.image.width }}" crossorigin="anonymous" decoding="async" />
-						{% endif %}
-						<hr />
-						<address>
-							<div>{{ page.location.streetAddress }}</div>
-							<div>{{ page.location.addressLocality }}, {{ page.location.addressRegion | default: 'CA' }} {{ page.location.postalCode }}</div>
-						</address>
-						<br />
-						{% if page.location.url %}
-							<a href="{{ page.location.url }}" rel="noopener external">Open in Google Maps</a>
-						{% else %}
-							<a href="geo:{{ page.location.geo.latitude }},{{ page.location.geo.longitude }}">Open in Map App</a>
-						{% endif %}
-					</div>
-				</leaflet-marker>
-			</leaflet-map>
 		{% endif %}
 	</div>
 	<br />

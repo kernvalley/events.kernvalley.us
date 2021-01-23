@@ -21,7 +21,7 @@
 		{% endfor %}{% endif %}
 		<h3 itemprop="name">{{ include.business.name }}</h3>
 		{% if include.business.description %}<blockquote itemprop="description">{{ include.business.description }}</blockquote>{% endif %}
-		{% if include.business.address %}{% include address.html address=include.business.address %}{% endif %}
+		{% if include.business.address %}{% include common/address.html address=include.business.address %}{% endif %}
 		{% if include.business.telephone %}<div><a href="tel:+{{ include.business.telephone }}" itemprop="telephone" content="{{ include.business.telephone }}">
 			<span>{{ include.business.telephone }}</span>
 			{% include common/icon.html icon="call-start" width="20" height="20" fill="currentColor" %}

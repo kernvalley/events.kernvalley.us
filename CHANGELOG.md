@@ -14,6 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Use `<iframe src="https://maps.kernvalley.us">` instead of `<leaflet-map>` for event maps
+
+### Fixed
+- Correct mobile layout, main sizing
+- Update various component paths to work with common submodule components
+
 ## [v1.5.0]
 
 ### Added

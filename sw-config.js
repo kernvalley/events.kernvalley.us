@@ -19,7 +19,6 @@ const config = {
 		/* JS, `customElements`, etc. */
 		'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
-		'https://cdn.kernvalley.us/components/leaflet/map.html',
 		'https://cdn.kernvalley.us/components/pwa/prompt.html',
 		'https://cdn.kernvalley.us/components/weather-current.html',
 
@@ -27,7 +26,6 @@ const config = {
 		'https://unpkg.com/leaflet@1.7.1/dist/leaflet.css',
 		'https://cdn.kernvalley.us/components/toast-message.css',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
-		'https://cdn.kernvalley.us/components/leaflet/map.css',
 		'https://cdn.kernvalley.us/components/pwa/prompt.css',
 		'https://cdn.kernvalley.us/components/weather-current.css',
 
