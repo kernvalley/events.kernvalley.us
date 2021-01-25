@@ -9,14 +9,14 @@
 		</div>
 		<div class="input-group">
 			<label for="event-date" class="block">
-				{% include icon.html icon="events" %}
+				{% include common/icon.html icon="events" %}
 				<span>Date</span>
 			</label>
 			<input type="date" name="event-date" id="event-date" placeholder="yyyy-mm-dd" required="" />
 		</div>
 		<div class="input-group">
 			<label for="event-start" class="block">
-				{% include icon.html icon="clock" %}
+				{% include common/icon.html icon="clock" %}
 				<span>Time</span>
 			</label>
 			<input type="time" name="event-startTime" id="event-start" placeholder="hh:mm" required="" />
@@ -25,7 +25,7 @@
 		</div>
 		<div class="input-group">
 			<label for="event-description" class="block">
-				{% include icon.html icon="note" %}
+				{% include common/icon.html icon="note" %}
 				<span>Description</span>
 			</label>
 			<input type="text" name="event-description" id="event-description" placehoder="Brief description" maxlength="80" required="" />
@@ -39,7 +39,7 @@
 				<option value="Bodfish" />
 			</datalist>
 			<label for="event-location-street-address" class="block">
-				{% include icon.html icon="location" %}
+				{% include common/icon.html icon="location" %}
 				<span>Address</span>
 			</label>
 			<input type="hidden" name="event-location-@type" value="PostalAddress" />
@@ -52,14 +52,14 @@
 		</div>
 		<div class="input-group">
 			<label for="event-image" class="block">
-				{% include icon.html icon="file-media" %}
+				{% include common/icon.html icon="file-media" %}
 				<span>Image</span>
 			</label>
 			<input type="file" name="event-image" id="event-image" accept="image/*" required="" />
 		</div>
 		<div class="input-group">
 			<label for="event-content" class="block">
-				{% include icon.html icon="documents" %}
+				{% include common/icon.html icon="documents" %}
 				<span>Page Content</span>
 			</label>
 			<textarea name="event-content" id="event-content" placeholder="Extended content/description" required=""></textarea>
@@ -69,39 +69,39 @@
 		<legend>Contact Info</legend>
 		<div class="input-group">
 			<label for="contact-name" class="block">
-				{% include icon.html icon="avatar-default" %}
+				{% include common/icon.html icon="avatar-default" %}
 				<span>Name</span>
 			</label>
 			<input type="text" name="contact-name" id="contact-name" placeholder="Name" autocomplete="name" required="" />
 		</div>
 		<div class="input-group">
 			<label for="contact-email" class="block">
-				{% include icon.html icon="mail-unread" %}
+				{% include common/icon.html icon="mail-unread" %}
 				<span>Email</span>
 			</label>
 			<input type="email" name="contact-email" id="contact-email" autocomplete="email" placeholder="user@example.com" required="" />
 		</div>
 		<div class="input-group">
 			<label for="contact-phone" class="block">
-				{% include icon.html icon="call-start" %}
+				{% include common/icon.html icon="call-start" %}
 				<span>Phone Number</span>
 			</label>
 			<input type="tel" name="contact-phone" id="contact-phone" autocomplete="telephone" placeholder="+1-555-555-5555" required="" />
 		</div>
 		<div class="input-group">
 			<label for="contact-url" class="block">
-				{% include icon.html icon="link-external" %}
+				{% include common/icon.html icon="link-external" %}
 				<span>Event URL</span>
 			</label>
 			<input type="url" name="contact-url" id="contact-url" autocomplete="url" placeholder="https://example.com/event/" />
 		</div>
 	</fieldset>
 	<button type="submit" class="btn btn-accept">
-		{% include icon.html icon="check" %}
+		{% include common/icon.html icon="check" %}
 		<span>Submit</span>
 	</button>
 	<button type="reset" class="btn btn-reject">
-		{% include icon.html icon="x" %}
+		{% include common/icon.html icon="x" %}
 		<span>Cancel</span>
 	</button>
 </form>

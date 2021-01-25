@@ -1,5 +1,0 @@
-/* :root[data-layout="home"] > body.grid { */
-/* 	grid-template-areas: "header header header" ". main ."  "footer footer footer"; */
-/* 	grid-template-rows: auto minmax(75vh, auto) minmax(300px, auto); */
-/* 	grid-template-columns: 1fr 85vw 1fr; */
-/* } */

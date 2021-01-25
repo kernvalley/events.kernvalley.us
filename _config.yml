@@ -14,6 +14,7 @@ viewport: width=device-width, viewport-fit=cover
 robots: 'follow, index'
 referrer: same-origin
 manifest: /manifest.json
+keep-kern-clean: true
 tiles-config: /browserconfig.xml
 service_worker: /service-worker.js
 og-type: website
@@ -78,26 +79,12 @@ defaults:
           type: text/css
           crossOrigin: anonymous
           referrerPolicy: no-referrer
-        - href: "https://cdn.kernvalley.us/components/leaflet/map.css"
-          as: style
-          type: text/css
-          crossOrigin: anonymous
-          referrerPolicy: no-referrer
-        - href: "https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-          as: style
-          type: text/css
-          crossOrigin: anonymous
-          referrerPolicy: no-referrer
-          integrity: sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==
         - href: "https://cdn.kernvalley.us/components/share-to-button/share-to-button.css"
           as: style
           type: text/css
           crossOrigin: anonymous
           referrerPolicy: no-referrer
       preconnect:
-        - href: 'https://maps.wikimedia.com'
-          crossOrigin: anonymous
-          referrerPolicy: no-referrer
         - href: 'https://api.openweathermap.org/'
           crossOrigin: anonymous
           referrerPolicy: no-referrer

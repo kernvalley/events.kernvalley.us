@@ -14,8 +14,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Use `<iframe src="https://maps.kernvalley.us">` instead of `<leaflet-map>` for event maps
+
+### Fixed
+- Correct mobile layout, main sizing
+- Update various component paths to work with common submodule components
+
+## [v1.5.0]
+
 ### Added
+- Sub-directories by year for events
+- `jekyll-common` submodule as `_includes/common/`
 - JSON array of upcoming events at `/events.json`
+
+### Changed
+- Update `_layouts/*` and `_includes/*` to use `_includes/common/`
+- Use service worker from CDN
+- Generally, update for consistency with other projects
 
 ## [v1.4.1] - 2020-12-13
 
