@@ -46,7 +46,7 @@ main-itemtype: Event
 		{% endif %}
 		<!-- <div itemtype="https://schema.org/Place" itemprop="location" itemref="place-card" hidden=""></div> -->
 		<figure class="center" itemprop="image" itemtype="https://schema.org/ImageObject" itemscope="">
-			{% include common/imgur.html url=page.imgur itemprop="url" class="imgur" %}
+			{% include common/imgur.html url=page.imgur itemprop="url" class="imgur" sizes="(max-width: 800px) 100vw, 60vw" %}
 		</figure>
 		{% if page.offers %}<hr /><div class="flex row wrap event-page-offers">{% for offer in page.offers %}
 			{% if offer.url %}
