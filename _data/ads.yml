@@ -3,7 +3,7 @@ source: kern-valley-events
 medium: web
 campaign: kv-ads
 sidebar:
-  - uuid: 57c7036d-f128-4506-962b-373b8fb5ea78
+  - id: 57c7036d-f128-4506-962b-373b8fb5ea78
     label: Kern Valley Ads
     url: https://ads.kernvalley.us
     image: https://cdn.kernvalley.us/img/branding/ads.kernvalley.us.svg
@@ -11,7 +11,7 @@ sidebar:
     callToAction: Click here to get started
     layout: card
     theme: auto
-  - uuid: 342bd190-ffd7-4568-b7c6-191f7f300de8
+  - id: 342bd190-ffd7-4568-b7c6-191f7f300de8
     label: The Reel Cinema
     disabled: true
     description: |-
@@ -23,7 +23,7 @@ sidebar:
     url: https://ourreelcinema.com
     layout: card
     theme: auto
-  - uuid: 3a99a3fb-e828-4814-832c-4fb7798b9429
+  - id: 3a99a3fb-e828-4814-832c-4fb7798b9429
     label: Whiskey Flat Days
     url: https://whiskeyflatdays.com
     image: https://cdn.kernvalley.us/img/branding/whiskeyflatdays.com.svg
