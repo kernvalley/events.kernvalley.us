@@ -69,23 +69,24 @@ defaults:
       layout: event-page
       eventStatus: EventScheduled
       eventAttendanceMode: OfflineEventAttendanceMode
+      offers: []
       comments: true
       ads: false
       index: true
       referrer: no-referrer
       preload:
-        - href: "https://cdn.kernvalley.us/components/weather-current.css"
+        - href: https://cdn.kernvalley.us/components/weather-current.css
           as: style
           type: text/css
           crossOrigin: anonymous
           referrerPolicy: no-referrer
-        - href: "https://cdn.kernvalley.us/components/share-to-button/share-to-button.css"
+        - href: https://cdn.kernvalley.us/components/share-to-button/share-to-button.css
           as: style
           type: text/css
           crossOrigin: anonymous
           referrerPolicy: no-referrer
       preconnect:
-        - href: 'https://api.openweathermap.org/'
+        - href: https://api.openweathermap.org/
           crossOrigin: anonymous
           referrerPolicy: no-referrer
   - scope:
