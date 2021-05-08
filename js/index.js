@@ -29,10 +29,6 @@ toggleClass([document.documentElement], {
 	'no-js': false,
 });
 
-if ('serviceWorker' in navigator) {
-	navigator.serviceWorker.register('/service-worker.js');
-}
-
 if (typeof GA === 'string' && GA.length !== 0) {
 	loaded().then(() => {
 		requestIdleCallback(() => {
