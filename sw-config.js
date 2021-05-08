@@ -46,9 +46,11 @@ const config = {
 		'https://i.imgur.com/',
 		'https://cdn.kernvalley.us/img/branding/',
 		/https:\/\/\w+\.githubusercontent\.com\/u\/*/,
+		/\.(jpg|png|gif|webp|ico)$/,
 	],
 	allowedFresh: [
 		'https://api.github.com/users/',
 		'https://api.openweathermap.org/data/2.5/weather',
+		/\.(js|css|html|json)$/,
 	]
 };
