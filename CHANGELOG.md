@@ -14,12 +14,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.5.1] - 2021-05-08
+
+### Added
+- KRV Guide app ad
+
 ### Changed
 - Use `<iframe src="https://maps.kernvalley.us">` instead of `<leaflet-map>` for event maps
+- Remove use of `esQuery` and use DOM module instead
 
 ### Fixed
+- Update HTTP headers to use `Referrer-Policy: no-referrer`
 - Correct mobile layout, main sizing
 - Update various component paths to work with common submodule components
+- Remove unused modules (no more `<leaflet-map>`)
+
+### Removed
+- Take out code for deprecated Notification triggers (experiment expired)
 
 ## [v1.5.0]
 

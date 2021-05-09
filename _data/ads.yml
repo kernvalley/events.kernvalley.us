@@ -7,6 +7,7 @@ sidebar:
     label: Kern Valley Ads
     url: https://ads.kernvalley.us
     image: https://cdn.kernvalley.us/img/branding/ads.kernvalley.us.svg
+    imagFit: contain
     description: Advertise on websites throughout the Kern River Valley
     callToAction: Click here to get started
     layout: card
@@ -25,9 +26,17 @@ sidebar:
     theme: auto
   - uuid: 3a99a3fb-e828-4814-832c-4fb7798b9429
     label: Whiskey Flat Days
+    disabled: true
     url: https://whiskeyflatdays.com
     image: https://cdn.kernvalley.us/img/branding/whiskeyflatdays.com.svg
     description: Every President's Day Weekend in Kernville, CA
     callToAction: Click to learn more!
     theme: auto
+  - uuid: 39b480a2-dd47-42af-9e4a-78210a518be8
+    url: https://guide.kernvalley.us
+    label: Kern Valley Guide
+    description: Looking for the address of a new burger place? Tired of Google showing results from out-of-town?
+    image: https://cdn.kernvalley.us/img/branding/guide.kernvalley.us.svg
+    imagFit: contain
+    callToAction: Search Local Businesses
 ---
