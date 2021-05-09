@@ -8,3 +8,5 @@
   type: font/woff2
   referrerPolicy: no-referrer
   importance: high
+- href: /manifest.json
+  as: fetch
