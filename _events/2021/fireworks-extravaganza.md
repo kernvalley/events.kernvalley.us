@@ -23,8 +23,8 @@ location:
   url: 'https://goo.gl/maps/x8Sxo4vS2GQ2'
   geo:
     '@type': GeoCoordinates
-    latitude: 35.65687781
-    longitude: -118.46591949
+    latitude: 35.65677320
+    longitude: -118.46682072
 organizer:
   '@type': 'Organization'
   name: Kern River Valley Chamber of Commerce
