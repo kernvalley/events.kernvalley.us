@@ -30,7 +30,6 @@ organizer:
   name: Kern River Valley Chamber of Commerce
   url: 'https://www.kernrivervalley.com/'
 ---
-### 4<sup>th</sup> of July Fireworks Extravaganza
 
 **TIME:** 9:30 PM (approximately) when the sun has completely set over the mountain
 and winds are calm.
