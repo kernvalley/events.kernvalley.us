@@ -5,6 +5,7 @@ image: https://i.imgur.com/XqkvavG.jpg
 imgur: https://i.imgur.com/XqkvavG.jpg
 url: https://www.kernvillebeerfest.com/
 description: Kernville's craft beer festival. Over 30 breweries, food vendors, & bands. Get your tickets now!
+pinned: true
 tags:
   - beer
   - music

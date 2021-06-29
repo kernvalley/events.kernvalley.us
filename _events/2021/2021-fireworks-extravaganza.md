@@ -3,6 +3,7 @@
 name: 4th of July Fireworks Extravaganza
 image: https://imgur.com/vcCrG6L.jpg
 imgur: https://imgur.com/vcCrG6L.jpg
+pinned: true
 description: 'Join us at approx. 9:30 PM (depending on conditions) on the 3rd of July for 4th of July Fireworks Extravaganza'
 tags:
   - fireworks
