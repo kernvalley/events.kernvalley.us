@@ -153,7 +153,7 @@ main-itemtype: Event
 	</article>
 </main>
 <aside id="sidebar" class="card contain-content">
-	<div class="card clearfix" id="time-card">
+	<div id="time-card" class="card clearfix">
 		<h4 class="center">When</h4>
 		{% include common/icon.html icon='events' class="current-color icon float-left" %}
 		<span class="float-left"> </span>
@@ -168,7 +168,7 @@ main-itemtype: Event
 		</button>
 	</div>
 	<br />
-	<div class="clearfix card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" id="place-card" itemscope="">
+	<div id="place-card" class="clearfix card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
 		<h4 class="center">Where</h4>
 		{% if page.location.geo %}
 			<div itemprop="geo" itemtype="https://schema.org/GeoCoordinates" hidden="">
@@ -191,6 +191,29 @@ main-itemtype: Event
 		{% if page.location.addressLocality %}
 			{% include common/address.html address=page.location %}
 		{% endif %}
+	</div>
+	<br />
+	<div id="organizer-card" class="clearfix card" itemprop="organizer" itemprop="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
+		<h4 class="center">Organized by</h4>
+		<span class="block center" itemprop="name">{{ page.organizer.name }}</span><br />
+		<div class="organizer-info">
+			{% if page.organizer.url %}
+				{% include common/url.html url=page.organizer.url %}<br />
+			{% endif %}
+			{% if page.organizer.telephone %}
+				{% include common/telephone.html telephone=page.organizer.telephone %}<br />
+			{% endif %}
+			{% if page.organizer.address %}
+				{% include common/address.html address=page.organizer.address %}<br />
+			{% endif %}
+			{% if page.organizer.email %}
+				{% include common/email.html email=page.organizer.email %}<br />
+			{% endif %}
+			{% if page.organizer.sameAs %}
+				<hr />
+				{% include common/same-as-links.html sameAs=page.organizer.sameAs %}<br />
+			{% endif %}
+		</div>
 	</div>
 	<br />
 	{% if site.data.weather.appid %}
