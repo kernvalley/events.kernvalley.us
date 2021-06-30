@@ -207,7 +207,7 @@ main-itemtype: Event
 				{% include common/email.html email=page.organizer.email %}<br />
 			{% endif %}
 			{% if page.organizer.address %}
-				{% include common/address.html address=page.organizer.address %}<br />
+				<br />{% include common/address.html address=page.organizer.address %}<br />
 			{% endif %}
 			{% if page.organizer.sameAs %}
 				<hr />
