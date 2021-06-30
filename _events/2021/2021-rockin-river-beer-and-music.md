@@ -43,9 +43,17 @@ location:
     longitude: -118.423541
     latitude: 35.763118
 organizer:
+  "@type": Campground
   name: Rivernook Campground
   telephone: +1-760-376-2705
+  telephone: 760-376-2705
+  email: info@rivernookcampground.com
   url: https://rivernookcampground.com/
+  sameAs:
+   - https://www.facebook.com/myrivernook/
+   - https://twitter.com/Rivernookcamp
+   - https://instagram.com/rivernookcampgroundinc/
+   #- https://www.tripadvisor.com/Hotel_Review-g32556-d1628435-Reviews-Rivernook_Campground-Kernville_California.html
 ---
 Hello Independent Craft Beer Lovers!!!!! Ahhhh, we cant wait stand on the stage
 and Cheers to 2021!!! We hope that you all had a safe 2020. While 2020 was Brutal

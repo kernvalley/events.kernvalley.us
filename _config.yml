@@ -13,7 +13,7 @@ paginate_path: "/page-:num/"
 viewport: width=device-width, viewport-fit=cover
 robots: 'follow, index'
 referrer: same-origin
-manifest: /manifest.json
+manifest: /webapp.webmanifest
 keep-kern-clean: true
 tiles-config: /browserconfig.xml
 service_worker: /service-worker.js

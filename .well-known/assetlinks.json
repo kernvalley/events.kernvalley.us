@@ -13,6 +13,6 @@
   "relation": ["delegate_permission/common.query_webapk"],
   "target": {
     "namespace": "web",
-    "site": "https://events.kernvalley.us/manifest.json"
+    "site": "https://events.kernvalley.us/webapp.webmanifest"
   }
 }]
