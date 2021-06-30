@@ -203,11 +203,11 @@ main-itemtype: Event
 			{% if page.organizer.telephone %}
 				{% include common/telephone.html telephone=page.organizer.telephone %}<br />
 			{% endif %}
-			{% if page.organizer.address %}
-				{% include common/address.html address=page.organizer.address %}<br />
-			{% endif %}
 			{% if page.organizer.email %}
 				{% include common/email.html email=page.organizer.email %}<br />
+			{% endif %}
+			{% if page.organizer.address %}
+				{% include common/address.html address=page.organizer.address %}<br />
 			{% endif %}
 			{% if page.organizer.sameAs %}
 				<hr />
