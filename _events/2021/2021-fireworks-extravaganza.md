@@ -29,7 +29,19 @@ location:
 organizer:
   '@type': 'Organization'
   name: Kern River Valley Chamber of Commerce
+  email: office@kernrivervalley.com
   url: 'https://www.kernrivervalley.com/'
+  telephone: +1-866-578-4386
+  address:
+    "@type": PostalAddress
+    streetAddress: 6414 Lake Isabella Blvd. - Suite D
+    postOfficeBoxNumber: 567
+    addressLocality: Lake Isabella
+    addressRegion: CA
+    postalCode: 93240
+  sameAs:
+    - https://www.facebook.com/Kern-River-Valley-Chamber-of-Commerce-130937500306948/
+    - https://twitter.com/KRVCC
 ---
 
 **TIME:** 9:30 PM (approximately) when the sun has completely set over the mountain
