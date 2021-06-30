@@ -40,6 +40,7 @@ organizer:
   '@type': 'Organization'
   name: Notorious Entertainment
   url: http://notoriousent.net/
+  telephone: +1-661-340-0026
 ---
 ### Sept. 23-26, 2021 \\ Frandy Campground \\ Kernville, CA
 

@@ -76,7 +76,7 @@ Keyesville Classic is one of the longest running and BEST mountain bike races in
 the nation.
 
 We’re proud to announce that Team Action Dad will be producing the Keyesville
-Classic in 2020 and beyond. Follow us on <a href="https://www.facebook.com/keyesville.classic/" rel="noopener noreferrer external">Facebook {% include common/icon.html icon="facebook" height="16" width="16" %}</a> and <a href="https://www.instagram.com/keyesvilleclassic/" rel="noopener noreferrer external">Instagram <img src="'https://cdn.kernvalley.us/img/logos/instagram.svg" class="icon" width="16" height="16" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" /></a> for updates and contest.
+Classic in 2020 and beyond. Follow us on <a href="https://www.facebook.com/keyesville.classic/" rel="noopener noreferrer external">Facebook {% include common/icon.html icon="facebook" height="16" width="16" %}</a> and <a href="https://www.instagram.com/keyesvilleclassic/" rel="noopener noreferrer external">Instagram <img src="https://cdn.kernvalley.us/img/logos/instagram.svg" class="icon" width="16" height="16" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" crossorigin="anonymous" /></a> for updates and contest.
 
 See the [Keyesville Classic website {% include common/icon.html icon="link-external" %}](https://keyesvilleclassicmtb.com/)
 for registration and more info.
