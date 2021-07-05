@@ -3,6 +3,7 @@
 @import url("./sidebar.css");
 @import url("./main.css");
 @import url("./footer.css");
+@import url("./event-info.css");
 
 /* @import url("https://cdn.kernvalley.us/css/core-css/layout/index.css"); */
 
@@ -11,6 +12,10 @@ body {
 	grid-template-areas: "nav nav nav" ". main sidebar" "footer footer footer";
 	grid-template-rows: var(--nav-height, 4rem) 1fr auto;
 	grid-template-columns: 12px 1fr 400px;
+	gap: 8px;
+}
+
+#organizer-info {
 	gap: 8px;
 }
 

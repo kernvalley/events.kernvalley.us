@@ -46,24 +46,10 @@ main-itemtype: Event
 		{% endif %}
 		<!-- <div itemtype="https://schema.org/Place" itemprop="location" itemref="place-card" hidden=""></div> -->
 		<figure class="center" itemprop="image" itemtype="https://schema.org/ImageObject" itemscope="">
-			{% include common/imgur.html url=page.imgur itemprop="url" class="imgur" sizes="(max-width: 800px) 100vw, 60vw" %}
+			{% include common/imgur.html url=page.imgur itemprop="url" class="imgur" sizes="(max-width: 800px) 100vw, 80vw" %}
 		</figure>
-		<section id="info-section" class="flex row wrap">
-			<div id="time-card" class="card clearfix">
-				<h4 class="center">When</h4>
-				{% include common/icon.html icon='events' class="current-color icon float-left" %}
-				<span class="float-left"> </span>
-				<div class="float-left">
-					<time datetime="{{ page.startDate | date_to_xmlschema }}" itemprop="startDate">{{ page.startDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
-					<span>&mdash;</span>
-					<time datetime="{{ page.endDate | date_to_xmlschema }}" itemprop="endDate">{{ page.endDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
-				</div>
-				<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" data-uuid="{{ page.title | sluggify }}" hidden="">
-					{% include common/icon.html icon="appointment-new" %}
-					<span>Add Reminder</span>
-				</button>
-			</div>
-			<div id="place-card" class="clearfix card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
+		<section id="event-info-section" class="grid">
+			<div id="place-card" class="card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
 				<h4 class="center">Where</h4>
 				{% if page.location.geo %}
 					<div itemprop="geo" itemtype="https://schema.org/GeoCoordinates" hidden="">
@@ -87,26 +73,39 @@ main-itemtype: Event
 					{% include common/address.html address=page.location %}
 				{% endif %}
 			</div>
-			<br />
-			<div id="organizer-card" class="clearfix card" itemprop="organizer" itemprop="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
+			<div id="time-card" class="card">
+				<h4 class="center">When</h4>
+				{% include common/icon.html icon='events' class="current-color icon float-left" %}
+				<span class="float-left"> </span>
+				<div class="float-left">
+					<time datetime="{{ page.startDate | date_to_xmlschema }}" itemprop="startDate">{{ page.startDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
+					<span>&mdash;</span>
+					<time datetime="{{ page.endDate | date_to_xmlschema }}" itemprop="endDate">{{ page.endDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
+				</div>
+				<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" data-uuid="{{ page.title | sluggify }}" hidden="">
+					{% include common/icon.html icon="appointment-new" %}
+					<span>Add Reminder</span>
+				</button>
+			</div>
+			<div id="organizer-card" class="card" itemprop="organizer" itemprop="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
 				<h4 class="center">Organized by</h4>
-				<span class="block center" itemprop="name">{{ page.organizer.name }}</span><br />
-				<div class="organizer-info">
+				<div class="block center" itemprop="name">{{ page.organizer.name }}</div>
+				<div id="organizer-info" class="flex row wrap">
 					{% if page.organizer.url %}
-						{% include common/url.html url=page.organizer.url %}<br />
+						{% include common/url.html url=page.organizer.url %}
 					{% endif %}
 					{% if page.organizer.telephone %}
-						{% include common/telephone.html telephone=page.organizer.telephone %}<br />
+						{% include common/telephone.html telephone=page.organizer.telephone %}
 					{% endif %}
 					{% if page.organizer.email %}
-						{% include common/email.html email=page.organizer.email %}<br />
+						{% include common/email.html email=page.organizer.email %}
 					{% endif %}
 					{% if page.organizer.address %}
-						<br />{% include common/address.html address=page.organizer.address %}<br />
+						<br />{% include common/address.html address=page.organizer.address %}
 					{% endif %}
 					{% if page.organizer.sameAs %}
 						<hr />
-						{% include common/same-as-links.html sameAs=page.organizer.sameAs %}<br />
+						{% include common/same-as-links.html sameAs=page.organizer.sameAs %}
 					{% endif %}
 				</div>
 			</div>

@@ -1,0 +1,24 @@
+#event-info-section {
+	grid-template-areas: ". time place ." ". organizer place .";
+	grid-template-columns: 1fr minmax(350px, 450px) minmax(350px, 500px) 1fr;
+	gap: 1.2rem;
+}
+
+#place-card {
+	grid-area: place;
+}
+
+#time-card {
+	grid-area: time;
+}
+
+#organizer-card {
+	grid-area: organizer;
+}
+
+@media (max-width: 750px) {
+	#event-info-section {
+		grid-template-areas: "time" "place" "organizer";
+		grid-template-columns: auto;
+	}
+}
