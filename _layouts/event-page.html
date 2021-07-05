@@ -51,7 +51,7 @@ main-itemtype: Event
 		<section id="event-info-section" class="grid">
 			<div id="place-card" class="card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
 				<h4 class="center">
-					{% include common/icon.html icon='location' class='current-color icon float-left' %}
+					{% include common/icon.html icon='location' %}
 					<span>Where</span>
 				</h4>
 				{% if page.location.geo %}
@@ -79,7 +79,7 @@ main-itemtype: Event
 			</div>
 			<div id="time-card" class="card">
 				<h4 class="center">
-					{% include common/icon.html icon='events' class="current-color icon float-left" %}
+					{% include common/icon.html icon='events' %}
 					<span>When</span>
 				</h4>
 				<div>
