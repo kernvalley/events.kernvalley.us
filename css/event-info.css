@@ -16,7 +16,7 @@
 	grid-area: organizer;
 }
 
-#place-map .leaflet-map {
+#place-card .leaflet-map {
 	width: 100%;
 	border: none;
 }
