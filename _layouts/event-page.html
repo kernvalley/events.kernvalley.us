@@ -10,7 +10,7 @@ sidebar: true
 main-itemtype: Event
 ---
 {% include common/nav.html %}
-<main id="main" class="card shadow" itemtype="https://schema.org/Event" itemscope="" itemref="time-card place-card">
+<main id="main" class="card shadow" itemtype="https://schema.org/Event" itemscope="">
 	<link itemprop="eventStatus" content="https://schema.org/{{ page.eventStatus | default: 'EventScheduled' }}" />
 	<link itemprop="eventAttendanceMode" content="https://schema.org/{{ page.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
 	<header class="event-page-header">
@@ -48,6 +48,69 @@ main-itemtype: Event
 		<figure class="center" itemprop="image" itemtype="https://schema.org/ImageObject" itemscope="">
 			{% include common/imgur.html url=page.imgur itemprop="url" class="imgur" sizes="(max-width: 800px) 100vw, 60vw" %}
 		</figure>
+		<section id="info-section" class="flex row wrap">
+			<div id="time-card" class="card clearfix">
+				<h4 class="center">When</h4>
+				{% include common/icon.html icon='events' class="current-color icon float-left" %}
+				<span class="float-left"> </span>
+				<div class="float-left">
+					<time datetime="{{ page.startDate | date_to_xmlschema }}" itemprop="startDate">{{ page.startDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
+					<span>&mdash;</span>
+					<time datetime="{{ page.endDate | date_to_xmlschema }}" itemprop="endDate">{{ page.endDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
+				</div>
+				<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" data-uuid="{{ page.title | sluggify }}" hidden="">
+					{% include common/icon.html icon="appointment-new" %}
+					<span>Add Reminder</span>
+				</button>
+			</div>
+			<div id="place-card" class="clearfix card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
+				<h4 class="center">Where</h4>
+				{% if page.location.geo %}
+					<div itemprop="geo" itemtype="https://schema.org/GeoCoordinates" hidden="">
+						<meta itemprop="longitude" content="{{ page.location.geo.longitude }}" />
+						<meta itemprop="latitude" content="{{ page.location.geo.latitude }}" />
+					</div>
+					<iframe class="leaflet-map" src="https://maps.kernvalley.us/embed?latitude={{ page.location.geo.latitude }}&amp;longitude={{ page.location.geo.longitude }}&amp;zoom=15&amp;markerLatitude={{ page.location.geo.latitude }}&amp;markerLongitude={{ page.location.geo.longitude }}&amp;popup=&lt;h3&gt;{{ page.location.name | default: page.name | url_encode }}&lt;/h3&gt;&amp;icon=map-marker" loading="lazy" name="krvMaps" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+				{% endif %}
+				{% if page.location.name %}
+				{% include common/icon.html icon='location' class='current-color icon float-left' %}
+				<span class="float-left">&nbsp;</span>
+				{% if page.location.url %}
+					<a href="{{ page.location.url }}" class="location-link" rel="noopener external" itemprop="url">
+					{% include common/icon.html icon="link-external" %}
+				{% endif %}
+					<b class="float-left" itemprop="name">{{ page.location.name }}</b>
+				{% endif %}
+				{% if page.location.url %}</a>{% endif %}
+				<div class="clearfix"></div>
+				{% if page.location.addressLocality %}
+					{% include common/address.html address=page.location %}
+				{% endif %}
+			</div>
+			<br />
+			<div id="organizer-card" class="clearfix card" itemprop="organizer" itemprop="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
+				<h4 class="center">Organized by</h4>
+				<span class="block center" itemprop="name">{{ page.organizer.name }}</span><br />
+				<div class="organizer-info">
+					{% if page.organizer.url %}
+						{% include common/url.html url=page.organizer.url %}<br />
+					{% endif %}
+					{% if page.organizer.telephone %}
+						{% include common/telephone.html telephone=page.organizer.telephone %}<br />
+					{% endif %}
+					{% if page.organizer.email %}
+						{% include common/email.html email=page.organizer.email %}<br />
+					{% endif %}
+					{% if page.organizer.address %}
+						<br />{% include common/address.html address=page.organizer.address %}<br />
+					{% endif %}
+					{% if page.organizer.sameAs %}
+						<hr />
+						{% include common/same-as-links.html sameAs=page.organizer.sameAs %}<br />
+					{% endif %}
+				</div>
+			</div>
+		</section>
 		{% if page.offers %}<hr /><div class="flex row wrap event-page-offers">{% for offer in page.offers %}
 			{% if offer.url %}
 				<a href="{{ offer.url }}" role="button" rel="noopener external" class="center btn btn-primary event-offer-btn" itemprop="offers" itemtype="http://schema.org/Offer" itemscope=""{% if offer.availability and offer.availability != 'InStock' %} title="Unavailable" disabled=""{% endif %}>
@@ -153,69 +216,6 @@ main-itemtype: Event
 	</article>
 </main>
 <aside id="sidebar" class="card contain-content">
-	<div id="time-card" class="card clearfix">
-		<h4 class="center">When</h4>
-		{% include common/icon.html icon='events' class="current-color icon float-left" %}
-		<span class="float-left"> </span>
-		<div class="float-left">
-			<time datetime="{{ page.startDate | date_to_xmlschema }}" itemprop="startDate">{{ page.startDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
-			<span>&mdash;</span>
-			<time datetime="{{ page.endDate | date_to_xmlschema }}" itemprop="endDate">{{ page.endDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
-		</div>
-		<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" data-uuid="{{ page.title | sluggify }}" hidden="">
-			{% include common/icon.html icon="appointment-new" %}
-			<span>Add Reminder</span>
-		</button>
-	</div>
-	<br />
-	<div id="place-card" class="clearfix card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
-		<h4 class="center">Where</h4>
-		{% if page.location.geo %}
-			<div itemprop="geo" itemtype="https://schema.org/GeoCoordinates" hidden="">
-				<meta itemprop="longitude" content="{{ page.location.geo.longitude }}" />
-				<meta itemprop="latitude" content="{{ page.location.geo.latitude }}" />
-			</div>
-			<iframe class="leaflet-map" src="https://maps.kernvalley.us/embed?latitude={{ page.location.geo.latitude }}&amp;longitude={{ page.location.geo.longitude }}&amp;zoom=15&amp;markerLatitude={{ page.location.geo.latitude }}&amp;markerLongitude={{ page.location.geo.longitude }}&amp;popup=&lt;h3&gt;{{ page.location.name | default: page.name | url_encode }}&lt;/h3&gt;&amp;icon=map-marker" loading="lazy" name="krvMaps" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
-		{% endif %}
-		{% if page.location.name %}
-		{% include common/icon.html icon='location' class='current-color icon float-left' %}
-		<span class="float-left">&nbsp;</span>
-		{% if page.location.url %}
-			<a href="{{ page.location.url }}" class="location-link" rel="noopener external" itemprop="url">
-			{% include common/icon.html icon="link-external" %}
-		{% endif %}
-			<b class="float-left" itemprop="name">{{ page.location.name }}</b>
-		{% endif %}
-		{% if page.location.url %}</a>{% endif %}
-		<div class="clearfix"></div>
-		{% if page.location.addressLocality %}
-			{% include common/address.html address=page.location %}
-		{% endif %}
-	</div>
-	<br />
-	<div id="organizer-card" class="clearfix card" itemprop="organizer" itemprop="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
-		<h4 class="center">Organized by</h4>
-		<span class="block center" itemprop="name">{{ page.organizer.name }}</span><br />
-		<div class="organizer-info">
-			{% if page.organizer.url %}
-				{% include common/url.html url=page.organizer.url %}<br />
-			{% endif %}
-			{% if page.organizer.telephone %}
-				{% include common/telephone.html telephone=page.organizer.telephone %}<br />
-			{% endif %}
-			{% if page.organizer.email %}
-				{% include common/email.html email=page.organizer.email %}<br />
-			{% endif %}
-			{% if page.organizer.address %}
-				<br />{% include common/address.html address=page.organizer.address %}<br />
-			{% endif %}
-			{% if page.organizer.sameAs %}
-				<hr />
-				{% include common/same-as-links.html sameAs=page.organizer.sameAs %}<br />
-			{% endif %}
-		</div>
-	</div>
-	<br />
 	{% if site.data.weather.appid %}
 		<div class="center card">
 			{% include common/weather.html appId = site.data.weather.appid postalCode = page.location.postalCode %}
