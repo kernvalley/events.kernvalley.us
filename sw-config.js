@@ -46,7 +46,7 @@ const config = {
 		'https://i.imgur.com/',
 		'https://cdn.kernvalley.us/img/branding/',
 		/https:\/\/\w+\.githubusercontent\.com\/u\/*/,
-		/\.(jpg|png|gif|webp|ico|woff2|woff)$/,
+		/\.(jpg|png|gif|webp|ico|woff2|woff|ttf)$/,
 	],
 	allowedFresh: [
 		'https://api.github.com/users/',

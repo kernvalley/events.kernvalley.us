@@ -18,6 +18,7 @@
 
 #place-map .leaflet-map {
 	width: 100%;
+	border: none;
 }
 
 @media (max-width: 750px) {
