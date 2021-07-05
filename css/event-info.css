@@ -1,6 +1,6 @@
 #event-info-section {
 	grid-template-areas: ". time place ." ". organizer place .";
-	grid-template-columns: 1fr minmax(350px, 450px) minmax(350px, 500px) 1fr;
+	grid-template-columns: 1fr 350px minmax(350px, 500px) 1fr;
 	gap: 1.2rem;
 }
 
