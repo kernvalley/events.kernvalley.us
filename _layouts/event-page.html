@@ -50,7 +50,10 @@ main-itemtype: Event
 		</figure>
 		<section id="event-info-section" class="grid">
 			<div id="place-card" class="card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
-				<h4 class="center">Where</h4>
+				<h4 class="center">
+					{% include common/icon.html icon='location' class='current-color icon float-left' %}
+					<span>Where</span>
+				</h4>
 				{% if page.location.geo %}
 					<div itemprop="geo" itemtype="https://schema.org/GeoCoordinates" hidden="">
 						<meta itemprop="longitude" content="{{ page.location.geo.longitude }}" />
@@ -59,27 +62,31 @@ main-itemtype: Event
 					<iframe class="leaflet-map" src="https://maps.kernvalley.us/embed?latitude={{ page.location.geo.latitude }}&amp;longitude={{ page.location.geo.longitude }}&amp;zoom=15&amp;markerLatitude={{ page.location.geo.latitude }}&amp;markerLongitude={{ page.location.geo.longitude }}&amp;popup=&lt;h3&gt;{{ page.location.name | default: page.name | url_encode }}&lt;/h3&gt;&amp;icon=map-marker" loading="lazy" name="krvMaps" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
 				{% endif %}
 				{% if page.location.name %}
-				{% include common/icon.html icon='location' class='current-color icon float-left' %}
-				<span class="float-left">&nbsp;</span>
-				{% if page.location.url %}
-					<a href="{{ page.location.url }}" class="location-link" rel="noopener external" itemprop="url">
-					{% include common/icon.html icon="link-external" %}
-				{% endif %}
-					<b class="float-left" itemprop="name">{{ page.location.name }}</b>
+					<div>
+						<span>&nbsp;</span>
+						{% if page.location.url %}
+							<a href="{{ page.location.url }}" class="location-link" rel="noopener noreferrer external" itemprop="url">
+							{% include common/icon.html icon="link-external" %}
+						{% endif %}
+						<b itemprop="name">{{ page.location.name }}</b>
+					</div>
 				{% endif %}
 				{% if page.location.url %}</a>{% endif %}
-				<div class="clearfix"></div>
+				<br />
 				{% if page.location.addressLocality %}
 					{% include common/address.html address=page.location %}
 				{% endif %}
 			</div>
 			<div id="time-card" class="card">
-				<h4 class="center">When</h4>
-				{% include common/icon.html icon='events' class="current-color icon float-left" %}
-				<span class="float-left"> </span>
-				<div class="float-left">
+				<h4 class="center">
+					{% include common/icon.html icon='events' class="current-color icon float-left" %}
+					<span>When</span>
+				</h4>
+				<div>
+					<span>Start:</span>
 					<time datetime="{{ page.startDate | date_to_xmlschema }}" itemprop="startDate">{{ page.startDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
-					<span>&mdash;</span>
+					<br />
+					<span>End:</span>
 					<time datetime="{{ page.endDate | date_to_xmlschema }}" itemprop="endDate">{{ page.endDate | date: '%a %b %-d, %Y %l:%M %p'}}</time>
 				</div>
 				<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" data-uuid="{{ page.title | sluggify }}" hidden="">
@@ -103,11 +110,11 @@ main-itemtype: Event
 					{% if page.organizer.address %}
 						<br />{% include common/address.html address=page.organizer.address %}
 					{% endif %}
-					{% if page.organizer.sameAs %}
-						<hr />
-						{% include common/same-as-links.html sameAs=page.organizer.sameAs %}
-					{% endif %}
 				</div>
+				{% if page.organizer.sameAs %}
+					<hr />
+					{% include common/same-as-links.html sameAs=page.organizer.sameAs %}
+				{% endif %}
 			</div>
 		</section>
 		{% if page.offers %}<hr /><div class="flex row wrap event-page-offers">{% for offer in page.offers %}
