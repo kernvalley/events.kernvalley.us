@@ -94,7 +94,7 @@ main-itemtype: Event
 					<span>Add Reminder</span>
 				</button>
 			</div>
-			<div id="organizer-card" class="card" itemprop="organizer" itemprop="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
+			<div id="organizer-card" class="card" itemprop="organizer" itemtype="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
 				<h4 class="center">Organized by</h4>
 				<div class="block center" itemprop="name">{{ page.organizer.name }}</div>
 				<div id="organizer-info" class="flex row wrap">
