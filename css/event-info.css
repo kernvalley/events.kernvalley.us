@@ -1,0 +1,30 @@
+#event-info-section {
+	grid-template-areas: ". time place ." ". organizer place .";
+	grid-template-columns: 1fr minmax(auto, 350px) minmax(350px, 500px) 1fr;
+	gap: 8px;
+}
+
+#place-card {
+	grid-area: place;
+}
+
+#time-card {
+	grid-area: time;
+}
+
+#organizer-card {
+	grid-area: organizer;
+}
+
+#place-card .leaflet-map {
+	width: 100%;
+	min-height: 250px;
+	border: none;
+}
+
+@media (max-width: 750px) {
+	#event-info-section {
+		grid-template-areas: "time" "place" "organizer";
+		grid-template-columns: auto;
+	}
+}
