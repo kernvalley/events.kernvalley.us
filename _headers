@@ -22,13 +22,25 @@
   Link: </js/index.min.js>; rel=preload; as=script; referrerpolicy=no-referrer;
   Content-Security-Policy: default-src 'self'; img-src *; script-src 'self' cdn.kernvalley.us unpkg.com/ www.google-analytics.com www.googletagmanager.com cdn.polyfill.io/v3/polyfill.min.js; style-src 'self' cdn.kernvalley.us unpkg.com/; connect-src 'self' cdn.kernvalley.us apps.kernvalley.us/apps.json api.github.com/users/ api.openweathermap.org/data/2.5/ www.google-analytics.com/ www.googletagmanager.com/gtag/; font-src cdn.kernvalley.us; media-src *; frame-src www.youtube-nocookie.com maps.kernvalley.us/embed; form-action 'self'; manifest-src 'self'; worker-src 'self'; reflected-xss block; upgrade-insecure-requests; block-all-mixed-content; disown-opener;
 
+  /embed
+    X-Content-Type-Options: nosniff
+    X-XSS-Protection: 1; mode=block
+    Referrer-Policy: no-referrer
+    Tk: N
+    Feature-Policy: geolocation 'none';
+    Cross-Origin-Embedder-Policy: unsafe-none
+    Link: </css/embed.css>; rel=preload; as=style; referrerpolicy=no-referrer;
+    Link: <//cdn.kernvalley.us/components/krv/events.min.js>; as=script; referrerpolicy=no-referrer; crossorigin=anonymous;
+    Link: </js/embed.js>; as=script; referrerpolicy=no-referrer;
+    Content-Security-Policy: default-src 'none'; img-src *; script-src /js/embed.js cdn.kernvalley.us/components/krv/events.min.js; style-src 'self' cdn.kernvalley.us/components/krv/events.css unpkg.com/leaflet@1.7.1/dist/leaflet.css; connect-src 'self' cdn.kernvalley.us/components/krv/events.html events.kernvalley.us/events.json; font-src cdn.kernvalley.us/fonts/; media-src 'none'; frame-src 'none'; form-action 'none'; manifest-src 'self'; worker-src 'self'; reflected-xss block; upgrade-insecure-requests; block-all-mixed-content;
+
 /reset
   Referrer-Policy: no-referrer
   Clear-Site-Data: "cache", "cookies", "storage"
   Content-Security-Policy: default-src 'self'; script-src 'self' cdn.kernvalley.us;
 
 /service-worker.js
-Referrer-Policy: no-referrer
+  Referrer-Policy: no-referrer
   Content-Security-Policy: default-src 'self'; connect-src *; script-src 'self' cdn.kernvalley.us/service-worker.js;
   Link: <//cdn.kernvalley.us/service-worker.js>; rel=preload; as=script
   Link: </sw-config.js>; rel=preload; as=script
