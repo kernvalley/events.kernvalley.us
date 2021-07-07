@@ -1,0 +1,20 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	font-family: Roboto;
+}
+
+krv-events {
+	max-height: 100vh;
+	overflow: auto;
+}
+
+@font-face {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local("Roboto"), local("Roboto-Regular"), url("https://cdn.kernvalley.us/fonts/roboto.woff2") format("woff2"), url("https://cdn.kernvalley.us/fonts/roboto.woff") format("woff"), url("https://cdn.kernvalley.us/fonts/roboto.ttf") format("truetype");
+}
