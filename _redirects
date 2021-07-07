@@ -5,5 +5,6 @@ https://youthful-dijkstra-321f5b.netlify.com/* https://events.kernvalley.us/:spl
 http://youthful-dijkstra-321f5b.netlify.com/* https://events.kernvalley.us/:splat 301!
 http://events.kernvalley.us/* https://events.kernvalley.us/:splat 301!
 
-/contact	https://contact.kernvalley.us/	301!
-/privacy	https://kernvalley.us/privacy/	301!
+/contact	          https://contact.kernvalley.us/	301!
+/privacy	          https://kernvalley.us/privacy/	301!
+/.well-known/events /events.json                    301!
