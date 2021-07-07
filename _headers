@@ -32,7 +32,7 @@
     Link: </css/embed.css>; rel=preload; as=style; referrerpolicy=no-referrer;
     Link: <//cdn.kernvalley.us/components/krv/events.min.js>; as=script; referrerpolicy=no-referrer; crossorigin=anonymous;
     Link: </js/embed.js>; as=script; referrerpolicy=no-referrer;
-    Content-Security-Policy: default-src 'none'; img-src *; script-src /js/embed.js cdn.kernvalley.us/components/krv/events.min.js; style-src 'self' cdn.kernvalley.us/components/krv/events.css unpkg.com/leaflet@1.7.1/dist/leaflet.css; connect-src 'self' cdn.kernvalley.us/components/krv/events.html events.kernvalley.us/events.json; font-src cdn.kernvalley.us/fonts/; media-src 'none'; frame-src 'none'; form-action 'none'; manifest-src 'self'; worker-src 'self'; reflected-xss block; upgrade-insecure-requests; block-all-mixed-content;
+    Content-Security-Policy:  default-src 'none'; connect-src 'self' https://cdn.kernvalley.us/components/krv/events.html; font-src https://cdn.kernvalley.us/fonts/; img-src *; script-src 'self' https://cdn.kernvalley.us/components/krv/events.min.js; style-src 'self' https://cdn.kernvalley.us/components/krv/events.css;
 
 /reset
   Referrer-Policy: no-referrer
