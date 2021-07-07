@@ -9,6 +9,7 @@
 krv-events {
 	max-height: 100vh;
 	overflow: auto;
+	padding: 4px 20px;
 }
 
 @font-face {
