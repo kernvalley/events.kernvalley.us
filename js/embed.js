@@ -12,7 +12,7 @@ customElements.whenDefined('krv-events').then(async () => {
 	}
 	
 	if (url.searchParams.has('s')) {
-		events.source = url.searchParams.set('s');
+		events.source = url.searchParams.get('s');
 	}
 
 	document.body.append(events);
