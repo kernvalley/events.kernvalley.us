@@ -10,6 +10,10 @@ customElements.whenDefined('krv-events').then(async () => {
 	if (url.searchParams.has('t')) {
 		events.theme = url.searchParams.get('t');
 	}
+	
+	if (url.searchParams.has('s')) {
+		events.source = url.searchParams.set('s');
+	}
 
 	document.body.append(events);
 });
