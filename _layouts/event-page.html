@@ -220,6 +220,9 @@ main-itemtype: Event
 			</a>
 		</footer>
 	</article>
+	{% unless page.no-comments == true %}
+		<disqus-comments site="krv-events" class="block"></disqus-comments>
+	{% endunless %}
 </main>
 <aside id="sidebar" class="card contain-content">
 	{% if site.data.weather.appid %}
