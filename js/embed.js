@@ -3,6 +3,12 @@ customElements.whenDefined('krv-events').then(async () => {
 	const KRVEvents = customElements.get('krv-events');
 	const events = new KRVEvents();
 
+	if (url.searchParams.has('o')) {
+		events.target = url.searchParams.get('o');
+	} else {
+		events.target = '_blank';
+	}
+
 	if (url.searchParams.has('c')) {
 		events.count = parseInt(url.searchParams.get('c'));
 	}
