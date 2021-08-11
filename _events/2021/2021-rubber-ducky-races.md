@@ -72,6 +72,8 @@ organizer:
       longitude: -118.450685
       url: geo:35.66467600,-118.45068500
 ---
+<div class="status-box warn">This Saturdays event has just been moved to Rivernook due to circumstances beyond our control. We will being shooting video of the Finish Line in the races so everyone can see who duck is winning or has won and notify everyone accordingly but we are not going to be able to have the large event in Circle Park.<br />We are working on public access at this time.</div>
+
 ### Heat Races
 #### Bottom Last Race with Heat Winners
 
