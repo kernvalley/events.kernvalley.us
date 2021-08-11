@@ -35,12 +35,10 @@ location:
       height: 213
       width: 320
       encodingFormat: image/jpeg
-  address:
-    "@type": PostalAddress
-    streetAddress: 14001 Sierra Way
-    addressLocality: Kernville
-    addressRegion: CA
-    postalCode: 93238
+  streetAddress: 14001 Sierra Way
+  addressLocality: Kernville
+  addressRegion: CA
+  postalCode: 93238
   geo:
     "@type": GeoCoordinates
     longitude: -118.423541
