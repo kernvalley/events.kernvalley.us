@@ -17,8 +17,7 @@ location:
     longitude: -118.424992
 image: https://i.imgur.com/Qnvw7I2.jpg
 imgur: https://i.imgur.com/Qnvw7I2.jpg
-description: 'The Kernville Chamber of Commerce is sad to announce the cancellation of the
-2021 Whiskey Flat Days Festival'
+description: 'Whiskey Flat Days is one of the most popular Festivals in all of Southern California.'
 tags:
   - events
   - kern valley
