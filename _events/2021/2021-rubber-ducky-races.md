@@ -12,10 +12,10 @@ tags:
   - race
 date: 2021-08-11
 startDate: 2021-08-14 13:00
-endDateDate: 2021-08-14 14:00
+endDate: 2021-08-14 14:00
 imgur: https://i.imgur.com/a9dXqlt.jpg
 image: https://i.imgur.com/a9dXqlt.jpg
-place:
+location:
   name: Rivernook Campground
   identifier: 4e4c5708-845d-4f41-8b17-1b257f9cca66
   "@context": https://schema.org
