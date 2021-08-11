@@ -45,7 +45,7 @@ location:
     "@type": GeoCoordinates
     longitude: -118.423541
     latitude: 35.763118
-"@organizer":
+organizer:
   "@type": NGO
   "@context": https://schema.org
   identifier: f7846790-f062-406b-a7ac-01ae0835d0f7
@@ -82,4 +82,4 @@ location:
 | 1      | $40                  | $25                  | $10                  |
 | 2      | $500                 | $250                 | $125                 |
 
-**Donation of $15 each or $50 a family.**
+*Donation of $15 each or $50 a family.*
