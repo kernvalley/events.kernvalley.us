@@ -15,8 +15,8 @@ location:
   geo:
     latitude: 35.755262
     longitude: -118.424992
-image: https://i.imgur.com/dw0xqBU.jpg
-imgur: https://i.imgur.com/dw0xqBU.jpg
+image: https://i.imgur.com/Qnvw7I2.jpg
+imgur: https://i.imgur.com/Qnvw7I2.jpg
 description: 'The Kernville Chamber of Commerce is sad to announce the cancellation of the
 2021 Whiskey Flat Days Festival'
 tags:
