@@ -1,0 +1,76 @@
+---
+name: River Run
+title: River Run
+date: 2021-08-12
+startDate: '2021-09-08 07:00'
+endDate: '2021-09-09 16:15'
+pinned: true
+eventStatus: EventScheduled
+location:
+  name: Riverside Park
+  identifier: 73acafc7-1407-473a-b807-b3acdd53f6db
+  "@context": https://schema.org
+  "@type": Park
+  address:
+    "@type": PostalAddress
+    streetAddress: 10 Kern River Rd.
+    addressLocality: Kernville
+    addressRegion: CA
+    postalCode: 93238
+    url: https://goo.gl/maps/8PWNAgBLWKJb6UpD8
+  geo:
+    "@type": GeoCoordinates
+    latitude: 35.753111
+    longitude: -118.424323
+    url: geo:35.753111,-118.424323
+  image:
+    - url: https://i.imgur.com/kacthtRm.jpg
+      "@type": ImageObject
+      width: 320
+      height: 240
+      encodingFormat: image/png
+image: https://i.imgur.com/DRs9sKk.jpg
+imgur: https://i.imgur.com/DRs9sKk.jpg
+description: Kick back in Kernville at the 45th annual River Run Car Show
+tags:
+  - events
+  - kern valley
+  - kern river valley
+  - kernville
+  - car show
+  - rod run
+organizer:
+  name: Rhodeshow Productions
+  "@context": https://schema.org
+  "@type": Organization
+  telephone: +1-909-754-5270
+  email: Rhodeshow48@gmail.com
+  image:
+    - "@type": ImageObject
+      url: https://cdn.kernvalley.us/img/raster/missing-image.png
+      width: 640
+      height: 480
+      encodingFormat: image/png
+---
+## Event Schedule
+
+### Thurs. Oct. 7<sup>th</sup>
+- 12:00 PM Registration Open
+
+### Fri. Oct. 8<sup>th</sup>
+- 7:00 AM Registration Open
+- 7:00 AM Event Begins
+
+### Sat. Oct. 9<sup>th</sup>
+- 7:00 AM Registration Open
+- 9:00 AM &mdash; 11:00 AM Merchants Pick Judging
+- 2:00 PM &mdash; 3:00 PM Raffle
+- 3:00 PM &mdash; 4:00 PM Awards Presentation
+- 4:00 PM Cruise around Lake Isabella
+
+### Registrations &amp; Fees
+- Pre-Registration: $50
+- At the show: $65
+- Vendor Space: $125
+
+**Max Capacity: 400 Vehicles**
