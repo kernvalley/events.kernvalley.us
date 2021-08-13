@@ -1,5 +1,5 @@
 ---
-name: Kernville Arts &amp; Cratfs Festival
+name: Kernville Arts & Crafts Festival
 pinned: true
 date: 2021-08-12
 image: https://cdn.kernvalley.us/img/raster/missing-image.png
