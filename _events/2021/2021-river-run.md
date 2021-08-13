@@ -2,8 +2,8 @@
 name: River Run
 title: River Run
 date: 2021-08-12
-startDate: '2021-09-08 07:00'
-endDate: '2021-09-09 16:15'
+startDate: '2021-10-08 07:00'
+endDate: '2021-10-09 16:15'
 pinned: true
 eventStatus: EventScheduled
 location:
