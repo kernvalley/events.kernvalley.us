@@ -2,7 +2,8 @@
 name: Kernville Arts & Crafts Festival
 pinned: true
 date: 2021-08-12
-image: https://cdn.kernvalley.us/img/raster/missing-image.png
+imgur: https://i.imgur.com/dR36PN4.jpg
+image: https://i.imgur.com/dR36PN4.jpg
 description: The KRVAA proudly presents its annual Kernville Arts & Crafts Festival on Labor Day Weekend
 tags:
   - events
