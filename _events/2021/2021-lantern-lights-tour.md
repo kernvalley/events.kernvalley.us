@@ -18,7 +18,7 @@ tags:
   - haunted
   - halloween
 location:
-- "@type": Museum
+  "@type": Museum
   "@context": https://schema.org
   identifier: 20ed6c2f-6c5e-4f9c-8ff5-9aa00e26b0c8
   name: Silver City Ghost Town
@@ -54,7 +54,7 @@ offers:
     name: General Admission
     price: 12.00
 organizer:
-- "@type": Museum
+  "@type": Museum
   "@context": https://schema.org
   identifier: 20ed6c2f-6c5e-4f9c-8ff5-9aa00e26b0c8
   name: Silver City Ghost Town
