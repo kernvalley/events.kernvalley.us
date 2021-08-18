@@ -18,15 +18,18 @@ tags:
 startDate: 2021-10-16 13:00
 endDate: 2021-10-16 17:00
 offers:
-  - name: Designated Driver
+  - "@type": Offer
+    name: Designated Driver
     price: 25.00
     currency: USD
     url: https://kernvillebeerfest.simpletix.com/
-  - name: General Admission
+  - "@type": Offer
+    name: General Admission
     price: 55.00
     currency: USD
     url: https://kernvillebeerfest.simpletix.com/
-  - name: VIP Entry (Entry @ 12:00 PM)
+  - "@type": Offer
+    name: VIP Entry (Entry @ 12:00 PM)
     price: 75.00
     currency: USD
     url: https://kernvillebeerfest.simpletix.com/
