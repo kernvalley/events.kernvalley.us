@@ -26,7 +26,6 @@ location:
     - https://www.youtube.com/channel/UCixrV4-Rgy-gmr_frlb3_Bg
     - https://twitter.com/_kvhd
     - https://www.facebook.com/Kern-Valley-Health-Care-District-272972479424343/
-    - https://www.pinterest.com/kernvalleyhealthcaredistrict
   image:
     - url: https://cdn.kernvalley.us/img/raster/missing-image.png
       "@type": ImageObject
@@ -55,7 +54,6 @@ organizer:
     - https://www.youtube.com/channel/UCixrV4-Rgy-gmr_frlb3_Bg
     - https://twitter.com/_kvhd
     - https://www.facebook.com/Kern-Valley-Health-Care-District-272972479424343/
-    - https://www.pinterest.com/kernvalleyhealthcaredistrict
   image:
     - url: https://cdn.kernvalley.us/img/raster/missing-image.png
       "@type": ImageObject
