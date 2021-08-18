@@ -5,7 +5,8 @@ date: 2021-08-18
 pinned: true
 startDate: 2021-09-18 09:00
 endDate: 2021-09-18 12:00
-image: https://cdn.kernvalley.us/img/raster/missing-image.png
+image: https://i.imgur.com/YRqP5il.jpg
+imgur: https://i.imgur.com/YRqP5il.jpg
 description: This event is lacking a description
 tags:
   - events
