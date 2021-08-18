@@ -3,7 +3,7 @@ name: Crabfest
 title: Crabfest
 date: 2021-08-18
 pinned: true
-description: This year Crabfest will be held outdoors on the lawn and attendance will be limited to $150.
+description: This year Crabfest will be held outdoors on the lawn and attendance will be limited to 150.
 tags:
   - events
   - kern valley
