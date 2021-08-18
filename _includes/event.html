@@ -60,14 +60,14 @@
 		</time>
 		<hr />
 		<div class="event-location" itemprop="location" itemtype="http://schema.org/{{ include.event.location['@type'] | default: 'Place' }}" itemscope="">
-			{% if include.event.location.url %}
-				<a href="{{ event.location.url }}" class="event-location-link" rel="noopener external" itemprop="url">
-					{% include common/icon.html icon="link=external" %}
+			{% if event.location.name %}
+				{% include common/icon.html icon="location" fill="currentColor" height="16" width="16" %}
+				<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
 			{% endif %}
-			{% if event.location.name %}<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>{% endif %}
-			{% if event.location.url %}</a>{% endif %}
 			{% if include.event.location.addressRegion %}
 				{% include common/address.html address=include.event.location itemprop='address' %}
+			{% elsif event.location.address.addressRegion %}
+				{% include common/address.html address=include.event.location.address itemprop='address' %}
 			{% endif %}
 		</div>
 		<hr />

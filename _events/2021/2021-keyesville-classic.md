@@ -27,28 +27,36 @@ tags:
   - keyesville classic
   - mountain bike race
 offers:
-  - name: All-Mountain Stage Race Reg. (Adult)
+  - "@type": Offer
+    name: All-Mountain Stage Race Reg. (Adult)
     price: 120.00
     url: https://replaytiming.com/register/2021-keyesville
-  - name: All-Mountain Stage Race Reg. (Junior)
+  - "@type": Offer
+    name: All-Mountain Stage Race Reg. (Junior)
     price: 60.00
     url: https://replaytiming.com/register/2021-keyesville
-  - name: Short Track Reg. - Sat. (Adult)
+  - "@type": Offer
+    name: Short Track Reg. - Sat. (Adult)
     price: 40.00
     url: https://replaytiming.com/register/2021-keyesville
-  - name: Short Track Reg. - Sat. (Junior)
+  - "@type": Offer
+    name: Short Track Reg. - Sat. (Junior)
     price: 20.00
     url: https://replaytiming.com/register/2021-keyesville
-  - name: Super D Reg. - Sat. (Adult)
+  - "@type": Offer
+    name: Super D Reg. - Sat. (Adult)
     price: 40.00
     url: https://replaytiming.com/register/2021-keyesville
-  - name: Super D Reg. - Sat. (Junior)
+  - "@type": Offer
+    name: Super D Reg. - Sat. (Junior)
     price: 20.00
     url: https://replaytiming.com/register/2021-keyesville
-  - name: XC Reg. - Sun. (Adult)
+  - "@type": Offer
+    name: XC Reg. - Sun. (Adult)
     price: 40.00
     url: https://replaytiming.com/register/2021-keyesville
-  - name: XC Reg. - Sun. (Junior)
+  - "@type": Offer
+    name: XC Reg. - Sun. (Junior)
     price: 20.00
     url: https://replaytiming.com/register/2021-keyesville
 organizer:

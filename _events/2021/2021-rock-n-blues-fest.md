@@ -24,15 +24,18 @@ location:
     longitude: -118.42168650778954
     url: geo:35.7541800458006,-118.42168650778954
 offers:
-  - name: Fan Pack
+  - "@type": Offer
+    name: Fan Pack
     price: 65.00
     currency: USD
     url: https://bpt.me/5067252
-  - name: 2-Day Festival Pack
+  - "@type": Offer
+    name: 2-Day Festival Pack
     price: 20.00
     currency: USD
     url: https://bpt.me/5067252    
-  - name: Saturday Only Pass
+  - "@type": Offer
+    name: Saturday Only Pass
     price: 15.00
     currency: USD
     url: https://bpt.me/5067252
