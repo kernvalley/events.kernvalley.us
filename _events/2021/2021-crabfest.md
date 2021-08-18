@@ -3,8 +3,8 @@ name: Crabfest
 title: Crabfest
 date: 2021-08-18
 pinned: true
-startDate: 2021-09-18 09:00
-endDate: 2021-09-18 12:00
+startDate: 2021-09-18 15:30
+endDate: 2021-09-18 18:00
 image: https://i.imgur.com/YRqP5il.jpg
 imgur: https://i.imgur.com/YRqP5il.jpg
 description: This event is lacking a description
@@ -70,9 +70,15 @@ organizer:
     "@type": GeoCoordinates
     latitude: 35.635197
     longitude: -118.407396
-#  offers:
-#    - "@type": Offer
-#      name:
+  offers:
+    - "@type": Offer
+      name: Ticket
+      price: 50.00
 ---
-<script type="module" src="https://cdn.kernvalley.us/components/bacon-ipsum.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<bacon-ipsum></bacon-ipsum>
+<div class="status-box warn">This outdoor event has limited seating and social distancing will be adhered to.</div>
+
+Contact [(760) 379-5257](tel:+1-760-379-5257) extension 4 or RSVP at [(661) 742-2881](tel:+1-661-742-2881)
+
+September 18th, 2021 at 3:30 PM at KVHD lawn in Mt. Mesa
+
+6 people per table and tickets are $50
