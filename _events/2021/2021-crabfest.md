@@ -70,10 +70,10 @@ organizer:
     "@type": GeoCoordinates
     latitude: 35.635197
     longitude: -118.407396
-  offers:
-    - "@type": Offer
-      name: Ticket
-      price: 50.00
+offers:
+  - "@type": Offer
+    name: Ticket
+    price: 50.00
 ---
 <div class="status-box warn">This outdoor event has limited seating and social distancing will be adhered to.</div>
 
