@@ -36,6 +36,10 @@ repository:
   username: kernvalley
   project: events.kernvalley.us
   url: 'https://github.com/kernvalley/events.kernvalley.us'
+thumbnail:
+  url: https://cdn.kernvalley.us/img/thumbnail/krv-events.png
+  width: 1280
+  height: 720
 twitter: kern_valley
 facebook: 2123017744629045
 feed:

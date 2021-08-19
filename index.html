@@ -6,15 +6,15 @@ pinned: true
 no-header: true
 description: The best place to find events in the Kern River Valley!
 tags:
-- events
-- calendar
-- kern valley
-- kern river valley
-- kernville
-- lake isabella
-- wofford heights
-- bodfish
-- weldon
+  - events
+  - calendar
+  - kern valley
+  - kern river valley
+  - kernville
+  - lake isabella
+  - wofford heights
+  - bodfish
+  - weldon
 ---
 {% assign now= 'now' | date_to_xmlschema %}
 {% assign events=site.events | where_exp: 'event', 'event.endDate >= now' | sort: 'startDate' %}
