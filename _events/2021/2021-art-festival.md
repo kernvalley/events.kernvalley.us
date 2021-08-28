@@ -4,6 +4,7 @@ pinned: true
 date: 2021-08-12
 imgur: https://i.imgur.com/dR36PN4.jpg
 image: https://i.imgur.com/dR36PN4.jpg
+eventStaus: EventCancelled
 description: The KRVAA proudly presents its annual Kernville Arts & Crafts Festival on Labor Day Weekend
 tags:
   - events
