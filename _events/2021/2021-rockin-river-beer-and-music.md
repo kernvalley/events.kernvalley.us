@@ -34,17 +34,28 @@ offers:
     currency: USD
     url: https://kernvillebeerfest.simpletix.com/
 location:
+  name: Johnny McNally Rodeo Arena
+  identifier: 1a74b246-673c-4a08-a275-535fb193eab0
+  "@context": https://schema.org
   "@type": Place
-  name: Rivernook Campground
-  streetAddress: 14001 Sierra Way
-  addressLocality: Kernville
-  addressRegion: CA
-  postalCode: 93238
-  url: 'https://goo.gl/maps/7621RwUbwXqCMmFg8'
+  address:
+    "@type": PostalAddress
+    streetAddress: Scodie Ave.
+    addressLocality: Kernville
+    addressRegion: CA
+    postalCode: 93238
+    url: https://goo.gl/maps/aqxpV52f4Vj2uHnV6
   geo:
     "@type": GeoCoordinates
-    longitude: -118.423541
-    latitude: 35.763118
+    latitude: 35.759778
+    longitude: -118.426618
+    url: geo:35.759778,-118.426618
+  image:
+    - url: https://cdn.kernvalley.us/img/raster/missing-image.png
+      "@type": ImageObject
+      width: 640
+      height: 480
+      encodingFormat: image/png
 organizer:
   "@type": Campground
   name: Rivernook Campground
@@ -80,3 +91,7 @@ Food Vendors will be onsite selling various meals.
 **21 and older, rain or shine no refunds. Must have valid ID and tickets.**
 
 *Tickets can be purchased at the gate (10% above online ticket price) if event is not sold out.*
+
+<div class="status-box info">100% of the proceeds benefit Kern Valley Search & Rescue</div>
+
+More info may be found on the [{{ page.name | escape }} website {% include common/icon.html icon="link-external" height="16" width="16" fill="currentColor" %}](https://www.kernvillebeerfest.com/).
