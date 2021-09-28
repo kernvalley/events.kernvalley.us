@@ -60,7 +60,9 @@
     "version:bump:major": "npm version --no-git-tag-version patch"
   },
   "dependencies": {
-    "eslint-plugin-frontmatter": "0.0.8",
-    "netlify-js-app": "^1.1.0"
+    "eslint-plugin-frontmatter": "0.0.8"
+  },
+  "devDependencies": {
+    "netlify-js-app": "github:shgysk8zer0/netlify-js-app"
   }
 }
