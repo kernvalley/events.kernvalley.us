@@ -5,7 +5,7 @@ date: 2021-08-12
 startDate: '2021-10-08 07:00'
 endDate: '2021-10-09 16:15'
 pinned: true
-eventStatus: EventScheduled
+eventStatus: EventCancelled
 location:
   name: Riverside Park
   identifier: 73acafc7-1407-473a-b807-b3acdd53f6db
