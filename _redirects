@@ -8,3 +8,4 @@ http://events.kernvalley.us/* https://events.kernvalley.us/:splat 301!
 /contact	          https://contact.kernvalley.us/	301!
 /privacy	          https://kernvalley.us/privacy/	301!
 /.well-known/events /events.json                    301!
+/events/2021-rockin-river-beer-and-music/ /events/2021-kern-river-beer-and-music/
