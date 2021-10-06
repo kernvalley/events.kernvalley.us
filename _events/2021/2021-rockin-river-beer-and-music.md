@@ -12,7 +12,6 @@ tags:
   - festival
   - events
   - kernville
-  - rivernook
   - kern valley
   - kern river valley
 startDate: 2021-10-16 13:00
