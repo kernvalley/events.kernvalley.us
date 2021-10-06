@@ -23,6 +23,10 @@ toggleClass([document.documentElement], {
 	'no-js': false,
 });
 
+[...document.querySelectorAll('a:not([rel~="external"])')]
+	.filter(a => a.origin !== location.origin)
+	.forEach(a => a.relList.add('external', 'noopener', 'noreerrer'));
+
 if (typeof GA === 'string' && GA.length !== 0) {
 	loaded().then(() => {
 		requestIdleCallback(() => {
