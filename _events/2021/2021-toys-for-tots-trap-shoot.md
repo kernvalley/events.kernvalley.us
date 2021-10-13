@@ -105,6 +105,6 @@ organizer:
 ### Raffles
 - $5 50/50 Poker Shoot
 - $5 50/50 Annie Oakley Shoot
-Please call [{% include icon.html icon="call-start" height="16" width="16" fill="currentColor" %} 661 345-8359](tel:+1-661-345-8359) to purchase your entry and for more info.
+Please call [{% include common/icon.html icon="call-start" height="16" width="16" fill="currentColor" %} 661 345-8359](tel:+1-661-345-8359) to purchase your entry and for more info.
 
 See event on [{% include common/icon.html icon="facebook" height="16" width="16" %} KRVGA Facebook](https://www.facebook.com/events/3963776467082905)
