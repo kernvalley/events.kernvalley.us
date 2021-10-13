@@ -2,7 +2,7 @@
 # See https://schema.org/Event
 name: Paint 4 Paws
 image: https://i.imgur.com/Q3tCPdVm.jpg
-imgur: https://i.imgur.com/Q3tCPdV.jpg
+#imgur: https://i.imgur.com/Q3tCPdV.jpg
 description: We will be painting for Paws! Literally. Want to have a fun relaxing evening but also support a SOS Dog Rescue save more Dogs?
 pinned: true
 tags:

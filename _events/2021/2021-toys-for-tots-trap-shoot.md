@@ -29,38 +29,38 @@ offers:
     price: 40.00
     currency: USD
 location:
-"@type": LocalBusiness
-"@context": "https://schema.org"
-identifier: a12b33e8-89b0-44eb-9f03-e6a7243ce1a3
-name: Kern River Valley Gun Association
-url: "https://krvga.com/"
-telephone: +1-760-223-5083
-email: null
-description: >-
-  The Kern River Valley Gun Association promotes organized rifle, pistol &
-  shotgun shooting and safe handling in an environment friendly recreational
-  shooting area.
-sameAs:
-  - "https://www.facebook.com/krvga/"
-image:
-  - "@type": ImageObject
-    url: "https://cdn.kernvalley.us/img/raster/missing-image.png"
-    width: 640
-    height: 480
-    encodingFormat: image/png
-address:
-  "@type": PostalAddress
-  streetAddress: 6076 Cyprus Canyon Rd.
-  postOfficeBoxNumber: "958"
-  addressLocality: Kernville
-  addressRegion: CA
-  addressCountry: US
-  postalCode: "93238"
-geo:
-  "@type": GeoCoordinates
-  latitude: 35.702903
-  longitude: -118.41837199
-  url: "geo:35.702903,-118.41837199"
+  "@type": LocalBusiness
+  "@context": "https://schema.org"
+  identifier: a12b33e8-89b0-44eb-9f03-e6a7243ce1a3
+  name: Kern River Valley Gun Association
+  url: "https://krvga.com/"
+  telephone: +1-760-223-5083
+  email: null
+  description: >-
+    The Kern River Valley Gun Association promotes organized rifle, pistol &
+    shotgun shooting and safe handling in an environment friendly recreational
+    shooting area.
+  sameAs:
+    - "https://www.facebook.com/krvga/"
+  image:
+    - "@type": ImageObject
+      url: "https://cdn.kernvalley.us/img/raster/missing-image.png"
+      width: 640
+      height: 480
+      encodingFormat: image/png
+  address:
+    "@type": PostalAddress
+    streetAddress: 6076 Cyprus Canyon Rd.
+    postOfficeBoxNumber: "958"
+    addressLocality: Kernville
+    addressRegion: CA
+    addressCountry: US
+    postalCode: "93238"
+  geo:
+    "@type": GeoCoordinates
+    latitude: 35.702903
+    longitude: -118.41837199
+    url: "geo:35.702903,-118.41837199"
 organizer:
   "@type": LocalBusiness
   "@context": "https://schema.org"
@@ -95,7 +95,6 @@ organizer:
     longitude: -118.41837199
     url: "geo:35.702903,-118.41837199"
 ---
-
 ### General Info
 - Up to 100 shot trap shoot
 - Lunch
@@ -105,6 +104,7 @@ organizer:
 ### Raffles
 - $5 50/50 Poker Shoot
 - $5 50/50 Annie Oakley Shoot
+
 Please call [{% include common/icon.html icon="call-start" height="16" width="16" fill="currentColor" %} 661 345-8359](tel:+1-661-345-8359) to purchase your entry and for more info.
 
 See event on [{% include common/icon.html icon="facebook" height="16" width="16" %} KRVGA Facebook](https://www.facebook.com/events/3963776467082905)
