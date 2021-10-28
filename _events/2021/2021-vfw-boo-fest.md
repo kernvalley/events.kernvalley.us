@@ -1,5 +1,6 @@
 ---
 title: VFW Boo Fest
+name: VFW Boo Fest
 date: 2021-10-25
 description: Free family fun, carnival games, food, and over $400 in prizes. Costume and pumpkin carving contests for all ages. Support your local vets.
 tags:
@@ -13,7 +14,7 @@ tags:
 startDate: 2021-10-31 13:00
 endDate: 2021-10-31 16:00
 image: https://i.imgur.com/AoEA9Nfm.jpg
-imgur: https://imgur.com/AoEA9Nf.jpg
+#imgur: https://imgur.com/AoEA9Nf.jpg
 location:
   name: VFW
   address:
