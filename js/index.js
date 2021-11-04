@@ -3,7 +3,7 @@ import 'https://cdn.kernvalley.us/js/std-js/deprefixer.js';
 import 'https://cdn.kernvalley.us/js/std-js/theme-cookie.js';
 import 'https://cdn.kernvalley.us/components/share-to-button/share-to-button.js';
 import 'https://cdn.kernvalley.us/components/install/prompt.js';
-import 'https://cdn.kernvalley.us/components/share-button.js';
+// import 'https://cdn.kernvalley.us/components/share-button.js';
 import 'https://cdn.kernvalley.us/components/copy-button.js';
 import 'https://cdn.kernvalley.us/components/weather-current.js';
 import 'https://cdn.kernvalley.us/components/github/user.js';
@@ -11,6 +11,7 @@ import 'https://cdn.kernvalley.us/components/ad/block.js';
 import 'https://cdn.kernvalley.us/components/app/list-button.js';
 import 'https://cdn.kernvalley.us/components/app/stores.js';
 import 'https://cdn.kernvalley.us/components/disqus/comments.js';
+import { shareInit } from 'https://cdn.kernvalley.us/js/std-js/data-share.js';
 import { getCustomElement } from 'https://cdn.kernvalley.us/js/std-js/custom-elements.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
 import { loaded, on, toggleClass } from 'https://cdn.kernvalley.us/js/std-js/dom.js';
@@ -22,6 +23,16 @@ toggleClass([document.documentElement], {
 	'js': true,
 	'no-js': false,
 });
+
+if (navigator.canShare() && typeof customElements.get('share-button') === 'undefined') {
+	[...document.querySelectorAll('[is="share-button"]')].forEach(btn => {
+		btn.dataset.shareTitle = btn.getAttribute('sharetitle') || document.title;
+		btn.dataset.shareText = btn.getAttribute('text');
+		btn.dataset.shareUrl = btn.hasAttribute('url') ? new URL(btn.getAttribute('url') || '.', location.origin).href : location.href;
+		['sharetitle', 'text', 'url'].forEach(attr => btn.removeAttribute(attr));
+		shareInit(btn);
+	});
+}
 
 [...document.querySelectorAll('a:not([rel~="external"])')]
 	.filter(a => a.origin !== location.origin)
