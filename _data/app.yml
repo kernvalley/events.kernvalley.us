@@ -1,5 +1,6 @@
 name: Kern Valley Events
 shortName: KRV Events
+id: KRVEvents
 version: 1.5.1
 lang: en
 dir: ltr
