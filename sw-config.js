@@ -5,11 +5,27 @@ layout: null
 /* eslint-env serviceworker */
 /* eslint no-unused-vars: 0 */
 
+async function updateAssets(assets, {
+	referrerPolicy = 'no-referrer',
+	version = '{{ site.data.app.version | default: site.version }}',
+} = {}) {
+	if (Array.isArray(assets) && assets.length !== 0) {
+		const cache = await caches.open(version);
+		await Promise.allSettled(assets.filter(url => url.length !== 0).map(async url => {
+			const req = new Request(new URL(url, location.origin), { referrerPolicy: 'no-referrer' });
+			const resp = await fetch(req);
+
+			if (resp.ok) {
+				await cache.put(req, resp);
+			}
+		}));
+	}
+}
+
 const config = {
 	version: '{{ site.data.app.version | default: site.version }}',
 	fresh: [
 		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
-		'{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
 		'https://apps.kernvalley.us/apps.json',
 		'/webapp.webmanifest',
 	].map(path => new URL(path, location.origin).href),
@@ -53,5 +69,16 @@ const config = {
 		'https://api.github.com/users/',
 		'https://api.openweathermap.org/data/2.5/weather',
 		/\.(js|css|html|json)$/,
-	]
+	],
+	periodicSync: {
+		'main-assets': async () => await updateAssets([
+			'/js/index.min.js',
+			'/css/index.min.css',
+			'/img/icons.svg',
+			'/webapp.webmanifest',
+		]),
+		'upcoming-events': async () => await updateAssets([
+			'/', '{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
+		]),
+	},
 };
