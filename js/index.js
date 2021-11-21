@@ -11,6 +11,7 @@ import 'https://cdn.kernvalley.us/components/ad/block.js';
 import 'https://cdn.kernvalley.us/components/app/list-button.js';
 import 'https://cdn.kernvalley.us/components/app/stores.js';
 import 'https://cdn.kernvalley.us/components/disqus/comments.js';
+import { DAYS } from 'https://cdn.kernvalley.us/js/std-js/date-consts.js';
 import { shareInit } from 'https://cdn.kernvalley.us/js/std-js/data-share.js';
 import { getCustomElement } from 'https://cdn.kernvalley.us/js/std-js/custom-elements.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from 'https://cdn.kernvalley.us/js/std-js/google-analytics.js';
@@ -65,7 +66,7 @@ if ('serviceWorker' in navigator) {
 
 			if (state === 'granted') {
 				reg.periodicSync.register('main-assets', { minInterval: 7 *  DAYS }).catch(console.error);
-				reg.periodicSync.register('upcoming-events', { minInterval: ! * DAYS }).catch(console.error);
+				reg.periodicSync.register('upcoming-events', { minInterval: 1 * DAYS }).catch(console.error);
 			}
 		}
 	});
