@@ -40,7 +40,7 @@ location:
     longitude: -118.424971
     latitude: 35.755727
 organizer:
-  @type: LocalBusiness
+  "@type": LocalBusiness
   name: Love Inspired Studios
   sameAs:
     - https://www.facebook.com/loveinspiredstudiokrv/
