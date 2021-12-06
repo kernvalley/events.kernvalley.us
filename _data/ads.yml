@@ -6,6 +6,18 @@ sidebar:
   - "@context": https://schema.org
     "@type": WPAdBlock
     version: 1.0.0
+    identifier: cef968f1-865d-4575-96bf-6c6294281afc
+    label: Whiskey Flat Days App
+    image: https://i.imgur.com/8Lxv139m.png
+    layout: image
+    theme: auto
+    url: https://whiskeyflatdays.com
+    campaign: krv-ads
+    imageFit: contain
+    imagePosition: center
+  - "@context": https://schema.org
+    "@type": WPAdBlock
+    version: 1.0.0
     identifier: 8664509e-8317-417e-bcd5-071ad7e38818
     label: Kern Valley Guide
     description: Your virtual guide to exploring the Kern River Valley. Get the knowledge of locals at your fingertips!
@@ -16,7 +28,7 @@ sidebar:
     url: https://guide.kernvalley.us
     imageFit: contain
     imagePosition: center
-  - uuid: 57c7036d-f128-4506-962b-373b8fb5ea78
+  - identifier: 57c7036d-f128-4506-962b-373b8fb5ea78
     label: Kern Valley Ads
     url: https://ads.kernvalley.us
     image: https://cdn.kernvalley.us/img/branding/ads.kernvalley.us.svg
