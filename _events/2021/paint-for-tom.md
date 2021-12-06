@@ -3,10 +3,9 @@ title: 'Paint for Tom!'
 name: 'Paint for Tom!'
 date: 2021-12-05
 startDate: 2021-12-08 17:30
-endDate: 2021-12-18 20:30
+endDate: 2021-12-08 20:30
 pinned: true
-description: Join us Wednesday, December 8th at The Kernville Saloon for a fundraiser paint
-class to help raise money for Tom Beaton!
+description: Join us Wednesday, December 8th at The Kernville Saloon for a fundraiser paint class to help raise money for Tom Beaton!
 tags:
   - event
   - kernville
