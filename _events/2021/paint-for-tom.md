@@ -11,8 +11,8 @@ tags:
   - kernville
   - charity
   - donate
-imgur: https://i.imgur.com/dzHYs0A.jpg
-image: https://i.imgur.com/dzHYs0Am.jpg
+imgur: https://i.imgur.com/3yuDdmp.jpg
+image: https://i.imgur.com/3yuDdmp.jpg
 location:
   name: Kernville Saloon
   identifier: ee8d2e72-4370-4f3c-97ba-c0af3d29234b
