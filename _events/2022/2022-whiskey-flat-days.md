@@ -15,8 +15,8 @@ location:
   geo:
     latitude: 35.755262
     longitude: -118.424992
-image: https://i.imgur.com/Qnvw7I2.jpg
-imgur: https://i.imgur.com/Qnvw7I2.jpg
+image: https://i.imgur.com/foTQ1r0.jpg
+imgur: https://i.imgur.com/foTQ1r0.jpg
 description: 'Whiskey Flat Days is one of the most popular Festivals in all of Southern California.'
 tags:
   - events
