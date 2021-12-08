@@ -1,10 +1,10 @@
 ---
 name: 23rd Annual Jeanette Rogers-Erickson Heart Walk
 title: 23rd Annual Jeanette Rogers-Erickson Heart Walk
-date: 2020-02-26
-startDate: '2021-02-26 09:00'
-endDate: '2021-02-26 10:45'
-pinned: false
+date: 2021-12-08
+startDate: '2022-02-26 09:00'
+endDate: '2022-02-26 10:45'
+pinned: true
 location:
   '@type': HighSchool
   name: Kern Valley High
