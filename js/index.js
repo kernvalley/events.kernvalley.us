@@ -3,7 +3,7 @@ import 'https://cdn.kernvalley.us/js/std-js/deprefixer.js';
 import 'https://cdn.kernvalley.us/js/std-js/theme-cookie.js';
 import 'https://cdn.kernvalley.us/components/share-to-button/share-to-button.js';
 import 'https://cdn.kernvalley.us/components/install/prompt.js';
-// import 'https://cdn.kernvalley.us/components/share-button.js';
+import 'https://cdn.kernvalley.us/components/share-button.js';
 import 'https://cdn.kernvalley.us/components/copy-button.js';
 import 'https://cdn.kernvalley.us/components/weather-current.js';
 import 'https://cdn.kernvalley.us/components/github/user.js';
@@ -29,9 +29,10 @@ if (navigator.canShare() && typeof customElements.get('share-button') === 'undef
 	[...document.querySelectorAll('[is="share-button"]')].forEach(btn => {
 		btn.dataset.shareTitle = btn.getAttribute('sharetitle') || document.title;
 		btn.dataset.shareText = btn.getAttribute('text');
-		btn.dataset.shareUrl = btn.hasAttribute('url') ? new URL(btn.getAttribute('url') || '.', location.origin).href : location.href;
+		btn.dataset.shareUrl = btn.hasAttribute('url') ? new URL(btn.getAttribute('url') || './', location.origin).href : location.href;
 		['sharetitle', 'text', 'url'].forEach(attr => btn.removeAttribute(attr));
 		shareInit(btn);
+		btn.hidden = false;
 	});
 }
 
