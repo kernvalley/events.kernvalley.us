@@ -10,7 +10,7 @@ sidebar: true
 main-itemtype: Event
 ---
 {% include common/nav.html %}
-<main id="main" class="card shadow" itemtype="https://schema.org/Event" itemscope="">
+<main id="main" class="card shadow" itemtype="{{ page['@context'] | default: https://schema.org }}/{{ page['@type'] | default: 'Event' }}" itemscope="">
 	<link itemprop="eventStatus" content="https://schema.org/{{ page.eventStatus | default: 'EventScheduled' }}" />
 	<link itemprop="eventAttendanceMode" content="https://schema.org/{{ page.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
 	<header class="event-page-header">
@@ -59,7 +59,7 @@ main-itemtype: Event
 						<meta itemprop="longitude" content="{{ page.location.geo.longitude }}" />
 						<meta itemprop="latitude" content="{{ page.location.geo.latitude }}" />
 					</div>
-					<iframe class="leaflet-map" src="https://maps.kernvalley.us/embed?latitude={{ page.location.geo.latitude }}&amp;longitude={{ page.location.geo.longitude }}&amp;zoom=15&amp;markerLatitude={{ page.location.geo.latitude }}&amp;markerLongitude={{ page.location.geo.longitude }}&amp;popup=&lt;h3&gt;{{ page.location.name | default: page.name | url_encode }}&lt;/h3&gt;&amp;icon=map-marker" loading="lazy" name="krvMaps" referrerpolicy="no-referrer" sandbox="allow-scripts"></iframe>
+					<iframe class="leaflet-map" src="https://maps.kernvalley.us/embed?latitude={{ page.location.geo.latitude }}&amp;longitude={{ page.location.geo.longitude }}&amp;zoom=15&amp;markerLatitude={{ page.location.geo.latitude }}&amp;markerLongitude={{ page.location.geo.longitude }}&amp;popup=&lt;h3&gt;{{ page.location.name | default: page.name | url_encode }}&lt;/h3&gt;&amp;icon=map-marker" loading="lazy" name="krvMaps" referrerpolicy="no-referrer" allow="geolocation" sandbox="allow-scripts"></iframe>
 				{% endif %}
 				{% if page.location.name %}
 					<div>
@@ -69,12 +69,14 @@ main-itemtype: Event
 							{% include common/icon.html icon="link-external" %}
 						{% endif %}
 						<b itemprop="name">{{ page.location.name }}</b>
+						{% if page.location.url %}</a>{% endif %}
 					</div>
 				{% endif %}
-				{% if page.location.url %}</a>{% endif %}
 				<br />
 				{% if page.location.addressLocality %}
 					{% include common/address.html address=page.location %}
+				{% elsif page.location.address.addressLocality %}
+					{% include common/address.html address=page.location.address %}
 				{% endif %}
 			</div>
 			<div id="time-card" class="card">
