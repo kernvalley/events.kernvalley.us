@@ -45,8 +45,9 @@ organizer:
   sameAs:
     - https://www.facebook.com/loveinspiredstudiokrv/
 offers:
-  price: 40
-  availability: InStoreOnly
+  - name: Class Sign-up
+    price: 40
+    availability: InStoreOnly
 ---
 Join us Wednesday, December 8<sup>th</sup> at The Kernville Saloon for a fundraiser paint
 class to help raise money for Tom Beaton! Tom has been battling cancer. 100% of
