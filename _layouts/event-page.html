@@ -184,7 +184,7 @@ main-itemtype: Event
 			<meta itemprop="keywords" content="{{ page.tags | join: ', '}}" />
 		{% endif %}
 		{% if page.imgur %}
-			{% capture hash %}{{ include.url | replace: 'https://i.imgur.com/', '' | replace: 'https://imgur.com/', '' | replace: '.png', '' | replace: '.jpg', '' }}{% endcapture %}
+			{% capture hash %}{{ page.imgur | remove: 'https://i.imgur.com/' | remove: 'https://imgur.com/' | remove: '.png' | remove: '.jpg' }}{% endcapture %}
 			<meta itemprop="image" content="https://i.imgur.com/{{ hash }}m.png" />
 		{% elsif page.image %}
 			<meta itemprop="image" content="{{ page.image  }}" />
