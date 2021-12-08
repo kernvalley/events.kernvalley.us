@@ -10,3 +10,4 @@ http://events.kernvalley.us/* https://events.kernvalley.us/:splat 301!
 /.well-known/events /events.json                    301!
 /events/2021-rockin-river-beer-and-music/ /events/2021-kern-river-beer-and-music/
 /manifest.json      /webapp.webmanifest
+/events/whiskey-flat-days-kickoff-dinner/ /events/2022-whiskey-flat-days-kickoff-dinner/ 301!
