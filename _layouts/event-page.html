@@ -10,7 +10,7 @@ sidebar: true
 main-itemtype: Event
 ---
 {% include common/nav.html %}
-<main id="main" class="card shadow" itemtype="{{ page['@context'] | default: https://schema.org }}/{{ page['@type'] | default: 'Event' }}" itemscope="">
+<main id="main" class="card shadow" itemtype="{{ page['@context'] | default: 'https://schema.org' }}/{{ page['@type'] | default: 'Event' }}" itemscope="">
 	<link itemprop="eventStatus" content="https://schema.org/{{ page.eventStatus | default: 'EventScheduled' }}" />
 	<link itemprop="eventAttendanceMode" content="https://schema.org/{{ page.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
 	<header class="event-page-header">
