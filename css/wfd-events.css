@@ -1,6 +1,6 @@
 wfd-events::part(list) {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 320px));
-	grid-template-rows: repeat(auto-fit, minmax(150px, 180px));
+	justify-content: center;
 	gap: 6px;
 }
