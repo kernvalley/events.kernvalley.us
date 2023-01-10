@@ -1,6 +1,6 @@
 {
   "name": "events.kernvalley",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Events in the Kern Valley",
   "private": true,
   "config": {
@@ -8,7 +8,7 @@
     "serve": {
       "domain": "localhost",
       "path": "./_site",
-      "port": 8888
+      "port": 4000
     },
     "dir": {
       "css": "css/",
@@ -33,6 +33,7 @@
     "preinstall": "npm run git:submodules",
     "postinstall": "npm run build",
     "preversion": "npm test",
+    "create:lock": "npm i --package-lock-only --ignore-scripts",
     "git:fetch": "git fetch --prune --tags",
     "git:submodules": "if [ -f '.gitmodules' ]; then git submodule update --init --recursive; fi",
     "lint": "npm run lint:js && npm run lint:css && npm run lint:html",
@@ -57,7 +58,7 @@
     "version:bump": "npm run version:bump:patch",
     "version:bump:patch": "npm version --no-git-tag-version patch",
     "version:bump:minor": "npm version --no-git-tag-version minor",
-    "version:bump:major": "npm version --no-git-tag-version patch"
+    "version:bump:major": "npm version --no-git-tag-version major"
   },
   "dependencies": {
     "eslint-plugin-frontmatter": "0.0.8",
