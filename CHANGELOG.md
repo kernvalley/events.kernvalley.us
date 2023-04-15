@@ -14,9 +14,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.6.1] - 2023-04-15
+
+### Added
+- Implement TrustedTypes
+- Add zoom controls & fullscreen to embedded maps
+
+### Changed
+- Switch from `<ad-block>` to `<krv-ad>`
+- Use polyfill script from CDN instead of bundling
+
 ## [v1.6.0] - 2023-01-09
 
-## Changed
+### Changed
 - Updated to node 18.13.0
 
 ## [v1.5.1] - 2021-05-08

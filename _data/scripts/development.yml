@@ -1,3 +1,13 @@
+- src: https://cdn.kernvalley.us/js/shims.min.js
+  crossOrigin: anonymous
+  referrerPolicy: no-referrer
+  defer: true
+- src: https://cdn.kernvalley.us/js/std-js/harden.js
+  crossOrigin: anonymous
+  referrerPolicy: no-referrer
+  defer: true
 - src: /js/index.js
   type: module
   referrerPolicy: no-referrer
+
+

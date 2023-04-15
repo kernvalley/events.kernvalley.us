@@ -59,7 +59,7 @@ main-itemtype: Event
 						<meta itemprop="longitude" content="{{ page.location.geo.longitude }}" />
 						<meta itemprop="latitude" content="{{ page.location.geo.latitude }}" />
 					</div>
-					<iframe class="leaflet-map" src="https://maps.kernvalley.us/embed?latitude={{ page.location.geo.latitude }}&amp;longitude={{ page.location.geo.longitude }}&amp;zoom=15&amp;markerLatitude={{ page.location.geo.latitude }}&amp;markerLongitude={{ page.location.geo.longitude }}&amp;popup=&lt;h3&gt;{{ page.location.name | default: page.name | url_encode }}&lt;/h3&gt;&amp;icon=map-marker" loading="lazy" name="krvMaps" referrerpolicy="no-referrer" allow="geolocation" sandbox="allow-scripts"></iframe>
+					<iframe class="leaflet-map" src="https://maps.kernvalley.us/embed?latitude={{ page.location.geo.latitude }}&amp;longitude={{ page.location.geo.longitude }}&amp;zoom=15&amp;markerLatitude={{ page.location.geo.latitude }}&amp;markerLongitude={{ page.location.geo.longitude }}&amp;popup=&lt;h3&gt;{{ page.location.name | default: page.name | url_encode }}&lt;/h3&gt;&amp;icon=map-marker&amp;zoomControl=1&amp;fullscreen=1" loading="lazy" name="krvMaps" referrerpolicy="no-referrer" allow="fullscreen" sandbox="allow-scripts allow-same-origin" allowfullscreen="" ></iframe>
 				{% endif %}
 				{% if page.location.name %}
 					<div>
@@ -223,17 +223,17 @@ main-itemtype: Event
 		</footer>
 	</article>
 	{% unless page.no-comments == true %}
-		<disqus-comments site="krv-events" class="block"></disqus-comments>
+		<disqus-comments site="krv-events" class="block contain-content"></disqus-comments>
 	{% endunless %}
 </main>
-<aside id="sidebar" class="card contain-content">
+<aside id="sidebar" class="card contain-content center">
 	{% if site.data.weather.appid %}
 		{% include common/weather.html appId = site.data.weather.appid postalCode=page.location.postalCode %}
 	{% endif %}
 	{% if page.ads.sidebar %}{% for ad in page.ads.sidebar %}
-		{% include common/ad.html ad=ad content="sidebar" %}
+		{% include common/krv-ad.html ad=ad content="sidebar" %}
 	{% endfor %}{% else %}{% for ad in site.data.ads.sidebar %}
-		{% include common/ad.html ad=ad content="sidebar" %}
+		{% include common/krv-ad.html ad=ad content="sidebar" %}
 	{% endfor %}{% endif %}
 </aside>
 {% include common/footer.html keep-kern-clean=site.keep-kern-clean %}
