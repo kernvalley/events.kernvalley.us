@@ -4,8 +4,10 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: no-referrer
   Link: </css/index.min.css>; rel=preload; as=style; referrerpolicy=no-referrer;
+  Link: <https://cdn.kernvalley.us/js/shims.min.js>; rel=preload; as=script; crossorigin=anonymous; referrerpolicy=no-referrer;
+  Link: <https://cdn.kernvalley.us/js/std-js/harden.js>; rel=preload; as=script; crossorigin=anonymous; referrerpolicy=no-referrer;
   Link: </js/index.min.js>; rel=preload; as=script; referrerpolicy=no-referrer;
-  Content-Security-Policy: default-src 'self'; img-src *; script-src 'self' cdn.kernvalley.us unpkg.com/ www.google-analytics.com www.googletagmanager.com cdn.polyfill.io/v3/polyfill.min.js; style-src 'self' cdn.kernvalley.us unpkg.com/; connect-src 'self' cdn.kernvalley.us apps.kernvalley.us/apps.json api.github.com/users/ api.openweathermap.org/data/2.5/ www.google-analytics.com/ www.googletagmanager.com/gtag/; font-src cdn.kernvalley.us; media-src *; frame-src www.youtube-nocookie.com; form-action 'self'; manifest-src 'self'; worker-src 'self'; reflected-xss block; upgrade-insecure-requests; block-all-mixed-content; disown-opener;
+  Content-Security-Policy: default-src 'self'; img-src *; script-src 'self' cdn.kernvalley.us unpkg.com/ www.google-analytics.com www.googletagmanager.com cdn.polyfill.io/v3/polyfill.min.js; style-src 'self' cdn.kernvalley.us unpkg.com/; connect-src 'self' cdn.kernvalley.us apps.kernvalley.us/apps.json ads.kernvalley.us/api/ api.github.com/users/ api.openweathermap.org/data/2.5/ www.google-analytics.com/ www.googletagmanager.com/gtag/; font-src cdn.kernvalley.us; media-src *; frame-src www.youtube-nocookie.com; form-action 'self'; manifest-src 'self'; worker-src 'self'; reflected-xss block; upgrade-insecure-requests; block-all-mixed-content; disown-opener; trusted-types default empty#html empty#script ga#script-url goog#html sanitizer-raw#html purify-raw#html purify#html github-user#html weather-current#html share-to-buttons#html youtube#embed disqus#script-url pwa-install; require-trusted-types-for 'script';
 
 /events.json
   Access-Control-Allow-Origin: *
@@ -19,8 +21,10 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: no-referrer
   Link: </css/index.min.css>; rel=preload; as=style; referrerpolicy=no-referrer;
+  Link: <https://cdn.kernvalley.us/js/shims.min.js>; rel=preload; as=script; crossorigin=anonymous; referrerpolicy=no-referrer;
+  Link: <https://cdn.kernvalley.us/js/std-js/harden.js>; rel=preload; as=script; crossorigin=anonymous; referrerpolicy=no-referrer;
   Link: </js/index.min.js>; rel=preload; as=script; referrerpolicy=no-referrer;
-  Content-Security-Policy: default-src 'self'; img-src *; script-src 'self' cdn.kernvalley.us *.disqus.com/embed.js unpkg.com/ www.google-analytics.com www.googletagmanager.com cdn.polyfill.io/v3/polyfill.min.js; style-src 'self' cdn.kernvalley.us unpkg.com/; connect-src 'self' cdn.kernvalley.us apps.kernvalley.us/apps.json api.github.com/users/ api.openweathermap.org/data/2.5/ whiskeyflatdays.com/events.json baconipsum.com/api/ www.google-analytics.com/ www.googletagmanager.com/gtag/; font-src cdn.kernvalley.us; media-src *; frame-src www.youtube-nocookie.com maps.kernvalley.us/embed disqus.com/embed/comments/; form-action 'self'; manifest-src 'self'; worker-src 'self'; reflected-xss block; upgrade-insecure-requests; block-all-mixed-content; disown-opener;
+  Content-Security-Policy: default-src 'self'; img-src * data:; script-src 'self' cdn.kernvalley.us *.disqus.com/embed.js unpkg.com/ www.google-analytics.com www.googletagmanager.com cdn.polyfill.io/v3/polyfill.min.js; style-src 'self' cdn.kernvalley.us ads.kernvalley.us/api/ unpkg.com/; connect-src 'self' cdn.kernvalley.us apps.kernvalley.us/apps.json api.github.com/users/ api.openweathermap.org/data/2.5/ whiskeyflatdays.com/events.json baconipsum.com/api/ www.google-analytics.com/ www.googletagmanager.com/gtag/; font-src cdn.kernvalley.us; media-src *; frame-src www.youtube-nocookie.com maps.kernvalley.us/embed disqus.com/embed/comments/; form-action 'self'; manifest-src 'self'; worker-src 'self'; reflected-xss block; upgrade-insecure-requests; block-all-mixed-content; disown-opener; trusted-types default empty#html empty#script ga#script-url goog#html sanitizer-raw#html purify-raw#html purify#html github-user#html weather-current#html share-to-buttons#html youtube#embed disqus#script-url pwa-install; require-trusted-types-for 'script';
 
   /embed
     X-Content-Type-Options: nosniff
@@ -47,3 +51,5 @@
 
 /*
   X-Content-Type-Options: nosniff
+
+
