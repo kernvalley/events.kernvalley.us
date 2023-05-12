@@ -31,8 +31,8 @@ const config = {
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		/* JS, `customElements`, etc. */
-		'https://cdn.kernvalley.us/js/shims.min.js',
-		'https://cdn.kernvalley.us/js/std-js/harden.js',
+		'https://unpkg.com/@shgysk8zer0/polyfills@0.0.5/all.min.js',
+		'https://unpkg.com/@shgysk8zer0/kazoo@0.0.5/harden.js',
 		'/js/index.min.js',
 		// 'https://cdn.kernvalley.us/components/toast-message.html',
 		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
