@@ -14,6 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.0] - 2023-05-12
+
+### Added
+- Implement import maps
+
+### Changed
+- Events now have URLs `/:year/:month/:day/:title` - no redirects :(
+- Renamed nearly every event file
+
 ## [v1.6.1] - 2023-04-15
 
 ### Added

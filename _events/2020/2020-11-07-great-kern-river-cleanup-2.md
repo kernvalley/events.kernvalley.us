@@ -1,6 +1,6 @@
 ---
-name: The Great Kern River Cleanup
-title: The Great Kern River Cleanup
+name: The Great Kern River Cleanup (Day 2)
+title: The Great Kern River Cleanup (Day 2)
 date: 2020-10-22
 startDate: '2020-11-07 10:00'
 endDate: '2020-11-07 14:00'

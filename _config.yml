@@ -3,8 +3,9 @@ author: Chris Zuber
 title: Kern Valley Events
 url: 'https://events.kernvalley.us'
 markdown: kramdown
-version: 1.6.1
+version: 2.0.0
 timezone: America/Los_Angeles
+future: true
 lang: en
 dir: ltr
 charset: utf-8
@@ -71,6 +72,7 @@ defaults:
       path: _events
     values:
       layout: event-page
+      permalink: /:year/:month/:day/:title
       eventStatus: EventScheduled
       eventAttendanceMode: OfflineEventAttendanceMode
       offers: []
