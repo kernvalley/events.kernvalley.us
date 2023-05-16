@@ -31,20 +31,20 @@ const config = {
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		/* JS, `customElements`, etc. */
-		'https://unpkg.com/@shgysk8zer0/polyfills@0.0.5/all.min.js',
-		'https://unpkg.com/@shgysk8zer0/kazoo@0.0.5/harden.js',
+		'https://unpkg.com/@shgysk8zer0/polyfills@0.0.6/all.min.js',
+		'https://unpkg.com/@shgysk8zer0/kazoo@0.0.12/harden.js',
 		'/js/index.min.js',
-		// 'https://cdn.kernvalley.us/components/toast-message.html',
-		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.html',
-		'https://cdn.kernvalley.us/components/pwa/prompt.html',
-		'https://cdn.kernvalley.us/components/weather/current.html',
+		// 'https://unpkg.com/@shgysk8zer0/components@0.0.7/toast-message.html',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.7/button/share-to.html',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.7/pwa/prompt.html',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.7/weather/current.html',
 
 		/* CSS */
 		'/css/index.min.css',
-		// 'https://cdn.kernvalley.us/components/toast-message.css',
-		'https://cdn.kernvalley.us/components/share-to-button/share-to-button.css',
-		'https://cdn.kernvalley.us/components/pwa/prompt.css',
-		'https://cdn.kernvalley.us/components/weather/current.css',
+		// 'https://unpkg.com/@shgysk8zer0/components@0.0.7/toast-message.css',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.7/button/share-to.css',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.7/pwa/prompt.css',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.7/weather/current.css',
 
 		/* Images & Icons */
 		'/img/icons.svg',

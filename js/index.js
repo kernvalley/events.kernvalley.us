@@ -1,22 +1,13 @@
-import 'std-js/theme-cookie.js';
-import '@shgysk8zer0/components/share-to-button/share-to-button.js';
-import '@shgysk8zer0/components/install/prompt.js';
-import '@shgysk8zer0/components/share-button.js';
-import '@shgysk8zer0/components/copy-button.js';
-import '@shgysk8zer0/components/weather/current.js';
-import '@shgysk8zer0/components/github/user.js';
-import '@kernvalley/components/ad.js';
-import '@shgysk8zer0/components/app/list-button.js';
-import '@shgysk8zer0/components/app/stores.js';
-import '@shgysk8zer0/components/disqus/comments.js';
-import { DAYS } from 'std-js/date-consts.js';
-import { shareInit } from 'std-js/data-share.js';
-import { getCustomElement } from 'std-js/custom-elements.js';
-import { getGooglePolicy, getDefaultPolicyWithDisqus } from 'std-js/trust-policies.js';
-import { createPolicy } from 'std-js/trust.js';
-import { importGa, externalHandler, telHandler, mailtoHandler } from 'std-js/google-analytics.js';
-import { loaded, on, toggleClass } from 'std-js/dom.js';
+import '@shgysk8zer0/kazoo/theme-cookie.js';
+import { DAYS } from '@shgysk8zer0/kazoo/date-consts.js';
+import { shareInit } from '@shgysk8zer0/kazoo/data-share.js';
+import { getCustomElement } from '@shgysk8zer0/kazoo/custom-elements.js';
+import { getGooglePolicy, getDefaultPolicyWithDisqus } from '@shgysk8zer0/kazoo/trust-policies.js';
+import { createPolicy } from '@shgysk8zer0/kazoo/trust.js';
+import { importGa, externalHandler, telHandler, mailtoHandler } from '@shgysk8zer0/kazoo/google-analytics.js';
+import { loaded, on, toggleClass } from '@shgysk8zer0/kazoo/dom.js';
 import { GA } from './consts.js';
+import './components.js';
 
 getDefaultPolicyWithDisqus();
 
