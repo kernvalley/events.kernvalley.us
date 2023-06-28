@@ -31,20 +31,20 @@ const config = {
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		/* JS, `customElements`, etc. */
-		'https://unpkg.com/@shgysk8zer0/polyfills@0.0.6/all.min.js',
-		'https://unpkg.com/@shgysk8zer0/kazoo@0.0.12/harden.js',
+		'https://unpkg.com/@shgysk8zer0/polyfills@0.1.2/all.min.js',
+		'https://unpkg.com/@shgysk8zer0/kazoo@0.0.17/harden.js',
 		'/js/index.min.js',
-		// 'https://unpkg.com/@shgysk8zer0/components@0.0.7/toast-message.html',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.7/button/share-to.html',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.7/pwa/prompt.html',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.7/weather/current.html',
+		// 'https://unpkg.com/@shgysk8zer0/components@0.0.12/toast-message.html',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.12/button/share-to.html',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.12/pwa/prompt.html',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.12/weather/current.html',
 
 		/* CSS */
 		'/css/index.min.css',
-		// 'https://unpkg.com/@shgysk8zer0/components@0.0.7/toast-message.css',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.7/button/share-to.css',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.7/pwa/prompt.css',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.7/weather/current.css',
+		// 'https://unpkg.com/@shgysk8zer0/components@0.0.12/toast-message.css',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.12/button/share-to.css',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.12/pwa/prompt.css',
+		'https://unpkg.com/@shgysk8zer0/components@0.0.12/weather/current.css',
 
 		/* Images & Icons */
 		'/img/icons.svg',

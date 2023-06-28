@@ -4,7 +4,7 @@ title: Stars and Stripes Independence Day Celebration
 image: https://i.imgur.com/YFDirLX.jpg
 imgur: https://i.imgur.com/YFDirLX.jpg
 pinned: true
-description: 'Join us at approx. 9:30 PM (depending on conditions) on the 1st of July for our Stars and Stripes Independence Day Celebration'
+description: Join the Stars and Stripes Independence Day Celebration in Lake Isabella, CA, on July 1st. Experience a breathtaking fireworks display at Engineer Point near the Auxiliary Dam. Please note that fireworks are prohibited in Sequoia National Forest, and fire restrictions apply. Come together with the Kern River Valley community to honor the nation's independence while respecting safety measures and enjoying a memorable evening of unity and patriotism.
 tags:
   - fireworks
   - 4th of july
@@ -52,6 +52,12 @@ Get ready to ignite your patriotic spirit and embrace the joyous atmosphere as L
 At approximately **9:30 PM** on **July 1st**, the night sky above Lake Isabella will be ablaze with the brilliance of fireworks as they burst forth from Engineer Point near the Auxiliary Dam. The awe-inspiring display will paint the heavens with vibrant colors and dazzling patterns, creating a visual masterpiece that will leave spectators in awe. Please note that the start time may be subject to change due to safety precautions regarding wind conditions. The safety of attendees is of paramount importance, and any necessary delays will ensure a secure and enjoyable experience for all.
 
 <div class="center">{% include youtube.html id="qs50bZRa1DQ" width=560 height=315 title=page.name %}</div>
+
+### Fireworks, Fire Restrictions, and Safety
+
+It's essential to be aware that fireworks are prohibited in Sequoia National Forest, including the areas surrounding Lake Isabella. Additionally, fire restrictions are in place, which apply to campfires and any open flames. These measures are implemented to prevent the risk of wildfires and ensure the safety of tourists, campers, and the natural environment.
+
+The Stars and Stripes Independence Day Celebration adheres strictly to these regulations and provides a controlled and safe environment for attendees to enjoy the fireworks display. It's important for visitors and campers to respect and comply with the fire restrictions in place to maintain the pristine beauty of the surroundings and mitigate the risk of wildfires.
 
 ### Community Support
 
