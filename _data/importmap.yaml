@@ -1,14 +1,13 @@
 ---
 nonce: adb62285-373c-484b-98a0-011359013af4
 imports:
-  'std-js/': https://cdn.kernvalley.us/js/std-js/
-  '@shgysk8zer0/kazoo/': https://unpkg.com/@shgysk8zer0/kazoo@0.0.12/
-  '@shgysk8zer0/konami': https://unpkg.com/@shgysk8zer0/konami@1.0.9/konami.js
-  '@shgysk8zer0/polyfills': https://unpkg.com/@shgysk8zer0/polyfills@0.0.6/all.min.js
-  '@shgysk8zer0/polyfills/': https://unpkg.com/@shgysk8zer0/polyfills@0.0.6/
-  '@shgysk8zer0/components/': https://unpkg.com/@shgysk8zer0/components@0.0.7/
-  '@kernvalley/components/': https://unpkg.com/@shgysk8zer0/components@0.0.7/krv/
-  '@shgysk8zer0/http-status': https://unpkg.com/@shgysk8zer0/http-status@1.0.1/http-status.js
+  '@shgysk8zer0/kazoo/': https://unpkg.com/@shgysk8zer0/kazoo@0.0.17/
+  '@shgysk8zer0/konami': https://unpkg.com/@shgysk8zer0/konami@1.0.10/konami.js
+  '@shgysk8zer0/polyfills': https://unpkg.com/@shgysk8zer0/polyfills@0.1.2/all.min.js
+  '@shgysk8zer0/polyfills/': https://unpkg.com/@shgysk8zer0/polyfills@0.1.2/
+  '@shgysk8zer0/components/': https://unpkg.com/@shgysk8zer0/components@0.0.12/
+  '@kernvalley/components/': https://unpkg.com/@kernvalley/components@1.0.2/
+  '@shgysk8zer0/http-status': https://unpkg.com/@shgysk8zer0/http-status@1.0.2/http-status.js
   'leaflet': https://unpkg.com/leaflet@1.9.3/dist/leaflet-src.js
   'firebase/': https://www.gstatic.com/firebasejs/9.16.0/
   'url-pattern': https://unpkg.com/urlpattern-polyfill@8.0.2/index.js
