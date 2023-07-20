@@ -3,6 +3,7 @@
 
 @media all {
 	:root[theme], :root:not([theme]) {
+		font-size: clamp(18px, 1.3vmax, 22px);
 		--header-height: 0;
 		--nav-height: 4rem;
 

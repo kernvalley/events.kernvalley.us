@@ -124,6 +124,7 @@ main-itemtype: Event
 				<a href="{{ offer.url }}" role="button" rel="noopener external" class="center btn btn-primary event-offer-btn" itemprop="offers" itemtype="http://schema.org/Offer" itemscope=""{% if offer.availability and offer.availability != 'InStock' %} title="Unavailable" disabled=""{% endif %}>
 					<meta itemprop="url" content="{{ offer.url }}" />
 					<b class="event-price">
+						{% include common/icon.html icon="link-external" height="16" width="16" fill="currentColor" %}
 						<span itemprop="name">{{ offer.name | default: 'General Admission' }}</span>:
 						$<span itemprop="price">{{ offer.price }}</span>
 					</b>
@@ -151,21 +152,6 @@ main-itemtype: Event
 				<link itemprop="availability" href="https://schema.org/{{ offer.availability | default: 'InStock' }}" />
 			</span>
 		{% endif %}
-		<br />
-		<div class="center">
-			<button type="button" class="btn btn-primary schedule-notification" data-title="{{ page.name | escape }}" data-time="{{ page.startDate | date_to_xmlschema }}" data-url="{{  page.url }}" data-body="{{ page.description | escape }}" data-location-url="{{ page.location.url }}" data-image="{{ page.image }}" data-uuid="{{ page.title | sluggify }}" hidden="">
-				{% include common/icon.html icon="appointment-new" %}
-				<span>Add Reminder</span>
-			</button>
-		</div>
-		<br />
-		{% include common/share-buttons.html
-			text=page.description
-			facebook=true
-			twitter=true
-			reddit=true
-			linkedin=true
-		%}
 	</header>
 	<article itemprop="about" itemtype="https://schema.org/Article" itemscope="">
 		<div itemprop="author" itemtype="https://schema.org/{{ page.organizer['@type'] | default: 'Organization' }}" itemscope="" hidden="">
@@ -213,6 +199,14 @@ main-itemtype: Event
 		{% endif %}
 		<br />
 		<section itemtype="articleBody">{{ content }}</section>
+		<hr />
+		{% include common/share-buttons.html
+			text=page.description
+			facebook=true
+			twitter=true
+			reddit=true
+			linkedin=true
+		%}
 		<footer itemprop="publisher" itemtype="https://schema.org/{{ site.data.publisher['@type'] | default: 'Organization' }}" itemscope="" hidden="">
 			<a href="{{ site.data.publisher.url }}" rel="external noopener" itemprop="url">
 				<figure itemprop="logo" itemtype="https://schema.org/ImageObject" itemscope="" hidden="">
