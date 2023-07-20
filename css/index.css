@@ -98,3 +98,7 @@ summary[role="button"] {
 .stepped-form > .form-step:not(.step-active) {
 	display: none;
 }
+
+a.btn {
+	text-decoration: none;
+}
