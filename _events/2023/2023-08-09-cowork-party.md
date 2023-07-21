@@ -30,9 +30,9 @@ offers:
     price: 30.00
 location:
   '@type': Place
-  name: Sportsman's Inn
+  name: Sportsman's
   addressLocality: Kernville
-  streetAddress: 11123 Kernville Rd.
+  streetAddress: 11023 Kernville Rd.
   addressRegion: CA
   postalCode: 93238
   geo:
