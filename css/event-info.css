@@ -1,7 +1,18 @@
 #event-info-section {
-	grid-template-areas: ". time place ." ". organizer place .";
-	grid-template-columns: 1fr minmax(auto, 350px) minmax(350px, 500px) 1fr;
+	grid-template-areas: ". time place ." ". organizer place ." ". performer . .";
+	grid-template-columns: 1fr minmax(320px, 380px) minmax(350px, 500px) 1fr;
 	gap: 8px;
+	line-height: 1.65;
+}
+
+#event-info-section #performer-card .performer-info {
+	text-decoration: none;
+}
+
+.event-page-header .event-img {
+	width: 95%;
+	height: auto;
+	border-radius: 6px;
 }
 
 #place-card {
@@ -16,15 +27,40 @@
 	grid-area: organizer;
 }
 
+#organizer-info > a {
+	display: block;
+}
+
+#performer-card {
+	grid-area: performer;
+}
+
+#performer-card .performer-info {
+	gap: 1.8rem;
+}
+
+#performer-card .performer-image {
+	width: 96px;
+	height: 96px;
+	object-position: center;
+	object-fit: contain;
+}
+
 #place-card .leaflet-map {
 	width: 100%;
 	min-height: 250px;
 	border: none;
 }
 
+.event-page-offers.flex, .event-details.flex.row {
+	justify-content: space-around;
+	gap: 1.3rem;
+	margin-top: 1.3rem;
+}
+
 @media (max-width: 750px) {
 	#event-info-section {
-		grid-template-areas: "time" "place" "organizer";
+		grid-template-areas: "time" "place" "organizer" "performer";
 		grid-template-columns: auto;
 	}
 }
