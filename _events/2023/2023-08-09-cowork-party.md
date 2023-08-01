@@ -4,7 +4,7 @@ title: Kernville Cowork Anniversary and Nonprofit Launch Party
 image: https://i.imgur.com/C0YhxU3m.jpg
 # imgur: https://i.imgur.com/C0YhxU3.jpg
 pinned: true
-description: Get ready to celebrate Kernville Cowork's 5th Anniversary and Nonprofit Launch Party on Wed, Aug 9th at the Sportsman
+description: Join Kernville Cowork along with musical guest Jim Ranger to celebrate our 5 yr anniversary and launch of our brand new nonprofit
 eventLink: https://www.eventbrite.com/e/kernville-cowork-anniversary-and-nonprofit-launch-party-tickets-681352241897?aff=oddtdtcreator
 tags:
   - cowork
@@ -84,10 +84,9 @@ organizer:
     latitude: 35.75548932
     longitude: -118.42398586
 ---
-Kernville Cowork is excited to invite you to a launch party for the Kern River
-Valley’s newest nonprofit: Sierra Shared Spaces! While we’re at it, we’ll also be
-celebrating International Coworking Day as well as Kernville Cowork's 5 year anniversary!
-The event will take place at The Sportsman, with:
+Featuring live music by Jim Ranger!
+
+Kernville Cowork is excited to invite you to a launch party for the Kern River Valley’s newest nonprofit: Sierra Shared Spaces! While we’re at it, we’ll also be celebrating International Coworking Day as well as Kernville Cowork's 5 year anniversary. The event will take place at The Sportsman, with catering provided by the Big Blue Bear.
 
 - Live Music 🎵
 - Delicious Food 🍽
