@@ -21,17 +21,6 @@
 	width: 650px;
 }
 
-main.card {
-	padding: 2em;
-	width: 95vw;
-	margin-left: 2.5%;
-}
-
-.event-page-offers.flex, .event-details.flex.row {
-	justify-content: space-around;
-	gap: 1.3rem;
-}
-
 button.btn.event-offer-btn {
 	cursor: default;
 }

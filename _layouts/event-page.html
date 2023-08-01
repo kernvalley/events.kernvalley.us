@@ -45,10 +45,16 @@ main-itemtype: Event
 			</h2>
 		{% endif %}
 		<!-- <div itemtype="https://schema.org/Place" itemprop="location" itemref="place-card" hidden=""></div> -->
-		<figure class="center" itemprop="image" itemtype="https://schema.org/ImageObject" itemscope="">
-			{% include common/imgur.html url=page.imgur itemprop="url" class="imgur" sizes="(max-width: 800px) 100vw, 80vw" %}
-		</figure>
-		<section id="event-info-section" class="grid">
+		{% if page.imgur %}
+			<figure class="center" itemprop="image" itemtype="https://schema.org/ImageObject" itemscope="">
+				{% include common/imgur.html url=page.imgur itemprop="url" class="imgur event-img" sizes="(max-width: 800px) 100vw, 80vw" %}
+			</figure>
+		{% elsif page.image %}
+			<figure class="center" itemprop="image" itemtype="https://schema.org/ImageObject" itemscope="">
+				<img src="{{ page.image }}" class="event-img" itemprop="url" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" />
+			</figure>
+		{% endif %}
+		<section id="event-info-section" class="grid{% if page.performer %} with-performer{% endif %}">
 			<div id="place-card" class="card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
 				<h4 class="center">
 					{% include common/icon.html icon='location' %}
@@ -99,7 +105,7 @@ main-itemtype: Event
 			<div id="organizer-card" class="card" itemprop="organizer" itemtype="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
 				<h4 class="center">Organized by</h4>
 				<div class="block center" itemprop="name">{{ page.organizer.name }}</div>
-				<div id="organizer-info" class="flex row wrap">
+				<div id="organizer-info">
 					{% if page.organizer.url %}
 						{% include common/url.html url=page.organizer.url %}
 					{% endif %}
@@ -118,11 +124,25 @@ main-itemtype: Event
 					{% include common/same-as-links.html sameAs=page.organizer.sameAs %}
 				{% endif %}
 			</div>
+			{% if page.performer %}
+				<div id="performer-card" class="event-page-performer card" itemprop="performer" itemtype="https://schema.org/{{ page.performer['@type'] | default: 'Person' }}" itemscope="">
+					<h3 class="center">Featuring</h3>
+					<a href="{{ page.performer.url }}" class="block performer-info flex row" itemprop="url" rel="noopener noreferrer external" target="_blank">
+						<img src="{{ page.performer.image }}" itemprop="image" class="performer-image round" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" />
+						<div class="flex-group">
+							<h4 itemprop="name" class="performer-name underline">{{ page.performer.name }}</h4>
+							<!-- <p itemprop="description" class="performer-description">{{ page.performer.description }}</p> -->
+						</div>
+					</a>
+				</div>
+			{% endif %}
 		</section>
 		{% if page.offers %}<hr /><div class="flex row wrap event-page-offers">{% for offer in page.offers %}
 			{% if offer.url %}
 				<a href="{{ offer.url }}" role="button" rel="noopener external" class="center btn btn-primary event-offer-btn" itemprop="offers" itemtype="http://schema.org/Offer" itemscope=""{% if offer.availability and offer.availability != 'InStock' %} title="Unavailable" disabled=""{% endif %}>
 					<meta itemprop="url" content="{{ offer.url }}" />
+					<meta itemprop="validFrom" content="{{ page.validFrom | default: site.time | date_to_xmlschema }}" />
+					<meta itemprop="validFrom" content="{{ page.validThrough | default: page.endDate | date_to_xmlschema }}" />
 					<b class="event-price">
 						{% include common/icon.html icon="link-external" height="16" width="16" fill="currentColor" %}
 						<span itemprop="name">{{ offer.name | default: 'General Admission' }}</span>:
@@ -133,6 +153,8 @@ main-itemtype: Event
 				</a>
 			{% else %}
 				<span role="button" class="center btn btn-primary cursor-default event-offer-btn" itemprop="offers" itemtype="http://schema.org/Offer" itemscope=""{% if offer.availability and offer.availability != 'InStock' %} title="Unavailable" disabled=""{% endif %}>
+					<meta itemprop="validFrom" content="{{ page.validFrom | default: site.time | date_to_xmlschema }}" />
+					<meta itemprop="validFrom" content="{{ page.validThrough | default: page.endDate | date_to_xmlschema }}" />
 					<b class="event-price">
 						<span itemprop="name">{{ offer.name | default: 'General Admission' }}</span>:
 						$<span itemprop="price">{{ offer.price }}</span>
