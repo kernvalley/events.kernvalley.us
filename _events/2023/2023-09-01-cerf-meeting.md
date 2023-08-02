@@ -5,6 +5,7 @@ description: Join the CERF Community Engagement Meeting on September 1, 2023, at
 image: https://i.imgur.com/imZN7jmm.png
 startDate: 2023-09-01 18:00
 endDate: 2023-09-01 19:30
+eventAttendanceMode: MixedEventAttendanceMode
 location:
   name: Paradise Cove Lodge
   identifier: f779f9cd-ce71-43d7-974e-6d30dd2e7af2
