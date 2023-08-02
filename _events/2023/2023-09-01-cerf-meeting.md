@@ -36,4 +36,4 @@ Join us for the CERF Community Engagement Meeting on September 1, 2023, at 6:00 
 
 The meeting aims to bring together a diverse group of stakeholders from Kern County to explore exciting projects that have the potential to create meaningful job opportunities. Come and actively participate in shaping the future of our community!
 
-Food and drinks will be provided, and everyone is welcome to attend. For any inquiries, feel free to contact us at [{% include common/icon.html icon="mail" height=18 width=18 fill="currentColor" %} KernCERF@kccd.edu](mailto:KernCERF@kccd.edu). We look forward to seeing you there!
+Food and drinks will be provided, and everyone is welcome to attend. For any inquiries, feel free to contact us at [{% include common/icon.html icon="mail-unread" height=18 width=18 fill="currentColor" %} KernCERF@kccd.edu](mailto:KernCERF@kccd.edu). We look forward to seeing you there!
