@@ -37,7 +37,7 @@ organizer:
     - https://www.instagram.com/kerncoalition/
     - https://www.linkedin.com/company/kern-coalition
 ---
-Join us for the CERF Community Engagement Meeting on September 1, 2023, at 6:00 PM. This event will be held both in-person at Paradise Cove Lodge, 10700 CA-178, Lake Isabella, CA 93240, and virtually via [{% include common/icon.html icon="link-external" height=18 width=18 fill="currentColor" %} Zoom](www.bit.ly/cerfeastkern).
+Join us for the CERF Community Engagement Meeting on September 1, 2023, at 6:00 PM. This event will be held both in-person at Paradise Cove Lodge, 10700 CA-178, Lake Isabella, CA 93240, and virtually via [{% include common/icon.html icon="link-external" height=18 width=18 fill="currentColor" %} Zoom](https://www.bit.ly/cerfeastkern).
 
 The meeting aims to bring together a diverse group of stakeholders from Kern County to explore exciting projects that have the potential to create meaningful job opportunities. Come and actively participate in shaping the future of our community!
 
