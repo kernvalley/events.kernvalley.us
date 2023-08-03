@@ -2,7 +2,7 @@
 name: CERF Community Engagement Meeting
 title: CERF Community Engagement Meeting
 description: Join the CERF Community Engagement Meeting on September 1, 2023, at 6:00 PM. Explore job opportunities in Kern County. In-person & virtual. All welcome!
-image: https://i.imgur.com/imZN7jmm.png
+image: https://i.imgur.com/4leDHlmm.png
 startDate: 2023-09-01 18:00
 endDate: 2023-09-01 19:30
 eventAttendanceMode: MixedEventAttendanceMode
