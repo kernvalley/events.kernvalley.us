@@ -1,9 +1,9 @@
-- src: https://unpkg.com/@shgysk8zer0/polyfills@0.2.0/all.min.js
+- src: https://unpkg.com/@shgysk8zer0/polyfills@0.2.6/all.min.js
   crossOrigin: anonymous
   referrerPolicy: no-referrer
-  integrity: sha384-8s5Tj7IrKDs3va2EJ3QsRxxApN9vT+thnbA8imc6bwYJA2JaAddVR5b8q5wDkrdv
+  integrity: sha384-lj4uuNED37EaQqaCjSiBPmHxxCbXyoERY03CJOFNOZuMXZC8x20EEup5sx9F66Jx
   defer: true
-- src: https://unpkg.com/@shgysk8zer0/kazoo@0.2.0/harden.js
+- src: https://unpkg.com/@shgysk8zer0/kazoo@0.2.6/harden.js
   crossOrigin: anonymous
   referrerPolicy: no-referrer
   integrity: sha384-55L/wO9o0uIVTeubRIDQB4bewfNqyxrj4OXuxlW24NMEk+ioZwMHVw/tFV78mM+k
