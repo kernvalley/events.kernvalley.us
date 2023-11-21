@@ -44,6 +44,9 @@ Fund (CERF) are a crucial event for Eastern Kern residents. CERF, dedicated to
 fostering economic resilience, plays a pivotal role in shaping the community's
 future.
 
+> Over the next few years, the Kern Coalition will have a lot of important decisions to make regarding how to allocate CERF funds to projects around Kern County. In order to ensure representation for our community in the governance council that will be making these decisions, we need our community to come out and vote in the governance council elections.  
+> <cite href="#justin-powers">Justin Powers</cite>
+
 ### Why CERF Matters
 
 CERF focuses on projects that create meaningful, living-wage job opportunities
@@ -57,6 +60,7 @@ Join us at Paradise Cove Lodge, 10700 CA-178, Lake Isabella, CA 93240, on
 November 29th, 2023, from 6:00 PM to 8:00 PM, to participate in the Governance
 Council Elections. Your vote is an opportunity to influence the direction of
 Eastern Kern's development.
+
 
 ### Meet the [Candidates](https://www.kccd.edu/kern-coalition-cerf/east-subregion-candidates.html)
 

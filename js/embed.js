@@ -1,6 +1,5 @@
-customElements.whenDefined('krv-events').then(async () => {
+customElements.whenDefined('krv-events').then(KRVEvents => {
 	const url = new URL(location.href);
-	const KRVEvents = customElements.get('krv-events');
 	const events = new KRVEvents();
 
 	if (url.searchParams.has('o')) {
