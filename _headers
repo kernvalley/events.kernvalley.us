@@ -35,9 +35,10 @@
   Cross-Origin-Embedder-Policy: unsafe-none
   Link: </css/embed.css>; rel=preload; as=style; referrerpolicy=no-referrer;
   Link: <https://unpkg.com/@shgysk8zer0/polyfills@0.2.6/all.min.js>; rel=preload; as=script; crossorigin=anonymous; referrerpolicy=no-referrer;
-  Link: <https://unpkg.com/@kernvalley/components@1.1.0/krv/events.min.js>; as=script; referrerpolicy=no-referrer; crossorigin=anonymous;
-  Link: </js/embed.js>; as=script; referrerpolicy=no-referrer;
-  Content-Security-Policy:  default-src 'none'; connect-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@kernvalley/ events.kernvalley.us/events.json; font-src https://cdn.kernvalley.us/fonts/; img-src *; script-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@kernvalley/ https://unpkg.com/@webcomponents/; style-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@kernvalley/ blob:;
+  Link: <https://unpkg.com/@kernvalley/components@1.1.0/events.min.js>; rel=preload; as=script; crossorigin=anonymous; referrerpolicy=no-referrer;
+  Link: </js/embed.js>; rel=preload; as=script; referrerpolicy=no-referrer;
+  Link: <https://events.kernvalley.us/events.json>; rel=preload; as=fetch; crossorigin=anonymous; referrerpolicy=no-referrer;
+  Content-Security-Policy:  default-src 'none'; connect-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@kernvalley/ events.kernvalley.us/events.json; font-src https://cdn.kernvalley.us/fonts/; img-src *; script-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@kernvalley/ https://unpkg.com/@webcomponents/; style-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@kernvalley/ blob:; trusted-types empty#html empty#script sanitizer-raw#html krv-events#html; require-trusted-types-for 'script';
 
 /reset
   Referrer-Policy: no-referrer
