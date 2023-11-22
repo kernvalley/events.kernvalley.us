@@ -2,7 +2,11 @@
 name: CERF Governance Council Elections
 title: CERF Governance Council Elections
 description: Join the CERF Governance Council Elections in Eastern Kern. Vote for candidates focused on economic resilience.
-image: https://i.imgur.com/HxZEe4Sm.png
+image: https://i.imgur.com/HxZEe4Sl.png
+thumbnail:
+  url: https://i.imgur.com/HxZEe4Sl.png
+  width: 640
+  height: 355
 startDate: 2023-11-29 18:00
 endDate: 2023-11-29 20:00
 location:
