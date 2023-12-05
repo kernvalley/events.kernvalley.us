@@ -1,9 +1,9 @@
 ---
 name: Addiction & Recovery Pop-Up
 # imgur: https://i.imgur.com/AuO9fIM.png
-image: https://i.imgur.com/1DAqxYpl.jpg
+image: https://i.imgur.com/wSTP041l.jpg
 thumbnail:
-  url: https://i.imgur.com/1DAqxYpl.jpg
+  url: https://i.imgur.com/wSTP041l.jpg
   width: 640
   height: 355
 description: "A collaboration between KRV Bridge Connection and Bakersfield Recovery Services."
@@ -35,9 +35,6 @@ A collaboration between KRV Bridge Connection and Bakersfield Recovery Services.
 > Your story isn't over; a new chapter begins today. Recovery is possible, and hope is here.
 
 ### Information on How to Access:
-- Help for people struggling with use disorders
-- Narcan Training
-- Education about the effects of addiction & alcohol on individuals & families
+<ul><li>Help for people struggling with substance use disorders</li><li><a href="https://en.wikipedia.org/wiki/Naloxone" title="Narcan on Wikipedia" rel="noopener noreferrer external" target="_blank">{% include common/icon.html icon="link-external" height="18" width="18" fill="currentColor" %}<span> Narcan</span></a><span> Training</span></li><li>Education about the effects of addiction & alcohol on individuals & families</li></ul>
 
-<a href="tel:+1-800-991-5272" class="btn btn-primary" title="Crisis Hotline">{% include common/icon.html icon="call-start" height="18" width="18" %} Crisis Hotline: (800) 991-5272</a>
-<a href="https://drive.google.com/file/d/11uylz2uL7XXP-LIn7QdAAq808rMgKPFr/view?usp=drivesdk" rel="noreferrer noopener external" class="btn btn-primary" title="Event Flyer">{% include common/icon.html icon="pdf" height="18" width="18" %} View/Download Flyer</a>
+<div class="flex row space-around wrap cta-btns"><a href="https://drive.google.com/file/d/11uylz2uL7XXP-LIn7QdAAq808rMgKPFr/view?usp=drivesdk" rel="noreferrer noopener external" class="btn btn-primary" title="Event Flyer on Google Drive" target="_blank">{% include common/icon.html icon="pdf" height="18" width="18" %} View/Download Flyer</a><a href="tel:+1-866-266-4898" class="btn btn-primary" title="Call Substance Use Access Line">{% include common/icon.html icon="call-start" height="18" width="18" %} Substance Use Access Line: (866) 266-4898</a><a href="tel:988" class="btn btn-primary" title="Call Crisis Hotline">{% include common/icon.html icon="call-start" height="18" width="18" %} Crisis Hotline: 988</a></div>
