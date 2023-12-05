@@ -2,6 +2,10 @@ main a:not(.btn) {
 	text-decoration: underline;
 }
 
+.cta-btns.flex {
+	gap: 1.8rem;
+}
+
 main.card {
 	padding: 2em;
 	width: 95vw;
