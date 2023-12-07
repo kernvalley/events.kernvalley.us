@@ -1,11 +1,12 @@
 ---
 name: Geminid Meteor Shower Star Gazing
 description: Come hang out with us during the new moon and watch the Geminid Meteor Shower
-startDate: 2023-12-12 20:00
+startDate: 2023-12-12 19:00
 endDate: 2023-12-12 23:00
-image: https://i.imgur.com/9U7wZb0l.png
+updated: 20023-12-07 09:00
+image: https://i.imgur.com/Dtgyh65l.webp
 thumbnail:
-  url: https://i.imgur.com/9U7wZb0l.png
+  url: https://i.imgur.com/Dtgyh65l.webp
   width: 640
   height: 335
 tags:
@@ -15,15 +16,17 @@ tags:
   - social
   - hangout
 location:
-  name: Tillie Creek Campground
+  name: Nuui Cunni
   address:
-    addressLocality: Wofford Heights
+    streetAddress: 2600 CA-155
+    addressLocality: Lake Isabella
     addressRegion: CA
-    postalCode: 93285
+    postalCode: 93240
+    url: https://maps.app.goo.gl/WYrdk2e1mwAwuQRw5
   geo:
-    latitude: 35.701582391870836
-    longitude: -118.45564327611206
-    url: geo:35.701582391870836,-118.45564327611206
+    latitude: 35.656150825500184
+    longitude: -118.4793359041214
+    url: geo:35.656150825500184,-118.4793359041214
 organizer:
   name: KernValley.US
   email: admin@kernvalley.us
