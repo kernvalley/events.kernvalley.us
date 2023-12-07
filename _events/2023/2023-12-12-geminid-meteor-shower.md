@@ -4,9 +4,9 @@ description: Come hang out with us during the new moon and watch the Geminid Met
 startDate: 2023-12-12 19:00
 endDate: 2023-12-12 23:00
 updated: 20023-12-07 09:00
-image: https://i.imgur.com/Dtgyh65l.webp
+image: https://i.imgur.com/Dtgyh65l.png
 thumbnail:
-  url: https://i.imgur.com/Dtgyh65l.webp
+  url: https://i.imgur.com/Dtgyh65l.png
   width: 640
   height: 335
 tags:
