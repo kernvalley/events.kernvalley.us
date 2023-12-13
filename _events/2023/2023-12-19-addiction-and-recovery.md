@@ -1,5 +1,6 @@
 ---
 name: Addiction & Recovery Pop-Up
+title: Addiction & Recovery Pop-Up
 # imgur: https://i.imgur.com/AuO9fIM.png
 image: https://i.imgur.com/wSTP041l.jpg
 thumbnail:

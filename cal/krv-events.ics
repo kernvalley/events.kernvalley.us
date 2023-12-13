@@ -3,24 +3,7 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:22f46e10-f4dc-47b7-a689-290bff6d48ce
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Geminid Meteor Shower Star Gazing
-LOCATION:2600 CA-155, Lake Isabella, CA 93240, US
-DESCRIPTION:Come hang out with us during the new moon and watch the Geminid
-  Meteor Shower
-DTSTAMP:20231208T184820Z
-LAST-MODIFIED:20231208T184820Z
-DTSTART:20231213T030000Z
-DTEND:20231213T070000Z
-ORGANIZER;CN=KernValley.US:mailto:admin@kernvalley.us
-URL:https://events.kernvalley.us/2023/12/12/geminid-meteor-shower
-END:VEVENT
-BEGIN:VEVENT
-UID:19bfd7b6-e507-4abc-8b42-c8427ccc34e6
+UID:1f958de6-85b3-45f5-99c5-02884e31a839
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -29,11 +12,45 @@ SUMMARY:Addiction & Recovery Pop-Up
 LOCATION:7504 Lake Isabella Blvd., Lake Isabella, CA 93240, US
 DESCRIPTION:A collaboration between KRV Bridge Connection and Bakersfield R
  ecovery Services.
-DTSTAMP:20231208T184820Z
-LAST-MODIFIED:20231208T184820Z
+DTSTAMP:20231213T173455Z
+LAST-MODIFIED:20231213T173455Z
 DTSTART:20231219T210000Z
 DTEND:20231219T230000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
-URL:https://events.kernvalley.us/2023/12/19/addiction-and-recovery
+URL:http://localhost:4000/2023/12/19/addiction-and-recovery
+END:VEVENT
+BEGIN:VEVENT
+UID:e0a6c27c-9496-4e0a-9145-f9017012b5a8
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Whiskey Flat Days Kickoff Dinner
+LOCATION:6708 Wofford Blvd., Wofford Heights, CA 93285, US
+DESCRIPTION:Join us at Elks Lodge and meet the Whiskey Flat Days Mayor cont
+ enders
+DTSTAMP:20231213T173455Z
+LAST-MODIFIED:20231213T173455Z
+DTSTART:20240106T020000Z
+DTEND:20240106T050000Z
+ORGANIZER;CN=Kernville Chamber of Commerce:mailto:info@gotokernville.com
+URL:http://localhost:4000/2024/01/05/wfd-kickkoff-dinner
+END:VEVENT
+BEGIN:VEVENT
+UID:d273f368-2015-408b-922d-be8a70fe9b6e
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Whiskey Flat Days
+LOCATION:Kernville, CA 93238, US
+DESCRIPTION:Whiskey Flat Days is one of the most popular Festivals in all o
+ f Southern California.
+DTSTAMP:20231213T173455Z
+LAST-MODIFIED:20231213T173455Z
+DTSTART:20240216T180000Z
+DTEND:20240220T020000Z
+ORGANIZER;CN=Kernville Chamber of Commerce:mailto:info@gotokernville.com
+URL:http://localhost:4000/2023/12/13/wfd
 END:VEVENT
 END:VCALENDAR
