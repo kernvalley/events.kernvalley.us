@@ -1,7 +1,6 @@
 import '@shgysk8zer0/kazoo/theme-cookie.js';
 import { DAYS } from '@shgysk8zer0/kazoo/date-consts.js';
 import { shareInit } from '@shgysk8zer0/kazoo/data-share.js';
-import { getCustomElement } from '@shgysk8zer0/kazoo/custom-elements.js';
 import { getGooglePolicy, getDefaultPolicyWithDisqus } from '@shgysk8zer0/kazoo/trust-policies.js';
 import { createPolicy } from '@shgysk8zer0/kazoo/trust.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from '@shgysk8zer0/kazoo/google-analytics.js';
@@ -69,7 +68,7 @@ if ('serviceWorker' in navigator) {
 	});
 }
 
-getCustomElement('install-prompt').then(HTMLInstallPromptElement => {
+customElements.whenDefined('install-prompt').then(HTMLInstallPromptElement => {
 	const btn = document.getElementById('install-btn');
 
 	if (btn instanceof Element) {
