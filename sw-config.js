@@ -36,14 +36,12 @@ const config = {
 		'/js/index.min.js',
 		// 'https://unpkg.com/@shgysk8zer0/components@0.0.12/toast-message.html',
 		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}button/share-to.html',
-		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}pwa/prompt.html',
 		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}weather/current.html',
 
 		/* CSS */
 		'/css/index.min.css',
 		// 'https://unpkg.com/@shgysk8zer0/components@0.0.12/toast-message.css',
 		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}button/share-to.css',
-		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}pwa/prompt.css',
 		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}weather/current.css',
 
 		/* Images & Icons */
