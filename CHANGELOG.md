@@ -14,11 +14,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.7] - 2024-01-21
+
+
 ### Added
 - Add WFD Kickoff Dinner & WFD 2024
 
 ### Changed
 - Update scripts/importmap/`integrity` for latest versions
+
+### Fixed
+- Fix URL/date for Whiskey Flat Days
+- Fix service worker config (remove invalid sources)
 
 ## [v2.0.6] - 2023-12-5
 

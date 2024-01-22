@@ -31,20 +31,18 @@ const config = {
 	].map(path => new URL(path, location.origin).href),
 	stale: [
 		/* JS, `customElements`, etc. */
-		'https://unpkg.com/@shgysk8zer0/polyfills@0.2.6/all.min.js',
-		'https://unpkg.com/@shgysk8zer0/kazoo@0.2.7/harden.js',
+		'{{ site.data.importmap.imports["@shgysk8zer0/polyfills/"] }}all.min.js',
+		'{{ site.data.importmap.imports["@shgysk8zer0/kazoo/"] }}harden.js',
 		'/js/index.min.js',
 		// 'https://unpkg.com/@shgysk8zer0/components@0.0.12/toast-message.html',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.15/button/share-to.html',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.15/pwa/prompt.html',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.15/weather/current.html',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}button/share-to.html',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}weather/current.html',
 
 		/* CSS */
 		'/css/index.min.css',
 		// 'https://unpkg.com/@shgysk8zer0/components@0.0.12/toast-message.css',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.15/button/share-to.css',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.15/pwa/prompt.css',
-		'https://unpkg.com/@shgysk8zer0/components@0.0.15/weather/current.css',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}button/share-to.css',
+		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}weather/current.css',
 
 		/* Images & Icons */
 		'/img/icons.svg',
@@ -80,7 +78,7 @@ const config = {
 			'/webapp.webmanifest',
 		]),
 		'upcoming-events': async () => await updateAssets([
-			'/', '{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
+			'/', //'{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
 		]),
 	},
 };
