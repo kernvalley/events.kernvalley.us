@@ -8,3 +8,4 @@ import '@kernvalley/components/ad.js';
 import '@shgysk8zer0/components/app/list-button.js';
 import '@shgysk8zer0/components/app/stores.js';
 import '@shgysk8zer0/components/disqus/comments.js';
+import '@kernvalley/components/wfd/events.js';
