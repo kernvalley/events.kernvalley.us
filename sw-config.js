@@ -78,7 +78,7 @@ const config = {
 			'/webapp.webmanifest',
 		]),
 		'upcoming-events': async () => await updateAssets([
-			'/', '{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
+			'/', //'{{ site.events | where: "pinned", true | map: "url" | join: "', '" }}',
 		]),
 	},
 };
