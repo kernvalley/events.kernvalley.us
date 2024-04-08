@@ -1,16 +1,8 @@
 trusted:
   - default
-  - empty#html
-  - empty#script
+  - aegis-sanitizer#html
   - ga#script-url
   - goog#html
-  - sanitizer-raw#html
-  - purify-raw#html
-  - purify#html
-  - github-user#html
-  - weather-current#html
-  - share-to-buttons#html
   - youtube#script-url
   - disqus#script-url
   - pwa-install
-  - wfd-events#html

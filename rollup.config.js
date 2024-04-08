@@ -7,7 +7,7 @@ const { homepage: baseURL } = await readJSONFile('./package.json');
 
 export default getConfig('./js/index.js', {
 	plugins: [
-		rollupImport('./_data/importmap.yaml'),
+		rollupImport('./_data/importmap.json'),
 		rollupImportMeta({ baseURL }),
 	],
 	format: 'iife',
