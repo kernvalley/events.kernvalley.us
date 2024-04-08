@@ -14,6 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.9] - 2024-04-07
+
+### Changed
+- Updates to implement `@aegisjsproject/parsers`
+
 ## [v2.0.8] - 2024-01-21
 
 ### Fixed

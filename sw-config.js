@@ -32,17 +32,10 @@ const config = {
 	stale: [
 		/* JS, `customElements`, etc. */
 		'{{ site.data.importmap.imports["@shgysk8zer0/polyfills/"] }}all.min.js',
-		'{{ site.data.importmap.imports["@shgysk8zer0/kazoo/"] }}harden.js',
 		'/js/index.min.js',
-		// 'https://unpkg.com/@shgysk8zer0/components@0.0.12/toast-message.html',
-		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}button/share-to.html',
-		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}weather/current.html',
 
 		/* CSS */
 		'/css/index.min.css',
-		// 'https://unpkg.com/@shgysk8zer0/components@0.0.12/toast-message.css',
-		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}button/share-to.css',
-		'{{ site.data.importmap.imports["@shgysk8zer0/components/"] }}weather/current.css',
 
 		/* Images & Icons */
 		'/img/icons.svg',
