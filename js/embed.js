@@ -14,11 +14,12 @@ customElements.whenDefined('krv-events').then(KRVEvents => {
 
 	if (url.searchParams.has('t')) {
 		events.theme = url.searchParams.get('t');
+		document.documentElement.dataset.theme = url.searchParams.get('t');
 	}
 	
 	if (url.searchParams.has('s')) {
 		events.source = url.searchParams.get('s');
 	}
 
-	document.body.append(events);
+	document.body.replaceChildren(events);
 });

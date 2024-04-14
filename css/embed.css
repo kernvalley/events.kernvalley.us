@@ -1,9 +1,26 @@
 * {
 	box-sizing: border-box;
+}
+
+:root {
+	color-scheme: light dark;
+	font-family: system-ui;
+}
+
+:root[data-theme="dark"] {
+	color-scheme: dark;
+	background-color: #1c1b22;
+	color: #fefefe;
+}
+
+:root[data-theme="light"] {
+	color-scheme: light;
+	background-color: #ffffff;
+	color: #363636;
+}
+
+body {
 	margin: 0;
-	padding: 0;
-	max-width: 100%;
-	font-family: Roboto;
 }
 
 krv-events {

@@ -14,6 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.0.10] - 2024-04-13
+
+### Changed
+- Update importmap & scripts
+
 ## [v2.0.9] - 2024-04-07
 
 ### Changed
