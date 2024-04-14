@@ -7,6 +7,7 @@ import { importGa, externalHandler, telHandler, mailtoHandler } from '@shgysk8ze
 import { loaded, on, toggleClass } from '@shgysk8zer0/kazoo/dom.js';
 import { GA } from './consts.js';
 import './components.js';
+import '@shgysk8zer0/components/loading-spinner.js';
 
 getDefaultPolicyWithDisqus();
 
@@ -30,24 +31,27 @@ if (navigator.canShare() && typeof customElements.get('share-button') === 'undef
 
 [...document.querySelectorAll('a:not([rel~="external"])')]
 	.filter(a => a.origin !== location.origin)
-	.forEach(a => a.relList.add('external', 'noopener', 'noreerrer'));
+	.forEach(a => a.relList.add('external', 'noopener', 'noreferrer'));
 
 if (typeof GA === 'string' && GA.length !== 0) {
 	const policy = getGooglePolicy();
 
+	scheduler.postTask(async () => {
+		const { ga, hasGa } = await importGa(GA, {}, { policy });
+
+		if (hasGa()) {
+			ga('create', GA, 'auto');
+			ga('set', 'transport', 'beacon');
+			ga('send', 'pageview');
+
+			on('a[rel~="external"]', ['click'], externalHandler, { passive: true });
+			on('a[href^="tel:"]', ['click'], telHandler, { passive: true });
+			on('a[href^="mailto:"]', ['click'], mailtoHandler, { passive: true });
+		}
+	}, { priority: 'background' });
+
 	loaded().then(() => {
 		requestIdleCallback(() => {
-			importGa(GA, {}, { policy }).then(({ ga, hasGa }) => {
-				if (hasGa()) {
-					ga('create', GA, 'auto');
-					ga('set', 'transport', 'beacon');
-					ga('send', 'pageview');
-
-					on('a[rel~="external"]', ['click'], externalHandler, { passive: true });
-					on('a[href^="tel:"]', ['click'], telHandler, { passive: true });
-					on('a[href^="mailto:"]', ['click'], mailtoHandler, { passive: true });
-				}
-			});
 		});
 	});
 } else {
