@@ -1,0 +1,164 @@
+---
+layout: default
+permalink: /create/
+title: Create an Event
+description: Submit an event to the KRV Events App
+scripts:
+  - src: /js/create.min.js
+    defer: true
+    referrerPolicy: no-referrer
+---
+<form id="event">
+	<datalist id="city-list">
+		<option value="Lake Isabella"></option>
+		<option value="Kernville"></option>
+		<option value="Wofford Heights"></option>
+		<option value="Bodfish"></option>
+		<option value="Mt Mesa"></option>
+		<option value="South Lake"></option>
+		<option value="Weldon"></option>
+		<option value="Onyx"></option>
+	</datalist>
+	<datalist id="zip-list">
+		<option value="93240"></option>
+		<option value="93238"></option>
+		<option value="93285"></option>
+		<option value="93205"></option>
+		<option value="93283"></option>
+		<option value="93255"></option>
+	</datalist>
+	<input type="hidden" name="@context" value="https://schema.org" />
+	<input type="hidden" name="@type" value="Event" />
+	<fieldset disabled="" id="basic-info">
+		<legend>Event Info</legend>
+		<div class="form-group">
+			<label class="input-label required" for="event-name">Event Name</label>
+			<input type="text" name="name" id="event-name" class="input" placeholder="Event Name" minlength="8" maxlength="65" autocomplete="off" required="" />
+		</div>
+		<div class="form-group">
+			<label class="input-label required" for="event-start-date">Start Time</label>
+			<input type="datetime-local" name="startDate" id="event-start-date" class="input" placeholder="yyyy-mm-ddThh:mm" required="" />
+		</div>
+		<div class="form-group">
+			<label class="input-label required" for="event-end-date">End Time</label>
+			<input type="datetime-local" name="endDate" id="event-end-date" class="input" placeholder="yyyy-mm-ddThh:mm" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-description" class="input-label required">Description</label>
+			<input type="text" name="description" class="input" id="event-description" minlength="40" maxlength="80" autocomplete="off" placeholder="Short description of event" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-image" class="input-label required">Image URL</label>
+			<input type="url" name="image" id="event-image" class="input" placeholder="https://example.com/image.jpg" required="" />
+		</div>
+		<div>
+			<input type="file" accept="image/*" id="img-upload" />
+		</div>
+	</fieldset>
+	<fieldset id="event-organizer" disabled="">
+		<legend>Organizer Info</legend>
+		<div class="form-group">
+			<label for="event-organizer-name" class="input-label required">Organizer Name</label>
+			<input type="text" name="organizer[name]" id="event-organizer-name" class="input" placeholder="Organizer Name" autocomplete="organization" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-organizer-type" class="input-label required">Organizer Type</label>
+			<select name="organizer[@type]" id="event-organizer-type" class="input" required="">
+				<option label="Select a type" value=""></option>
+				<option label="Person" value="Person"></option>
+				<option label="Organization" value="Organization"></option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="event-organizer-email" class="input-label required">Email</label>
+			<input type="email" name="organizer[email]" id="event-organizer-email" class="input" placeholder="user@example.com" autocomplete="email" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-organizer-phone" class="input-label">Phone</label>
+			<input type="tel" name="organizer[telephone]" id="event-organizer-phone" class="input" placeholder="+1-555-555-5555" autocomplete="tel" />
+		</div>
+		<div class="form-group">
+			<label for="event-organizer-url" class="input-label">Website</label>
+			<input type="url" name="organizer[url]" id="event-organizer-url" class="input" placeholder="https://example.com" />
+		</div>
+	</fieldset>
+	<fieldset id="event-location" disabled="">
+		<legend>Event Location</legend>
+		<div class="form-group">
+			<label for="event-location-name" class="input-label required">Location Name</label>
+			<input type="text" name="location[name]" id="event-location-name" class="input" placeholder="Location Name" autocomplete="off" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-location-type" class="input-label required">Location Type</label>
+			<select name="location[@type]" id="event-location-type" class="input" required="">
+				<option label="Place (Other)" value="Place" selected=""></option>
+				<optgroup label="Civic">
+					<option label="Park" value="Park"></option>
+					<option label="Church" value="Church"></option>
+					<option label="Museum" value="Museum"></option>
+					<option label="Campgroud" value="Campground"></option>
+					<option label="Hospital" value="Hospital"></option>
+				</optgroup>
+				<optgroup label="Business">
+					<option label="Local Business" value="LocalBusiness"></option>
+					<option label="Restaurant" value="Restaurant"></option>
+					<option label="Bar or Pub" value="BarOrPub"></option>
+					<option label="Library" value="Library"></option>
+				</optgroup>
+				<optgroup label="Outdoor / Nature">
+					<option label="Mountain" value="Mountain"></option>
+					<option label="Lake" value="LakeBodyOfWater"></option>
+					<option label="River" value="RiverBodyOfWater"></option>
+				</optgroup>
+				<option label="Landmark / Historical Building" value="LandmarksOrHistoricalBuildings"></option>
+				<option label="Residence" value="Residence"></option>
+			</select>
+		</div>
+		<input type="hidden" name="location[address][@type]" value="PostalAddress" />
+		<div class="form-group">
+			<label for="event-location-street-address" class="input-label">Street Address</label>
+			<input type="text" name="location[address][streetAddress]" id="event-location-street-address" class="input" placeholder="123 Some St"  pattern="\d{1,5}\s[A-Za-z0-9.,\- ]+" autocomplete="off" />
+		</div>
+		<div class="form-group">
+			<label for="event-location-address-locality" class="input-label required">City</label>
+			<input type="text" name="location[address][addressLocality]" id="event-location-address-locality" class="input" placeholder="City Name" autocomplete="off" list="city-list" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-location-address-region" class="input-label required">State</label>
+			<select name="location[address][addressRegion]" id="event-location-address-region" class="input" autocomplete="off" required="">
+				<option label="California" value="CA" selected=""></option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="event-location-postal-code" class="input-label required">Zip/Postal Code</label>
+			<input type="text" name="location[address][postalCode]" id="event-location-postal-code" class="input" inputmode="numeric" pattern="\d{5}" minlength="5" maxlength="5" list="zip-list" autocomplete="off" required="" />
+		</div>
+		<div class="form-group" hidden="">
+			<label for="event-location-country" class="input-label required">Country</label>
+			<select name="location[address][addressCountry]" id="event-location-country" class="input" required="">
+				<option label="USA" value="US" selected=""></option>
+			</select>
+		</div>
+		<input type="hidden" name="location[geo][@type]" value="GeoCoordinates" />
+ 		<div class="form-group">
+			<label for="event-geo-latitude" class="input-label">Latitude</label>
+			<input type="text" name="location[geo][latitude]" id="event-geo-latitude" class="input" inputmode="numeric" pattern="-?\d{1,3}\.\d+" placeholder="###.######" />
+		</div>
+		<div class="form-group">
+			<label for="event-geo-longitude" class="input-label">Longitude</label>
+			<input type="text" name="location[geo][longitude]" id="event-geo-longitude" class="input" inputmode="numeric" pattern="-?\d{1,3}\.\d+" placeholder="###.######" />
+		</div>
+	</fieldset>
+	<fieldset id="event-article" disabled="">
+		<legend>Event Article</legend>
+		<div class="form-group">
+			<label for="event-body" class="input-label required">Content</label>
+			<textarea name="body" id="event-body" class="input" rows="12" placeholder="Content for event article (Markdown supported)" required=""></textarea>
+		</div>
+		<button type="button" id="preview-md" class="btn btn-primary">Preview</button>
+	</fieldset>
+	<div class="flex row">
+		<button type="submit" class="btn btn-accept" disabled="">Submit</button>
+		<button type="reset" class="btn btn-reject">Cancel</button>
+	</div>
+</form>
