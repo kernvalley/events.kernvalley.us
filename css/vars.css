@@ -27,13 +27,19 @@
 		--default-color-dark: var(--bs-gray-100);
 		--primary-color-light: var(--bs-gray-200);
 		--primary-color-dark: var(--bs-gray-800);
+		--heading-color-light: var(--bs-blue-700);
+		--heading-color-dark: var(--bs-blue-200);
+		--heading-color: var(--heading-color-light);
 
 		--scrollbar-width: thin;
 		--card-border: 1px solid var(--card-border-color);
 
 		@media (prefers-color-scheme: dark) {
-			--card-bg: var(--bs-gray-900);
-			--card-border-color: #5b5b5b;
+			& {
+				--card-bg: var(--bs-gray-900);
+				--heading-color: var(--heading-color-dark);
+				--card-border-color: #5b5b5b;
+			}
 		}
 	}
 }

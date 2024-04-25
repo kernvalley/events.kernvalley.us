@@ -15,9 +15,9 @@ main-itemtype: Event
 	<link itemprop="eventAttendanceMode" content="https://schema.org/{{ page.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
 	<header class="event-page-header">
 		{% if page.description %}
-			<meta itemprop="description" content="{{ page.description }}" />
+			<meta itemprop="description" content="{{ page.description | xml_escape }}" />
 		{% endif %}
-		<h1 itemprop="name" class="center">{{ page.name | default: page.title }}</h1>
+		<h1 itemprop="name" class="center event-name">{{ page.name | default: page.title }}</h1>
 		{% if page.eventStatus != "EventScheduled" %}
 			<h2 class="event-status-container">
 				{% case page.eventStatus %}
@@ -56,8 +56,8 @@ main-itemtype: Event
 		{% endif %}
 		<section id="event-info-section" class="grid{% if page.performer %} with-performer{% endif %}">
 			<div id="place-card" class="card" itemprop="location" itemtype="https://schema.org/{{ page.location['@type'] | default: 'Place' }}" itemscope="">
-				<h4 class="center">
-					{% include common/icon.html icon='location' %}
+				<h4 class="event-section-heading">
+					{% include common/icon.html icon="location" height="18" width="18" fill="currentColor" %}
 					<span>Where</span>
 				</h4>
 				{% if page.location.geo %}
@@ -69,16 +69,14 @@ main-itemtype: Event
 				{% endif %}
 				{% if page.location.name %}
 					<div>
-						<span>&nbsp;</span>
 						{% if page.location.url %}
 							<a href="{{ page.location.url }}" class="location-link" rel="noopener noreferrer external" itemprop="url">
-							{% include common/icon.html icon="link-external" %}
+							{% include common/icon.html icon="link-external" height="16" width="16" fill="currentColor" %}
 						{% endif %}
-						<b itemprop="name">{{ page.location.name }}</b>
+						<b class="event-location-name" itemprop="name">{{ page.location.name }}</b>
 						{% if page.location.url %}</a>{% endif %}
 					</div>
 				{% endif %}
-				<br />
 				{% if page.location.addressLocality %}
 					{% include common/address.html address=page.location %}
 				{% elsif page.location.address.addressLocality %}
@@ -86,8 +84,8 @@ main-itemtype: Event
 				{% endif %}
 			</div>
 			<div id="time-card" class="card">
-				<h4 class="center">
-					{% include common/icon.html icon='events' %}
+				<h4 class="event-section-heading">
+					{% include common/icon.html icon="events" height="18" width="18" fill="currentColor" %}
 					<span>When</span>
 				</h4>
 				<div>
@@ -103,8 +101,11 @@ main-itemtype: Event
 				</button>
 			</div>
 			<div id="organizer-card" class="card" itemprop="organizer" itemtype="https://schema.org/{{ page.organizer.type | default: 'Organization' }}" itemscope="">
-				<h4 class="center">Organized by</h4>
-				<div class="block center" itemprop="name">{{ page.organizer.name }}</div>
+				<h4 class="event-section-heading">
+					{% include common/icon.html icon="organization" height="18" width="18" fill="currentColor" %}
+					<span>Organized by</span>
+				</h4>
+				<div itemprop="name"><b>{{ page.organizer.name }}</b></div>
 				<div id="organizer-info">
 					{% if page.organizer.url %}
 						{% include common/url.html url=page.organizer.url %}
@@ -120,7 +121,6 @@ main-itemtype: Event
 					{% endif %}
 				</div>
 				{% if page.organizer.sameAs %}
-					<hr />
 					{% include common/same-as-links.html sameAs=page.organizer.sameAs %}
 				{% endif %}
 			</div>
@@ -137,7 +137,7 @@ main-itemtype: Event
 				</div>
 			{% endif %}
 		</section>
-		{% if page.offers %}<hr /><div class="flex row wrap event-page-offers">{% for offer in page.offers %}
+		{% if page.offers %}<div class="flex row wrap event-page-offers">{% for offer in page.offers %}
 			{% if offer.url %}
 				<a href="{{ offer.url }}" role="button" rel="noopener external" class="center btn btn-primary event-offer-btn" itemprop="offers" itemtype="http://schema.org/Offer" itemscope=""{% if offer.availability and offer.availability != 'InStock' %} title="Unavailable" disabled=""{% endif %}>
 					<meta itemprop="url" content="{{ offer.url }}" />
@@ -184,7 +184,6 @@ main-itemtype: Event
 			{% endif %}
 			{% if page.organizer.url %}<meta itemprop="url" content="{{ page.organizer.url }}">{% endif %}
 		</div>
-		<br />
 		{% if page.description %}
 			<meta itemprop="description" content="{{ page.description }}" />
 		{% endif %}
@@ -219,9 +218,7 @@ main-itemtype: Event
 		{% else %}
 			<meta itemprop="dateModified" content="{{ page.date | date: data_to_xmlschema }}" />
 		{% endif %}
-		<br />
 		<section itemtype="articleBody">{{ content }}</section>
-		<hr />
 		{% include common/share-buttons.html
 			text=page.description
 			facebook=true

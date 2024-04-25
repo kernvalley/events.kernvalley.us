@@ -31,23 +31,6 @@ button.btn.event-offer-btn {
 	padding: 0.4em 1.3em;
 }
 
-@media (min-width: 800px) {
-	main {
-		width: 95%;
-		width: min(800px, 95%);
-		padding: 2em;
-		margin-left: 2.5%;
-		margin-inline: auto;
-	}
-}
-
-@media (max-width: 800px) {
-	#main, #sidebar {
-		width: 95%;
-		margin-inline: auto;
-	}
-}
-
 button:disabled.btn {
 	background: var(--button-disabled-background);
 }
