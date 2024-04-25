@@ -7,9 +7,20 @@
 	--map-width: 100%;
 }
 
+#sidebar > .card {
+	--card-radius: 8px;
+}
+
+#sidebar > *::part(container) {
+	background-color: var(--card-bg);
+	border-color: var(--card-border-color);
+	border-radius: 8px;
+}
+
 #sidebar weather-current {
 	margin: 0;
 	max-width: 100%;
+	width: 100%;
 }
 
 #sidebar .leaflet-map {

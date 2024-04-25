@@ -1,5 +1,6 @@
-@import url("https://cdn.kernvalley.us/css/core-css/theme/default/index.css");
-@import url("https://cdn.kernvalley.us/css/core-css/theme/properties.css");
+@import url("https://unpkg.com/@shgysk8zer0/core-css@2.5.4/palette/bootstrap.css");
+@import url("https://unpkg.com/@shgysk8zer0/core-css@2.5.4/theme/default/index.css");
+@import url("https://unpkg.com/@shgysk8zer0/core-css@2.5.4/theme/properties.css");
 
 @media all {
 	:root[theme], :root:not([theme]) {
@@ -9,17 +10,31 @@
 
 
 		/*================= Set color vars here =================*/
+		--accent-color-dark: var(--bs-primary);
+		--accent-color-light: var(--bs-primary);
+		--button-primary-background: var(--bs-primary);
 
 		/*==================== Set fonts here ====================*/
-		--main-font: 'Roboto';
+		--main-font: system-ui, 'Roboto';
 		--title-font: 'Alice', cursive;
 		--header-font: 'Alice', cursive;
 		--article-font: 'Ubuntu';
 		--article-header-font: var(--header-font);
 		--sidebar-max-width: 30vw;
 		--map-width: 25vw;
+		--card-bg: var(--bs-gray-100);
+		--card-border-color: #cacaca;
+		--default-color-dark: var(--bs-gray-100);
+		--primary-color-light: var(--bs-gray-200);
+		--primary-color-dark: var(--bs-gray-800);
 
 		--scrollbar-width: thin;
+		--card-border: 1px solid var(--card-border-color);
+
+		@media (prefers-color-scheme: dark) {
+			--card-bg: var(--bs-gray-900);
+			--card-border-color: #5b5b5b;
+		}
 	}
 }
 

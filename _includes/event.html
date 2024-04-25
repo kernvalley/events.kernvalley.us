@@ -1,4 +1,4 @@
-<div id="{{ include.event.name | slugify }}" class="{{ include.itemprop | default: 'event' }}" itemtype="http://schema.org/Event" itemscope="">
+<div id="{{ include.event.name | slugify }}" class="{{ include.itemprop | default: 'event' }} card event-card" itemtype="http://schema.org/Event" itemscope="">
 	<div>
 		<link itemprop="eventStatus" content="https://schema.org/{{ include.eventStatus | default: 'EventScheduled' }}" />
 		<link itemprop="eventAttendanceMode" content="https://schema.org/{{ include.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
@@ -37,11 +37,12 @@
 					url=include.event.image
 					itemprop='url'
 					sizes='(max-width: 800px) 90vw, 30vw'
+					class='event-card-img'
 				%}
 			</figure>
 		{% elsif include.event.image %}
 			<figure class="event-thumb center" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
-				<img src="{{ include.event.image }}" class="card shadow" alt="" title="" crossorigin="anonymous" referrerpolicy="origin-when-cross-origin" decoding="auto" itemprop="url" />
+				<img src="{{ include.event.image }}" class="event-card-img" alt="" title="" crossorigin="anonymous" referrerpolicy="origin-when-cross-origin" decoding="auto" itemprop="url" />
 			</figure>
 		{% endif %}
 		<time class="event-begin" itemprop="startDate" datetime="{{ include.event.startDate | date_to_xmlschema }}">

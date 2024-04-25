@@ -1,6 +1,6 @@
 #footer {
 	padding: 1.4em;
-	background-color: #232323;
+	background-color: var(--bs-gray-900);
 	color: #fafafa;
 	grid-area: footer;
 }

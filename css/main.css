@@ -8,8 +8,6 @@ main a:not(.btn) {
 
 main.card {
 	padding: 2em;
-	width: 95vw;
-	margin-left: 2.5%;
 }
 
 @media (max-width: 800px) {
