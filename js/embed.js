@@ -1,24 +1,28 @@
 customElements.whenDefined('krv-events').then(KRVEvents => {
-	const url = new URL(location.href);
+	const params = new URLSearchParams(location.search);
 	const events = new KRVEvents();
 
-	if (url.searchParams.has('o')) {
-		events.target = url.searchParams.get('o');
+	if (params.has('target')) {
+		events.target = params.get('target');
 	} else {
 		events.target = '_blank';
 	}
 
-	if (url.searchParams.has('c')) {
-		events.count = parseInt(url.searchParams.get('c'));
+	if (params.has('count')) {
+		events.count = Math.max(1, parseInt(params.get('count')));
 	}
 
-	if (url.searchParams.has('t')) {
-		events.theme = url.searchParams.get('t');
-		document.documentElement.dataset.theme = url.searchParams.get('t');
+	if (params.has('theme')) {
+		events.theme = params.get('theme');
+		document.documentElement.dataset.theme = params.get('theme');
 	}
 	
-	if (url.searchParams.has('s')) {
-		events.source = url.searchParams.get('s');
+	if (params.has('source')) {
+		events.source = params.get('source');
+	}
+
+	if (params.has('tags')) {
+		events.tags = params.getAll('tags');
 	}
 
 	document.body.replaceChildren(events);
