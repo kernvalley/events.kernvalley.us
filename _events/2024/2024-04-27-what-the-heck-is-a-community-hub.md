@@ -38,7 +38,7 @@ offers:
     price: 0
     priceCurrency: USD
     url: https://lu.ma/u9cth8jm
-keywords:
+tags:
   - community hub
   - sierra shared spaces
   - kernville cowork
@@ -46,7 +46,7 @@ keywords:
 ---
 Do you want to be a part of building the future of the Kern River Valley? Would you like a space where you can learn and grow your career and your community? Do you want a space to collaborate with others in your community?
 
-​Join us and learn about our plans to build a Community Hub in Lake Isabella. Everyone from the community is invited to join!Do you want to be a part of building the future of the Kern River Valley? Would you like a space where you can learn and grow your career and your community? Do you want a space to collaborate with others in your community?
+​Join us and learn about our plans to build a Community Hub in Lake Isabella. Everyone from the community is invited to join! Do you want to be a part of building the future of the Kern River Valley? Would you like a space where you can learn and grow your career and your community? Do you want a space to collaborate with others in your community?
 
 ​Join us and learn about our plans to build a Community Hub in Lake Isabella. Everyone from the community is invited to join!
 
