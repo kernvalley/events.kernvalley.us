@@ -21,7 +21,7 @@ tags:
 {% if events.size != 0 %}
 	<section id="events-calendar" class="grid">
 		{% for event in events %}
-			<div class="card shadow">{% include event.html event=event %}</div>
+			{% include event.html event=event %}
 		{% endfor %}
 	</section>
 {% else %}

@@ -14,6 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.1.0] - 2024-04-25
+
+### Changed
+- Switch to using core-css via unpkg instead of KRV CDN
+- Update color palette
+- Improve sizing, borders, & layout
+- Use `system-ui` font
+- Update eslint & super linter
+
 ## [v2.0.10] - 2024-04-13
 
 ### Changed

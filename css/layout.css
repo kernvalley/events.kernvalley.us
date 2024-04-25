@@ -59,4 +59,9 @@ button.btn[is="share-button"] {
 	.mobile-hidden {
 		display: none;
 	}
+
+	#sidebar {
+		width: 95%;
+		margin-inline: auto;
+	}
 }

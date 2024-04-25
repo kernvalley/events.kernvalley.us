@@ -10,7 +10,7 @@ sidebar: true
 main-itemtype: Event
 ---
 {% include common/nav.html %}
-<main id="main" class="card shadow" itemtype="{{ page['@context'] | default: 'https://schema.org' }}/{{ page['@type'] | default: 'Event' }}" itemscope="">
+<main id="main" class="card" itemtype="{{ page['@context'] | default: 'https://schema.org' }}/{{ page['@type'] | default: 'Event' }}" itemscope="">
 	<link itemprop="eventStatus" content="https://schema.org/{{ page.eventStatus | default: 'EventScheduled' }}" />
 	<link itemprop="eventAttendanceMode" content="https://schema.org/{{ page.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
 	<header class="event-page-header">
@@ -242,15 +242,6 @@ main-itemtype: Event
 		<disqus-comments site="krv-events" class="block contain-content"></disqus-comments>
 	{% endunless %}
 </main>
-<aside id="sidebar" class="card contain-content center">
-	{% if site.data.weather.appid %}
-		{% include common/weather.html appId = site.data.weather.appid postalCode=page.location.postalCode %}
-	{% endif %}
-	{% if page.ads.sidebar %}{% for ad in page.ads.sidebar %}
-		{% include common/krv-ad.html ad=ad content="sidebar" %}
-	{% endfor %}{% else %}{% for ad in site.data.ads.sidebar %}
-		{% include common/krv-ad.html ad=ad content="sidebar" %}
-	{% endfor %}{% endif %}
-</aside>
+{% include sidebar.html %}
 {% include common/footer.html keep-kern-clean=site.keep-kern-clean %}
 {% include common/share-button.html text=page.description %}
