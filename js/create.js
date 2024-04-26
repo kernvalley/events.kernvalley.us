@@ -197,6 +197,7 @@ document.getElementById('import-md').addEventListener('change', async event => {
 			target.setCustomValidity(err.message);
 		} finally {
 			target.disabled = false;
+			target.reportValidity();
 		}
 	}
 });
