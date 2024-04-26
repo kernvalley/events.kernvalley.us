@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Add custom `<form>` to create events (creates file to submit via email)
+
 ## [v2.1.1] - 2024-04-25
 
 ### Changed
