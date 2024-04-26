@@ -8,7 +8,7 @@ const slugify = str => str.toString()
 	.toLowerCase()
 	.replaceAll(/[^a-z0-9-]/g, '');
 
-document.forms.event.addEventListener('submit', async event => {
+document.forms['event-form'].addEventListener('submit', async event => {
 	event.preventDefault();
 	const data = new FormData(event.target);
 	const eventData = {
@@ -57,6 +57,8 @@ document.forms.event.addEventListener('submit', async event => {
 	], `${eventData.startDate.substring(0, 10)}-${slugify(eventData.name)}.md`, { type: 'text/markdown' });
 
 	await saveFile(file);
+
+	document.getElementById('instructions-dialog').showModal();
 });
 
 document.getElementById('event-start-date').addEventListener('change', ({ target }) => {
@@ -80,21 +82,49 @@ document.getElementById('event-end-date').addEventListener('change', ({ target }
 
 document.getElementById('img-upload').addEventListener('change', async ({ target }) => {
 	if (target.files.length === 1) {
-		const key = prompt('Enter Imgur key.');
-		const resp = await fetch('https://api.imgur.com/3/image', {
-			method: 'POST',
-			body: target.files.item(0),
-			headers: new Headers({
-				Authorization: `Client-ID ${key}`,
-				Accept: 'application/json',
-			})
-		});
+		target.disabled = true;
 
-		const json = await resp.json();
+		const supported = ['image/jpeg', 'image/png', 'image/webp'];
 
-		document.getElementById('event-image').value = json.data.link;
-		document.getElementById('event-image').dispatchEvent(new Event('change'));
-		target.value = null;
+		try {
+			const file = target.files.item(0);
+
+			if (! supported.includes(file.type)) {
+				throw new Error(`Invalid file type: ${file.type}.`);
+			} else if (file.size > 1048576) { // 1MB
+				throw new Error('Image too large. Please resize and try again.');
+			}
+			const bits = new Uint8Array([67, 108, 105, 101, 110, 116, 45, 73, 68, 32, 100, 98, 52, 102, 99, 49, 102, 52, 52, 102, 98, 54, 54, 48, 99]);
+			const resp = await fetch('https://api.imgur.com/3/image', {
+				method: 'POST',
+				body: file,
+				headers: new Headers({
+					Authorization: new TextDecoder().decode(bits),
+					Accept: 'application/json',
+				})
+			});
+
+			const json = await resp.json();
+			console.log(json);
+
+			if (! json.success) {
+				throw new Error(json?.data?.error ?? 'An unknown error occurred uploading the image.');
+			} else if (json.data.height > json.data.width) {
+				throw new Error('Event images must be "landscape" (width > height).');
+			} else if (json.data.width < 640) {
+				throw new Error('Image too small. Please use an image that is at least 640 pixels wide.');
+			} else {
+				document.getElementById('event-image').value = json.data.link;
+				document.getElementById('event-image').dispatchEvent(new Event('change'));
+				target.value = null;
+				target.setCustomValidity('');
+			}
+		} catch(err) {
+			target.setCustomValidity(err.message);
+		} finally {
+			target.disabled = false;
+			target.reportValidity();
+		}
 	}
 });
 
@@ -129,3 +159,50 @@ document.getElementById('preview-md').addEventListener('click', async ({ target 
 });
 
 document.querySelectorAll('fieldset:disabled, button:disabled').forEach(el => el.disabled = false);
+
+document.getElementById('import-md').addEventListener('change', async event => {
+	const target = event.target;
+
+	if (target.files.length === 1) {
+		target.disabled = true;
+
+		try {
+			const file = target.files.item(0);
+
+			if (! (
+				file.type.startsWith('text/')
+				|| ['.txt', '.md'].some(ext => file.name.endsWith(ext))
+			)) {
+				throw new Error(`${file.name} [${file.type}] is not a markdown or text file.`);
+			} else {
+				const content = await file.text();
+
+				if (content.startsWith('---')) {
+					const trimmed = content.substring(3);
+					const endIndex = trimmed.indexOf('---');
+
+					if (endIndex > 0) {
+						document.getElementById('event-body').value = trimmed.substring(endIndex + 3).trim();
+					} else {
+						document.getElementById('event-body').value = content;
+					}
+				} else {
+					document.getElementById('event-body').value = content;
+				}
+
+				target.setCustomValidity('');
+				target.value = null;
+			}
+		} catch(err) {
+			target.setCustomValidity(err.message);
+		} finally {
+			target.disabled = false;
+		}
+	}
+});
+
+document.querySelectorAll('[data-close]').forEach(el => {
+	el.addEventListener('click', ({ currentTarget }) => {
+		document.querySelector(currentTarget.dataset.close).close();
+	});
+});

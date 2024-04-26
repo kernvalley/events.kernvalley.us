@@ -8,7 +8,7 @@ scripts:
     defer: true
     referrerPolicy: no-referrer
 ---
-<form id="event">
+<form id="event-form" class="card">
 	<datalist id="city-list">
 		<option value="Lake Isabella"></option>
 		<option value="Kernville"></option>
@@ -29,8 +29,14 @@ scripts:
 	</datalist>
 	<input type="hidden" name="@context" value="https://schema.org" />
 	<input type="hidden" name="@type" value="Event" />
-	<fieldset disabled="" id="basic-info">
+	<fieldset id="event-info" class="form-section" disabled="">
 		<legend>Event Info</legend>
+		<!-- <div class="form-nav"> -->
+		<!-- 	<a href="/create/#event-info" class="btn btn-primary">Basic Info</a> -->
+		<!-- 	<a href="/create/#event-organizer" class="btn btn-primary">Organizer Info</a> -->
+		<!-- 	<a href="/create/#event-location" class="btn btn-primary">Event Location</a> -->
+		<!-- 	<a href="/create/#event-article" class="btn btn-primary">Event Article</a> -->
+		<!-- </div> -->
 		<div class="form-group">
 			<label class="input-label required" for="event-name">Event Name</label>
 			<input type="text" name="name" id="event-name" class="input" placeholder="Event Name" minlength="8" maxlength="65" autocomplete="off" required="" />
@@ -45,17 +51,21 @@ scripts:
 		</div>
 		<div class="form-group">
 			<label for="event-description" class="input-label required">Description</label>
-			<input type="text" name="description" class="input" id="event-description" minlength="40" maxlength="80" autocomplete="off" placeholder="Short description of event" required="" />
+			<input type="text" name="description" class="input" id="event-description" minlength="10" maxlength="80" autocomplete="off" placeholder="Short description of event" required="" />
 		</div>
 		<div class="form-group">
 			<label for="event-image" class="input-label required">Image URL</label>
 			<input type="url" name="image" id="event-image" class="input" placeholder="https://example.com/image.jpg" required="" />
 		</div>
 		<div>
-			<input type="file" accept="image/*" id="img-upload" />
+			<p>Or <label for="img-upload" class="btn btn-primary">Upload</label> an image.</p>
+			<input type="file" accept="image/jpeg, image/png, image/webp" id="img-upload" />
+		</div>
+		<div class="status-box info">
+			<p>{% include common/icon.html icon="info" height="18" width="18" fill="currentColor" %} Images should be at least 640x80 and in a supported type (JPEG, PNG, WebP). Max upload size is 1 MB.</p>
 		</div>
 	</fieldset>
-	<fieldset id="event-organizer" disabled="">
+	<fieldset id="event-organizer" class="form-section" disabled="">
 		<legend>Organizer Info</legend>
 		<div class="form-group">
 			<label for="event-organizer-name" class="input-label required">Organizer Name</label>
@@ -82,7 +92,7 @@ scripts:
 			<input type="url" name="organizer[url]" id="event-organizer-url" class="input" placeholder="https://example.com" />
 		</div>
 	</fieldset>
-	<fieldset id="event-location" disabled="">
+	<fieldset id="event-location" class="form-section" disabled="">
 		<legend>Event Location</legend>
 		<div class="form-group">
 			<label for="event-location-name" class="input-label required">Location Name</label>
@@ -148,17 +158,30 @@ scripts:
 			<label for="event-geo-longitude" class="input-label">Longitude</label>
 			<input type="text" name="location[geo][longitude]" id="event-geo-longitude" class="input" inputmode="numeric" pattern="-?\d{1,3}\.\d+" placeholder="###.######" />
 		</div>
+		<div class="status-box info">
+			<p>{% include common/icon.html icon="info" height="18" width="18" fill="currentColor" %} Latitude &amp; Longitude are required for map to event location, but optional in this form.</p>
+		</div>
 	</fieldset>
-	<fieldset id="event-article" disabled="">
+	<fieldset id="event-article" class="form-section" disabled="">
 		<legend>Event Article</legend>
 		<div class="form-group">
 			<label for="event-body" class="input-label required">Content</label>
-			<textarea name="body" id="event-body" class="input" rows="12" placeholder="Content for event article (Markdown supported)" required=""></textarea>
+			<textarea name="body" id="event-body" class="input" rows="12" placeholder="Content for event article" required=""></textarea>
+			<input type="file" accept="text/*, .txt, .md" id="import-md" />
 		</div>
-		<button type="button" id="preview-md" class="btn btn-primary">Preview</button>
+		<p><a href="https://commonmark.org/help/" rel="noopener noreferrer external" target="_blank">Markdown {% include common/icon.html icon="link-external" height="16" width="16" fill="currentColor" %}</a> supported</p>
+		<div class="flex row">
+			<button type="button" id="preview-md" class="btn btn-primary">Preview Article Content</button>
+			<button type="submit" class="btn btn-accept" disabled="">Submit</button>
+			<button type="reset" class="btn btn-reject">Cancel</button>
+		</div>
 	</fieldset>
-	<div class="flex row">
-		<button type="submit" class="btn btn-accept" disabled="">Submit</button>
-		<button type="reset" class="btn btn-reject">Cancel</button>
-	</div>
 </form>
+<dialog id="instructions-dialog">
+	<p>Direct submission of events is currently not supported. Please attach the
+		event file just generated in an email to <a href="mailto:admin@kernvalley.us?subject=Event%20Submission">admin@kernvalley.us {% include common/icon.html icon="mail-send" height="16" width="16" fill="currentColor" %}</a></p>
+		<button type="button" class="btn btn-reject" data-close="#instructions-dialog">
+			<span>Close</span>
+			{% include common/icon.html icon="x" height="18" width="18" fill="currentColor" %}
+		</button>
+</dialog>
