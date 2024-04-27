@@ -14,6 +14,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add support for external event URLs and redirects
+
 ### Changed
 - Add custom `<form>` to create events (creates file to submit via email)
 
