@@ -48,7 +48,7 @@ summary[role="button"] {
 }
 
 #events-calendar {
-	grid-template-columns: repeat(auto-fill, minmax(320px, 450px));
+	grid-template-columns: repeat(auto-fill, minmax(320px, 425px));
 	grid-template-rows: masonry;
 	grid-gap: 0.8em;
 	justify-content: center;

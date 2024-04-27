@@ -33,6 +33,7 @@ const config = {
 		/* JS, `customElements`, etc. */
 		'{{ site.data.importmap.imports["@shgysk8zer0/polyfills/"] }}all.min.js',
 		'/js/index.min.js',
+		'/js/create.min.js',
 
 		/* CSS */
 		'/css/index.min.css',

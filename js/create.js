@@ -11,13 +11,18 @@ const slugify = str => str.toString()
 document.forms['event-form'].addEventListener('submit', async event => {
 	event.preventDefault();
 	const data = new FormData(event.target);
+	const redirect = data.has('redirect') ? URL.parse(data.get('redirect')) : null;
+
 	const eventData = {
 		'@context': data.get('@context'),
 		'@type': data.get('@type'),
+		layout: redirect instanceof URL ? 'redirect' : 'event-page',
+		redirect: redirect ?? undefined,
 		date: data.get('startDate').substring(0, 10),
 		name: data.get('name'),
 		title: data.get('name'), // Needs to be duplicated
 		description: data.get('description'),
+		tags: data.getAll('tags'),
 		startDate: data.get('startDate'),
 		endDate: data.get('endDate'),
 		image: data.get('image'),
@@ -49,12 +54,21 @@ document.forms['event-form'].addEventListener('submit', async event => {
 		};
 	}
 
-	const file = new File([
+	const content = [
 		'---\n',
 		stringify(eventData),
-		'---\n',
-		data.get('body'),
-	], `${eventData.startDate.substring(0, 10)}-${slugify(eventData.name)}.md`, { type: 'text/markdown' });
+		'---\n'
+	];
+
+	if (data.has('body')) {
+		content.push(data.get('body'));
+	}
+
+	const file = new File(
+		content,
+		`${eventData.startDate.substring(0, 10)}-${slugify(eventData.name)}.md`,
+		{ type: 'text/markdown' }
+	);
 
 	await saveFile(file);
 
@@ -200,6 +214,14 @@ document.getElementById('import-md').addEventListener('change', async event => {
 			target.reportValidity();
 		}
 	}
+});
+
+document.getElementById('event-redirect').addEventListener('change', ({ target }) => {
+	// Disable article if redirect URL is set
+	const content = document.getElementById('event-body');
+	const disable = typeof target.value === 'string' && target.value.length !== 0;
+	content.disabled = disable;
+	content.labels.forEach(label => label.classList.toggle('required', ! disable));
 });
 
 document.querySelectorAll('[data-close]').forEach(el => {
