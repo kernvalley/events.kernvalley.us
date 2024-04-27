@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf8" />
+		<meta name="color-scheme" content="light dark" />
+		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="refresh" content="0; URL={{ page.redirect }}?utm_source=krv-events&amp;utm_medium=referrer" />
+		<meta name="robots" content="follow, index" />
+	</head>
+	<body>
+		<p>You are being directed off of KRV Events to <a href="{{ page.redirect }}?utm_source=krv-events&amp;utm_medium=referrer" rel="noopener external">{{ page.title }}</a></p>
+		<script type="application/ld+json">{% include event-ld.json event=page %}</script>
+	</body>
+</html>

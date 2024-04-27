@@ -1,0 +1,46 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": {{ include.event.name | default: include.event.title | jsonify }},
+    {% if include.event.redirect %}"url": "{{ include.event.redirect }}?utm_source=krv-events&utm_medium=referrer",
+    {% else %}"url": "{{ include.event.url | absolute_url }}",{% endif %}
+    "image": {{ include.event.image | jsonify }},
+    "eventStatus": "{{ include.event.eventStatus | default: 'EventScheduled' }}",
+    "eventAttendanceMode": {{ include.event.eventAttendanceMode | jsonify }},
+    "description": {{ include.event.description | jsonify }},
+    "startDate": "{{ include.event.startDate | date_to_xmlschema }}",
+    "endDate": "{{ include.event.endDate | date_to_xmlschema }}",
+    "organizer": {
+    	"@type": "{{ include.event.organizer['@type'] | default: 'Organization' }}",
+    	"name": {{ include.event.organizer.name | jsonify }}{% if include.event.organizer.url %},
+    	"url": {{ include.event.organizer.url | jsonify }}{% endif %}{% if include.event.organizer.email %},
+    	"email": {{ include.event.organizer.email | jsonify }}{% endif %}{% if include.event.organizer.telephone %},
+    	"telephone": {{ include.event.organizer.telephone | jsonify }}{% endif %}{% if include.event.organizer.sameAs %},
+    	"sameAs": {{ include.event.organizer.sameAs | jsonify }}{% endif %}
+    },
+    "location": {
+      "@type": "{{ include.event.location['@type'] | default: 'Place' }}",
+      "name": "{{ include.event.location.name | default: include.event.location.address.name }}",
+      "address": {% if include.event.location.address %}{
+        "@type": "{{ include.event.location.address['@type'] | default: 'PostalAddress' }}",
+        "streetAddress": {{ include.event.location.address.streetAddress | jsonify }},
+        "addressLocality": "{{ include.event.location.address.addressLocality }}",
+        "addressRegion": "{{ include.event.location.address.addressRegion | default: 'CA' }}",
+        "postalCode": {{ include.event.location.address.postalCode | jsonify }},
+        "addressCountry": "{{ include.event.location.addressCountry | default: 'US' }}"
+      }{% else %}{
+        "@type": "PostalAddress",
+        "streetAddress": {{ include.event.location.streetAddress | jsonify }},
+        "addressLocality": "{{ include.event.location.addressLocality }}",
+        "addressRegion": "{{ include.event.location.addressRegion | default: 'CA' }}",
+        "postalCode": {{ include.event.location.postalCode | jsonify }},
+        "addressCountry": "{{ include.event.location.addressCountry | default: 'US' }}"
+      }{% endif %},
+      "geo": {
+        "@type": "{{ include.event.location.geo['@type'] | default: 'GeoCoordinates' }}",
+        "longitude": {{ include.event.location.geo.longitude | jsonify }},
+        "latitude": {{ include.event.location.geo.latitude | jsonify }}
+      }
+    },{% if include.event.tags %} "keywords": {{ include.event.tags | jsonify }}, {% else %} "keywords": [],{% endif %}
+    "offers": {{ include.event.offers | jsonify }}
+  }
