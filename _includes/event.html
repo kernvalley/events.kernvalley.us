@@ -2,7 +2,9 @@
 	<div>
 		<link itemprop="eventStatus" content="https://schema.org/{{ include.eventStatus | default: 'EventScheduled' }}" />
 		<link itemprop="eventAttendanceMode" content="https://schema.org/{{ include.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
-		{% if include.event.url %}<a href="{{ include.event.url  }}">{% endif %}
+		{% if include.event.redirect %}
+			<a href="{{ include.event.redirect }}?utm_souce=krv-events&amp;utm_medium=referrer" rel="noopener referrer external">
+		{% elsif include.event.url %}<a href="{{ include.event.url }}">{% endif %}
 		<h4 class="event-title center underline" itemprop="name">
 			{{ include.event.name }}
 		</h4>
@@ -30,7 +32,7 @@
 						</div>
 				{% endcase %}
 		{% endif %}
-		{% if include.event.url %}</a>{% endif %}
+		{% if include.event.url or include.event.redirect %}</a>{% endif %}
 		{% if include.event.imgur %}
 			<figure class="event-thumb center" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
 				{% include common/imgur.html
@@ -107,10 +109,14 @@
 				<meta itemprop="priceCurrency" content="{{ offer.eventCurrency | default: 'USD' }}" />
 			</div>
 		{% endif %}
-		{% if include.event.url %}
+		{% if include.event.redirect %}
 			<hr />
 			{% include common/icon.html icon='link' %}
-			<a href="{{ include.event.url  }}" class="underline" itemprop="url">Click here to learn more</a>
+			<a href="{{ include.event.redirect }}?utm_souce=krv-events&amp;utm_medium=referrer" rel="noopener referrer external" class="underline" itemprop="url">Click here to learn more</a>
+		{% elsif include.event.url %}
+			<hr />
+			{% include common/icon.html icon='link' %}
+			<a href="{{ include.event.url }}" class="underline" itemprop="url">Click here to learn more</a>
 		{% endif %}
 		{% if include.event.organizer %}
 			<hr />
