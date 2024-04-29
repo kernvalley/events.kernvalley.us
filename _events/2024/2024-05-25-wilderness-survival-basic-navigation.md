@@ -3,7 +3,7 @@
 "@type": Event
 layout: redirect
 redirect: https://lu.ma/yxxqih53
-date: 2024-08-25
+date: 2024-05-25
 name: Wilderness Survival - Basic Navigation
 title: Wilderness Survival - Basic Navigation
 description: Learning to navigate accurately is a vital skill every outdoorsman
@@ -15,8 +15,8 @@ tags:
   - course
   - class
   - survival
-startDate: 2024-08-25T08:00
-endDate: 2024-08-25T18:00
+startDate: 2024-05-25T08:00
+endDate: 2024-05-25T18:00
 image: https://i.imgur.com/C75auTx.jpg
 #image: https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,quality=75,width=640,height=480/event-covers/rc/4fb0055a-349f-4e2b-b7f2-0929a651cdde
 organizer:
