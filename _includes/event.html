@@ -3,7 +3,7 @@
 		<link itemprop="eventStatus" content="https://schema.org/{{ include.eventStatus | default: 'EventScheduled' }}" />
 		<link itemprop="eventAttendanceMode" content="https://schema.org/{{ include.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
 		{% if include.event.redirect %}
-			<a href="{{ include.event.redirect }}?utm_souce=krv-events&amp;utm_medium=referrer" rel="noopener referrer external">
+			<a href="{{ include.event.redirect }}?utm_source=krv-events&amp;utm_medium=referrer" rel="noopener referrer external">
 		{% elsif include.event.url %}<a href="{{ include.event.url }}">{% endif %}
 		<h4 class="event-title center underline" itemprop="name">
 			{{ include.event.name }}
@@ -125,7 +125,7 @@
 					<span>Organized by</span>
 					<span itemprop="name">
 						{% if include.event.organizer.url %}
-							<a href="{{ include.event.organizer.url  }}" class="event-organizer-url underline" target="_blank" rel="noopener external">
+							<a href="{{ include.event.organizer.url }}?utm_source=krv-events&amp;utm_medium=referrer" class="event-organizer-url underline" target="_blank" rel="noopener external">
 								{{ include.event.organizer.name }}
 							</a>
 						{% else %}
