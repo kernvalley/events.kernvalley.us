@@ -43,4 +43,8 @@ location:
     "@type": GeoCoordinates
     latitude: 35.7554436
     longitude: -118.424012
+offers:
+  - name: Book Now
+    price: 100
+    url: https://lu.ma/yxxqih53
 ---
