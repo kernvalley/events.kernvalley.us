@@ -12,12 +12,13 @@ tags:
   - krv
   - kernville
   - music
+  - car show
 startDate: 2024-05-04T08:00
 endDate: 2024-05-04T14:00
 image: https://i.imgur.com/vpHgU2f.jpeg
 organizer:
   "@type": Organization
-  name: Rotary Club f the Kern River Valley
+  name: Rotary Club of the Kern River Valley
   email: tlivermo@icloud.com
   url: https://portal.clubrunner.ca/2835/
 location:
