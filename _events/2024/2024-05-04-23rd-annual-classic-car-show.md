@@ -6,7 +6,7 @@ redirect: https://portal.clubrunner.ca/2835/Stories/23rd-annual-classic-car-show
 date: 2024-05-04
 name: 23rd Annual Classic Car Show
 title: 23rd Annual Classic Car Show
-description: 50's & 60's Music, Vendors, Raffle - Open to all 1975& Older cars,
+description: 50's & 60's Music, Vendors, Raffle - Open to all 1975 & Older cars,
   trucks,  street rods, rat rods - stock or custom
 tags:
   - krv
