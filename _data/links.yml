@@ -5,11 +5,7 @@ nav:
   - label: Submit Event
     # href: https://forms.gle/9NPNcvcjLDoVw52w7
     href: /create/
-    icon: appointment-new
-    rel:
-      - noreferrer
-      - noopener
-      - external
+    icon: event-create
 footer:
   - label: KernValley.US
     icon: web-browser
@@ -38,8 +34,4 @@ footer:
   - label: Submit Event
     # href: https://forms.gle/9NPNcvcjLDoVw52w7
     href: /create/
-    icon: events
-    rel:
-      - noopener
-      - external
-      - noreferrer
+    icon: event-create

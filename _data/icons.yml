@@ -3,6 +3,7 @@ kernvalley: img/kernvalley-icons/kernvalley.svg
 rafting: img/kernvalley-icons/rafting.svg
 events: img/kernvalley-icons/event.svg
 favicon: img/favicon.svg
+event-create: img/event-create.svg
 mark-github: img/octicons/mark-github.svg
 repo: img/octicons/repo.svg
 password: img/adwaita-icons/status/dialog-password.svg
