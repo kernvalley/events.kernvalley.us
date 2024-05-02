@@ -21,7 +21,11 @@ tags:
 {% if events.size != 0 %}
 	<section id="events-calendar" class="grid">
 		{% for event in events %}
-			{% include event.html event=event %}
+			{% if forloop.index < 3 %}
+				{% include event.html event=event loading="eager" %}
+			{% else %}
+				{% include event.html event=event loading="lazy" %}
+			{% endif %}
 		{% endfor %}
 	</section>
 {% else %}
@@ -30,7 +34,7 @@ tags:
 			<span>No Events to display.</span>
 			<p>We're sorry, but there are currently no known events taking place in the
 				Kern River Valley. If you are organizing an event that you would like
-				to list on this site, please enter the event information <a href="https://forms.gle/9NPNcvcjLDoVw52w7" title="KRV Event Submission form" rel="noopener noreferrer external">here {% include common/icon.html icon="link-external" %}</a>.
+				to list on this site, please enter the event information <a href="/create/" title="KRV Event Submission form">here {% include common/icon.html icon="link" %}</a>.
 			</p>
 		</div>
 	</section>
