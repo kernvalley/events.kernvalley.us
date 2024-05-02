@@ -56,6 +56,20 @@ screenshots:
   - src: 'https://i.imgur.com/5H246qct.png'
     sizes: 160x778
     type: image/png
+shortcuts:
+  - name: Create Event
+    url: /create/?utm_source=shortcut&utm_medium=pwa&utm_campaign=pwa
+    description: Create an Event to submit to KRV Events
+    icons:
+      - src: /img/shortcuts/create-192.png
+        type: image/png
+        sizes: 192x192
+      - src: /img/shortcuts/create-32.png
+        type: image/png
+        sizes: 32x32
+      # - src: /img/shortcuts/create.svg
+      #   type: image/svg+xml
+      #   sizes: any
 iarc_rating_id: 9c0e041d-7199-4821-bc90-7c6e07b3feea
 related_applications:
   - platform: play
