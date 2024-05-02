@@ -40,11 +40,12 @@
 					itemprop='url'
 					sizes='(max-width: 800px) 90vw, 30vw'
 					class='event-card-img'
+					loading=include.loading
 				%}
 			</figure>
 		{% elsif include.event.image %}
 			<figure class="event-thumb center" itemprop="image" itemtype="http://schema.org/ImageObject" itemscope="">
-				<img src="{{ include.event.image }}" class="event-card-img" alt="" title="" crossorigin="anonymous" referrerpolicy="origin-when-cross-origin" decoding="auto" itemprop="url" />
+				<img src="{{ include.event.image }}" class="event-card-img" crossorigin="anonymous" referrerpolicy="no-referrer" loading="{{ include.loading | default: 'lazy' }}" decoding="auto" itemprop="url" alt="" />
 			</figure>
 		{% endif %}
 		<time class="event-begin" itemprop="startDate" datetime="{{ include.event.startDate | date_to_xmlschema }}">
