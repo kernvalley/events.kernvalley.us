@@ -79,13 +79,6 @@
 	margin-top: 1.3rem;
 }
 
-@media (max-width: 750px) {
-	#event-info-section {
-		grid-template-areas: "time" "place" "organizer" "performer";
-		grid-template-columns: auto;
-	}
-}
-
 .event-page-header figure, .event-card figure {
 	margin-inline: 0;
 }
@@ -107,4 +100,23 @@
 
 .layout-event-page .share-btns hr {
 	display: none;
+}
+
+@media (max-width: 750px) {
+	#event-info-section {
+		grid-template-areas: "time" "place" "organizer" "performer";
+		grid-template-columns: auto;
+	}
+}
+
+@media (min-width: 801px) {
+	.event-card .event-title {
+		height: 2.7em;
+		margin-block: 0.3em;
+	}
+
+	.event-card-img {
+		aspect-ratio: 4 / 3;
+		width: 100%;
+	}
 }
