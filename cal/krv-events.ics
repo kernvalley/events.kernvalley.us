@@ -3,54 +3,93 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:6af6d368-05b2-45fc-8484-2249baa0cc65
+UID:c45ad8c1-4115-4a48-9a6b-feb2407ffc2c
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:Addiction & Recovery Pop-Up
-LOCATION:7504 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:A collaboration between KRV Bridge Connection and Bakersfield R
- ecovery Services.
-DTSTAMP:20231213T173759Z
-LAST-MODIFIED:20231213T173759Z
-DTSTART:20231219T210000Z
-DTEND:20231219T230000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
-URL:http://localhost:4000/2023/12/19/addiction-and-recovery
+SUMMARY:23rd Annual Classic Car Show
+LOCATION:10 Kern River Dr, Kernville, CA 93238, US
+DESCRIPTION:50's & 60's Music, Vendors, Raffle - Open to all 1975 & Older c
+ ars, trucks,  street rods, rat rods - stock or custom
+DTSTAMP:20240503T165123Z
+LAST-MODIFIED:20240503T165123Z
+DTSTART:20240504T150000Z
+DTEND:20240504T210000Z
+ORGANIZER;CN=Rotary Club of the Kern River Valley:mailto:tlivermo@icloud.co
+ m
+URL:https://portal.clubrunner.ca/2835/Stories/23rd-annual-classic-car-show-
+ may-4th-2024-8am-2pm?utm_source=krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:f4833d00-aad0-4579-9fa3-0bb06bceff42
+UID:4121314d-94cc-4d1d-9f4f-b7780d462b3e
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:Whiskey Flat Days Kickoff Dinner
-LOCATION:6708 Wofford Blvd., Wofford Heights, CA 93285, US
-DESCRIPTION:Join us at Elks Lodge and meet the Whiskey Flat Days Mayor cont
- enders
-DTSTAMP:20231213T173759Z
-LAST-MODIFIED:20231213T173759Z
-DTSTART:20240106T020000Z
-DTEND:20240106T050000Z
-ORGANIZER;CN=Kernville Chamber of Commerce:mailto:info@gotokernville.com
-URL:http://localhost:4000/2024/01/05/wfd-kickkoff-dinner
+SUMMARY:Building a Fire Resilient Future Award Ceremony
+LOCATION:6749 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:Award Ceremony in collaboration with Kern Fire Safe Council, Ca
+ lFire, & CA Climate Investments to promote a fire resilient community
+DTSTAMP:20240503T165123Z
+LAST-MODIFIED:20240503T165123Z
+DTSTART:20240505T220000Z
+DTEND:20240505T230000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:curatorkrvaa@gmail.co
+ m
+URL:https://www.facebook.com/events/s/building-a-fire-resilient-futu/461261
+ 419576489/?utm_source=krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:4801fce9-6682-4281-8134-f107bcf266ba
+UID:cf37f007-ae19-4dd3-9678-e8ee48788836
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:Whiskey Flat Days
-LOCATION:Kernville, CA 93238, US
-DESCRIPTION:Whiskey Flat Days is one of the most popular Festivals in all o
- f Southern California.
-DTSTAMP:20231213T173759Z
-LAST-MODIFIED:20231213T173759Z
-DTSTART:20240216T180000Z
-DTEND:20240220T020000Z
-ORGANIZER;CN=Kernville Chamber of Commerce:mailto:info@gotokernville.com
-URL:http://localhost:4000/2023/12/13/wfd
+SUMMARY:Co-creating our community hub
+LOCATION:Lake Isabella, CA 93240, US
+DESCRIPTION:This is your chance to tell us what you want! We're building th
+ is community hub together.
+DTSTAMP:20240503T165123Z
+LAST-MODIFIED:20240503T165123Z
+DTSTART:20240517T003000Z
+DTEND:20240517T023000Z
+ORGANIZER;CN=Kernville Cowork:mailto:justin@kernvillecowork.com
+URL:https://lu.ma/hzkm8dqy?utm_source=krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:80219691-b1eb-4e19-9359-eec80b73d957
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Wilderness Survival - Basic Navigation
+LOCATION:11113 Kernvile Rd, Kernville, CA 93238, US
+DESCRIPTION:Learning to navigate accurately is a vital skill every outdoors
+ man needs to learn
+DTSTAMP:20240503T165123Z
+LAST-MODIFIED:20240503T165123Z
+DTSTART:20240525T150000Z
+DTEND:20240526T010000Z
+ORGANIZER;CN=Fire Wolf Self Reliance:mailto:info@firewolfselfreliance.com
+URL:https://lu.ma/yxxqih53?utm_source=krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:ce80d5f4-b783-44ab-8a47-a2592660367d
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Memorial Day Arts & Crafts Festival
+LOCATION:7 Tobias ST, Kernville, CA 93238, US
+DESCRIPTION:A 3 day arts and crafts festival at Circle Park, Kernville CA p
+ ut on by the Kern River Valley Art Association.
+DTSTAMP:20240503T165123Z
+LAST-MODIFIED:20240503T165123Z
+DTSTART:20240525T160000Z
+DTEND:20240527T200000Z
+ORGANIZER;CN=Kern Valley Art Association:mailto:info@krvaa.org
+URL:https://www.facebook.com/events/1551195532330999/?utm_source=krv-events
+ &utm_medium=referrer
 END:VEVENT
 END:VCALENDAR
