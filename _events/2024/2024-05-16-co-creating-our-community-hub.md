@@ -27,7 +27,7 @@ location:
   name: Lake Isabella Senior Center
   address:
     "@type": PostalAddress
-    6407 Lake Isabella Blvd
+    streetAddress: 6407 Lake Isabella Blvd
     addressLocality: Lake Isabella
     addressRegion: CA
     postalCode: "93240"
