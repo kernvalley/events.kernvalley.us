@@ -1,9 +1,8 @@
 ---
 name: Independence Day Fireworks Extravaganza
 title: Independence Day Fireworks Extravaganza
-image: https://i.imgur.com/OyDFP5F.jpeg
-pinned: true
-description: Join the Stars and Stripes Independence Day Celebration in Lake Isabella, CA, on July 1st. Experience a breathtaking fireworks display at Engineer Point near the Auxiliary Dam. Please note that fireworks are prohibited in Sequoia National Forest, and fire restrictions apply. Come together with the Kern River Valley community to honor the nation's independence while respecting safety measures and enjoying a memorable evening of unity and patriotism.
+image: https://i.imgur.com/OyDFP5F.jpg
+description: Join the Independence Day Fireworks Extravaganza in Lake Isabella, CA. Experience a breathtaking fireworks display at Engineer Point near the Auxiliary Dam.
 tags:
   - fireworks
   - 4th of july
@@ -12,6 +11,8 @@ tags:
   - kern river valley
   - lake isabella
   - events
+  - outdoors
+  - lake
 startDate: 2024-07-06 21:30
 endDate: 2024-07-06 23:00
 location:
