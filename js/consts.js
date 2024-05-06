@@ -1,1 +1,1 @@
-export const GA = 'UA-119717465-3';
+export const GA = 'G-JT9JD49TYM';
