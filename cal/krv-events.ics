@@ -3,62 +3,24 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:c45ad8c1-4115-4a48-9a6b-feb2407ffc2c
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:23rd Annual Classic Car Show
-LOCATION:10 Kern River Dr, Kernville, CA 93238, US
-DESCRIPTION:50's & 60's Music, Vendors, Raffle - Open to all 1975 & Older c
- ars, trucks,  street rods, rat rods - stock or custom
-DTSTAMP:20240503T165123Z
-LAST-MODIFIED:20240503T165123Z
-DTSTART:20240504T150000Z
-DTEND:20240504T210000Z
-ORGANIZER;CN=Rotary Club of the Kern River Valley:mailto:tlivermo@icloud.co
- m
-URL:https://portal.clubrunner.ca/2835/Stories/23rd-annual-classic-car-show-
- may-4th-2024-8am-2pm?utm_source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:4121314d-94cc-4d1d-9f4f-b7780d462b3e
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Building a Fire Resilient Future Award Ceremony
-LOCATION:6749 Wofford Blvd, Wofford Heights, CA 93285, US
-DESCRIPTION:Award Ceremony in collaboration with Kern Fire Safe Council, Ca
- lFire, & CA Climate Investments to promote a fire resilient community
-DTSTAMP:20240503T165123Z
-LAST-MODIFIED:20240503T165123Z
-DTSTART:20240505T220000Z
-DTEND:20240505T230000Z
-ORGANIZER;CN=Kern River Valley Art Association:mailto:curatorkrvaa@gmail.co
- m
-URL:https://www.facebook.com/events/s/building-a-fire-resilient-futu/461261
- 419576489/?utm_source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:cf37f007-ae19-4dd3-9678-e8ee48788836
+UID:ad51bc2a-059d-43cc-919d-605c91ade258
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
 SUMMARY:Co-creating our community hub
-LOCATION:Lake Isabella, CA 93240, US
+LOCATION:6407 Lake Isabella Blvd, Lake Isabella, CA 93240, US
 DESCRIPTION:This is your chance to tell us what you want! We're building th
  is community hub together.
-DTSTAMP:20240503T165123Z
-LAST-MODIFIED:20240503T165123Z
+DTSTAMP:20240506T153644Z
+LAST-MODIFIED:20240506T153644Z
 DTSTART:20240517T003000Z
 DTEND:20240517T023000Z
 ORGANIZER;CN=Kernville Cowork:mailto:justin@kernvillecowork.com
 URL:https://lu.ma/hzkm8dqy?utm_source=krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:80219691-b1eb-4e19-9359-eec80b73d957
+UID:5351a8a7-c7a2-4785-afb8-da5371f78aaa
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -67,15 +29,15 @@ SUMMARY:Wilderness Survival - Basic Navigation
 LOCATION:11113 Kernvile Rd, Kernville, CA 93238, US
 DESCRIPTION:Learning to navigate accurately is a vital skill every outdoors
  man needs to learn
-DTSTAMP:20240503T165123Z
-LAST-MODIFIED:20240503T165123Z
+DTSTAMP:20240506T153644Z
+LAST-MODIFIED:20240506T153644Z
 DTSTART:20240525T150000Z
 DTEND:20240526T010000Z
 ORGANIZER;CN=Fire Wolf Self Reliance:mailto:info@firewolfselfreliance.com
 URL:https://lu.ma/yxxqih53?utm_source=krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:ce80d5f4-b783-44ab-8a47-a2592660367d
+UID:105ef9ca-3e84-4519-b871-c3b75276cd17
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -84,12 +46,32 @@ SUMMARY:Memorial Day Arts & Crafts Festival
 LOCATION:7 Tobias ST, Kernville, CA 93238, US
 DESCRIPTION:A 3 day arts and crafts festival at Circle Park, Kernville CA p
  ut on by the Kern River Valley Art Association.
-DTSTAMP:20240503T165123Z
-LAST-MODIFIED:20240503T165123Z
+DTSTAMP:20240506T153644Z
+LAST-MODIFIED:20240506T153644Z
 DTSTART:20240525T160000Z
 DTEND:20240527T200000Z
 ORGANIZER;CN=Kern Valley Art Association:mailto:info@krvaa.org
 URL:https://www.facebook.com/events/1551195532330999/?utm_source=krv-events
  &utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:898b70c3-6753-45f9-9df8-4b0f0c484b0b
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Independence Day Fireworks Extravaganza
+LOCATION:Lake Isabella, CA 93240, US
+DESCRIPTION:Join the Independence Day Fireworks Extravaganza in Lake Isabel
+ la, CA. Experience a breathtaking fireworks display at Engineer Point near
+  the Auxiliary Dam.
+DTSTAMP:20240506T153644Z
+LAST-MODIFIED:20240506T153644Z
+DTSTART:20240707T043000Z
+DTEND:20240707T060000Z
+ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:office@kernriverv
+ alley.com
+URL:http://localhost:4000/2024/07/06/independence-day-fireworks-extravaganz
+ a
 END:VEVENT
 END:VCALENDAR
