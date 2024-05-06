@@ -1,6 +1,6 @@
 ---
-name: Stars and Stripes Independence Day Celebration
-title: Stars and Stripes Independence Day Celebration
+name: Independence Day Fireworks Extravaganza
+title: Independence Day Fireworks Extravaganza
 image: https://i.imgur.com/OyDFP5F.jpeg
 pinned: true
 description: Join the Stars and Stripes Independence Day Celebration in Lake Isabella, CA, on July 1st. Experience a breathtaking fireworks display at Engineer Point near the Auxiliary Dam. Please note that fireworks are prohibited in Sequoia National Forest, and fire restrictions apply. Come together with the Kern River Valley community to honor the nation's independence while respecting safety measures and enjoying a memorable evening of unity and patriotism.
