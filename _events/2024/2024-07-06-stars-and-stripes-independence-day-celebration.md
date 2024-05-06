@@ -12,8 +12,8 @@ tags:
   - kern river valley
   - lake isabella
   - events
-startDate: 2024-07-05 21:30
-endDate: 2024-07-05 23:00
+startDate: 2024-07-06 21:30
+endDate: 2024-07-06 23:00
 location:
   '@type': Place
   name: Isabella Lake
@@ -48,12 +48,12 @@ organizer:
 Get ready to ignite your patriotic spirit and embrace the joyous atmosphere as Lake Isabella, CA, hosts the
 highly anticipated **Stars and Stripes Independence Day Celebration**. Organized by the Kern River Valley
 Chamber of Commerce and fueled by generous community donations, this spectacular event promises an unforgettable
-evening with a breathtaking fireworks display. Mark your calendars for **July 5th** and join us at
+evening with a breathtaking fireworks display. Mark your calendars for **July 6th** and join us at
 **EngineerPoint near the Auxiliary Dam** for an evening that celebrates the spirit of freedom and unity.
 
 ### Fireworks Extravaganza
 
-At approximately **9:30 PM** on **July 5th**, the night sky above Lake Isabella will be ablaze with the
+At approximately **9:30 PM** on **July 6th**, the night sky above Lake Isabella will be ablaze with the
 brilliance of fireworks as they burst forth from Engineer Point near the Auxiliary Dam. The awe-inspiring
 display will paint the heavens with vibrant colors and dazzling patterns, creating a visual masterpiece
 that will leave spectators in awe. Please note that the start time may be subject to change due to safety
