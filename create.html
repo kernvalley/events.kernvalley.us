@@ -4,9 +4,9 @@ permalink: /create/
 title: Create an Event
 description: Submit an event to the KRV Events App
 scripts:
-  - src: /js/create.min.js
-    defer: true
-    referrerPolicy: no-referrer
+- src: /js/create.min.js
+  defer: true
+  referrerPolicy: no-referrer
 ---
 <form id="event-form" class="card">
 	<datalist id="city-list">
@@ -28,7 +28,6 @@ scripts:
 		<option value="93255"></option>
 	</datalist>
 	<input type="hidden" name="@context" value="https://schema.org" />
-	<input type="hidden" name="@type" value="Event" />
 	<fieldset id="event-info" class="form-section" disabled="">
 		<legend>Event Info</legend>
 		<!-- <div class="form-nav"> -->
@@ -39,30 +38,61 @@ scripts:
 		<!-- </div> -->
 		<div class="form-group">
 			<label class="input-label required" for="event-name">Event Name</label>
-			<input type="text" name="name" id="event-name" class="input" placeholder="Event Name" minlength="8" maxlength="65" autocomplete="off" required="" />
+			<input type="text" name="name" id="event-name" class="input" placeholder="Event Name" minlength="8"
+				maxlength="65" autocomplete="off" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-type" class="input-label required">Event Type</label>
+			<select name="@type" id="event-type" class="input" required="">
+				<optgroup label="General Events">
+					<option label="Other/Genric Event" value="Event" selected=""></option>
+					<option label="Social Event" value="SocialEvent"></option>
+					<option label="Business Event" value="BusinessEvent"></option>
+					<option label="Children's Event" value="ChildrensEvent"></option>
+				</optgroup>
+				<optgroup label="Subject Specific Event">
+					<option label="Sporting Event" value="SportsEvent"></option>
+					<option label="Food Event" value="FoodEvent"></option>
+					<option label="Eduacational Event" value="EducationEvent"></option>
+				</optgroup>
+				<optgroup label="Arts / Performances / Entertainment">
+					<option label="Musical Event" value="MusicEvent"></option>
+					<option label="Exhibition" value="ExhibitionEvent"></option>
+					<option label="Screening (eg movie)" value="ScreeningEvent"></option>
+					<option label="Dance" value="DanceEvent"></option>
+					<option label="Theatere Event" value="TheaterEvent"></option>
+					<option label="Visual Arts" value="VisualArtsEvent"></option>
+				</optgroup>
+				<option label="Festival" value="Festival"></option>
+			</select>
 		</div>
 		<div class="form-group">
 			<label class="input-label required" for="event-start-date">Start Time</label>
-			<input type="datetime-local" name="startDate" id="event-start-date" class="input" placeholder="yyyy-mm-ddThh:mm" required="" />
+			<input type="datetime-local" name="startDate" id="event-start-date" class="input"
+				placeholder="yyyy-mm-ddThh:mm" required="" />
 		</div>
 		<div class="form-group">
 			<label class="input-label required" for="event-end-date">End Time</label>
-			<input type="datetime-local" name="endDate" id="event-end-date" class="input" placeholder="yyyy-mm-ddThh:mm" required="" />
+			<input type="datetime-local" name="endDate" id="event-end-date" class="input" placeholder="yyyy-mm-ddThh:mm"
+				required="" />
 		</div>
 		<div class="form-group">
 			<label for="event-description" class="input-label required">Description</label>
-			<input type="text" name="description" class="input" id="event-description" minlength="10" maxlength="120" autocomplete="off" placeholder="Short description of event" required="" />
+			<input type="text" name="description" class="input" id="event-description" minlength="10" maxlength="120"
+				autocomplete="off" placeholder="Short description of event" required="" />
 		</div>
 		<div class="form-group">
 			<label for="event-image" class="input-label required">Image URL</label>
-			<input type="url" name="image" id="event-image" class="input" placeholder="https://example.com/image.jpg" required="" />
+			<input type="url" name="image" id="event-image" class="input" placeholder="https://example.com/image.jpg"
+				required="" />
 		</div>
 		<div>
 			<p>Or <label for="img-upload" class="btn btn-primary">Upload</label> an image.</p>
 			<input type="file" accept="image/jpeg, image/png, image/webp" id="img-upload" />
 		</div>
 		<div class="status-box info">
-			<p>{% include common/icon.html icon="info" height="18" width="18" fill="currentColor" %} Images should be at least 640x80 and in a supported type (JPEG, PNG, WebP). Max upload size is 1 MB.</p>
+			<p>{% include common/icon.html icon="info" height="18" width="18" fill="currentColor" %} Images should be at
+				least 640x80 and in a supported type (JPEG, PNG, WebP). Max upload size is 1 MB.</p>
 		</div>
 		<div class="form-group">
 			<label for="event-tags" class="input-label">Event Tags/Keywords (multiple allowed)</label>
@@ -98,7 +128,7 @@ scripts:
 				<option label="Select a type" value=""></option>
 				<option label="Person" value="Person"></option>
 				<option label="Organization" value="Organization"></option>
-				<option value="Local Business" value="LocalBusiness"></option>
+				<option label="Local Business" value="LocalBusiness"></option>
 				<option label="Library" value="Library"></option>
 				<option label="School" value="School"></option>
 				<option label="Restaurant" value="Restaurant"></option>
@@ -107,7 +137,8 @@ scripts:
 		</div>
 		<div class="form-group">
 			<label for="event-organizer-email" class="input-label required">Email</label>
-			<input type="email" name="organizer[email]" id="event-organizer-email" class="input" placeholder="user@example.com" autocomplete="email" required="" />
+			<input type="email" name="organizer[email]" id="event-organizer-email" class="input"
+				placeholder="user@example.com" autocomplete="email" required="" />
 		</div>
 		<div class="form-group">
 			<label for="event-organizer-phone" class="input-label">Phone</label>
@@ -146,14 +177,14 @@ scripts:
 					<option label="Lake" value="LakeBodyOfWater"></option>
 					<option label="River" value="RiverBodyOfWater"></option>
 				</optgroup>
-				<option label="Landmark / Historical Building" value="LandmarksOrHistoricalBuildings"></option>
+				<option label="Landmark or Historical Building" value="LandmarksOrHistoricalBuildings"></option>
 				<option label="Residence" value="Residence"></option>
 			</select>
 		</div>
 		<input type="hidden" name="location[address][@type]" value="PostalAddress" />
 		<div class="form-group">
 			<label for="event-location-street-address" class="input-label">Street Address</label>
-			<input type="text" name="location[address][streetAddress]" id="event-location-street-address" class="input" placeholder="123 Some St"  pattern="\d{1,5}\s[A-Za-z0-9.,\- ]+" autocomplete="off" />
+			<input type="text" name="location[address][streetAddress]" id="event-location-street-address" class="input" placeholder="123 Some St" pattern="\d{1,5}\s[A-Za-z0-9.,\- ]+" autocomplete="off" />
 		</div>
 		<div class="form-group">
 			<label for="event-location-address-locality" class="input-label required">City</label>
@@ -176,7 +207,7 @@ scripts:
 			</select>
 		</div>
 		<input type="hidden" name="location[geo][@type]" value="GeoCoordinates" />
- 		<div class="form-group">
+		<div class="form-group">
 			<label for="event-geo-latitude" class="input-label">Latitude</label>
 			<input type="text" name="location[geo][latitude]" id="event-geo-latitude" class="input" inputmode="numeric" pattern="-?\d{1,3}\.\d+" placeholder="###.######" />
 		</div>
