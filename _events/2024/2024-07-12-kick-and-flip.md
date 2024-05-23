@@ -76,7 +76,7 @@ and we're all in this together!
 
 ## Special Thanks
 
-##  Announcement
+## Announcement
 - Ribbon Cutting for the George & Darlene Randal Skate Park
 - Kick-off / block party for the Neighbor-to-Neighbor Program in Lake Isabella
 
