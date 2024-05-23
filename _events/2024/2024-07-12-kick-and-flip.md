@@ -74,7 +74,7 @@ Mark your calendars and invite your neighbors. This is a day to celebrate our co
 the new skate park, and the hopeful future that lies ahead.  The KRV is moving forward,
 and we're all in this together!
 
-## Special Thanks 
+## Special Thanks
 
 ##  Announcement
 - Ribbon Cutting for the George & Darlene Randal Skate Park
