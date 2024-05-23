@@ -49,11 +49,6 @@ if (typeof GA === 'string' && GA.length !== 0) {
 			on('a[href^="mailto:"]', ['click'], mailtoHandler, { passive: true });
 		}
 	}, { priority: 'background' });
-
-	loaded().then(() => {
-		requestIdleCallback(() => {
-		});
-	});
 } else {
 	createPolicy('goog#script-url', {});
 	createPolicy('goog#html', {});

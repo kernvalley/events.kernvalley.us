@@ -56,7 +56,6 @@
 	<br />
 	<details class="event-details"{% if include.hideDetails %} hidden=""{% endif %}>
 		<summary role="button" class="btn btn-primary">More Info</summary>
-		<hr />
 		<time class="event-end" itemprop="endDate" datetime="{{ include.event.startDate | date_to_xmlschema }}">
 			{% include common/icon.html icon='events' %}
 			<span>Ends:</span>
@@ -78,7 +77,6 @@
 		<div class="event-description" itemprop="description">
 			{% include common/icon.html icon='note' %}{{ include.event.description }}
 		</div>
-		<hr />
 		{% if include.event.offers %}<div>{% for offer in include.event.offers %}
 			<hr />
 			{% if offer.url %}
@@ -134,6 +132,14 @@
 						{% endif %}
 					</span>
 				</h5>
+			</div>
+		{% endif %}
+		{% if include.event.funding %}
+			<div itemprop="funding" itemtype="https://scheme.org/{{ include.event.funding['@type'] | default: 'Grant' }}" itemscope="" hidden="">
+				<meta itemprop="name" content="{{ include.event.funding.name }}" />
+				{% if include.event.funding.url %}
+					<link itemprop="url" href="{{ include.event.funding.url }}" />
+				{% endif %}
 			</div>
 		{% endif %}
 	</details>
