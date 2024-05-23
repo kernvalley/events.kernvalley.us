@@ -5,7 +5,7 @@ layout: event-page
 date: 2024-07-12
 name: Kick & Flip
 title: Kick & Flip
-description: Join us as we celebrate the Ribbon Cutting for Ceremony for the George & Darlene Randall Skate Park and have a Block Party as the Lake Isabella Kick-Off of the Neighbor-to-Neighbor Program
+description: Join us as we celebrate the Ribbon Cutting for Ceremony for the George & Darlene Randall Skatepark and have a Block Party as the Lake Isabella Kick-Off of the Neighbor-to-Neighbor Program
 tags:
   - lake isabella
   - outdoors
@@ -28,7 +28,7 @@ organizer:
     - https://instagram.com/krvbridgeconnection/
 location:
   "@type": Park
-  name: George & Darlene Randall Skate Park
+  name: George & Darlene Randall Skatepark
   address:
     "@type": PostalAddress
     streetAddress: 4901 Lake Isabella Blvd
@@ -55,7 +55,7 @@ funding:
 ---
 
 A long-awaited dream becomes reality! On July 12th, 2024, Lake Isabella and the KRV celebrate the grand
-opening of the George & Darlene Randall Skate Park with a community block party. This event signifies
+opening of the George & Darlene Randall Skatepark with a community block party. This event signifies
 more than just a new place to skate – it marks a turning point for our community.
 
 ## Official Skate Park Ribbon Cutting
@@ -75,9 +75,13 @@ the new skate park, and the hopeful future that lies ahead.  The KRV is moving f
 and we're all in this together!
 
 ## Special Thanks
+- Karene Williams
+- The Skatepark Committee
+- [Sphon Ranch](https://www.spohnranch.com/)
+- [The Skatepark Project](https://skatepark.org/)
 
 ## Announcement
-- Ribbon Cutting for the George & Darlene Randal Skate Park
+- Ribbon Cutting for the George & Darlene Randal Skatepark
 - Kick-off / block party for the Neighbor-to-Neighbor Program in Lake Isabella
 
 ## Attendees
