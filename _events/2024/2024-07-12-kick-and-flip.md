@@ -1,11 +1,12 @@
 ---
 "@context": https://schema.org
 "@type": SocialEvent
-layout: event-page
+layout: redirect
+redirect: https://portal.goldenvolunteer.com/opportunities/V0Lh5ehWcj
 date: 2024-07-12
 name: Kick & Flip
 title: Kick & Flip
-description: Join us as we celebrate the Ribbon Cutting for Ceremony for the George & Darlene Randall Skatepark and have a Block Party as the Lake Isabella Kick-Off of the Neighbor-to-Neighbor Program
+description: Join us as we celebrate the Ribbon Cutting Ceremony for the George & Darlene Randall Skatepark and have a Block Party as the Lake Isabella Kick-Off of the Neighbor-to-Neighbor Program
 tags:
   - lake isabella
   - outdoors
@@ -58,14 +59,13 @@ A long-awaited dream becomes reality! On July 12th, 2024, Lake Isabella and the 
 opening of the George & Darlene Randall Skatepark with a community block party. This event signifies
 more than just a new place to skate – it marks a turning point for our community.
 
-## Official Skate Park Ribbon Cutting
+## Official Skatepark Ribbon Cutting
 Witness the culmination of years of effort and dedication.
-
 
 - **Community Fun**: Games, activities, and a chance to connect with your neighbors.
 - **BMX/Skateboarding Demonstration**: Be inspired by pro rider Connor Smith and local skaters.
 - **Free Helmets**: Safety first, as we embark on this exciting journey together.
-- **Games and Giveaways**: Fun for all ages, with exciting prizes!
+- **Games and Giveaways**: Fun for all ages, with exciting prizes! 20 decks donated from local skate shops
 
 ## Neighbor-to-Neighbor Kick-Off & Block Party
 <div class="center">{% include youtube.html id="3DzOOVL0nyo" %}</div>
@@ -90,7 +90,7 @@ and we're all in this together!
 - Sphon Ranch (contractors for the park)
 
 ## Events
-- BMX/Skate show  / "bike rodeo"
+- BMX/Skate show / "bike rodeo"
 - Helmet give-away
 - Games and typical stuff
 - 20 dekcs being given away (donated from local skate shops)
