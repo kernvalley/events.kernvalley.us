@@ -1,0 +1,14 @@
+---
+title: Tags
+layout: default
+---
+<ul id="site-tags">
+	{% for tag in site.data.tags %}
+		<li>
+			<a href="/tags/{{ tag | slugify }}">
+				{% include common/icon.html icon="tag" height=16 width=16 fill="currentColor" %}
+				<span>#{{ tag }}</span>
+			</a>
+		</li>
+	{% endfor %}
+</ul>

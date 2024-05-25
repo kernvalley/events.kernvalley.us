@@ -3,7 +3,7 @@ author: Chris Zuber
 title: Kern Valley Events
 url: 'https://events.kernvalley.us'
 markdown: kramdown
-version: 2.1.2
+version: 2.1.3
 timezone: America/Los_Angeles
 future: true
 lang: en
@@ -95,6 +95,12 @@ defaults:
         - href: https://api.openweathermap.org/
           crossOrigin: anonymous
           referrerPolicy: no-referrer
+  - scope:
+      path: tags
+    values:
+      layout: tags
+      theme: auto
+      no-header: true
   - scope:
       path: _drafts
     values:
