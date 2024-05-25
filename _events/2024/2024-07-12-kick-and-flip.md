@@ -16,6 +16,8 @@ tags:
   - krv-bridge
   - skateboard
   - bmx
+  - sports
+  - social
 startDate: 2024-07-12T09:00
 endDate: 2024-07-12T12:00
 image: https://i.imgur.com/szV0bJzh.png

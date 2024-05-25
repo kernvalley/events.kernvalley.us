@@ -14,6 +14,7 @@ tags:
   - n2n
   - neighbor-to-neighbor
   - krv-together
+  - social
 startDate: 2024-06-08T16:30
 endDate: 2024-06-08T20:00
 image: https://i.imgur.com/ecXTfQOh.png

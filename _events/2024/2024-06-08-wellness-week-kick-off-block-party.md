@@ -16,6 +16,8 @@ tags:
   - n2n
   - neighbor-to-neighbor
   - krv-together
+  - social
+  - exercise
 startDate: 2024-06-08T09:00
 endDate: 2024-06-08T18:00
 image: https://i.imgur.com/vxB44Uvh.png
