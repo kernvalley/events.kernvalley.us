@@ -2,14 +2,16 @@
 title: Tags
 layout: default
 ---
-<ul id="site-tags">
-	{% assign tags=site.data.tags | sort %}
-	{% for tag in tags %}
-		<li>
-			<a href="/tags/{{ tag | slugify }}">
-				{% include common/icon.html icon="tag" height=16 width=16 fill="currentColor" %}
-				<span>#{{ tag }}</span>
-			</a>
-		</li>
-	{% endfor %}
-</ul>
+<div class="card">
+	<ul id="site-tags">
+		{% assign tags=site.data.tags | sort %}
+		{% for tag in tags %}
+			<li>
+				<a href="/tags/{{ tag | slugify }}">
+					{% include common/icon.html icon="tag" height=16 width=16 fill="currentColor" %}
+					<span>#{{ tag }}</span>
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</div>
