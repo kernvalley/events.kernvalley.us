@@ -1,5 +1,5 @@
 #event-info-section {
-	grid-template-areas: ". time place ." ". organizer place ." ". performer . .";
+	grid-template-areas: ". time place ." ". organizer place ." ". performer . ." "tags tags tags tags";
 	grid-template-columns: 1fr minmax(320px, 380px) minmax(350px, 500px) 1fr;
 	gap: 8px;
 	line-height: 1.65;
@@ -17,6 +17,14 @@
 	color: var(--heading-color);
 }
 
+.event-tags {
+	grid-area: tags;
+}
+
+.event-tag-list {
+	gap: 0.8em;
+	overflow-x: auto;
+}
 
 #organizer-card .same-as-links {
 	padding: 0.4rem;

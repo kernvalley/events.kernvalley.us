@@ -14,7 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.1.3]
+
 ### Added
+- Add event tags with links to tag directory pages
+- Add PWA shortcuts to some tags
 - Add PWA shortcut to `/create/`
 
 ## [v2.1.2] - 2024-05-02

@@ -1,0 +1,25 @@
+{% if include.date %}
+	{% assign events=site.events | where_exp: 'event', 'event.endDate >= include.date and event.tags contains include.tag' | sort: 'startDate' %}
+{% else %}
+	{% assign events=site.events | where_exp: 'event', 'event.tags contains include.tag' | sort: 'startDate' %}
+{% endif %}
+{% if events.size != 0 %}
+	<section id="events-calendar" class="grid">
+		{% for event in events %}
+			{% include event.html event=event %}
+		{% endfor %}
+	</section>
+{% else %}
+	<div class="status-box info">
+		<p>No current events tagged <q>{{ include.tag }}.</q></p>
+		<a  href="/" class="btn btn-primary">
+			{% include common/icon.html icon="home" width=16 height=16 fill="currentColor" %}
+			<span>Go to homepage</span>
+		</a>
+		<br /><br />
+		<a href="/tags/" class="btn btn-primary">
+			{% include common/icon.html icon="tag" width=16 height=16 fill="currentColor" %}
+			<span>Go to tags page</span>
+		</a>
+	</div>
+{% endif %}
