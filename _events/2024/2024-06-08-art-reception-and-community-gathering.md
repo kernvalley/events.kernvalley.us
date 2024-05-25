@@ -1,7 +1,8 @@
 ---
 "@context": https://schema.org
 "@type": ExhibitionEvent
-layout: event-page
+layout: redirect
+redirect: https://portal.goldenvolunteer.com/opportunities/GjsgWZJu4S
 date: 2024-06-08
 name: Art Reception and Community Gathering
 title: Art Reception and Community Gathering
