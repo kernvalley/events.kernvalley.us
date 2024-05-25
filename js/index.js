@@ -4,7 +4,7 @@ import { shareInit } from '@shgysk8zer0/kazoo/data-share.js';
 import { getGooglePolicy, getDefaultPolicyWithDisqus } from '@shgysk8zer0/kazoo/trust-policies.js';
 import { createPolicy } from '@shgysk8zer0/kazoo/trust.js';
 import { importGa, externalHandler, telHandler, mailtoHandler } from '@shgysk8zer0/kazoo/google-analytics.js';
-import { loaded, on, toggleClass } from '@shgysk8zer0/kazoo/dom.js';
+import { on, toggleClass } from '@shgysk8zer0/kazoo/dom.js';
 import { GA } from './consts.js';
 import './components.js';
 import '@shgysk8zer0/components/loading-spinner.js';
@@ -49,11 +49,6 @@ if (typeof GA === 'string' && GA.length !== 0) {
 			on('a[href^="mailto:"]', ['click'], mailtoHandler, { passive: true });
 		}
 	}, { priority: 'background' });
-
-	loaded().then(() => {
-		requestIdleCallback(() => {
-		});
-	});
 } else {
 	createPolicy('goog#script-url', {});
 	createPolicy('goog#html', {});
