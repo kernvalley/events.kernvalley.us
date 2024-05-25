@@ -97,8 +97,11 @@ scripts:
 		<div class="form-group">
 			<label for="event-tags" class="input-label">Event Tags/Keywords (multiple allowed)</label>
 			<select name="tags" id="evet-tags" class="input" multiple="">
-				<option label="krv" value="krv" selected=""></option>
-				<option label="kernville" value="kernville"></option>
+				<option label="#krv" value="krv" selected=""></option>
+				{% for tag in site.data.tags %}
+					<option label="#{{ tag }}" vlaue="{{ tag }}"></option>
+				{% endfor %}
+				<!-- <option label="kernville" value="kernville"></option>
 				<option label="wofford heights" value="wofford heights"></option>
 				<option label="lake isabella" value="lake isabella"></option>
 				<option label="bodfish" value="bodfish"></option>
@@ -112,7 +115,7 @@ scripts:
 				<option label="lake" value="lake"></option>
 				<option label="river" value="river"></option>
 				<option label="hiking" value="hiking"></option>
-				<option label="health" value="health"></option>
+				<option label="health" value="health"></option> -->
 			</select>
 		</div>
 	</fieldset>

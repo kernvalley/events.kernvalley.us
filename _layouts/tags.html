@@ -1,0 +1,11 @@
+---
+name: tags
+theme: default
+og-type: website
+itemtype: 'https://schema.org/WebPage'
+layout: default
+sidebar: false
+main-itemtype: Event
+---
+{% assign now= 'now' | date_to_xmlschema %}
+{% include tags.html tag=page.tag date=now %}

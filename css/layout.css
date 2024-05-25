@@ -35,6 +35,11 @@ body {
 	grid-area: footer;
 }
 
+#site-tags {
+	line-height: 1.8;
+	font-size: 1.2em;
+}
+
 @media (max-width: 980px) {
 	:root {
 		--map-height: calc(80vh - var(--nav-height, 4rem));
