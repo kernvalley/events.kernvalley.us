@@ -94,5 +94,3 @@ and we're all in this together!
 - Helmet give-away
 - Games and typical stuff
 - 20 dekcs being given away (donated from local skate shops)
-
-#ItTakesaNeighborhood #KRVTogether

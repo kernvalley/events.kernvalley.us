@@ -55,7 +55,8 @@
 	</div>
 	<br />
 	<details class="event-details"{% if include.hideDetails %} hidden=""{% endif %}>
-		<summary role="button" class="btn btn-primary">More Info</summary>
+		<summary role="button" class="btn btn-primary">{% include common/icon.html icon="view-more" height=16 width=16 fill="currentColor" %}Event Details</summary>
+		<br />
 		<time class="event-end" itemprop="endDate" datetime="{{ include.event.startDate | date_to_xmlschema }}">
 			{% include common/icon.html icon='events' %}
 			<span>Ends:</span>
