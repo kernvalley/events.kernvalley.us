@@ -5,7 +5,7 @@ nav:
   - label: Tags
     href: /tags/
     icon: tag
-  - label: Submit Event
+  - label: Add Event
     # href: https://forms.gle/9NPNcvcjLDoVw52w7
     href: /create/
     icon: event-create

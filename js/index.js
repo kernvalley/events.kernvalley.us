@@ -75,3 +75,41 @@ customElements.whenDefined('install-prompt').then(HTMLInstallPromptElement => {
 		btn.hidden = false;
 	}
 });
+
+if (location.pathname === '/tags/') {
+	const filterTags = query => {
+		const url = new URL(location.href);
+
+		if (typeof query === 'string' && query.length !== 0) {
+			url.searchParams.set('tag', query);
+			document.querySelectorAll('.event-link').forEach(tag => tag.parentElement.hidden = ! tag.textContent.includes(query));
+		} else {
+			if (url.searchParams.has('tag')) {
+				url.searchParams.delete('tag');
+			}
+
+			document.querySelectorAll('.event-link').forEach(tag => tag.parentElement.hidden = false);
+		}
+
+		if (url.href !== location.href) {
+			history.replaceState(history.state, '', url.href);
+		}
+	};
+
+
+	document.forms.tagSearch.addEventListener('submit', event => {
+		event.preventDefault();
+		const data = new FormData(event.target);
+		filterTags(data.get('tag').replace('#', '').trim().toLowerCase());
+	});
+
+	document.forms.tagSearch.addEventListener('reset', () => filterTags(null));
+
+	if (location.search.length > 1) {
+		const params = new URLSearchParams(location.search);
+
+		if (params.has('tag')) {
+			filterTags(params.get('tag').toLowerCase());
+		}
+	}
+}

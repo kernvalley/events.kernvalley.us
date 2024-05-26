@@ -1,7 +1,7 @@
 name: Kern Valley Events
 shortName: KRV Events
 id: KRVEvents
-version: 2.1.3
+version: 2.1.3-1
 lang: en
 dir: ltr
 display: standalone
@@ -87,7 +87,7 @@ shortcuts:
       - src: /img/shortcuts/tag-32.png
         type: image/png
         sizes: 32x32
-  - name: Create Event
+  - name: Add Event
     url: /create/?utm_source=shortcut&utm_medium=pwa&utm_campaign=pwa
     description: Create an Event to submit to KRV Events
     icons:
