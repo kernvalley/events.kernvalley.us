@@ -12,7 +12,7 @@ tags:
   - kernville
   - neighbor-to-neighbor
   - krv-together
-  - health
+  - art
 startDate: 2024-06-11T17:00
 endDate: 2024-06-11T18:30
 image: https://i.imgur.com/Aeju62eh.jpeg

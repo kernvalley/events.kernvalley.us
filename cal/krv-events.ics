@@ -3,41 +3,7 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:ad51bc2a-059d-43cc-919d-605c91ade258
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Co-creating our community hub
-LOCATION:6407 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:This is your chance to tell us what you want! We're building th
- is community hub together.
-DTSTAMP:20240506T153644Z
-LAST-MODIFIED:20240506T153644Z
-DTSTART:20240517T003000Z
-DTEND:20240517T023000Z
-ORGANIZER;CN=Kernville Cowork:mailto:justin@kernvillecowork.com
-URL:https://lu.ma/hzkm8dqy?utm_source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:5351a8a7-c7a2-4785-afb8-da5371f78aaa
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Wilderness Survival - Basic Navigation
-LOCATION:11113 Kernvile Rd, Kernville, CA 93238, US
-DESCRIPTION:Learning to navigate accurately is a vital skill every outdoors
- man needs to learn
-DTSTAMP:20240506T153644Z
-LAST-MODIFIED:20240506T153644Z
-DTSTART:20240525T150000Z
-DTEND:20240526T010000Z
-ORGANIZER;CN=Fire Wolf Self Reliance:mailto:info@firewolfselfreliance.com
-URL:https://lu.ma/yxxqih53?utm_source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:105ef9ca-3e84-4519-b871-c3b75276cd17
+UID:415302ec-e705-4e0f-95dd-fbaf3f2ecdf5
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -46,8 +12,8 @@ SUMMARY:Memorial Day Arts & Crafts Festival
 LOCATION:7 Tobias ST, Kernville, CA 93238, US
 DESCRIPTION:A 3 day arts and crafts festival at Circle Park, Kernville CA p
  ut on by the Kern River Valley Art Association.
-DTSTAMP:20240506T153644Z
-LAST-MODIFIED:20240506T153644Z
+DTSTAMP:20240526T023617Z
+LAST-MODIFIED:20240526T023617Z
 DTSTART:20240525T160000Z
 DTEND:20240527T200000Z
 ORGANIZER;CN=Kern Valley Art Association:mailto:info@krvaa.org
@@ -55,7 +21,76 @@ URL:https://www.facebook.com/events/1551195532330999/?utm_source=krv-events
  &utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:898b70c3-6753-45f9-9df8-4b0f0c484b0b
+UID:3169dc50-060c-4a28-8637-1665f4718e10
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Wellness Week Kick-off Block Party
+LOCATION:14 Sierra Drive, Kernville, CA 93238, US
+DESCRIPTION:Come together to participate in yoga, movement classes, mindful
+ ness practice, and tai chi.
+DTSTAMP:20240526T023617Z
+LAST-MODIFIED:20240526T023617Z
+DTSTART:20240608T160000Z
+DTEND:20240609T010000Z
+ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
+URL:https://portal.goldenvolunteer.com/opportunities/tFbVk3TSX5?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:e0064de0-df52-4f63-a0ad-44665c076c85
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Art Reception and Community Gathering
+LOCATION:6749 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:Come together and connect with neighbors over an art reception.
+DTSTAMP:20240526T023617Z
+LAST-MODIFIED:20240526T023617Z
+DTSTART:20240608T233000Z
+DTEND:20240609T030000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://portal.goldenvolunteer.com/opportunities/GjsgWZJu4S?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:5f564489-e737-4fbc-a54d-3e30ffd16f87
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:LBGQT, Family and Friends Craft Night
+LOCATION:14 Sierra Dr, Kernville, CA 93238, US
+DESCRIPTION:Arts and craft celebrating Pride Month.
+DTSTAMP:20240526T023617Z
+LAST-MODIFIED:20240526T023617Z
+DTSTART:20240612T000000Z
+DTEND:20240612T013000Z
+ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
+URL:https://portal.goldenvolunteer.com/opportunities/dzUDyqZwku?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:3c93cda8-ad56-4236-9bc8-1d427203de54
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Poetry Anthology Book Reading & Signing
+LOCATION:6701 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:Expand community awareness for our local art and culture.
+DTSTAMP:20240526T023617Z
+LAST-MODIFIED:20240526T023617Z
+DTSTART:20240615T223000Z
+DTEND:20240616T003000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://portal.goldenvolunteer.com/opportunities/6OdRQOQlwS?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:89912906-4c69-47ce-b5ab-f54cc3abcd93
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -65,13 +100,50 @@ LOCATION:Lake Isabella, CA 93240, US
 DESCRIPTION:Join the Independence Day Fireworks Extravaganza in Lake Isabel
  la, CA. Experience a breathtaking fireworks display at Engineer Point near
   the Auxiliary Dam.
-DTSTAMP:20240506T153644Z
-LAST-MODIFIED:20240506T153644Z
+DTSTAMP:20240526T023617Z
+LAST-MODIFIED:20240526T023617Z
 DTSTART:20240707T043000Z
 DTEND:20240707T060000Z
 ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:office@kernriverv
  alley.com
-URL:http://localhost:4000/2024/07/06/independence-day-fireworks-extravaganz
- a
+URL:https://events.kernvalley.us/2024/07/06/independence-day-fireworks-extr
+ avaganza
+END:VEVENT
+BEGIN:VEVENT
+UID:9d9524ae-e521-47e1-aa1d-3896ac24d633
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Kick & Flip
+LOCATION:4901 Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:Join us as we celebrate the Ribbon Cutting Ceremony for the Geo
+ rge & Darlene Randall Skatepark and have a Block Party as the Lake Isabell
+ a Kick-Off of the Neighbor-to-Neighbor Program
+DTSTAMP:20240526T023617Z
+LAST-MODIFIED:20240526T023617Z
+DTSTART:20240712T160000Z
+DTEND:20240712T190000Z
+ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
+URL:https://portal.goldenvolunteer.com/opportunities/V0Lh5ehWcj?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:ab869a0d-c70e-49b8-a6f9-7e063de84bb5
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:International Co-working Day
+LOCATION:11113 Kernville Rd, Kernville, CA 93238, US
+DESCRIPTION:Come together to learn about the international Co-working Movem
+ ent.
+DTSTAMP:20240526T023617Z
+LAST-MODIFIED:20240526T023617Z
+DTSTART:20240810T003000Z
+DTEND:20240810T013000Z
+ORGANIZER;CN=Sierra Shared Spaces:mailto:justin@kernvillecowork.com
+URL:https://portal.goldenvolunteer.com/opportunities/EJkIEWpgbL?utm_source=
+ krv-events&utm_medium=referrer
 END:VEVENT
 END:VCALENDAR
