@@ -2,11 +2,7 @@ import { saveFile } from '@shgysk8zer0/kazoo/filesystem.js';
 import { stringify } from 'yaml';
 import { parse } from 'marked';
 
-const slugify = str => str.toString()
-	.trim()
-	.replaceAll(' ', '-')
-	.toLowerCase()
-	.replaceAll(/[^a-z0-9-]/g, '');
+const slugify = str => str.toString().trim().replaceAll(/[^A-Za-z0-9]+/g, '-').toLowerCase();
 
 document.forms['event-form'].addEventListener('submit', async event => {
 	event.preventDefault();
@@ -19,28 +15,28 @@ document.forms['event-form'].addEventListener('submit', async event => {
 		layout: redirect instanceof URL ? 'redirect' : 'event-page',
 		redirect: redirect ?? undefined,
 		date: data.get('startDate').substring(0, 10),
-		name: data.get('name'),
-		title: data.get('name'), // Needs to be duplicated
-		description: data.get('description'),
+		name: data.get('name').trim(),
+		title: data.get('name').trim(), // Needs to be duplicated
+		description: data.get('description').trim(),
 		tags: data.getAll('tags'),
 		startDate: data.get('startDate'),
 		endDate: data.get('endDate'),
-		image: data.get('image'),
+		image: data.get('image').trim(),
 		organizer: {
 			'@type': data.get('organizer[@type]'),
-			name: data.get('organizer[name]'),
-			email: data.get('organizer[email]'),
-			url: data.get('organizer[url]'),
+			name: data.get('organizer[name]').trim(),
+			email: data.get('organizer[email]').trim(),
+			url: data.get('organizer[url]').trim(),
 		},
 		location: {
 			'@type': data.get('location[@type]'),
-			name: data.get('location[name]'),
+			name: data.get('location[name]').trim(),
 			address: {
 				'@type': data.get('location[address][@type]'),
-				streetAddress: data.get('location[address][streetAddress]'),
-				addressLocality: data.get('location[address][addressLocality]'),
-				addressRegion: data.get('location[address][addressRegion]'),
-				postalCode: data.get('location[address][postalCode]'),
+				streetAddress: data.get('location[address][streetAddress]').trim(),
+				addressLocality: data.get('location[address][addressLocality]').trim(),
+				addressRegion: data.get('location[address][addressRegion]').trim(),
+				postalCode: parseInt(data.get('location[address][postalCode]').trim()),
 				addressCountry: data.get('location[address][addressCountry]'),
 			}
 		}
@@ -49,8 +45,8 @@ document.forms['event-form'].addEventListener('submit', async event => {
 	if (data.has('location[geo][latitude]') && data.get('location[geo][longitude]')) {
 		eventData.location.geo = {
 			'@type': data.get('location[geo][@type]'),
-			latitude: parseFloat(data.get('location[geo][latitude]')),
-			longitude: parseFloat(data.get('location[geo][longitude]')),
+			latitude: parseFloat(data.get('location[geo][latitude]').trim()),
+			longitude: parseFloat(data.get('location[geo][longitude]').trim()),
 		};
 	}
 

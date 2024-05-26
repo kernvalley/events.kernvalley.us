@@ -1,15 +1,34 @@
 ---
 title: Tags
 layout: default
+index: true
+pin: true
+description: Search KRV Events by event tags
 ---
 <div class="card">
+	{% assign tags=site.data.tags | sort %}
+	<search>
+		<form id="tagSearch">
+			<input type="search" id="tag" name="tag" placeholder="tag search"  list="tag-list" autocomplete="off" required="" />
+			<button type="submit" class="btn btn-accept" aria-label="Search" title="Search">
+				{% include common/icon.html icon="search" height=16 width=16 fill="currentColor" %}
+			</button>
+			<button type="reset" class="btn btn-reject" aria-label="Clear" title="Clear">
+				{% include common/icon.html icon="x" height=16 width=16 fill="currentColor" %}
+			</button>
+			<datalist id="tag-list">
+				{% for tag in tags %}
+				<option value="{{ tag }}"></option>
+				{% endfor %}
+			</datalist>
+		</form>
+	</search>
 	<ul id="site-tags">
-		{% assign tags=site.data.tags | sort %}
 		{% for tag in tags %}
 			<li>
-				<a href="/tags/{{ tag | slugify }}">
-					{% include common/icon.html icon="tag" height=16 width=16 fill="currentColor" %}
+				<a href="/tags/{{ tag | slugify }}" class="event-link">
 					<span>#{{ tag }}</span>
+					{% include common/icon.html icon="tag" height=16 width=16 fill="currentColor" %}
 				</a>
 			</li>
 		{% endfor %}
