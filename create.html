@@ -94,29 +94,17 @@ scripts:
 			<p>{% include common/icon.html icon="info" height="18" width="18" fill="currentColor" %} Images should be at
 				least 640x80 and in a supported type (JPEG, PNG, WebP). Max upload size is 1 MB.</p>
 		</div>
-		<div class="form-group">
-			<label for="event-tags" class="input-label">Event Tags/Keywords (multiple allowed)</label>
-			<select name="tags" id="evet-tags" class="input" multiple="">
-				<option label="#krv" value="krv" selected=""></option>
-				{% for tag in site.data.tags %}
-					<option label="#{{ tag }}" value="{{ tag }}"></option>
-				{% endfor %}
-				<!-- <option label="kernville" value="kernville"></option>
-				<option label="wofford heights" value="wofford heights"></option>
-				<option label="lake isabella" value="lake isabella"></option>
-				<option label="bodfish" value="bodfish"></option>
-				<option label="festival" value="festival"></option>
-				<option label="art" value="art"></option>
-				<option label="music" value="music"></option>
-				<option label="fundraiser" value="fundraiser"></option>
-				<option label="volunteer" value="volunteer"></option>
-				<option label="sports" value="sports"></option>
-				<option label="outdoors" value="outdoors"></option>
-				<option label="lake" value="lake"></option>
-				<option label="river" value="river"></option>
-				<option label="hiking" value="hiking"></option>
-				<option label="health" value="health"></option> -->
-			</select>
+	</fieldset>
+	<fieldset id="event-tags">
+		<legend>Event Tags (Multiple Allowed)</legend>
+		<div class="flex row wrap tag-options">
+			{% for tag in site.data.tags %}
+				<label class="tag-option btn btn-primary">
+					<span>#{{ tag }}</span>
+					<input type="checkbox" name="tags" class="hidden-check" value="{{ tag }}" hidden="" />
+					{% include common/icon.html icon="check" height=16 width=16 fill="currenttColor" %}
+				</label>
+			{% endfor %}
 		</div>
 	</fieldset>
 	<fieldset id="event-organizer" class="form-section" disabled="">

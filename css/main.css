@@ -10,6 +10,44 @@ main.card {
 	padding: 2em;
 }
 
+#tagSearch #tag {
+	padding: 0.3em;
+}
+
+#site-tags {
+	gap: 0.6em;
+	justify-content: center;
+	list-style: none;
+
+	& .event-link {
+		text-decoration: none;
+	}
+}
+
+.tag-options {
+	gap: 0.6em;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.4em;
+}
+
+.tag-option.btn {
+	padding: 0.6em 1.3em;
+	cursor: pointer;
+	transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.tag-option > .hidden-check:not(:checked) + .icon {
+	visibility: hidden;
+}
+
+.tag-option:not(:has(:checked)),.tag-option:hover:not(:has(:checked)) {
+	background-color: inherit;
+	color: inherit;
+	outline: 1px solid #dadada;
+}
+
+
 @media (max-width: 800px) {
 	#main.card {
 		padding: 2em 0.7em;

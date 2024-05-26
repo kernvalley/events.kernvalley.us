@@ -14,7 +14,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [v2.1.3]
+## [v2.1.4] - 2024-05-26
+
+### Changed
+- Create event tags now use `<input type="checkbox">` instead of `<select multiple>`
+- Improved design of tags page layout
+
+## [v2.1.3] - 2024-05-25
 
 ### Added
 - Add event tags with links to tag directory pages
