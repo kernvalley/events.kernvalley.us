@@ -36,7 +36,7 @@ document.forms['event-form'].addEventListener('submit', async event => {
 				streetAddress: data.get('location[address][streetAddress]').trim(),
 				addressLocality: data.get('location[address][addressLocality]').trim(),
 				addressRegion: data.get('location[address][addressRegion]').trim(),
-				postalCode: paresInt(data.get('location[address][postalCode]').trim()),
+				postalCode: parseInt(data.get('location[address][postalCode]').trim()),
 				addressCountry: data.get('location[address][addressCountry]'),
 			}
 		}
