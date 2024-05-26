@@ -23,10 +23,10 @@ description: Search KRV Events by event tags
 			</datalist>
 		</form>
 	</search>
-	<ul id="site-tags">
+	<ul id="site-tags" class="flex row wrap">
 		{% for tag in tags %}
-			<li>
-				<a href="/tags/{{ tag | slugify }}" class="event-link">
+			<li class="tag-list-item">
+				<a href="/tags/{{ tag | slugify }}" class="event-link btn btn-primary">
 					<span>#{{ tag }}</span>
 					{% include common/icon.html icon="tag" height=16 width=16 fill="currentColor" %}
 				</a>
