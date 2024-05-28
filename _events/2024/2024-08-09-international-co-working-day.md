@@ -15,6 +15,7 @@ tags:
   - krv-together
   - coworking
   - social
+  - professional
 startDate: 2024-08-09T17:30
 endDate: 2024-08-09T18:30
 image: https://i.imgur.com/UruYSJ4h.jpeg

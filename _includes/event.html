@@ -123,15 +123,13 @@
 			<div class="event-organizer" itemprop="organizer" itemtype="{{ include.event.organizer['@context'] | default: 'http://schema.org'}}/{{ include.event.organizer['@type'] | default: 'Organization'}}" itemscope="">
 				<h5>
 					<span>Organized by</span>
-					<span itemprop="name">
-						{% if include.event.organizer.url %}
-							<a href="{{ include.event.organizer.url }}?utm_source=krv-events&amp;utm_medium=referrer" class="event-organizer-url underline" target="_blank" rel="noopener external">
-								{{ include.event.organizer.name }}
-							</a>
-						{% else %}
-							{{ include.event.organizer.name }}
-						{% endif %}
-					</span>
+					{% if include.event.organizer.url %}
+						<a href="{{ include.event.organizer.url }}?utm_source=krv-events&amp;utm_medium=referrer" class="event-organizer-url underline" target="_blank" rel="noopener external" itemprop=="url">
+							<span itemprop="namee">{{ include.event.organizer.name }}</span>
+						</a>
+					{% else %}
+						<span itemprop="name">{{ include.event.organizer.name }}</span>
+					{% endif %}
 				</h5>
 			</div>
 		{% endif %}
