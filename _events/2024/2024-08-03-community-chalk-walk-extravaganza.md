@@ -14,6 +14,7 @@ tags:
   - outdoors
   - neighbor-to-neighbor
   - krv-together
+  - family
 startDate: 2024-08-03T09:00
 endDate: 2024-08-03T15:00
 image: https://i.imgur.com/qkamzYKh.jpeg

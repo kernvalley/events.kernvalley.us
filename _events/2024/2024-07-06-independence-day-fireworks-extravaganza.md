@@ -14,6 +14,7 @@ tags:
   - outdoors
   - lake
   - holiday
+  - family
 startDate: 2024-07-06 21:30
 endDate: 2024-07-06 23:00
 location:

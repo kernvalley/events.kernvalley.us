@@ -13,6 +13,8 @@ tags:
   - social
   - games
   - indoors
+  - children
+  - family
 startDate: 2024-06-01T12:00
 endDate: 2024-06-01T13:00
 image: https://i.imgur.com/9elccRXh.jpeg

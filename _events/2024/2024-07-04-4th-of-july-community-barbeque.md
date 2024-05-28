@@ -13,6 +13,7 @@ tags:
   - social
   - neighbor-to-neighbor
   - krv-together
+  - family
 startDate: 2024-07-04T10:00
 endDate: 2024-07-04T19:00
 image: https://i.imgur.com/0deZbXrh.png
