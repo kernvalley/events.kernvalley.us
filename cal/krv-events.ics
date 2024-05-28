@@ -3,25 +3,25 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:415302ec-e705-4e0f-95dd-fbaf3f2ecdf5
+UID:4a36a1f8-4ebe-48ac-9cc7-5fee41b8ef18
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:Memorial Day Arts & Crafts Festival
-LOCATION:7 Tobias ST, Kernville, CA 93238, US
-DESCRIPTION:A 3 day arts and crafts festival at Circle Park, Kernville CA p
- ut on by the Kern River Valley Art Association.
-DTSTAMP:20240526T023617Z
-LAST-MODIFIED:20240526T023617Z
-DTSTART:20240525T160000Z
-DTEND:20240527T200000Z
-ORGANIZER;CN=Kern Valley Art Association:mailto:info@krvaa.org
-URL:https://www.facebook.com/events/1551195532330999/?utm_source=krv-events
- &utm_medium=referrer
+SUMMARY:Unplugged Gaming Hour
+LOCATION:7054 Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:Family time is essential, so why not spend it at the library pl
+ aying free games?
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240601T190000Z
+DTEND:20240601T200000Z
+ORGANIZER;CN=Kern River Valley Branch Library:mailto:info@kernlibrary.org
+URL:https://www.facebook.com/events/821008026054905/821008029388238/?utm_so
+ urce=krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:3169dc50-060c-4a28-8637-1665f4718e10
+UID:8b1129ac-26e6-48b6-bcba-1babbb39595b
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -30,8 +30,8 @@ SUMMARY:Wellness Week Kick-off Block Party
 LOCATION:14 Sierra Drive, Kernville, CA 93238, US
 DESCRIPTION:Come together to participate in yoga, movement classes, mindful
  ness practice, and tai chi.
-DTSTAMP:20240526T023617Z
-LAST-MODIFIED:20240526T023617Z
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
 DTSTART:20240608T160000Z
 DTEND:20240609T010000Z
 ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
@@ -39,7 +39,7 @@ URL:https://portal.goldenvolunteer.com/opportunities/tFbVk3TSX5?utm_source=
  krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:e0064de0-df52-4f63-a0ad-44665c076c85
+UID:178f32e7-4743-4e5e-b455-2cf8f2e9ed5a
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -47,8 +47,8 @@ CLASS:PUBLIC
 SUMMARY:Art Reception and Community Gathering
 LOCATION:6749 Wofford Blvd, Wofford Heights, CA 93285, US
 DESCRIPTION:Come together and connect with neighbors over an art reception.
-DTSTAMP:20240526T023617Z
-LAST-MODIFIED:20240526T023617Z
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
 DTSTART:20240608T233000Z
 DTEND:20240609T030000Z
 ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
@@ -56,7 +56,7 @@ URL:https://portal.goldenvolunteer.com/opportunities/GjsgWZJu4S?utm_source=
  krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:5f564489-e737-4fbc-a54d-3e30ffd16f87
+UID:b37a2b29-9cdc-49ce-817f-3ab58ed37af1
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -64,8 +64,8 @@ CLASS:PUBLIC
 SUMMARY:LBGQT, Family and Friends Craft Night
 LOCATION:14 Sierra Dr, Kernville, CA 93238, US
 DESCRIPTION:Arts and craft celebrating Pride Month.
-DTSTAMP:20240526T023617Z
-LAST-MODIFIED:20240526T023617Z
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
 DTSTART:20240612T000000Z
 DTEND:20240612T013000Z
 ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
@@ -73,7 +73,7 @@ URL:https://portal.goldenvolunteer.com/opportunities/dzUDyqZwku?utm_source=
  krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:3c93cda8-ad56-4236-9bc8-1d427203de54
+UID:2bad56f7-e562-4737-8ab4-4836a36ef63b
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -81,8 +81,8 @@ CLASS:PUBLIC
 SUMMARY:Poetry Anthology Book Reading & Signing
 LOCATION:6701 Wofford Blvd, Wofford Heights, CA 93285, US
 DESCRIPTION:Expand community awareness for our local art and culture.
-DTSTAMP:20240526T023617Z
-LAST-MODIFIED:20240526T023617Z
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
 DTSTART:20240615T223000Z
 DTEND:20240616T003000Z
 ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
@@ -90,7 +90,58 @@ URL:https://portal.goldenvolunteer.com/opportunities/6OdRQOQlwS?utm_source=
  krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:89912906-4c69-47ce-b5ab-f54cc3abcd93
+UID:075a53ae-2549-40f0-a90b-a736a846b7ef
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Mask Making Workshop
+LOCATION:14 Sierra Dr, Kernville, CA 93238, US
+DESCRIPTION:Build connections with neighbors over mask-making workshops.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240619T000000Z
+DTEND:20240619T020000Z
+ORGANIZER;CN=Rivestone Wellness:mailto:hello@riverstonewellness.org
+URL:https://portal.goldenvolunteer.com/opportunities/7hVklLnl8W?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:754b1208-ea43-4d57-b115-44dd1385f087
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:International Yoga Day - Yoga in the Park
+LOCATION:10 Kern River Dr, Kernville, CA 93238, US
+DESCRIPTION:Community yoga outside in Kernville.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240622T010000Z
+DTEND:20240622T020000Z
+ORGANIZER;CN=Rivestone Wellness:mailto:hello@riverstonewellness.org
+URL:https://portal.goldenvolunteer.com/opportunities/HjAsIC71CO?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:bbcd26b0-2fe5-4457-80bc-81f0986e6287
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:4th of July Community Barbeque
+LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:Good food, music and games!
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240704T170000Z
+DTEND:20240705T020000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://portal.goldenvolunteer.com/opportunities/2r1td380cE?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:a81f6ed4-009a-4e4b-946c-9926e2a7206d
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -100,8 +151,8 @@ LOCATION:Lake Isabella, CA 93240, US
 DESCRIPTION:Join the Independence Day Fireworks Extravaganza in Lake Isabel
  la, CA. Experience a breathtaking fireworks display at Engineer Point near
   the Auxiliary Dam.
-DTSTAMP:20240526T023617Z
-LAST-MODIFIED:20240526T023617Z
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
 DTSTART:20240707T043000Z
 DTEND:20240707T060000Z
 ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:office@kernriverv
@@ -110,7 +161,7 @@ URL:https://events.kernvalley.us/2024/07/06/independence-day-fireworks-extr
  avaganza
 END:VEVENT
 BEGIN:VEVENT
-UID:9d9524ae-e521-47e1-aa1d-3896ac24d633
+UID:dcb158b9-14fc-46cd-9ece-e60d8f2fdfc1
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -120,8 +171,8 @@ LOCATION:4901 Lake Isabella Blvd, Lake Isabella, CA 93240, US
 DESCRIPTION:Join us as we celebrate the Ribbon Cutting Ceremony for the Geo
  rge & Darlene Randall Skatepark and have a Block Party as the Lake Isabell
  a Kick-Off of the Neighbor-to-Neighbor Program
-DTSTAMP:20240526T023617Z
-LAST-MODIFIED:20240526T023617Z
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
 DTSTART:20240712T160000Z
 DTEND:20240712T190000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
@@ -129,7 +180,76 @@ URL:https://portal.goldenvolunteer.com/opportunities/V0Lh5ehWcj?utm_source=
  krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:ab869a0d-c70e-49b8-a6f9-7e063de84bb5
+UID:b1843825-0f8a-4cd1-b120-7e89e16d1780
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Full Moon Gathering
+LOCATION:14 Sierra Dr, Kernville, CA 93238, US
+DESCRIPTION:Connect community with discussion and mindfulness practice.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240722T010000Z
+DTEND:20240722T030000Z
+ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
+URL:https://portal.goldenvolunteer.com/opportunities/CBr8vjv6v7?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:6e0b0848-6880-4ebd-81e7-83a50d3b167d
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Film Camp Premiere Community Gathering
+LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:Provide video production opportunities for community youth.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240726T233000Z
+DTEND:20240727T030000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://portal.goldenvolunteer.com/opportunities/rVDVmdFfUk?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:fd9aa0fa-a266-4141-8e5b-e8510af6c80c
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Yoga in the Park
+LOCATION:10 Kern River Drive, Kernville, CA 93238, US
+DESCRIPTION:Provide community yoga outside.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240803T010000Z
+DTEND:20240803T020000Z
+ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
+URL:https://portal.goldenvolunteer.com/opportunities/lFzjBdtpl1?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:c1e2a4e5-0866-469b-8064-89b62b5d0ebd
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Community Chalk Walk Extravaganza
+LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:Provide artistic opportunities for community gathering activiti
+ es.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240803T160000Z
+DTEND:20240803T220000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://portal.goldenvolunteer.com/opportunities/K47iqYlwhB?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:ca9144fd-6bac-4943-9bd6-28718b36fcfb
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -138,12 +258,99 @@ SUMMARY:International Co-working Day
 LOCATION:11113 Kernville Rd, Kernville, CA 93238, US
 DESCRIPTION:Come together to learn about the international Co-working Movem
  ent.
-DTSTAMP:20240526T023617Z
-LAST-MODIFIED:20240526T023617Z
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
 DTSTART:20240810T003000Z
 DTEND:20240810T013000Z
 ORGANIZER;CN=Sierra Shared Spaces:mailto:justin@kernvillecowork.com
 URL:https://portal.goldenvolunteer.com/opportunities/EJkIEWpgbL?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:8bd85c81-fa2c-4d49-b913-092e74d04a70
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Community Ice Cream Social
+LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:Come together and enjoy a sweet treat!
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240825T200000Z
+DTEND:20240826T000000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://portal.goldenvolunteer.com/opportunities/4kdUhIAbqj?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:21e86d97-3d04-434f-ae07-120931520f33
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Labor Day Weekend Block Parties
+LOCATION:317 E Evans Rd, Wofford Heights, CA 93285, US
+DESCRIPTION:Celebrate and reintroduce the rehabilitated Wofford Heights Par
+ k to the community.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240901T040000Z
+DTEND:20240902T230000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://portal.goldenvolunteer.com/opportunities/aQHn9CLCrR?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:372931ca-4a14-4e09-a53e-f6db45c4b758
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Full Moon Gathering
+LOCATION:14 Sierra Dr, Kernville, CA 93238, US
+DESCRIPTION:Connect community with discussion and mindfulness practice.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240916T010000Z
+DTEND:20240916T030000Z
+ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
+URL:https://portal.goldenvolunteer.com/opportunities/CBr8vjv6v7?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:ad34c74c-c758-4b13-a5c7-ce1c5d85bb1d
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Good Neighbor Day Celebration
+LOCATION:11113 Kernville Rd, Kernville, CA 93238, US
+DESCRIPTION:Social gathering event to continue connecting neighbors with mu
+ sic, games, and resource-sharing.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240928T200000Z
+DTEND:20240929T000000Z
+ORGANIZER;CN=Sierra Shared Spaces:mailto:justin@kernvillecowork.com
+URL:https://portal.goldenvolunteer.com/opportunities/FA13UayABG?utm_source=
+ krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:5e7dd301-f00e-40b8-9d5d-c487e158a55c
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:International Food and Community Celebration
+LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:Expand community culture through food and music.
+DTSTAMP:20240528T231944Z
+LAST-MODIFIED:20240528T231944Z
+DTSTART:20240929T170000Z
+DTEND:20240929T230000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://portal.goldenvolunteer.com/opportunities/YzmL03gOtA?utm_source=
  krv-events&utm_medium=referrer
 END:VEVENT
 END:VCALENDAR
