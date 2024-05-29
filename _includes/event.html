@@ -124,8 +124,8 @@
 				<h5>
 					<span>Organized by</span>
 					{% if include.event.organizer.url %}
-						<a href="{{ include.event.organizer.url }}?utm_source=krv-events&amp;utm_medium=referrer" class="event-organizer-url underline" target="_blank" rel="noopener external" itemprop=="url">
-							<span itemprop="namee">{{ include.event.organizer.name }}</span>
+						<a href="{{ include.event.organizer.url }}?utm_source=krv-events&amp;utm_medium=referrer" class="event-organizer-url underline" target="_blank" rel="noopener external" itemprop="url">
+							<span itemprop="name">{{ include.event.organizer.name }}</span>
 						</a>
 					{% else %}
 						<span itemprop="name">{{ include.event.organizer.name }}</span>
