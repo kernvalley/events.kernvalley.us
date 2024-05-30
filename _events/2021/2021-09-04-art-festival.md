@@ -1,6 +1,5 @@
 ---
 name: Kernville Arts & Crafts Festival
-pinned: true
 date: 2021-08-12
 imgur: https://i.imgur.com/dR36PN4.jpg
 image: https://i.imgur.com/dR36PN4.jpg

@@ -5,7 +5,6 @@ startDate: 2021-09-23 17:00
 endDate: 2021-09-23 19:00
 image: https://i.imgur.com/0iCmITa.jpg
 imgur: https://i.imgur.com/0iCmITa.jpg
-pinned: true
 location:
   name: Frandy Park Campground
   identifier: f002cc27-7a41-4f4c-abb1-feeae4c45132

@@ -7,7 +7,6 @@ startDate: '2020-10-31 15:00'
 endDate: '2020-10-31 17:00'
 image: 'https://i.imgur.com/Sjd64uj.jpg'
 imgur: 'https://i.imgur.com/Sjd64uj.jpg'
-pinned: true
 location:
   name: Grocery Outlet Bargain Market
   streetAddress: 6415 Lake Isabella Blvd.

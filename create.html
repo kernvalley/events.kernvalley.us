@@ -82,6 +82,14 @@ scripts:
 				autocomplete="off" placeholder="Short description of event" required="" />
 		</div>
 		<div class="form-group">
+			<label for="event-attendance-mode" class="input-label">Event Attendance Type</label>
+			<select name="eventAttendanceMode"  id="event-attendance-mode" class="input" required="">
+				<option label="In-Person" value="OfflineEventAttendanceMode" selected=""></option>
+				<option label="Online" value="OnlineEventAttendanceMode"></option>
+				<!-- <option label="Hybrid (Online &amp; In-Person)" value="MixedEventAttendanceMode"></option> -->
+			</select>
+		</div>
+		<div class="form-group">
 			<label for="event-image" class="input-label required">Image URL</label>
 			<input type="url" name="image" id="event-image" class="input" placeholder="https://example.com/image.jpg"
 				required="" />
@@ -107,44 +115,12 @@ scripts:
 			{% endfor %}
 		</div>
 	</fieldset>
-	<fieldset id="event-organizer" class="form-section" disabled="">
-		<legend>Organizer Info</legend>
-		<div class="form-group">
-			<label for="event-organizer-name" class="input-label required">Organizer Name</label>
-			<input type="text" name="organizer[name]" id="event-organizer-name" class="input" placeholder="Organizer Name" autocomplete="organization" required="" />
-		</div>
-		<div class="form-group">
-			<label for="event-organizer-type" class="input-label required">Organizer Type</label>
-			<select name="organizer[@type]" id="event-organizer-type" class="input" required="">
-				<option label="Select a type" value=""></option>
-				<option label="Person" value="Person"></option>
-				<option label="Organization" value="Organization"></option>
-				<option label="Local Business" value="LocalBusiness"></option>
-				<option label="Library" value="Library"></option>
-				<option label="School" value="School"></option>
-				<option label="Restaurant" value="Restaurant"></option>
-				<option label="Bar or Pub" value="BarOrPub"></option>
-			</select>
-		</div>
-		<div class="form-group">
-			<label for="event-organizer-email" class="input-label required">Email</label>
-			<input type="email" name="organizer[email]" id="event-organizer-email" class="input"
-				placeholder="user@example.com" autocomplete="email" required="" />
-		</div>
-		<div class="form-group">
-			<label for="event-organizer-phone" class="input-label">Phone</label>
-			<input type="tel" name="organizer[telephone]" id="event-organizer-phone" class="input" placeholder="+1-555-555-5555" autocomplete="tel" />
-		</div>
-		<div class="form-group">
-			<label for="event-organizer-url" class="input-label">Website</label>
-			<input type="url" name="organizer[url]" id="event-organizer-url" class="input" placeholder="https://example.com" />
-		</div>
-	</fieldset>
-	<fieldset id="event-location" class="form-section" disabled="">
+	<fieldset id="event-location" class="form-section" disabled="" hidden="">
 		<legend>Event Location</legend>
 		<div class="form-group">
 			<label for="event-location-name" class="input-label required">Location Name</label>
-			<input type="text" name="location[name]" id="event-location-name" class="input" placeholder="Location Name" autocomplete="off" required="" />
+			<input type="text" name="location[name]" id="event-location-name" class="input" placeholder="Location Name"
+				autocomplete="off" required="" />
 		</div>
 		<div class="form-group">
 			<label for="event-location-type" class="input-label required">Location Type</label>
@@ -175,21 +151,26 @@ scripts:
 		<input type="hidden" name="location[address][@type]" value="PostalAddress" />
 		<div class="form-group">
 			<label for="event-location-street-address" class="input-label">Street Address</label>
-			<input type="text" name="location[address][streetAddress]" id="event-location-street-address" class="input" placeholder="123 Some St" pattern="\d{1,5}\s[A-Za-z0-9.,\- ]+" autocomplete="off" />
+			<input type="text" name="location[address][streetAddress]" id="event-location-street-address" class="input"
+				placeholder="123 Some St" pattern="\d{1,5}\s[A-Za-z0-9.,\- ]+" autocomplete="off" />
 		</div>
 		<div class="form-group">
 			<label for="event-location-address-locality" class="input-label required">City</label>
-			<input type="text" name="location[address][addressLocality]" id="event-location-address-locality" class="input" placeholder="City Name" autocomplete="off" list="city-list" required="" />
+			<input type="text" name="location[address][addressLocality]" id="event-location-address-locality" class="input"
+				placeholder="City Name" autocomplete="off" list="city-list" required="" />
 		</div>
 		<div class="form-group">
 			<label for="event-location-address-region" class="input-label required">State</label>
-			<select name="location[address][addressRegion]" id="event-location-address-region" class="input" autocomplete="off" required="">
+			<select name="location[address][addressRegion]" id="event-location-address-region" class="input"
+				autocomplete="off" required="">
 				<option label="California" value="CA" selected=""></option>
 			</select>
 		</div>
 		<div class="form-group">
 			<label for="event-location-postal-code" class="input-label required">Zip/Postal Code</label>
-			<input type="text" name="location[address][postalCode]" id="event-location-postal-code" class="input" inputmode="numeric" placeholder="#####" pattern="\d{5}" minlength="5" maxlength="5" list="zip-list" autocomplete="off" required="" />
+			<input type="text" name="location[address][postalCode]" id="event-location-postal-code" class="input"
+				inputmode="numeric" placeholder="#####" pattern="\d{5}" minlength="5" maxlength="5" list="zip-list"
+				autocomplete="off" required="" />
 		</div>
 		<div class="form-group" hidden="">
 			<label for="event-location-country" class="input-label required">Country</label>
@@ -200,14 +181,63 @@ scripts:
 		<input type="hidden" name="location[geo][@type]" value="GeoCoordinates" />
 		<div class="form-group">
 			<label for="event-geo-latitude" class="input-label">Latitude</label>
-			<input type="text" name="location[geo][latitude]" id="event-geo-latitude" class="input" inputmode="numeric" pattern="-?\d{1,3}\.\d+" placeholder="###.######" />
+			<input type="text" name="location[geo][latitude]" id="event-geo-latitude" class="input" inputmode="numeric"
+				pattern="-?\d{1,3}\.\d+" placeholder="###.######" />
 		</div>
 		<div class="form-group">
 			<label for="event-geo-longitude" class="input-label">Longitude</label>
-			<input type="text" name="location[geo][longitude]" id="event-geo-longitude" class="input" inputmode="numeric" pattern="-?\d{1,3}\.\d+" placeholder="###.######" />
+			<input type="text" name="location[geo][longitude]" id="event-geo-longitude" class="input" inputmode="numeric"
+				pattern="-?\d{1,3}\.\d+" placeholder="###.######" />
 		</div>
 		<div class="status-box info">
-			<p>{% include common/icon.html icon="info" height="18" width="18" fill="currentColor" %} Latitude &amp; Longitude are required for map to event location, but optional in this form.</p>
+			<p>{% include common/icon.html icon="info" height="18" width="18" fill="currentColor" %} Latitude &amp;
+				Longitude are required for map to event location, but optional in this form.</p>
+		</div>
+	</fieldset>
+	<fieldset id="event-virtual-location" disabled="">
+		<legend>Virtual Location / URL</legend>
+		<input type="hidden" name="event[location][@type]" value="VirtualLocation" readonly="" />
+		<div class="form-group">
+			<label for="event-virtual-location-name" class="input-label required">Site/Link Name</label>
+			<input type="text" name="event[location][name]" id="event-virtual-location-name" class="input" placeholder="Site/Link name" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-virtual-location-url" class="input-label required">Event URL</label>
+			<input type="url" name="event[location][url]" id="event-virtual-location-url" class="input"
+				placeholder="https://example.com" required="" />
+		</div>
+	</fieldset>
+	<fieldset id="event-organizer" class="form-section" disabled="" hidden="">
+		<legend>Organizer Info</legend>
+		<div class="form-group">
+			<label for="event-organizer-name" class="input-label required">Organizer Name</label>
+			<input type="text" name="organizer[name]" id="event-organizer-name" class="input" placeholder="Organizer Name" autocomplete="organization" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-organizer-type" class="input-label required">Organizer Type</label>
+			<select name="organizer[@type]" id="event-organizer-type" class="input" required="">
+				<option label="Select a type" value=""></option>
+				<option label="Person" value="Person"></option>
+				<option label="Organization" value="Organization"></option>
+				<option label="Local Business" value="LocalBusiness"></option>
+				<option label="Library" value="Library"></option>
+				<option label="School" value="School"></option>
+				<option label="Restaurant" value="Restaurant"></option>
+				<option label="Bar or Pub" value="BarOrPub"></option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="event-organizer-email" class="input-label required">Email</label>
+			<input type="email" name="organizer[email]" id="event-organizer-email" class="input"
+				placeholder="user@example.com" autocomplete="email" required="" />
+		</div>
+		<div class="form-group">
+			<label for="event-organizer-phone" class="input-label">Phone</label>
+			<input type="tel" name="organizer[telephone]" id="event-organizer-phone" class="input" placeholder="+1-555-555-5555" autocomplete="tel" />
+		</div>
+		<div class="form-group">
+			<label for="event-organizer-url" class="input-label">Website</label>
+			<input type="url" name="organizer[url]" id="event-organizer-url" class="input" placeholder="https://example.com" />
 		</div>
 	</fieldset>
 	<fieldset id="event-article" class="form-section" disabled="">

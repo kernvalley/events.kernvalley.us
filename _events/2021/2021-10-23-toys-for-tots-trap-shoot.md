@@ -4,7 +4,6 @@ name: Toys for Tots Trap Shoot
 image: https://i.imgur.com/GdoLOvHm.jpg
 #imgur: https://i.imgur.com/GdoLOvH.jpg
 description: Raffles, prizes, lunch, up to 100 shot trap shoot
-pinned: true
 tags:
   - toys 4 tots
   - krvga

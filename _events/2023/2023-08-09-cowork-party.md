@@ -3,7 +3,6 @@ name: Kernville Cowork Anniversary and Nonprofit Launch Party
 title: Kernville Cowork Anniversary and Nonprofit Launch Party
 image: https://i.imgur.com/C0YhxU3m.jpg
 # imgur: https://i.imgur.com/C0YhxU3.jpg
-pinned: true
 description: Join Kernville Cowork along with musical guest Jim Ranger to celebrate our 5 yr anniversary and launch of our brand new nonprofit
 eventLink: https://www.eventbrite.com/e/kernville-cowork-anniversary-and-nonprofit-launch-party-tickets-681352241897?aff=oddtdtcreator
 tags:

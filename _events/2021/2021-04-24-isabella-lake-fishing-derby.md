@@ -5,7 +5,6 @@ startDate: '2021-04-24 06:00'
 endDate: '2021-09-06 20:00'
 eventAttendanceMode: MixedEventAttendanceMode
 eventStatus: EventScheduled
-pinned: true
 location:
   name: Isabella Lake
   addressLocality: Lake Isabella

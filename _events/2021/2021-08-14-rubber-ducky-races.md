@@ -1,7 +1,6 @@
 ---
 name: Rubber Ducky Races
 description: The Rubber Ducky Races will be held at Rivernook Campground
-pinned: true
 tags:
   - events
   - kernville

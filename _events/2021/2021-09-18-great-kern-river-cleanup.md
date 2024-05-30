@@ -4,7 +4,6 @@ title: The Great Kern River Cleanup
 date: 2021-08-12
 startDate: '2021-09-18 10:00'
 endDate: '2021-09-18 14:00'
-pinned: true
 eventStatus: EventScheduled
 location:
   "@type": Place
