@@ -7,7 +7,7 @@ name: Rockslide Concert
 title: Rockslide Concert
 description: Great music! Great food! Great drinks! It's the Trifecta... What more could you ask for?
 tags:
-  - lake isabella
+  - kernville
   - food
   - music
   - concert
