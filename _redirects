@@ -6,8 +6,12 @@ http://youthful-dijkstra-321f5b.netlify.com/* https://events.kernvalley.us/:spla
 http://events.kernvalley.us/* https://events.kernvalley.us/:splat 301!
 
 /contact	          https://contact.kernvalley.us/	301!
-/.well-known/events /events.json                    301!
-/events/2021-rockin-river-beer-and-music/ /events/2021-kern-river-beer-and-music/
-/2023/12/13/wfd /2024-02-16/wfd
 /manifest.json      /webapp.webmanifest
-/events/whiskey-flat-days-kickoff-dinner/ /events/2022-whiskey-flat-days-kickoff-dinner/ 301!
+/.well-known/events /events.json                    301!
+/events/2021-rockin-river-beer-and-music/ /2021/10/16/kern-river-beer-and-music
+/events/whiskey-flat-days-kickoff-dinner/ /2022/01/07/whiskey-flat-days-kickoff-dinner
+/events/2020-jeanette-rogers-erickson-heart-walk/ /2020/02/26/jeanette-rogers-erickson-heart-walk
+/events/2021-keyesville-classic/ /2021/06/30/keyesville-classic
+/events/2020-kernville-nature-walk-build/ /2020/01/21/kernville-nature-walk-build
+/events/2020-whiskey-flat-days-kickoff-dinner/ /2020/01/03/whiskey-flat-days-kickoff-dinner
+/2023/12/13/wfd /2024-02-16/wfd
