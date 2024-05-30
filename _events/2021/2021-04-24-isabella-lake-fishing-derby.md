@@ -1,6 +1,6 @@
 ---
 name: Isabella Lake Fishing Derby
-date: 2021-02-26
+date: 2021-04-24
 startDate: '2021-04-24 06:00'
 endDate: '2021-09-06 20:00'
 eventAttendanceMode: MixedEventAttendanceMode

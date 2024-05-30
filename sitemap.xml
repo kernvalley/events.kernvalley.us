@@ -27,7 +27,11 @@ index: false
 	{% for page in site.events %}
 	<url>
 		<loc>{{ page.url | absolute_url }}</loc>
-		<lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+		{% if post.updated %}
+			<lastmod>{{ page.updated | date: '%Y-%m-%d' }}</lastmod>
+		{% else %}
+			<lastmod>{{ page.date | date: '%Y-%m-%d' }}</lastmod>
+		{% endif %}
 	</url>
 	{% endfor %}
 </urlset>

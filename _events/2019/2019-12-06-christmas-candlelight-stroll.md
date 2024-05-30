@@ -1,6 +1,6 @@
 ---
 name: Christmas Candlelight Stroll
-date: 2019-12-02
+date: 2019-12-06
 startDate: '2019-12-06 18:00'
 endDate: '2019-12-06 20:00'
 eventStatus: Rescheduled

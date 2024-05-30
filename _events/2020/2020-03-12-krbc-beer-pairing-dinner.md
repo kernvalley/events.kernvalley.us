@@ -1,7 +1,7 @@
 ---
 name: KRBC Beer Pairing Dinner
 title: KRBC Beer Pairing Dinner
-date: 2020-03-04
+date: 2020-03-12
 startDate: '2020-03-12 18:00'
 endDate: '2020-03-12 20:00'
 pinned: false
