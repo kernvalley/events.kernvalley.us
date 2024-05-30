@@ -2,7 +2,7 @@
 name: Whiskey Flat Days Kick Off Dinner
 title: Whiskey Flat Days Kick Off Dinner
 updated: 2020-01-02 17:39
-date: 2019-12-12
+date: 2020-01-03
 startDate: '2020-01-03 17:00'
 endDate: '2020-01-03 22:00'
 pinned: false
