@@ -43,5 +43,6 @@ performer:
     - https://www.facebook.com/profile.php?id=61555664770194
 
 ---
+<!-- markdownlint-disable -->
 Head over to Kernville this Sunday for a live performance by <a href="{{ page.performer.url }}" rel="noopener noreferrer external" target="_blank">{{ page.performer.name }}!</a> Enjoy some great music, amazing food served by <a  href="https://kernriverceviche.com/" rel="noopener noreferrer external" target="_blank">Kern River Ceviche Company</a>, and, as always, plenty of libations served by <a href="{{ page.organizer.url }}" rel="noreferrer noopener external" target="_blank">{{ page.organizer.name }}</a>!
 
