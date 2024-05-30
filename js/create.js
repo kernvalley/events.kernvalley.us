@@ -21,6 +21,7 @@ document.forms['event-form'].addEventListener('submit', async event => {
 		tags: data.getAll('tags'),
 		startDate: data.get('startDate'),
 		endDate: data.get('endDate'),
+		eventAttendanceMode: data.get('eventAttendanceMode'),
 		image: data.get('image').trim(),
 		organizer: {
 			'@type': data.get('organizer[@type]'),
@@ -28,7 +29,11 @@ document.forms['event-form'].addEventListener('submit', async event => {
 			email: data.get('organizer[email]').trim(),
 			url: data.get('organizer[url]').trim(),
 		},
-		location: {
+		location: data.get('location[@type]') === 'VirtualLocation' ? {
+			'@type': 'VirtualLocation',
+			name: data.get('location[name]').trim(),
+			url: data.get('location[url]').trim(),
+		} : {
 			'@type': data.get('location[@type]'),
 			name: data.get('location[name]').trim(),
 			address: {
@@ -168,7 +173,6 @@ document.getElementById('preview-md').addEventListener('click', async ({ target 
 	}
 });
 
-document.querySelectorAll('fieldset:disabled, button:disabled').forEach(el => el.disabled = false);
 
 document.getElementById('import-md').addEventListener('change', async event => {
 	const target = event.target;
@@ -212,6 +216,17 @@ document.getElementById('import-md').addEventListener('change', async event => {
 	}
 });
 
+function updateAttendance() {
+	const isVirtual = document.getElementById('event-attendance-mode').value === 'OnlineEventAttendanceMode';
+	const location = document.getElementById('event-location');
+	const virtualLocation = document.getElementById('event-virtual-location');
+
+	location.hidden = isVirtual;
+	location.disabled = isVirtual;
+	virtualLocation.hidden = ! isVirtual;
+	virtualLocation.disabled = ! isVirtual;
+}
+
 document.getElementById('event-redirect').addEventListener('change', ({ target }) => {
 	// Disable article if redirect URL is set
 	const content = document.getElementById('event-body');
@@ -220,8 +235,14 @@ document.getElementById('event-redirect').addEventListener('change', ({ target }
 	content.labels.forEach(label => label.classList.toggle('required', ! disable));
 });
 
+document.getElementById('event-attendance-mode').addEventListener('change', updateAttendance);
+
 document.querySelectorAll('[data-close]').forEach(el => {
 	el.addEventListener('click', ({ currentTarget }) => {
 		document.querySelector(currentTarget.dataset.close).close();
 	});
 });
+
+document.querySelectorAll('fieldset:disabled:not([hidden]), button:disabled').forEach(el => el.disabled = false);
+
+updateAttendance();

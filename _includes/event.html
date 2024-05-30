@@ -65,8 +65,15 @@
 		<hr />
 		<div class="event-location" itemprop="location" itemtype="http://schema.org/{{ include.event.location['@type'] | default: 'Place' }}" itemscope="">
 			{% if event.location.name %}
-				{% include common/icon.html icon="location" fill="currentColor" height="16" width="16" %}
-				<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
+				{% if event.location['@type'] == 'VirtualLocation' %}
+				<a href="{{ event.location.url }}" itemprop="url" target="_blank" rel="noopener noreferrer external">
+						{% include common/icon.html icon="link-external" fill="currentColor" height="16" width="16" %}
+						<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
+					</a>
+				{% else  %}
+					{% include common/icon.html icon="location" fill="currentColor" height="16" width="16" %}
+					<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
+				{% endif %}
 			{% endif %}
 			{% if include.event.location.addressRegion %}
 				{% include common/address.html address=include.event.location itemprop='address' %}

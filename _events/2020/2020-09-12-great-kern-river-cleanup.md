@@ -4,7 +4,6 @@ title: The Great Kern River Cleanup
 date: 2020-08-30
 startDate: '2020-09-12 10:00'
 endDate: '2020-09-12 14:00'
-pinned: true
 eventStatus: EventRescheduled
 location:
   name: Kernville Chamber of Commerce

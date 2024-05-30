@@ -7,7 +7,6 @@ startDate: '2020-10-31 15:00'
 endDate: '2020-10-31 22:00'
 image: 'https://i.imgur.com/1mVcTDY.png'
 imgur: 'https://i.imgur.com/1mVcTDY.png'
-pinned: true
 location:
   name: Rivernook Campgrounds
   streetAddress: 14001 Sierra Way

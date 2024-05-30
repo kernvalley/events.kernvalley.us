@@ -4,7 +4,6 @@ date: 2021-01-29
 startDate: '2021-02-12 10:00'
 endDate: '2021-02-15 18:00'
 eventStatus: EventCancelled
-pinned: true
 location:
   name: Kernville
   addressLocality: Kernville

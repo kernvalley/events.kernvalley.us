@@ -4,7 +4,6 @@ title: Keyesville Classic
 date: 2021-06-30
 startDate: '2021-10-23 07:30'
 endDate: '2021-10-23 13:30'
-pinned: true
 location:
   name: Keyesville Classic Staging Area
   addressLocality: Lake Isabella
