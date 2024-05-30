@@ -21,6 +21,7 @@ document.forms['event-form'].addEventListener('submit', async event => {
 		tags: data.getAll('tags'),
 		startDate: data.get('startDate'),
 		endDate: data.get('endDate'),
+		eventAttendanceMode: data.get('eventAttendanceMode'),
 		image: data.get('image').trim(),
 		organizer: {
 			'@type': data.get('organizer[@type]'),
@@ -28,9 +29,10 @@ document.forms['event-form'].addEventListener('submit', async event => {
 			email: data.get('organizer[email]').trim(),
 			url: data.get('organizer[url]').trim(),
 		},
-		location: data.get('location[@type]') === 'VirtualLocation'? {
+		location: data.get('location[@type]') === 'VirtualLocation' ? {
 			'@type': 'VirtualLocation',
-			url: data.get('locattion[url]').trim(),
+			name: data.get('location[name]').trim(),
+			url: data.get('location[url]').trim(),
 		} : {
 			'@type': data.get('location[@type]'),
 			name: data.get('location[name]').trim(),

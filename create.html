@@ -103,7 +103,7 @@ scripts:
 				least 640x80 and in a supported type (JPEG, PNG, WebP). Max upload size is 1 MB.</p>
 		</div>
 	</fieldset>
-	<fieldset id="event-tags">
+	<fieldset id="event-tags" disabled="">
 		<legend>Event Tags (Multiple Allowed)</legend>
 		<div class="flex row wrap tag-options">
 			{% for tag in site.data.tags %}
@@ -194,20 +194,20 @@ scripts:
 				Longitude are required for map to event location, but optional in this form.</p>
 		</div>
 	</fieldset>
-	<fieldset id="event-virtual-location" disabled="">
+	<fieldset id="event-virtual-location" disabled="" hidden="">
 		<legend>Virtual Location / URL</legend>
-		<input type="hidden" name="event[location][@type]" value="VirtualLocation" readonly="" />
+		<input type="hidden" name="location[@type]" value="VirtualLocation" readonly="" />
 		<div class="form-group">
 			<label for="event-virtual-location-name" class="input-label required">Site/Link Name</label>
-			<input type="text" name="event[location][name]" id="event-virtual-location-name" class="input" placeholder="Site/Link name" required="" />
+			<input type="text" name="location[name]" id="event-virtual-location-name" class="input" placeholder="Site/Link name" required="" />
 		</div>
 		<div class="form-group">
 			<label for="event-virtual-location-url" class="input-label required">Event URL</label>
-			<input type="url" name="event[location][url]" id="event-virtual-location-url" class="input"
+			<input type="url" name="location[url]" id="event-virtual-location-url" class="input"
 				placeholder="https://example.com" required="" />
 		</div>
 	</fieldset>
-	<fieldset id="event-organizer" class="form-section" disabled="" hidden="">
+	<fieldset id="event-organizer" class="form-section">
 		<legend>Organizer Info</legend>
 		<div class="form-group">
 			<label for="event-organizer-name" class="input-label required">Organizer Name</label>

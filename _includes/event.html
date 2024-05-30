@@ -67,7 +67,7 @@
 			{% if event.location.name %}
 				{% if event.location['@type'] == 'VirtualLocation' %}
 				<a href="{{ event.location.url }}" itemprop="url" target="_blank" rel="noopener noreferrer external">
-						{% include common/icon.html icon="link" fill="currentColor" height="16" width="16" %}
+						{% include common/icon.html icon="link-external" fill="currentColor" height="16" width="16" %}
 						<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
 					</a>
 				{% else  %}
