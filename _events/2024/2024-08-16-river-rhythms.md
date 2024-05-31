@@ -36,11 +36,11 @@ location:
     latitude: 35.7551597
     longitude: -118.4249668
 performer:
-  '@type': MusicGroup
-  name: ?????
-  url: "#"
-  image: https://cdn.kernvalley.us/img/raster/missing-img.png
-  # sameAs:
-  #   - https://www.facebook.com/profile.php?id=61555664770194
+  - '@type': MusicGroup
+    name: ?????
+    url: "#"
+    image: https://cdn.kernvalley.us/img/raster/missing-img.png
+    # sameAs:
+    #   - https://www.facebook.com/profile.php?id=61555664770194
 ---
 Bands, sponsors, and other info go here...

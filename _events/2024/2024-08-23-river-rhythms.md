@@ -36,11 +36,11 @@ location:
     latitude: 35.7551597
     longitude: -118.4249668
 performer:
-  '@type': MusicGroup
-  name: Zen Zeppelin
-  url: https://www.facebook.com/zeptribzen/
-  image: https://i.imgur.com/8aI3pdxt.jpeg
-  sameAs:
-    - https://www.facebook.com/zeptribzen/
+  - '@type': MusicGroup
+    name: Zen Zeppelin
+    url: https://www.facebook.com/zeptribzen/
+    image: https://i.imgur.com/8aI3pdxt.jpeg
+    sameAs:
+      - https://www.facebook.com/zeptribzen/
 ---
 Bands, sponsors, and other info go here...

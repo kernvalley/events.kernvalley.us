@@ -36,11 +36,11 @@ location:
     latitude: 35.7551597
     longitude: -118.4249668
 performer:
-  '@type': MusicGroup
-  name: Julia Lyons
-  url: https://julialyonsmusic.com/
-  image: https://i.imgur.com/tlEyjClt.jpeg
-  sameAs:
-    - https://www.instagram.com/julialyonsmusic_/
+  - '@type': MusicGroup
+    name: Julia Lyons
+    url: https://julialyonsmusic.com/
+    image: https://i.imgur.com/tlEyjClt.jpeg
+    sameAs:
+      - https://www.instagram.com/julialyonsmusic_/
 ---
 Bands, sponsors, and other info go here...

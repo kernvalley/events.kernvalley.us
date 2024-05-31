@@ -125,15 +125,21 @@ main-itemtype: Event
 				{% endif %}
 			</div>
 			{% if page.performer %}
-				<div id="performer-card" class="event-page-performer card" itemprop="performer" itemtype="https://schema.org/{{ page.performer['@type'] | default: 'Person' }}" itemscope="">
+				<div id="performer-card" class="event-page-performer card">
 					<h3 class="center">Featuring</h3>
-					<a href="{{ page.performer.url }}" class="block performer-info flex row" itemprop="url" rel="noopener noreferrer external" target="_blank">
-						<img src="{{ page.performer.image }}" itemprop="image" class="performer-image round" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" />
-						<div class="flex-group">
-							<h4 itemprop="name" class="performer-name underline">{{ page.performer.name }}</h4>
-							<!-- <p itemprop="description" class="performer-description">{{ page.performer.description }}</p> -->
+					{% for performer in page.performer %}
+						<div itemprop="performer" itemtype="https://schema/org/{{ performer['@type'] | default: 'Person' }}" itemscope="">
+							<a href="{{ performer.url }}" class="block performer-info flex row" itemprop="url" rel="noopener noreferrer external" target="_blank">
+								{% if performer.image %}
+									<img src="{{ performer.image }}" itemprop="image" class="performer-image round" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" />
+								{% endif %}
+								<div class="flex-group">
+									<h4 itemprop="name" class="performer-name underline">{{ performer.name }}</h4>
+									<!-- <p itemprop="description" class="performer-description">{{ performer.description }}</p> -->
+								</div>
+							</a>
 						</div>
-					</a>
+					{% endfor %}
 				</div>
 			{% endif %}
 		</section>

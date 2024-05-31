@@ -36,13 +36,13 @@ location:
     latitude: 35.7551597
     longitude: -118.4249668
 performer:
-  '@type': MusicGroup
-  name: Angels Roost
-  url: https://www.angelsroostband.com/
-  email: angelsroostband@gmail.com
-  image: https://i.imgur.com/7Yfpnbxt.png
-  sameAs:
-    - https://www.facebook.com/angelsroost
-    - https://www.instagram.com/angelsroost
+  - '@type': MusicGroup
+    name: Angels Roost
+    url: https://www.angelsroostband.com/
+    email: angelsroostband@gmail.com
+    image: https://i.imgur.com/7Yfpnbxt.png
+    sameAs:
+      - https://www.facebook.com/angelsroost
+      - https://www.instagram.com/angelsroost
 ---
 Bands, sponsors, and other info go here...

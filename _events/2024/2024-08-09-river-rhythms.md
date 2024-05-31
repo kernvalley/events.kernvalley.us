@@ -36,11 +36,11 @@ location:
     latitude: 35.7551597
     longitude: -118.4249668
 performer:
-  '@type': MusicGroup
-  name: Rockslide
-  url: https://www.facebook.com/profile.php?id=61555664770194
-  image: https://i.imgur.com/R5q9K0km.png
-  sameAs:
-    - https://www.facebook.com/profile.php?id=61555664770194
+  - '@type': MusicGroup
+    name: Rockslide
+    url: https://www.facebook.com/profile.php?id=61555664770194
+    image: https://i.imgur.com/R5q9K0km.png
+    sameAs:
+      - https://www.facebook.com/profile.php?id=61555664770194
 ---
 Bands, sponsors, and other info go here...
