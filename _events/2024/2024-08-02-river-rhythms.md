@@ -4,7 +4,7 @@
 layout: event-page
 date: 2024-08-02
 name: River Rhythms - Julia Lyons
-title: River Rhythms - v
+title: River Rhythms - Julia Lyons
 description: We will once again be back in Circle Park this year for 5 weeks of
   great Friday evening music in the park.
 tags:
