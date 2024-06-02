@@ -12,7 +12,7 @@ tags:
   - music
   - concert
   - social
-startDate: 2024-06-02T13:00
+startDate: 2024-06-02T14:00
 endDate: 2024-06-02T17:00
 image: https://i.imgur.com/sQrodYQ.png
 organizer:
