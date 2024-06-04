@@ -1,0 +1,12 @@
+---
+layout: null
+name: event-json
+---
+{% assign now = 'now' | date_to_xmlschema %}
+{% if page.tag %}
+	{% assign events=site.events | where_exp: 'event', 'event.endDate >= now and event.tags contains page.tag' |
+	sort: 'startDate' %}
+{% else %}
+	{% assign events = site.events | where_exp: 'event', 'event.endDate >= now' | sort: 'startDate' %}
+{% endif %}
+[{% for event in events %}{% include event-ld.json event=event %}{% unless forloop.last %},{% endunless %}{% endfor %}]
