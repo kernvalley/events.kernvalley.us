@@ -128,7 +128,7 @@ main-itemtype: Event
 				<div id="performer-card" class="event-page-performer card">
 					<h3 class="center">Featuring</h3>
 					{% for performer in page.performer %}
-						<div itemprop="performer" itemtype="https://schema/org/{{ performer['@type'] | default: 'Person' }}" itemscope="">
+						<div itemprop="performer" itemtype="https://schema.org/{{ performer['@type'] | default: 'Person' }}" itemscope="">
 							<a href="{{ performer.url }}" class="block performer-info flex row" itemprop="url" rel="noopener noreferrer external" target="_blank">
 								{% if performer.image %}
 									<img src="{{ performer.image }}" itemprop="image" class="performer-image round" crossorigin="anonymous" referrerpolicy="no-referrer" loading="lazy" />
@@ -241,13 +241,6 @@ main-itemtype: Event
 			<meta itemprop="dateModified" content="{{ page.date | date: data_to_xmlschema }}" />
 		{% endif %}
 		<section itemtype="articleBody">{{ content }}</section>
-		{% include common/share-buttons.html
-			text=page.description
-			facebook=true
-			twitter=true
-			reddit=true
-			linkedin=true
-		%}
 		<footer itemprop="publisher" itemtype="https://schema.org/{{ site.data.publisher['@type'] | default: 'Organization' }}" itemscope="" hidden="">
 			<a href="{{ site.data.publisher.url }}" rel="external noopener" itemprop="url">
 				<figure itemprop="logo" itemtype="https://schema.org/ImageObject" itemscope="" hidden="">
@@ -257,6 +250,35 @@ main-itemtype: Event
 			</a>
 		</footer>
 	</article>
+	{% if page.sponsor %}
+		<aside id="event-sponsors" class="event-sponsors-container">
+			<h3 class="sponsors-heading event-section-heading">{{ page.name | default: page.title }} Sponsored By:</h3>
+			<div class="grid event-sponsors">
+				{% for sponsor in page.sponsor %}
+				<span class="event-sponsor" title="{{ sponsor.name | escape }}" itemprop="sponsor" itemtype="https://schema.org/{{ sponsor['@type'] | default: 'Organization' }}" itemscope="">
+					{% if sponsor.url %}
+					<a href="{{ sponsor.url }}?utm_source=krv-events&amp;utm_medium=referrer&amp;utm_content=sponsor&amp;utm_campaign={{ page.name | slugify }}" class="sponsor-link" rel="noopener noreferrer external" itemprop="url" target="_blank">
+						<meta itemprop="name" content="{{ sponsor.name | escape }}" />
+						<img src="{{ sponsor.logo }}" class="event-sponsor-logo" height="64" alt="{{ sponsor.name | escape }}" loading="lazy" decoding="async" crossorigin="anonymous" referrerpolicy="no-referrer" itmemprop="image logo" />
+					</a>
+					{% else %}
+					<span class="event-sponsor">
+						<meta itemprop="name" content="{{ sponsor.name | escape }}" />
+						<img src="{{ sponsor.logo }}" class="event-sponsor-logo" height="64" alt="{{ sponsor.name | escape }}" loading="lazy" decoding="async" crossorigin="anonymous" referrerpolicy="no-referrer" itemprop="image logo" />
+					</span>
+					{% endif  %}
+				</span>
+				{% endfor %}
+			</div>
+		</aside>
+	{% endif %}
+	{% include common/share-buttons.html
+		text=page.description
+		facebook=true
+		twitter=true
+		reddit=true
+		linkedin=true
+	%}
 	{% unless page.no-comments == true %}
 		<disqus-comments site="krv-events" class="block contain-content"></disqus-comments>
 	{% endunless %}

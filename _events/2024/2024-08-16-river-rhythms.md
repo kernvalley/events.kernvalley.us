@@ -38,7 +38,7 @@ location:
 performer:
   - '@type': MusicGroup
     name: ?????
-    url: "#"
+    # url: "#"
     image: https://cdn.kernvalley.us/img/raster/missing-img.png
     # sameAs:
     #   - https://www.facebook.com/profile.php?id=61555664770194

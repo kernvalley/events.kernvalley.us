@@ -1,12 +1,13 @@
 #nav {
 	font-size: 1.2em;
 	gap: 18px;
-}
+	padding-inline: 0.6em;
 
-#nav > .nav-btn {
-	background-color: transparent;
-	color: inherit;
-	border: none;
+	& .nav-btn {
+		background-color: transparent;
+		color: inherit;
+		border: none;
+	}
 }
 
 #install-btn > svg {
