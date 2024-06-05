@@ -15,9 +15,9 @@ tags:
 startDate: 2024-08-16T18:00
 endDate: 2024-08-16T20:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://cdn.kernvalley.us/img/raster/missing-image.png
+image: https://i.imgur.com/gymriZJ.png
 thumbnail:
-  url: https://cdn.kernvalley.us/img/raster/missing-image.png
+  url: https://i.imgur.com/gymriZJ.png
   width: 640
   height: 480
 organizer:

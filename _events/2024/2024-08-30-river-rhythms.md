@@ -15,9 +15,9 @@ tags:
 startDate: 2024-08-30T18:00
 endDate: 2024-08-30T20:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://cdn.kernvalley.us/img/raster/missing-image.png
+image: https://i.imgur.com/TmBbqVt.png
 thumbnail:
-  url: https://cdn.kernvalley.us/img/raster/missing-image.png
+  url: https://i.imgur.com/TmBbqVt.png
   width: 640
   height: 480
 organizer:
