@@ -16,13 +16,13 @@ tags:
 startDate: 2023-08-09 18:00
 endDate: 2023-08-09 21:00
 performer:
-  "@type": MusicGroup
-  name: Jim Ranger
-  description: Lorem Ipsum
-  image: https://i.imgur.com/3fSzSLD.jpg
-  url: https://jimranger.com
-  sameAs:
-    - https://www.facebook.com/jimrangermusic
+  - "@type": MusicGroup
+    name: Jim Ranger
+    description: Lorem Ipsum
+    image: https://i.imgur.com/3fSzSLD.jpg
+    url: https://jimranger.com
+    sameAs:
+      - https://www.facebook.com/jimrangermusic
 offers:
   - "@type": Offer
     name: Early Bird Ticket

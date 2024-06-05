@@ -37,6 +37,11 @@
 .event-card {
 	background-color: var(--bs-gray-100);
 
+	& .event-location {
+		margin-block: 0.6em;
+		height: 4.8em;
+	}
+
 	@media (prefers-color-scheme: dark) {
 		& {
 			background-color: var(--bs-gray-900);
@@ -126,5 +131,28 @@
 	.event-card-img {
 		aspect-ratio: 4 / 3;
 		width: 100%;
+	}
+}
+
+
+.grid .event-sponsors {
+	--sponsor-size: 96px;
+	grid-template-rows: repeat(auto-fill, var(--sponsor-size));
+	grid-template-columns: repeat(auto-fill, minmax(var(--sponsor-size), calc(1.5 * var(--sponsor-size))));
+	gap: 0.8em;
+
+	& .event-sponsor {
+		margin-inline: auto;
+		display: inline-block;
+	}
+
+	& .sponsor-link {
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	& .event-sponsor-logo {
+		height: var(--sponsor-size);
+		width: auto;
 	}
 }

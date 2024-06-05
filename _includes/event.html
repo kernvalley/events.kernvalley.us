@@ -53,7 +53,25 @@
 			{{ include.event.startDate | date: '%a %b %-d, %Y %l:%M %p' }}
 		</time>
 	</div>
-	<br />
+	<div class="event-location" itemprop="location"
+		itemtype="http://schema.org/{{ include.event.location['@type'] | default: 'Place' }}" itemscope="">
+		{% if event.location.name %}
+			{% if event.location['@type'] == 'VirtualLocation' %}
+				<a href="{{ event.location.url }}" itemprop="url" target="_blank" rel="noopener noreferrer external">
+					{% include common/icon.html icon="link-external" fill="currentColor" height="16" width="16" %}
+					<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
+				</a>
+			{% else %}
+				{% include common/icon.html icon="location" fill="currentColor" height="16" width="16" %}
+				<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
+			{% endif %}
+		{% endif %}
+		{% if include.event.location.addressRegion %}
+			{% include common/address.html address=include.event.location itemprop='address' %}
+		{% elsif event.location.address.addressRegion %}
+			{% include common/address.html address=include.event.location.address itemprop='address' %}
+		{% endif %}
+	</div>
 	<details class="event-details"{% if include.hideDetails %} hidden=""{% endif %}>
 		<summary role="button" class="btn btn-primary">{% include common/icon.html icon="view-more" height=16 width=16 fill="currentColor" %}Event Details</summary>
 		<br />
@@ -62,26 +80,23 @@
 			<span>Ends:</span>
 			{{ include.event.endDate | date: '%a %b %-d, %Y %l:%M %p' }}
 		</time>
-		<hr />
-		<div class="event-location" itemprop="location" itemtype="http://schema.org/{{ include.event.location['@type'] | default: 'Place' }}" itemscope="">
-			{% if event.location.name %}
-				{% if event.location['@type'] == 'VirtualLocation' %}
-				<a href="{{ event.location.url }}" itemprop="url" target="_blank" rel="noopener noreferrer external">
-						{% include common/icon.html icon="link-external" fill="currentColor" height="16" width="16" %}
-						<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
-					</a>
-				{% else  %}
-					{% include common/icon.html icon="location" fill="currentColor" height="16" width="16" %}
-					<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
-				{% endif %}
-			{% endif %}
-			{% if include.event.location.addressRegion %}
-				{% include common/address.html address=include.event.location itemprop='address' %}
-			{% elsif event.location.address.addressRegion %}
-				{% include common/address.html address=include.event.location.address itemprop='address' %}
-			{% endif %}
-		</div>
-		<hr />
+		{% if include.event.performer %}
+			<div class="event-performers">
+				<b>Featuring:</b>
+				<ul class="event-performers-list">
+					{% for performer in include.event.performer %}<li class="event-performer" itemprop="performer" itemtype="https://schema.org/{{ performer['@type'] | default: 'Person' }}" itemscope="">
+						{% if performer.url %}
+							<a href="{{ performer.url }}" rel="noopener noreferrer external" target="_blank" itemprop="url">
+								<span itemprop="name">{{ performer.name }}</span>
+								{% include common/icon.html icon="link-external" height=16 width=16 fill="currentColor" %}
+							</a>
+						{% else %}
+							<span itemprop="name">{{ performer.name }}</span>
+						{% endif %}
+					</li>{% endfor %}
+				</ul>
+			</div>
+		{% endif %}
 		<div class="event-description" itemprop="description">
 			{% include common/icon.html icon='note' %}{{ include.event.description }}
 		</div>
@@ -117,16 +132,13 @@
 			</div>
 		{% endif %}
 		{% if include.event.redirect %}
-			<hr />
 			{% include common/icon.html icon='link' %}
 			<a href="{{ include.event.redirect }}?utm_souce=krv-events&amp;utm_medium=referrer" rel="noopener referrer external" class="underline" itemprop="url">Click here to learn more</a>
 		{% elsif include.event.url %}
-			<hr />
 			{% include common/icon.html icon='link' %}
 			<a href="{{ include.event.url }}" class="underline" itemprop="url">Click here to learn more</a>
 		{% endif %}
 		{% if include.event.organizer %}
-			<hr />
 			<div class="event-organizer" itemprop="organizer" itemtype="{{ include.event.organizer['@context'] | default: 'http://schema.org'}}/{{ include.event.organizer['@type'] | default: 'Organization'}}" itemscope="">
 				<h5>
 					<span>Organized by</span>
