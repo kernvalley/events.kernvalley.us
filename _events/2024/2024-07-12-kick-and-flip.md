@@ -22,7 +22,11 @@ tags:
   - children
 startDate: 2024-07-12T09:00
 endDate: 2024-07-12T12:00
-image: https://i.imgur.com/szV0bJzh.png
+image: https://i.imgur.com/xi7ggBY.jpg
+thumbnail:
+  url: https://i.imgur.com/xi7ggBY.png
+  height: 480
+  width: 640
 organizer:
   "@type": Organization
   name: KRV Bridge Connection
