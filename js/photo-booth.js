@@ -72,11 +72,20 @@ async function getDocument(id) {
 }
 
 async function uploadFile(file, { name } = {}) {
-	if (!(file instanceof File)) {
-		throw new TypeError('Not a file');
-	} else {
+	if (file instanceof File) {
 		const storage = await loadStorage(BUCKET);
 		const fileRef = typeof name === 'string' ? ref(storage, name) : ref(storage, file.name);
+
+		return await uploadBytes(fileRef, file, {
+			contentType: file.type,
+		});
+	} else if (! (file instanceof Blob)) {
+		throw new TypeError('Not a file or blob.');
+	} else if (typeof name !== 'stirng' || name.length === 0) {
+		throw new TypeError('Name is required for Blobs.');
+	} else {
+		const storage = await loadStorage(BUCKET);
+		const fileRef = ref(storage, name);
 
 		return await uploadBytes(fileRef, file, {
 			contentType: file.type,
@@ -90,8 +99,9 @@ async function captureHandler(event) {
 	const controller = new AbortController();
 
 	try {
-		const path = `${event.target.dataset.eventId}/`;
-		const file = await event.target.toFile(`${crypto.randomUUID()}${event.target.ext}`);
+		const path = `event/${event.target.dataset.eventId}/`;
+		const file = new File([await event.blob.arrayBuffer()], `${crypto.randomUUID()}${event.target.ext}`, { type: event.blob.type });
+		// const file = await event.target.toFile(`${crypto.randomUUID()}${event.target.ext}`);
 		const dialog = document.createElement('dialog');
 		const qrCode = createQRCode(getImageURL(path, file), { margin: 20 });
 		dialog.append(qrCode);
@@ -130,12 +140,12 @@ if (params.has('event')) {
 		customElements.whenDefined('photo-booth'),
 	]).then(async ([{ images, overlays, text, fonts, share }, HTMLPhotoBoothElement]) => {
 		const photoBooth = await HTMLPhotoBoothElement.create({
-			dataset: { eventId: params.get('event') }, share,
-			images, overlays, text, fonts, delay: 3, shutter: true, quality: 0.85,
-			resolution: HTMLPhotoBoothElement.UHD, type: HTMLPhotoBoothElement.WebP,
+			dataset: { eventId: params.get('event') }, share, saveOnCapture: false,
+			images, overlays, text, fonts, delay: 3, shutter: true, quality: 0.90,
+			resolution: HTMLPhotoBoothElement.UHD, type: HTMLPhotoBoothElement.JPEG,
 		});
 
-		photoBooth.addEventListener('beforecapture', captureHandler);
+		photoBooth.addEventListener('aftercapture', captureHandler);
 		document.body.append(photoBooth);
 	}).catch(err => {
 		console.error(err);
