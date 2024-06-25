@@ -81,7 +81,7 @@ async function uploadFile(file, { name } = {}) {
 		});
 	} else if (! (file instanceof Blob)) {
 		throw new TypeError('Not a file or blob.');
-	} else if (typeof name !== 'stirng' || name.length === 0) {
+	} else if (typeof name !== 'string' || name.length === 0) {
 		throw new TypeError('Name is required for Blobs.');
 	} else {
 		const storage = await loadStorage(BUCKET);
