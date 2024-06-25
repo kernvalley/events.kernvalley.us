@@ -1,0 +1,13 @@
+:root  {
+	color-scheme: dark;
+	box-sizing: border-box;
+	font-family: system-ui;
+}
+
+body {
+	margin: 0;
+}
+
+photo-booth:state(--inactive) {
+	max-height: 100dvh;
+}

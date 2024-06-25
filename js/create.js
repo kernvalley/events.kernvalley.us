@@ -243,6 +243,24 @@ document.querySelectorAll('[data-close]').forEach(el => {
 	});
 });
 
+function geoPasteHandler(event) {
+	const data = event.clipboardData.getData('text');
+
+	if (typeof data === 'string' && data.includes(',')) {
+		event.preventDefault();
+		const [latitude, longitude] = data.split(',').map(part => parseFloat(part.trim()));
+
+		if (! Number.isNaN(latitude) || Number.isNaN(longitude)) {
+			document.getElementById('event-geo-longitude').value = longitude;
+			document.getElementById('event-geo-latitude').value = latitude;
+		}
+	}
+}
+
+
+document.getElementById('event-geo-longitude').addEventListener('paste', geoPasteHandler);
+document.getElementById('event-geo-latitude').addEventListener('paste', geoPasteHandler);
+
 document.querySelectorAll('fieldset:disabled:not([hidden]), button:disabled').forEach(el => el.disabled = false);
 
 updateAttendance();

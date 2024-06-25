@@ -109,6 +109,7 @@ if (location.pathname === '/tags/') {
 		const params = new URLSearchParams(location.search);
 
 		if (params.has('tag')) {
+			document.getElementById('tag').value = params.get('tag');
 			filterTags(params.get('tag').toLowerCase());
 		}
 	}

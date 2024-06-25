@@ -9,7 +9,7 @@ description: Search KRV Events by event tags
 	{% assign tags=site.data.tags | sort %}
 	<search>
 		<form id="tagSearch">
-			<input type="search" id="tag" name="tag" placeholder="tag search"  list="tag-list" autocomplete="off" required="" />
+			<input type="search" id="tag" name="tag" placeholder="tag search"  list="tag-list" autocomplete="off" autofocus="" required="" />
 			<button type="submit" class="btn btn-accept" aria-label="Search" title="Search">
 				{% include common/icon.html icon="search" height=16 width=16 fill="currentColor" %}
 			</button>
