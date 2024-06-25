@@ -31,7 +31,7 @@ if (params.has('photo')) {
 		document.getElementById('photo-booth-gallery').append(...await Array.fromAsync(
 			params.getAll('photo'),
 			async photoPath => {
-				const blob = await getImageBlobURI(storage, photoPath)
+				const blob = await getImageBlobURI(storage, photoPath);
 				return createElement('div', {
 					classList:  ['photo-booth-card'],
 					children: [
@@ -49,7 +49,7 @@ if (params.has('photo')) {
 							events: { click: clickHandler },
 						})
 					]
-				})
+				});
 			}
 		));
 	});
