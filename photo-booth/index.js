@@ -9,10 +9,11 @@ import { getStorage, ref, uploadBytes } from 'firebase/firebase-storage.js';
 const BUCKET = 'photo-booth-3347d.appspot.com';
 const FIRESTORE = 'https://firebasestorage.googleapis.com/v0/b/';
 const STORE = 'events';
-const cache = new Map();
 const params = new URLSearchParams(location.search);
 
 if (! (Function.prototype.once instanceof Function)) {
+	const cache = new Map();
+
 	Function.prototype.once = function once() {
 		return (...args) => {
 			if (cache.has(this)) {
@@ -35,7 +36,7 @@ if (! (Function.prototype.once instanceof Function)) {
 				}
 			}
 		};
-	}
+	};
 }
 
 function getImageURL(path, file, config) {
