@@ -14,6 +14,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add page for `<photo-booth>`
+- Add paste handler for GPS coords when creating events
+- Add Jekyll plug-in for environment vars
+
+### Fixed
+- Fix typos in TrustedTypes
+
 ## [v2.1.4] - 2024-05-26
 
 ### Changed

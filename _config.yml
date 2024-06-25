@@ -119,6 +119,7 @@ plugins:
   - jekyll-admin
   - jekyll-watch
   - jekyll-paginate
+  - jekyll-environment-variables
 include:
 # Folders with dotfiles are ignored by default.
   - .well-known
