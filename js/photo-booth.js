@@ -139,10 +139,8 @@ if (params.has('event')) {
 		document.body.append(photoBooth);
 	}).catch(err => {
 		console.error(err);
-		// location.href = '/';
 		document.forms.eventQuery.hidden = false;
 	});
 }  else {
-	// location.href = '/';
 	document.forms.eventQuery.hidden = false;
 }
