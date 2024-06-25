@@ -37,7 +37,7 @@
   Content-Security-Policy:  default-src 'none'; connect-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@kernvalley/ events.kernvalley.us/events.json; font-src https://cdn.kernvalley.us/fonts/; img-src *; script-src 'self' https://unpkg.com/@shgysk8zer0/ https://unpkg.com/@kernvalley/ https://unpkg.com/@aegisjsproject/ https://unpkg.com/@webcomponents/; style-src 'self' blob:; trusted-types aegis-sanitizer#html; require-trusted-types-for 'script';
 
 /photo-booth/
-  Permissions-Policy: camera=(), fullscreen=(), web-share=(), wake-lock=(), geolocation=(none), microphone=(none), clipboard-read=(none), payment=(none), bluetooth=(none),  usb=(none), attribution-reporting=(none), browsing-topics=(none)
+  Permissions-Policy: camera=(self), fullscreen=(self), web-share=(self), wake-lock=(self), geolocation=(none), microphone=(none), clipboard-read=(none), payment=(none), bluetooth=(none),  usb=(none), attribution-reporting=(none), browsing-topics=(none)
   Content-Security-Policy:  default-src 'none'; connect-src 'self' https://firebasestorage.googleapis.com/ https://firestore.googleapis.com/ https://firebasestorage.googleapis.com/; style-src 'self' blob:; script-src 'self' https://unpkg.com/ https://www.gstatic.com/firebasejs/ 'nonce-adb62285-373c-484b-98a0-011359013af4'; img-src * data: blob:; font-src https://cdn.kernvalley.us/fonts/; trusted-types aegis-sanitizer#html; require-trusted-types-for 'script';
 
 /reset
