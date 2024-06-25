@@ -7,7 +7,6 @@ import { getFirestore, getDoc, doc } from 'firebase/firebase-firestore.js';
 import { getStorage, ref, uploadBytes } from 'firebase/firebase-storage.js';
 
 const BUCKET = 'photo-booth-3347d.appspot.com';
-const FIRESTORE = 'https://firebasestorage.googleapis.com/v0/b/';
 const STORE = 'events';
 const params = new URLSearchParams(location.search);
 
@@ -39,9 +38,9 @@ if (! (Function.prototype.once instanceof Function)) {
 	};
 }
 
-function getImageURL(path, file, config) {
-	const url = new URL(`${FIRESTORE}${config.storageBucket}/o/${encodeURIComponent(path)}${encodeURIComponent(file.name)}`);
-	url.searchParams.set('alt', 'media');
+function getImageURL(path, file) {
+	const url = new URL('./download/', `${location.origin}/${location.pathname}`);
+	url.searchParams.set('photo', `${path}${file.name}`);
 	return url;
 }
 
@@ -85,23 +84,16 @@ async function uploadFile(file, { name } = {}) {
 	}
 }
 
-const getConfig = (async ()  => getJSON('./config.json')).once();
-
-const dateToPath = (date = new Date()) => [
-	date.getFullYear().toString(),
-	(date.getMonth() + 1).toString().padStart(2, '0'),
-	date.getDate().toString().padStart(2, '0'),
-].join('/') + '/';
+const getConfig = (async ()  => getJSON('/photo-booth.json')).once();
 
 async function captureHandler(event) {
 	const controller = new AbortController();
 
 	try {
-		const config = await getConfig();
-		const path = `${dateToPath(new Date())}${event.target.dataset.eventId}/`;
+		const path = `${event.target.dataset.eventId}/`;
 		const file = await event.target.toFile(`${crypto.randomUUID()}${event.target.ext}`);
 		const dialog = document.createElement('dialog');
-		const qrCode = createQRCode(getImageURL(path, file, config), { margin: 20 });
+		const qrCode = createQRCode(getImageURL(path, file), { margin: 20 });
 		dialog.append(qrCode);
 		document.body.append(dialog);
 		dialog.showModal();
@@ -115,7 +107,7 @@ async function captureHandler(event) {
 			if (! signal.aborted) {
 				controller.abort('User closed dialog.');
 			}
-		}, { signal });
+		}, { once: true });
 
 		dialog.addEventListener('click', ({  target }) => target.close(), { signal });
 
@@ -126,13 +118,9 @@ async function captureHandler(event) {
 		}, { once: true });
 
 		await uploadFile(file, { name: `${path}${file.name}` });
-
-
-		// 4. Show Dialog
 	} catch (error) {
 		controller.abort(error);
 		console.error(error);
-		// Handle errors (e.g., show error message to the user)
 	}
 }
 
@@ -151,8 +139,10 @@ if (params.has('event')) {
 		document.body.append(photoBooth);
 	}).catch(err => {
 		console.error(err);
-		location.href = '/';
+		// location.href = '/';
+		document.forms.eventQuery.hidden = false;
 	});
 }  else {
-	location.href = '/';
+	// location.href = '/';
+	document.forms.eventQuery.hidden = false;
 }
