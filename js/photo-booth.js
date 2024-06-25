@@ -135,14 +135,12 @@ if (params.has('event')) {
 			resolution: HTMLPhotoBoothElement.UHD, type: HTMLPhotoBoothElement.WebP,
 		});
 
-		photoBooth.addEventListener('aftercapture', captureHandler);
+		photoBooth.addEventListener('beforecapture', captureHandler);
 		document.body.append(photoBooth);
 	}).catch(err => {
 		console.error(err);
-		// location.href = '/';
 		document.forms.eventQuery.hidden = false;
 	});
 }  else {
-	// location.href = '/';
 	document.forms.eventQuery.hidden = false;
 }
