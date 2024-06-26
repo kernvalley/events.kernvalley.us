@@ -11,3 +11,15 @@ body {
 photo-booth:state(--inactive) {
 	max-height: 100dvh;
 }
+
+#photo-booth-gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	gap: 16px;
+}
+
+#photo-booth-gallery .photo-booth-img {
+	object-fit: cover;
+	width: 400px;
+	max-width: 100%;
+}
