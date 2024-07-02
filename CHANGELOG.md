@@ -14,6 +14,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.1.5] - 2024-07-02
+
 ### Added
 - Add page for `<photo-booth>`
 - Add paste handler for GPS coords when creating events

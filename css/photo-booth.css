@@ -1,11 +1,16 @@
 :root  {
-	color-scheme: dark;
+	color-scheme: light dark;
 	box-sizing: border-box;
 	font-family: system-ui;
+	box-sizing: border-box;
 }
 
 body {
 	margin: 0;
+}
+
+*, ::after, ::before {
+	box-sizing: inherit;
 }
 
 photo-booth:state(--inactive) {
@@ -14,12 +19,79 @@ photo-booth:state(--inactive) {
 
 #photo-booth-gallery {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-template-rows: masonry;
 	gap: 16px;
+	justify-content: space-around;
+	padding: 2em;
+}
+
+#photo-booth-gallery .card {
+	padding: 1.3em;
+	border: 1px  solid #dadada;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.photo-booth-img {
+	object-fit: cover;
+	max-width: 100%;
+	cursor: pointer;
 }
 
 #photo-booth-gallery .photo-booth-img {
-	object-fit: cover;
 	width: 400px;
-	max-width: 100%;
+	margin-bottom: 12px;
+}
+
+#photo-booth-gallery .btn.btn-primary {
+	display: inline-block;
+	width: 200px;
+	height: 1.8em;
+	padding: 6px 8px;
+	background-color: #0d6efd;
+	color: #fafafa;
+	border: none;
+	border-radius: 6px;
+	font-size: 1.6em;
+	text-decoration: none;
+	text-align: center;
+	appearance: button;
+}
+
+#photo-booth-gallery .dl-btn {
+	margin-block: auto;
+}
+
+#photo-booth-gallery .btn .icon {
+	height: 1em;
+	width: auto;
+	margin-inline: 0.35em;
+	vertical-align: bottom;
+	transform: scale(1.3) translateY(0.2em);
+}
+
+#photo-booth, #photo-booth-gallery svg {
+	height: 1em;
+	width: auto;
+}
+
+
+.photo-modal {
+	max-width: 95vw;
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+
+.photo-modal::backdrop {
+	background-color: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(4px);
+	height: 110vh
+}
+
+@media (prefers-color-scheme: dark) {
+	#photo-booth-gallery .card {
+		border: 1px solid #5b5b5b;
+	}
 }
