@@ -10,6 +10,10 @@ const BUCKET = 'photo-booth-3347d.appspot.com';
 const STORE = 'events';
 const params = new URLSearchParams(location.search);
 
+async function blobToFile(blob, filename) {
+	return new File([await  blob.arrayBuffer()], filename, { type: blob.type });
+}
+
 if (! (Function.prototype.once instanceof Function)) {
 	const cache = new Map();
 
@@ -100,8 +104,7 @@ async function captureHandler(event) {
 
 	try {
 		const path = `event/${event.target.dataset.eventId}/`;
-		const file = new File([await event.blob.arrayBuffer()], `${crypto.randomUUID()}${event.target.ext}`, { type: event.blob.type });
-		// const file = await event.target.toFile(`${crypto.randomUUID()}${event.target.ext}`);
+		const file = await blobToFile(event.blob, `${crypto.randomUUID()}${event.target.ext}`);
 		const dialog = document.createElement('dialog');
 		const qrCode = createQRCode(getImageURL(path, file), { margin: 20 });
 		dialog.append(qrCode);
@@ -109,7 +112,7 @@ async function captureHandler(event) {
 		dialog.showModal();
 
 		await qrCode.decode();
-		const signal = AbortSignal.any([AbortSignal.timeout(5000), controller.signal]);
+		const signal = AbortSignal.any([AbortSignal.timeout(10000), controller.signal]);
 
 		dialog.addEventListener('close', ({ target }) => {
 			target.remove();
@@ -119,7 +122,7 @@ async function captureHandler(event) {
 			}
 		}, { once: true });
 
-		dialog.addEventListener('click', ({  target }) => target.close(), { signal });
+		dialog.addEventListener('click', ({ target }) => target.close(), { signal });
 
 		signal.addEventListener('abort', () => {
 			if (dialog.open) {
