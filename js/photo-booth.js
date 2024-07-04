@@ -143,7 +143,7 @@ if (params.has('event')) {
 		customElements.whenDefined('photo-booth'),
 	]).then(async ([{ images, overlays, text, fonts, share }, HTMLPhotoBoothElement]) => {
 		const photoBooth = await HTMLPhotoBoothElement.create({
-			dataset: { eventId: params.get('event') }, share, saveOnCapture: false,
+			dataset: { eventId: params.get('event') }, share, saveOnCapture: params.has('capture'),
 			images, overlays, text, fonts, delay: 3, shutter: true, quality: 0.90,
 			resolution: HTMLPhotoBoothElement.UHD, type: HTMLPhotoBoothElement.JPEG,
 		});
