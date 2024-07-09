@@ -38,7 +38,7 @@
 
 /photo-booth/
   Permissions-Policy: camera=(self), fullscreen=(self), web-share=(self), wake-lock=(self), geolocation=(none), microphone=(none), clipboard-read=(none), payment=(none), bluetooth=(none),  usb=(none), attribution-reporting=(none), browsing-topics=(none)
-  Content-Security-Policy:  default-src 'none'; connect-src 'self' https://firebasestorage.googleapis.com/ https://firestore.googleapis.com/ https://firebasestorage.googleapis.com/; style-src 'self' blob:; script-src 'self' https://unpkg.com/ https://www.gstatic.com/firebasejs/ 'nonce-adb62285-373c-484b-98a0-011359013af4'; img-src * data: blob:; font-src https://cdn.kernvalley.us/fonts/; trusted-types aegis-sanitizer#html; require-trusted-types-for 'script';
+  Content-Security-Policy:  default-src 'none'; connect-src 'self' https://firebasestorage.googleapis.com/ https://firestore.googleapis.com/ https://firebasestorage.googleapis.com/; style-src 'self' blob:; script-src 'self' https://unpkg.com/ https://www.gstatic.com/firebasejs/ 'nonce-adb62285-373c-484b-98a0-011359013af4'; img-src * data: blob:; font-src https://cdn.kernvalley.us/fonts/ https://fonts.gstatic.com/; trusted-types aegis-sanitizer#html; require-trusted-types-for 'script';
 
 /reset
   Referrer-Policy: no-referrer
