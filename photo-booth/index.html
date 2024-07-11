@@ -20,13 +20,16 @@
 		<link rel="icon" href="/img/icon-16.png" type="image/png" sizes="16x16" />
 		<link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#0d6efd" />
 		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="preconnect" href="https://www.gstatic.com/firebasejs" crossorigin="anonymous" />
+		<link rel="preconnect" href="https://firestore.googleapis.com/" crossorigin="anonymous" />
+		<link rel="preconnect" href="https://unpkg.com" crossorigin="anonymous" />
 		<title>Photo Booth</title>
 		<script type="importmap" nonce="adb62285-373c-484b-98a0-011359013af4">
 			{
 				"imports": {
 					"@shgysk8zer0/consts/": "https://unpkg.com/@shgysk8zer0/consts@1.0.8/",
 					"@shgysk8zer0/polyfills/": "https://unpkg.com/@shgysk8zer0/polyfills@0.3.10/",
-					"@shgysk8zer0/components/": "https://unpkg.com/@shgysk8zer0/components@0.3.8/",
+					"@shgysk8zer0/components/": "https://unpkg.com/@shgysk8zer0/components@0.3.9/",
 					"@shgysk8zer0/kazoo/": "https://unpkg.com/@shgysk8zer0/kazoo@1.0.6/",
 					"@aegisjsproject/core/": "https://unpkg.com/@aegisjsproject/core@0.2.13/",
 					"@aegisjsproject/sanitizer/": "https://unpkg.com/@aegisjsproject/sanitizer@0.1.0/",
@@ -54,5 +57,19 @@
 			</fieldset>
 			<button type="submit">Submit</button>
 		</form>
+		<template id="placeholder-template">
+			<div slot="placeholder" class="center">
+				<p>Welcome to the KRV Photo Booth.</p>
+				<p>
+					<span>Press the </span>
+					<svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" class="icon">
+						<path fill-rule="evenodd"
+							d="M15.2 2.09L10 5.72V3c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V9.28l5.2 3.63c.33.23.8 0 .8-.41v-10c0-.41-.47-.64-.8-.41z">
+						</path>
+					</svg>
+					<span>button to get started.</span>
+			</p>
+			</div>
+		</template>
 	</body>
 </html>

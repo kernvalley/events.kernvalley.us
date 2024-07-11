@@ -80,9 +80,7 @@ async function uploadFile(file, { name } = {}) {
 		const storage = await loadStorage(BUCKET);
 		const fileRef = typeof name === 'string' ? ref(storage, name) : ref(storage, file.name);
 
-		return await uploadBytes(fileRef, file, {
-			contentType: file.type,
-		});
+		return await uploadBytes(fileRef, file, { contentType: file.type });
 	} else if (! (file instanceof Blob)) {
 		throw new TypeError('Not a file or blob.');
 	} else if (typeof name !== 'string' || name.length === 0) {
@@ -91,9 +89,7 @@ async function uploadFile(file, { name } = {}) {
 		const storage = await loadStorage(BUCKET);
 		const fileRef = ref(storage, name);
 
-		return await uploadBytes(fileRef, file, {
-			contentType: file.type,
-		});
+		return await uploadBytes(fileRef, file, { contentType: file.type });
 	}
 }
 
@@ -149,6 +145,7 @@ if (params.has('event')) {
 		});
 
 		photoBooth.addEventListener('aftercapture', captureHandler);
+		photoBooth.append(document.getElementById('placeholder-template').content);
 		document.body.append(photoBooth);
 	}).catch(err => {
 		console.error(err);
