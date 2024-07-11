@@ -14,7 +14,17 @@ body {
 }
 
 photo-booth:state(--inactive) {
-	max-height: 100dvh;
+	height: 100dvh;
+}
+
+.center {
+	text-align: center;
+}
+
+.icon {
+	height: 1em;
+	width: auto;
+	vertical-align: bottom;
 }
 
 #photo-booth-gallery {
