@@ -105,3 +105,15 @@ photo-booth:state(--inactive) {
 		border: 1px solid #5b5b5b;
 	}
 }
+
+@media (orientation: portrait) {
+	.landscape {
+		display: none;
+	}
+}
+
+@media (orientation: landscape) {
+	.portrait {
+		display: none;
+	}
+}
