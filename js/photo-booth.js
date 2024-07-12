@@ -101,30 +101,34 @@ async function captureHandler(event) {
 	try {
 		const path = `event/${event.target.dataset.eventId}/`;
 		const file = await blobToFile(event.blob, `${crypto.randomUUID()}${event.target.ext}`);
-		const dialog = document.createElement('dialog');
-		const qrCode = createQRCode(getImageURL(path, file), { margin: 20 });
-		dialog.append(qrCode);
-		document.body.append(dialog);
-		dialog.showModal();
 
-		await qrCode.decode();
-		const signal = AbortSignal.any([AbortSignal.timeout(10000), controller.signal]);
+		// Only show QR Code when not saving to device.
+		if (! params.has('capture')) {
+			const dialog = document.createElement('dialog');
+			const qrCode = createQRCode(getImageURL(path, file), { margin: 20 });
+			dialog.append(qrCode);
+			document.body.append(dialog);
+			dialog.showModal();
 
-		dialog.addEventListener('close', ({ target }) => {
-			target.remove();
+			await qrCode.decode();
+			const signal = AbortSignal.any([AbortSignal.timeout(10000), controller.signal]);
 
-			if (! signal.aborted) {
-				controller.abort('User closed dialog.');
-			}
-		}, { once: true });
+			dialog.addEventListener('close', ({ target }) => {
+				target.remove();
 
-		dialog.addEventListener('click', ({ target }) => target.close(), { signal });
+				if (! signal.aborted) {
+					controller.abort('User closed dialog.');
+				}
+			}, { once: true });
 
-		signal.addEventListener('abort', () => {
-			if (dialog.open) {
-				dialog.close();
-			}
-		}, { once: true });
+			dialog.addEventListener('click', ({ target }) => target.close(), { signal });
+
+			signal.addEventListener('abort', () => {
+				if (dialog.open) {
+					dialog.close();
+				}
+			}, { once: true });
+		}
 
 		await uploadFile(file, { name: `${path}${file.name}` });
 	} catch (error) {
@@ -135,14 +139,19 @@ async function captureHandler(event) {
 
 if (params.has('event')) {
 	Promise.all([
+		// getJSON('/event.json'),
 		getDocument(params.get('event')),
 		customElements.whenDefined('photo-booth'),
 	]).then(async ([{ images, overlays, text, fonts, share }, HTMLPhotoBoothElement]) => {
+		const mq = matchMedia('(orientation: portrait)');
 		const photoBooth = await HTMLPhotoBoothElement.create({
 			dataset: { eventId: params.get('event') }, share, saveOnCapture: params.has('capture'),
 			images, overlays, text, fonts, delay: 3, shutter: true, quality: 0.90,
 			resolution: HTMLPhotoBoothElement.UHD, type: HTMLPhotoBoothElement.JPEG,
 		});
+
+		photoBooth.hidden = ! mq.matches;
+		mq.addEventListener('change', ({ target }) => photoBooth.hidden = ! target.matches);
 
 		photoBooth.addEventListener('aftercapture', captureHandler);
 		photoBooth.append(document.getElementById('placeholder-template').content);
