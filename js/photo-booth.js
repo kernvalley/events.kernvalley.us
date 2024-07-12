@@ -111,7 +111,7 @@ async function captureHandler(event) {
 			dialog.showModal();
 
 			await qrCode.decode();
-			const signal = AbortSignal.any([AbortSignal.timeout(10000), controller.signal]);
+			const signal = AbortSignal.any([AbortSignal.timeout(30000), controller.signal]);
 
 			dialog.addEventListener('close', ({ target }) => {
 				target.remove();
