@@ -151,7 +151,7 @@ if (params.has('event')) {
 		});
 
 		photoBooth.hidden = ! mq.matches;
-		mq.addEventListener('change', ({ target }) => photoBooth.hidden = ! mq.matches);
+		mq.addEventListener('change', ({ target }) => photoBooth.hidden = ! target.matches);
 
 		photoBooth.addEventListener('aftercapture', captureHandler);
 		photoBooth.append(document.getElementById('placeholder-template').content);
