@@ -2,6 +2,7 @@ import '@shgysk8zer0/polyfills/all.min.js';
 import '@shgysk8zer0/components/photo-booth.js';
 import { createQRCode } from '@shgysk8zer0/kazoo/qr.js';
 import { getJSON } from '@shgysk8zer0/kazoo/http.js';
+import { getSimpleUID } from '@shgysk8zer0/kazoo/utility.js';
 import { initializeApp } from 'firebase/firebase-app.js';
 import { getFirestore, getDoc, doc } from 'firebase/firebase-firestore.js';
 import { getStorage, ref, uploadBytes } from 'firebase/firebase-storage.js';
@@ -95,12 +96,12 @@ async function uploadFile(file, { name } = {}) {
 
 const getConfig = (async ()  => getJSON('/photo-booth.json')).once();
 
-async function captureHandler(event) {
+async function captureHandler({ target: { ext, dataset: { eventId }}, blob }) {
 	const controller = new AbortController();
 
 	try {
-		const path = `event/${event.target.dataset.eventId}/`;
-		const file = await blobToFile(event.blob, `${crypto.randomUUID()}${event.target.ext}`);
+		const path = `event/${eventId}/`;
+		const file = await blobToFile(blob, `${getSimpleUID()}${ext}`);
 
 		// Only show QR Code when not saving to device.
 		if (! params.has('capture')) {
@@ -143,15 +144,11 @@ if (params.has('event')) {
 		getDocument(params.get('event')),
 		customElements.whenDefined('photo-booth'),
 	]).then(async ([{ images, overlays, text, fonts, share }, HTMLPhotoBoothElement]) => {
-		const mq = matchMedia('(orientation: portrait)');
 		const photoBooth = await HTMLPhotoBoothElement.create({
 			dataset: { eventId: params.get('event') }, share, saveOnCapture: params.has('capture'),
 			images, overlays, text, fonts, delay: 3, shutter: true, quality: 0.90,
 			resolution: HTMLPhotoBoothElement.UHD, type: HTMLPhotoBoothElement.JPEG,
 		});
-
-		photoBooth.hidden = ! mq.matches;
-		mq.addEventListener('change', ({ target }) => photoBooth.hidden = ! target.matches);
 
 		photoBooth.addEventListener('aftercapture', captureHandler);
 		photoBooth.append(document.getElementById('placeholder-template').content);
