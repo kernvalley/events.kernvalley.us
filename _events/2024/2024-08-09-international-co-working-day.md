@@ -6,18 +6,18 @@ redirect: https://portal.goldenvolunteer.com/opportunities/EJkIEWpgbL
 date: 2024-08-09
 name: International Co-working Day
 title: International Co-working Day
-description: "Come together to learn about the international Co-working Movement. "
+description: "Come together for a block party to celebrate 20 years of coworking in North America!"
 tags:
   - krv
   - kernville
-  - indoors
+  - outdoors
   - neighbor-to-neighbor
   - krv-together
   - coworking
   - social
   - professional
-startDate: 2024-08-09T17:30
-endDate: 2024-08-09T18:30
+startDate: 2024-08-09T16:00
+endDate: 2024-08-09T18:00
 image: https://i.imgur.com/UruYSJ4h.jpeg
 organizer:
   "@type": Organization
@@ -25,11 +25,11 @@ organizer:
   email: justin@kernvillecowork.com
   url: https://sierrashared.space
 location:
-  "@type": LocalBusiness
-  name: Kernville Cowork
+  "@type": Park
+  name: Circle Park
   address:
     "@type": PostalAddress
-    streetAddress: 11113 Kernville Rd
+    streetAddress: 7 Tobias St
     addressLocality: Kernville
     addressRegion: CA
     postalCode: "93238"
