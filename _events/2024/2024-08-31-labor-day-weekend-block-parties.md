@@ -26,16 +26,16 @@ organizer:
   url: https://krvaa.org
 location:
   "@type": Park
-  name: Wofford Heights Park
+  name: Circle Park
   address:
     "@type": PostalAddress
-    streetAddress: 317 E Evans Rd
-    addressLocality: Wofford Heights
+    streetAddress: 7 Tobias St
+    addressLocality: Kernville
     addressRegion: CA
-    postalCode: 93285
+    postalCode: 93238
     addressCountry: US
   geo:
     "@type": GeoCoordinates
-    latitude: 35.7055848
-    longitude: -118.4491963
+    latitude: 35.7551597
+    longitude: -118.4249668
 ---
