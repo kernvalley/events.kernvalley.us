@@ -1,11 +1,10 @@
-import '@shgysk8zer0/polyfills/all.min.js';
-import '@shgysk8zer0/components/photo-booth.js';
 import { createQRCode } from '@shgysk8zer0/kazoo/qr.js';
 import { getJSON } from '@shgysk8zer0/kazoo/http.js';
-import { getSimpleUID } from '@shgysk8zer0/kazoo/utility.js';
-import { initializeApp } from 'firebase/firebase-app.js';
-import { getFirestore, getDoc, doc } from 'firebase/firebase-firestore.js';
-import { getStorage, ref, uploadBytes } from 'firebase/firebase-storage.js';
+import { getSUID, BASE64_URL } from '@shgysk8zer0/suid';
+import { initializeApp } from 'firebase/app';
+import { getFirestore, getDoc, doc } from 'firebase/firestore';
+import { getStorage, ref, uploadBytes } from 'firebase/storage';
+import '@shgysk8zer0/components/photo-booth.js';
 
 const BUCKET = 'photo-booth-3347d.appspot.com';
 const STORE = 'events';
@@ -101,7 +100,7 @@ async function captureHandler({ target: { ext, dataset: { eventId }}, blob }) {
 
 	try {
 		const path = `event/${eventId}/`;
-		const file = await blobToFile(blob, `${getSimpleUID()}${ext}`);
+		const file = await blobToFile(blob, `${getSUID({ alphabet: BASE64_URL })}${ext}`);
 
 		// Only show QR Code when not saving to device.
 		if (! params.has('capture')) {
@@ -140,19 +139,74 @@ async function captureHandler({ target: { ext, dataset: { eventId }}, blob }) {
 
 if (params.has('event')) {
 	Promise.all([
-		// getJSON('/event.json'),
 		getDocument(params.get('event')),
 		customElements.whenDefined('photo-booth'),
 	]).then(async ([{ images, overlays, text, fonts, share }, HTMLPhotoBoothElement]) => {
+		const {
+			saveOnCapture = params.has('capture'),
+			hideItems = false,
+			shutter = true,
+			delay = 3,
+			quality = 0.90,
+			resolution = HTMLPhotoBoothElement.UHD,
+			type = HTMLPhotoBoothElement.JPEG,
+			facingMode = 'environment',
+			mirror = false,
+		} = history.state ?? {};
+
 		const photoBooth = await HTMLPhotoBoothElement.create({
-			dataset: { eventId: params.get('event') }, share, saveOnCapture: params.has('capture'),
-			images, overlays, text, fonts, delay: 3, shutter: true, quality: 0.90,
-			resolution: HTMLPhotoBoothElement.UHD, type: HTMLPhotoBoothElement.JPEG,
+			dataset: { eventId: params.get('event') }, share, saveOnCapture,
+			images, overlays, text, fonts, delay, shutter, quality,
+			resolution, type, facingMode, mirror, hideItems,
 		});
 
 		photoBooth.addEventListener('aftercapture', captureHandler);
 		photoBooth.append(document.getElementById('placeholder-template').content);
 		document.body.append(photoBooth);
+
+		const observer = new MutationObserver(records => {
+			const state = history.state ?? {};
+
+			records.forEach(({ attributeName, target }) => {
+				switch(attributeName) {
+					case 'saveoncapture':
+						state.saveOnCapture = target.hasAttribute(attributeName);
+						break;
+
+					case 'hideitems':
+						state.hideItems = target.hasAttribute(attributeName);
+						break;
+
+					case 'facingmode':
+						state.facingMode = target.getAttribute(attributeName);
+						break;
+
+					case 'delay':
+						state.delay = parseInt(target.getAttribute(attributeName));
+						break;
+
+					case 'quality':
+						state.quality = parseFloat(target.getAttribute(attributeName));
+						break;
+
+					case 'mirror':
+					case 'shutter':
+						state[attributeName] = target.hasAttribute(attributeName);
+						break;
+
+					case 'resolution':
+					case 'type':
+						state[attributeName] = target.getAttribute(attributeName);
+						break;
+				}
+			});
+
+			history.replaceState(state, '', location.href);
+		});
+		observer.observe(photoBooth, {
+			attributeFilter: ['saveoncapture', 'shutter', 'delay', 'quality', 'resolution', 'type', 'facingmore', 'mirror', 'hideitems'],
+			attributes: true,
+		});
 	}).catch(err => {
 		console.error(err);
 		document.forms.eventQuery.hidden = false;
