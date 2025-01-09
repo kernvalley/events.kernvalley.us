@@ -15,7 +15,7 @@ tags:
   - krv-together
   - krv-bridge
   - volunteer
-startDate: 2025-01-29T4:00
+startDate: 2025-01-29T03:30
 endDate: 2025-01-29T10:00
 image: https://i.imgur.com/8ZBpbdEl.jpeg
 thumbnail:
