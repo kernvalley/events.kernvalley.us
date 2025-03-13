@@ -14,8 +14,8 @@ tags:
   - outdoors
   - neighbor-to-neighbor
   - krv-together
-startDate: 2025-03-12T17:00
-endDate: 2025-03-12T19:00
+startDate: 2025-03-19T17:00
+endDate: 2025-03-19T19:00
 image: https://i.imgur.com/eY7R6xvh.jpg
 organizer:
   "@type": Organization
