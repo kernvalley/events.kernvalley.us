@@ -2,27 +2,27 @@
 "@context": https://schema.org
 "@type": Event
 layout: redirect
-redirect: https://events.californiavolunteers.ca.gov/opportunities/NCrZ1FYTsB
+redirect: https://x.gldn.io/e/MyQ5vh6M1Rb
 date: 2025-02-28
-name: KRV Cares
-title: KRV Cares
-description: Create a United Voice to be heard, Addressing the most Critical Needs of the KRV, Taking charge and being Proactive By planning a Community Response
+name: Planting the Seeds
+title: Planting the Seeds
+description: Volunteers will work together to plant a garden which will help feed the residents of the Kern River Valley
 tags:
   - lake isabella
-  - bodfish
-  - wofford heights
-  - kernville
-  - weldon
-  - indoors
+  - outdoors
+  - volunteer
+  - food
+  - health
+  - social
   - n2n
   - neighbor-to-neighbor
   - krv-together
   - krv-bridge
-startDate: 2025-03-21T17:30
-endDate: 2025-03-21T20:00
-image: https://i.imgur.com/QzKpt59.jpeg
+startDate: 2025-04-05T10:00
+endDate: 2025-04-05T14:00
+image: https://i.imgur.com/zE6YUWk.png
 thumbnail:
-  url: https://i.imgur.com/QzKpt59.jpeg
+  url: https://i.imgur.com/zE6YUWk.png
   height: 666
   width: 1024
 organizer:
