@@ -3,7 +3,7 @@
 "@type": Event
 layout: redirect
 redirect: https://events.californiavolunteers.ca.gov/opportunities/RtDr64vQWg
-date: 2025-11-08
+date: 2025-08-11
 name: Back-to-School Movie
 title: Back-to-School Movie
 description: Join KRV Bridge Connection and Be Finally Free for a Back-to-School Movie Night! We're showing Inside Out 2 in the community garden.
@@ -15,8 +15,8 @@ tags:
   - neighbor-to-neighbor
   - krv-together
   - krv-bridge
-startDate: 2025-11-08T18:00
-endDate: 2025-11-08T22:00
+startDate: 2025-08-11T18:00
+endDate: 2025-08-11T22:00
 image: https://i.imgur.com/bIk889cl.png
 thumbnail:
   url: https://i.imgur.com/bIk889cl.png
