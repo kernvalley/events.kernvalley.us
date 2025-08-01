@@ -2,7 +2,7 @@
 "@context": https://schema.org
 "@type": Event
 layout: redirect
-redirect: https://events.californiavolunteers.ca.gov/opportunities/RtDr64vQWg
+redirect: https://www.facebook.com/events/2280237849112896/
 date: 2025-08-11
 name: Back-to-School Movie
 title: Back-to-School Movie
@@ -17,10 +17,10 @@ tags:
   - krv-bridge
 startDate: 2025-08-11T18:00
 endDate: 2025-08-11T22:00
-image: https://i.imgur.com/bIk889cl.png
+image: https://i.imgur.com/w2WaA29l.jpeg
 thumbnail:
-  url: https://i.imgur.com/bIk889cl.png
-  height: 666
+  url: https://i.imgur.com/w2WaA29l.jpeg
+  height: 702
   width: 1024
 organizer:
   "@type": Organization
