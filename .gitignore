@@ -231,3 +231,4 @@ pip-log.txt
 # Local Netlify folder
 .netlify
 Icon?
+deno.lock
