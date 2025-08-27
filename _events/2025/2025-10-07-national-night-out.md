@@ -58,3 +58,5 @@ funding:
     url: https://www.californiavolunteers.ca.gov/
 ---
 Join the KRV in a celebration of local law enforcement and first responders.
+
+Come to an evening of fun in our community garden. There will be games, live music, food from vendors, and more!
