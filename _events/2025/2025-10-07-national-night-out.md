@@ -1,12 +1,12 @@
 ---
 "@context": https://schema.org
 "@type": Event
-# layout: redirect
-# redirect: https://x.gldn.io/e/lzOI2vAvWVb
+layout: redirect
+redirect: https://x.gldn.io/e/MthEVgWOoWb
 date: 2025-10-07
 name: National Night Out
 title: National Night Out
-description: Join your community in celebrating law enforcement and first responders.
+description: Join your community in celebrating law enforcement and first responders. Featuring Live Music by Rock Slide.
 tags:
   - lake isabella
   - outdoors
@@ -19,9 +19,9 @@ tags:
   - krv-bridge
 startDate: 2025-10-07T18:00
 endDate: 2025-10-07T20:00
-image:https://i.imgur.com/F44pSGvl.png
+image: https://i.imgur.com/GYFYqJFl.png
 thumbnail:
-  url: https://i.imgur.com/F44pSGvl.png
+  url: https://i.imgur.com/GYFYqJFl.png
   height: 416
   width: 640
 organizer:
