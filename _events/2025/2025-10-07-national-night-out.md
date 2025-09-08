@@ -17,6 +17,7 @@ tags:
   - neighbor-to-neighbor
   - krv-together
   - krv-bridge
+  - social
 startDate: 2025-10-07T18:00
 endDate: 2025-10-07T20:00
 image: https://i.imgur.com/GYFYqJFl.png
