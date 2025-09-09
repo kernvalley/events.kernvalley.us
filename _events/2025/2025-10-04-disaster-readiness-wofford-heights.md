@@ -8,7 +8,7 @@ name: Disaster Readiness Fair - Wofford Heights
 title: Disaster Readiness Fair - Wofford Heights
 description: Disaster Readiness Community Event where local partners and neighbors are coming together to keep our community safe and prepared.
 tags:
-  - wofford heights
+  - wofford-heights
   - indoors
   - educational
   - family
