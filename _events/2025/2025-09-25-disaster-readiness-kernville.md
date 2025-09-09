@@ -17,8 +17,8 @@ tags:
   - krv-together
   - krv-bridge
   - social
-startDate: 2025-09-25T12:00
-endDate: 2025-09-25T13:30
+startDate: 2025-09-25T17:30
+endDate: 2025-09-25T19:00
 image: https://i.imgur.com/MBoQqRGl.jpeg
 thumbnail:
   url: https://i.imgur.com/MBoQqRGl.jpeg
