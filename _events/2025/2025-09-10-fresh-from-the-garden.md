@@ -6,7 +6,7 @@ name: Fresh from the Garden
 title: Fresh from the Garden
 description: We're celebrating the harvest with fresh salsa and free produce from our garden. Stop by and get some fresh vegetables to take home!
 tags:
-  - lake isabella
+  - lake-isabella
   - outdoors
   - krv-bridge
   - family
