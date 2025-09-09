@@ -8,7 +8,7 @@ name: National Night Out
 title: National Night Out
 description: Join your community in celebrating law enforcement and first responders. Featuring Live Music by Rock Slide.
 tags:
-  - lake isabella
+  - lake-isabella
   - outdoors
   - music
   - concert

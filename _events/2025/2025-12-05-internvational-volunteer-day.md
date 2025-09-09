@@ -8,7 +8,7 @@ name: International Volunteer Day
 title: International Volunteer Day
 description: We will be showing appreciation for volunteers in the community, with special recognition for outstanding volunteers
 tags:
-  - lake isabella
+  - lake-isabella
   - outdoors
   - family
   - n2n
@@ -18,6 +18,7 @@ tags:
   - krv-together
   - krv-bridge
   - social
+  - krv-chamber
 startDate: 2025-12-05T17:30
 endDate: 2025-12-05T19:30
 image: https://i.imgur.com/2ZQ8Vm0l.png
