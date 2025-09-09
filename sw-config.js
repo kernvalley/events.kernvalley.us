@@ -26,6 +26,12 @@ const config = {
 	version: '{{ site.data.app.version | default: site.version }}',
 	fresh: [
 		'{{ site.pages | where: "pinned", true | map: "url" | join: "', '" }}',
+		'/tags/kernville',
+		'/tags/lake-isabella',
+		'/tags/wofford-heights',
+		'/tags/mt-mesa',
+		'/tags/weldon',
+		'/tags/south-lake',
 		'https://apps.kernvalley.us/apps.json',
 		'/webapp.webmanifest',
 	].map(path => new URL(path, location.origin).href),
