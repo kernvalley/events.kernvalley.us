@@ -8,7 +8,7 @@ name: Disaster Readiness Fair - Lake Isabella
 title: Disaster Readiness Fair - Lake Isabella
 description: Disaster Readiness Community Event where local partners and neighbors are coming together to keep our community safe and prepared.
 tags:
-  - lake isabella
+  - lake-isabella
   - indoors
   - educational
   - family
