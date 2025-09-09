@@ -15,8 +15,9 @@ tags:
   - n2n
   - neighbor-to-neighbor
   - krv-together
-  - krv-bridge
+  - riverstone-wellness
   - social
+  - emergency
 startDate: 2025-09-25T17:30
 endDate: 2025-09-25T19:00
 image: https://i.imgur.com/MBoQqRGl.jpeg
