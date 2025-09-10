@@ -5,8 +5,8 @@
 # redirect: https://www.facebook.com/events/790286536782261/
 facebook: https://www.facebook.com/events/790286536782261/
 date: 2025-09-26
-name: Back-to-School Movie
-title: Back-to-School Movie
+name: KRV Movie Night
+title: KRV Movie Night
 description: It's going to be an "Ogre-the-Top" night of fun games, prizes, rock painting, popcorn, goodies, and Shrek under the Stars!
 tags:
   - lake isabella
@@ -48,4 +48,6 @@ location:
 ---
 It's going to be an "Ogre-the-Top" night of fun games, prizes, rock painting, popcorn, goodies, and Shrek under the Stars!
 
-See more info on <a href="{{ page.facebook }}" class="btn btn-link" rel="noopener noreferrer" target="_blank">Facebook {% include common/icon.html icon="facebook" height="18" width="18" %}</a>
+Co-Hosted with <a href="https://befinallyfree.org/" rel="noopener noreferrer" target="_blank">Be Finally Free {% include common/icon.html icon="link-external" height="18" width="18" %}</a>
+
+See more info on <a href="{{ page.facebook }}" rel="noopener noreferrer" target="_blank">Facebook {% include common/icon.html icon="facebook" height="18" width="18" %}</a>
