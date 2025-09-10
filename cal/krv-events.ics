@@ -3,42 +3,7 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:508dbf50-8a71-4499-a06e-570f3e455570
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Fresh from the Garden
-LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:We're celebrating the harvest with fresh salsa and free produce
-  from our garden. Stop by and get some fresh vegetables to take home!
-DTSTAMP:20250909T162141Z
-LAST-MODIFIED:20250909T162141Z
-DTSTART:20250910T180000Z
-DTEND:20250910T200000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://events.kernvalley.us/2025/09/10/fresh-from-the-garden
-END:VEVENT
-BEGIN:VEVENT
-UID:8b924848-414f-4bd6-a428-850f0f039627
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Disaster Readiness Fair - Kernville
-LOCATION:14 Sierra Dr, Kernville, CA 93238, US
-DESCRIPTION:Disaster Readiness Community Event where local partners and nei
- ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250909T162141Z
-LAST-MODIFIED:20250909T162141Z
-DTSTART:20250925T190000Z
-DTEND:20250925T203000Z
-ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
-URL:https://x.gldn.io/e/VreS2MLevWb?utm_source=krv-events&utm_medium=referr
- er
-END:VEVENT
-BEGIN:VEVENT
-UID:4b8fa8da-54d3-4db4-9151-677d2c948f6a
+UID:d74ee386-bc29-401e-a9e9-c49ccb80485f
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -47,8 +12,8 @@ SUMMARY:Disaster Readiness Fair - Mt Mesa
 LOCATION:12251 CA-178, Mt Mesa, CA 93240, US
 DESCRIPTION:Disaster Readiness Community Event where local partners and nei
  ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250909T162141Z
-LAST-MODIFIED:20250909T162141Z
+DTSTAMP:20250910T235002Z
+LAST-MODIFIED:20250910T235002Z
 DTSTART:20250925T190000Z
 DTEND:20250925T203000Z
 ORGANIZER;CN=Sierra Shared Spaces:mailto:justin@kernvillecowork.com
@@ -56,7 +21,42 @@ URL:https://x.gldn.io/e/nfBJuuCevWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:c01cc398-eef9-4b28-a4dc-dff4c4673991
+UID:e11bf7da-cff9-4434-a4a4-ee340f185d5a
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Disaster Readiness Fair - Kernville
+LOCATION:14 Sierra Dr, Kernville, CA 93238, US
+DESCRIPTION:Disaster Readiness Community Event where local partners and nei
+ ghbors are coming together to keep our community safe and prepared.
+DTSTAMP:20250910T235002Z
+LAST-MODIFIED:20250910T235002Z
+DTSTART:20250926T003000Z
+DTEND:20250926T020000Z
+ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
+URL:https://x.gldn.io/e/VreS2MLevWb?utm_source=krv-events&utm_medium=referr
+ er
+END:VEVENT
+BEGIN:VEVENT
+UID:d460ae45-d861-42f0-a564-32e4543848e9
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:KRV Movie Night
+LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
+DESCRIPTION:It's going to be an \"Ogre-the-Top\" night of fun games, prizes
+ , rock painting, popcorn, goodies, and Shrek under the Stars!
+DTSTAMP:20250910T235002Z
+LAST-MODIFIED:20250910T235002Z
+DTSTART:20250927T020000Z
+DTEND:20250927T050000Z
+ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
+URL:https://events.kernvalley.us/2025/09/26/krv-movie-night
+END:VEVENT
+BEGIN:VEVENT
+UID:c1e1d729-d846-48db-a671-c4c5526c2bd9
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -65,8 +65,8 @@ SUMMARY:Disaster Readiness Fair - Wofford Heights
 LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
 DESCRIPTION:Disaster Readiness Community Event where local partners and nei
  ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250909T162141Z
-LAST-MODIFIED:20250909T162141Z
+DTSTAMP:20250910T235002Z
+LAST-MODIFIED:20250910T235002Z
 DTSTART:20251004T170000Z
 DTEND:20251004T183000Z
 ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
@@ -74,7 +74,7 @@ URL:https://x.gldn.io/e/RbcJA5QevWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:67166c36-6837-42e5-89f2-3ff5f49fb84c
+UID:4352cba9-83b0-4f50-8dbb-f4c807ca7f6b
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -83,8 +83,8 @@ SUMMARY:Disaster Readiness Fair - Lake Isabella
 LOCATION:6407 Lake Isabella Blvd, Lake Isabella, CA 93240, US
 DESCRIPTION:Disaster Readiness Community Event where local partners and nei
  ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250909T162141Z
-LAST-MODIFIED:20250909T162141Z
+DTSTAMP:20250910T235002Z
+LAST-MODIFIED:20250910T235002Z
 DTSTART:20251004T203000Z
 DTEND:20251004T220000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
@@ -92,7 +92,7 @@ URL:https://x.gldn.io/e/MslqDfSevWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:b509c2ad-e0fb-46ee-96e4-2505d458dbcb
+UID:3d747b54-d872-40f6-9e5d-42bcd963e618
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -101,8 +101,8 @@ SUMMARY:National Night Out
 LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
 DESCRIPTION:Join your community in celebrating law enforcement and first re
  sponders. Featuring Live Music by Rock Slide.
-DTSTAMP:20250909T162141Z
-LAST-MODIFIED:20250909T162141Z
+DTSTAMP:20250910T235002Z
+LAST-MODIFIED:20250910T235002Z
 DTSTART:20251008T010000Z
 DTEND:20251008T030000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
@@ -110,7 +110,7 @@ URL:https://x.gldn.io/e/MthEVgWOoWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:d06f9fcf-b1eb-4395-a591-1f9275709d4a
+UID:d212ea5c-9143-4e40-a113-7d5b1a10eb34
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -119,8 +119,8 @@ SUMMARY:International Volunteer Day
 LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
 DESCRIPTION:We will be showing appreciation for volunteers in the community
  , with special recognition for outstanding volunteers
-DTSTAMP:20250909T162141Z
-LAST-MODIFIED:20250909T162141Z
+DTSTAMP:20250910T235002Z
+LAST-MODIFIED:20250910T235002Z
 DTSTART:20251206T013000Z
 DTEND:20251206T033000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
