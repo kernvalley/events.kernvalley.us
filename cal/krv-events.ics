@@ -3,7 +3,25 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:d74ee386-bc29-401e-a9e9-c49ccb80485f
+UID:298957c5-053b-43a3-86d7-6cecb874a637
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:The Great Kern River Cleanup
+LOCATION:15775 Sierra Way, Kernville, CA 93238, US
+DESCRIPTION:The Great Kern River Cleanup is the premier volunteer event foc
+ used on removing trash and restoring the health of the Mi
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
+DTSTART:20250913T163000Z
+DTEND:20250913T193000Z
+ORGANIZER;CN=Kern River Conservancy:mailto:info@kernriverchamber.org
+URL:https://kernriverconservancy.org/great-kern-river-cleanup?utm_source=kr
+ v-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:8ebcf611-913d-4b50-80cc-d0b441d386d2
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -12,8 +30,8 @@ SUMMARY:Disaster Readiness Fair - Mt Mesa
 LOCATION:12251 CA-178, Mt Mesa, CA 93240, US
 DESCRIPTION:Disaster Readiness Community Event where local partners and nei
  ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250910T235002Z
-LAST-MODIFIED:20250910T235002Z
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
 DTSTART:20250925T190000Z
 DTEND:20250925T203000Z
 ORGANIZER;CN=Sierra Shared Spaces:mailto:justin@kernvillecowork.com
@@ -21,7 +39,7 @@ URL:https://x.gldn.io/e/nfBJuuCevWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:e11bf7da-cff9-4434-a4a4-ee340f185d5a
+UID:8c665ddc-4fba-4fcc-88ff-c9a8a49d759f
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -30,8 +48,8 @@ SUMMARY:Disaster Readiness Fair - Kernville
 LOCATION:14 Sierra Dr, Kernville, CA 93238, US
 DESCRIPTION:Disaster Readiness Community Event where local partners and nei
  ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250910T235002Z
-LAST-MODIFIED:20250910T235002Z
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
 DTSTART:20250926T003000Z
 DTEND:20250926T020000Z
 ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
@@ -39,7 +57,7 @@ URL:https://x.gldn.io/e/VreS2MLevWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:d460ae45-d861-42f0-a564-32e4543848e9
+UID:3c650fe8-5c6e-4401-b958-db49bb68a025
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -48,15 +66,15 @@ SUMMARY:KRV Movie Night
 LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
 DESCRIPTION:It's going to be an \"Ogre-the-Top\" night of fun games, prizes
  , rock painting, popcorn, goodies, and Shrek under the Stars!
-DTSTAMP:20250910T235002Z
-LAST-MODIFIED:20250910T235002Z
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
 DTSTART:20250927T020000Z
 DTEND:20250927T050000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
 URL:https://events.kernvalley.us/2025/09/26/krv-movie-night
 END:VEVENT
 BEGIN:VEVENT
-UID:c1e1d729-d846-48db-a671-c4c5526c2bd9
+UID:8e81ce72-22fa-420e-97e1-375097e20c55
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -65,8 +83,8 @@ SUMMARY:Disaster Readiness Fair - Wofford Heights
 LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
 DESCRIPTION:Disaster Readiness Community Event where local partners and nei
  ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250910T235002Z
-LAST-MODIFIED:20250910T235002Z
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
 DTSTART:20251004T170000Z
 DTEND:20251004T183000Z
 ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
@@ -74,7 +92,7 @@ URL:https://x.gldn.io/e/RbcJA5QevWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:4352cba9-83b0-4f50-8dbb-f4c807ca7f6b
+UID:36e1f996-d17c-4230-b435-f006f9b3066c
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -83,8 +101,8 @@ SUMMARY:Disaster Readiness Fair - Lake Isabella
 LOCATION:6407 Lake Isabella Blvd, Lake Isabella, CA 93240, US
 DESCRIPTION:Disaster Readiness Community Event where local partners and nei
  ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250910T235002Z
-LAST-MODIFIED:20250910T235002Z
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
 DTSTART:20251004T203000Z
 DTEND:20251004T220000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
@@ -92,7 +110,7 @@ URL:https://x.gldn.io/e/MslqDfSevWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:3d747b54-d872-40f6-9e5d-42bcd963e618
+UID:9b461efc-5d9b-4fb0-b5d3-9b89550d7aea
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -101,8 +119,8 @@ SUMMARY:National Night Out
 LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
 DESCRIPTION:Join your community in celebrating law enforcement and first re
  sponders. Featuring Live Music by Rock Slide.
-DTSTAMP:20250910T235002Z
-LAST-MODIFIED:20250910T235002Z
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
 DTSTART:20251008T010000Z
 DTEND:20251008T030000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
@@ -110,7 +128,25 @@ URL:https://x.gldn.io/e/MthEVgWOoWb?utm_source=krv-events&utm_medium=referr
  er
 END:VEVENT
 BEGIN:VEVENT
-UID:d212ea5c-9143-4e40-a113-7d5b1a10eb34
+UID:8848db9e-1faa-4297-ad60-c304c6bb2935
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Kern River Valley 46th Annual Christmas Parade
+LOCATION:Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:Where Cowboy Boots Meet Christmas Magic
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
+DTSTART:20251129T190000Z
+DTEND:20251129T203000Z
+ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:Office@kernriverv
+ alley.com
+URL:https://www.kernrivervalley.com/christmas-parade?utm_source=krv-events&
+ utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:20ec5e56-7465-4c15-ae9d-e2f0bd50bede
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -119,8 +155,8 @@ SUMMARY:International Volunteer Day
 LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
 DESCRIPTION:We will be showing appreciation for volunteers in the community
  , with special recognition for outstanding volunteers
-DTSTAMP:20250910T235002Z
-LAST-MODIFIED:20250910T235002Z
+DTSTAMP:20250912T222731Z
+LAST-MODIFIED:20250912T222731Z
 DTSTART:20251206T013000Z
 DTEND:20251206T033000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
