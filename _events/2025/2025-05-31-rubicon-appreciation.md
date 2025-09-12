@@ -35,7 +35,7 @@ organizer:
     - https://www.facebook.com/krvbridgeconnection/
     - https://instagram.com/krvbridgeconnection/
 location:
-  "@type": NGO
+  "@type": Place
   name: KRV Bridge Connection
   address:
     "@type": PostalAddress
