@@ -18,7 +18,6 @@ tags:
   - krv-together
   - krv-bridge
   - social
-  - krv-chamber
 startDate: 2025-12-05T17:30
 endDate: 2025-12-05T19:30
 image: https://i.imgur.com/2ZQ8Vm0l.png
