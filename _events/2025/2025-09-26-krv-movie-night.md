@@ -9,7 +9,7 @@ name: KRV Movie Night
 title: KRV Movie Night
 description: It's going to be an "Ogre-the-Top" night of fun games, prizes, rock painting, popcorn, goodies, and Shrek under the Stars!
 tags:
-  - lake isabella
+  - lake-isabella
   - outdoors
   - social
   - family

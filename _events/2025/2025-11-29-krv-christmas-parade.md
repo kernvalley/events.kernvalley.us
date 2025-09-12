@@ -8,13 +8,13 @@ name: Kern River Valley 46th Annual Christmas Parade
 title: Kern River Valley 46th Annual Christmas Parade
 description: Where Cowboy Boots Meet Christmas Magic
 tags:
-  - lake isabella
+  - lake-isabella
   - family
   - children
   - social
   - holiday
   - outdoors
-  - krv chamber
+  - krv-chamber
 startDate: 2025-11-29T11:00
 endDate: 2025-11-29T12:30
 eventAttendanceMode: OfflineEventAttendanceMode
