@@ -2,7 +2,7 @@
 "@context": https://schema.org
 "@type": SocialEvent
 layout: event-page
-date: 2025-10-25
+date: 2025-10-24
 name: Tricks for Treats
 title: Tricks for Treats
 description: A Halloween Skate Competition, Costume Contest, and Trunk or Treat
@@ -15,10 +15,10 @@ tags:
   - holiday
   - games
   - outdoors
-startDate: 2025-10-25T17:00
-endDate: 2025-10-25T20:00
+startDate: 2025-10-24T17:00
+endDate: 2025-10-24T20:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/B7kv1qol.png
+image: https://i.imgur.com/v6NVWNDl.png
 organizer:
   "@type": Organization
   name: Kern River Skate Park
