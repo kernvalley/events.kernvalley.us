@@ -2,6 +2,11 @@
 	<div>
 		<link itemprop="eventStatus" content="https://schema.org/{{ include.eventStatus | default: 'EventScheduled' }}" />
 		<link itemprop="eventAttendanceMode" content="https://schema.org/{{ include.eventAttendanceMode | default: 'OfflineEventAttendanceMode' }}" />
+		{% if include.event.tags %}
+			{% for keyword in include.event.tags %}
+				<meta itemprop="keywords" content="{{ keyword }}" />
+			{% endfor %}
+		{% endif %}
 		{% if include.event.redirect %}
 			<a href="{{ include.event.redirect }}?utm_source=krv-events&amp;utm_medium=referrer" rel="noopener referrer external">
 		{% elsif include.event.url %}<a href="{{ include.event.url }}">{% endif %}
@@ -153,7 +158,7 @@
 			</div>
 		{% endif %}
 		{% if include.event.funding %}
-			<div itemprop="funding" itemtype="https://scheme.org/{{ include.event.funding['@type'] | default: 'Grant' }}" itemscope="" hidden="">
+			<div itemprop="funding" itemtype="https://schema.org/{{ include.event.funding['@type'] | default: 'Grant' }}" itemscope="" hidden="">
 				<meta itemprop="name" content="{{ include.event.funding.name }}" />
 				{% if include.event.funding.url %}
 					<link itemprop="url" href="{{ include.event.funding.url }}" />
