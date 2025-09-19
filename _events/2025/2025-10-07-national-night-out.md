@@ -16,6 +16,7 @@ tags:
   - n2n
   - neighbor-to-neighbor
   - krv-together
+  - krv-strong
   - krv-bridge
   - social
 startDate: 2025-10-07T18:00

@@ -17,6 +17,7 @@ tags:
   - social
   - outdoors
   - fundraiser
+  - adults
 startDate: 2025-10-18T12:00
 endDate: 2025-10-18T17:00
 eventAttendanceMode: OfflineEventAttendanceMode

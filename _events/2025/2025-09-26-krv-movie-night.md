@@ -15,6 +15,8 @@ tags:
   - family
   - krv-together
   - krv-bridge
+  - children
+  - youth
 startDate: 2025-09-26T19:00
 endDate: 2025-09-26T22:00
 image: https://i.imgur.com/idJuhDxl.png

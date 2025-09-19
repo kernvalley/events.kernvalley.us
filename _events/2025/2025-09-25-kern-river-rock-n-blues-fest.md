@@ -14,6 +14,7 @@ tags:
   - music
   - concert
   - social
+  - adults
 startDate: 2025-09-25T20:00
 endDate: 2025-09-28T14:00
 eventAttendanceMode: OfflineEventAttendanceMode
