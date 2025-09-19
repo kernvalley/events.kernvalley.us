@@ -10,6 +10,7 @@ description: A Halloween Skate Competition, Costume Contest, and Trunk or Treat
 tags:
   - lake-isabella
   - family
+  - youth
   - sports
   - social
   - holiday

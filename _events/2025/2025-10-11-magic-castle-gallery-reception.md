@@ -11,7 +11,7 @@ description: Magic Castle Themed gallery exhibition on the 2nd Saturday of
 tags:
   - wofford-heights
   - family
-  - children
+  - youth
   - food
   - art
   - music

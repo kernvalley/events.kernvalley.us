@@ -16,6 +16,7 @@ tags:
   - volunteer
   - social
   - krv-together
+  - krv-strong
   - krv-bridge
   - social
 startDate: 2025-12-05T17:30

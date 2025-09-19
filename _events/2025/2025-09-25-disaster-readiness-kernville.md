@@ -18,6 +18,8 @@ tags:
   - riverstone-wellness
   - social
   - emergency
+  - informational
+  - krv-strong
 startDate: 2025-09-25T17:30
 endDate: 2025-09-25T19:00
 image: https://i.imgur.com/MBoQqRGl.jpeg

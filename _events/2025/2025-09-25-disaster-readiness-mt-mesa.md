@@ -19,6 +19,8 @@ tags:
   - mt-mesa
   - social
   - emergency
+  - informational
+  - krv-strong
 startDate: 2025-09-25T12:00
 endDate: 2025-09-25T13:30
 image: https://i.imgur.com/MBoQqRGl.jpeg

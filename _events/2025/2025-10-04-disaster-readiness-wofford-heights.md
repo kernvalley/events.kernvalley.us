@@ -18,6 +18,8 @@ tags:
   - krvaa
   - social
   - emergency
+  - informational
+  - krv-strong
 startDate: 2025-10-04T10:00
 endDate: 2025-10-04T11:30
 image: https://i.imgur.com/MBoQqRGl.jpeg

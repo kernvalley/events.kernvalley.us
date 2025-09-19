@@ -18,6 +18,8 @@ tags:
   - krv-bridge
   - social
   - emergency
+  - informational
+  - krv-strong
 startDate: 2025-10-04T13:30
 endDate: 2025-10-04T15:00
 image: https://i.imgur.com/MBoQqRGl.jpeg
