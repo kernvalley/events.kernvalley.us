@@ -77,7 +77,7 @@ async function getDocument(id) {
 
 async function uploadFile(file, { name } = {}) {
 	if (file instanceof File) {
-		const storage = await loadStorage(BUCKET);
+		const storage = await loadStorage();
 		const fileRef = typeof name === 'string' ? ref(storage, name) : ref(storage, file.name);
 
 		return await uploadBytes(fileRef, file, { contentType: file.type });
@@ -203,8 +203,9 @@ if (params.has('event')) {
 
 			history.replaceState(state, '', location.href);
 		});
+
 		observer.observe(photoBooth, {
-			attributeFilter: ['saveoncapture', 'shutter', 'delay', 'quality', 'resolution', 'type', 'facingmore', 'mirror', 'hideitems'],
+			attributeFilter: ['saveoncapture', 'shutter', 'delay', 'quality', 'resolution', 'type', 'facingmode', 'mirror', 'hideitems'],
 			attributes: true,
 		});
 	}).catch(err => {
