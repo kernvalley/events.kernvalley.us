@@ -1,6 +1,6 @@
 ---
 "@context": https://schema.org
-voluunteer: https://www.signupgenius.com/go/10C0548A5AE2FA5F5C70-60003617-government#/
+volunteer: https://www.signupgenius.com/go/10C0548A5AE2FA5F5C70-60003617-government#/
 event: https://www.capk.org/shutdown/#calendar-e4bed589-3748-49c7-972e-fbe52f590998-event-c26918f2-dc72-47e5-8808-52507d6b1fcc
 "@type": Event
 date: 2025-11-13
@@ -46,5 +46,5 @@ If you are a Kern County resident who has had their CalFresh benefits affected b
 
 Kern County residents may attend CalFresh focused distributions in their communities to obtain supplemental food support. To obtain these services, please bring your EBT card to distribution locations.
 
-<a href="{{ event }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer external">Learn More {% include common/icon.html icon="link-external" %}</a>
-<a href="{{ volunteer }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer external">Volunteer Opportunities {% include common/icon.html icon="link-external" %}</a>
+<a href="{{ page.event }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer external">Learn More {% include common/icon.html icon="link-external" %}</a>
+<a href="{{ page.volunteer }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer external">Volunteer Opportunities {% include common/icon.html icon="link-external" %}</a>
