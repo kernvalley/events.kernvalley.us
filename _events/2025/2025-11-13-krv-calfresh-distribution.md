@@ -7,6 +7,7 @@ date: 2025-11-13
 name: Kern River Valley CalFresh Distribution
 title: Kern River Valley CalFresh Distribution
 description: Kern County residents may attend CalFresh focused distributions in their communities to obtain supplemental food support.
+eventStatus: EventCancelled
 tags:
   - lake-isabella
   - food
