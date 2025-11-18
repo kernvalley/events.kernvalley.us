@@ -1,8 +1,8 @@
 ---
 "@context": https://schema.org
 "@type": Event
-layout: redirect
-redirect: https://x.gldn.io/e/UXVdiCA1kWb
+#layout: redirect
+#redirect: https://x.gldn.io/e/UXVdiCA1kWb
 date: 2025-12-05
 name: International Volunteer Day
 title: International Volunteer Day
@@ -59,3 +59,29 @@ funding:
     name: California Volunteers
     url: https://www.californiavolunteers.ca.gov/
 ---
+> International Volunteer Day, commonly known as IVD, is celebrated on 5 December every year. It started as an
+international observance mandated by the United Nations General Assembly in 1985. It is a day where volunteers
+are acknowledged and the spirit of volunteerism is promoted at the local, national and international levels.
+
+- - -
+
+Join us this year as we celebrate the invaluable contributions of volunteers across our community!
+
+We are hosting a special event on Fri. Dec 5 at 5:30 PM at KRV Bridge Connection to show deep appreciation
+for all community volunteers, with a dedicated segment for special recognition.
+
+### Event Highlights & Recognition
+
+This gathering will bring together nonprofit organizations, churches, and members of the community
+to honor the dedication and impact of local volunteer efforts.
+
+The event will feature special recognition for outstanding volunteers. Recognition will be provided
+through donations collected from local businesses for:
+
+- Volunteers nominated by participating organizations.
+- One "Community Voted Volunteer" selected by the public.
+
+### Support & Funding
+
+This International Volunteer Day celebration is proudly hosted and funded through the Neighbor-to-Neighbor program,
+a key initiative supported by California Volunteers.
