@@ -91,4 +91,4 @@ through donations collected from local businesses for:
 This International Volunteer Day celebration is proudly hosted and funded through the Neighbor-to-Neighbor program,
 a key initiative supported by California Volunteers.
 
-<a href="{{ form }}" class="btn btn-primary btn-big" rel="noopener noreferrer external">KRV Community Volunteer of the Year Nomination {% include common/icon.html icon="link-external" %}</a> 
+<a href="{{ page.form }}" class="btn btn-primary btn-big" rel="noopener noreferrer external">KRV Community Volunteer of the Year Nomination {% include common/icon.html icon="link-external" %}</a> 
