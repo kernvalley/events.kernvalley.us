@@ -3,6 +3,11 @@
 "@type": Event
 #layout: redirect
 #redirect: https://x.gldn.io/e/UXVdiCA1kWb
+offers:
+  - name: Register Online
+    price: 0
+    url: https://x.gldn.io/e/UXVdiCA1kWb
+fomr: https://docs.google.com/forms/d/e/1FAIpQLSfdiVe9zaYUx6v2K8dIzNTyd5gBvrwtSyvDskkPx2WC0_wB9A/viewform?usp=header
 date: 2025-12-05
 name: International Volunteer Day
 title: International Volunteer Day
@@ -85,3 +90,5 @@ through donations collected from local businesses for:
 
 This International Volunteer Day celebration is proudly hosted and funded through the Neighbor-to-Neighbor program,
 a key initiative supported by California Volunteers.
+
+<a href="{{ form }}" class="btn btn-primary btn-big" rel="noopener noreferrer external">KRV Community Volunteer of the Year Nomination {% include common/icon.html icon="link-external" %}</a> 
