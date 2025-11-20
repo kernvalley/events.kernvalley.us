@@ -27,16 +27,16 @@ organizer:
   url: https://www.gokite.org/
 location:
   "@type": Restaurant
-  name: Sequoia Mountain Bakery
+  name: Dick Weed's Brews & Grub
   address:
     "@type": PostalAddress
-    streetAddress: 9 Big Blue Rd.
-    addressLocality: Kernville
+    streetAddress: 6301 Lake Isabella Blvd.
+    addressLocality: Lake Isabella
     addressRegion: CA
-    postalCode: 93238
+    postalCode: 93240
     addressCountry: US
   geo:
     "@type": GeoCoordinates
-    latitude: 35.7548553
-    longitude: -118.4256949
+    latitude: 35.6271891
+    longitude: -118.4747325
 ---
