@@ -22,7 +22,7 @@ tags:
 startDate: 2025-12-17T14:00
 endDate: 2025-12-17T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/PTpswHR.jpeg
+image: https://i.imgur.com/PTpswHRl.png
 organizer:
   "@type": Organization
   name: United Way Central Eastern California
