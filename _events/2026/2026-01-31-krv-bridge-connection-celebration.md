@@ -24,7 +24,7 @@ tags:
 startDate: 2026-01-31T14:00
 endDate: 2026-01-31T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/i4gp24Rl.png
+image: /img/ribbon-cutting.webp
 organizer:
   "@type": Organization
   name: KRV Bridge Connection
@@ -59,7 +59,7 @@ a hub for essential local initiatives, proving that "connection" is more than ju
 
 * **Disaster Resilience:** Following the Borel Fire, we hosted **Team Rubicon** for critical clearing and cleanup,
 followed by an appreciation event and concert to honor those who protected our valley.
-* **Essential Support:** Our **Emergency Choice Pantry and garden** has become a lifeline. In the last month alone,
+* **Essential Support:** The **Emergency Choice Pantry and garden** has become a lifeline. In the last month alone,
 the pantry provided food for **1,365 neighbors**.
 * **Community Health & Safety:** From hosting the **Point-in-Time Count** and **Disaster Readiness Fairs** to
 celebrating **National Night Out**, we have prioritized a safer, more informed community.
@@ -79,10 +79,3 @@ have made this first year a success. We have spent 365 days building the foundat
 forward to year two of bridging the gaps in the Kern River Valley.
 
 **Thank you for being part of the journey.**
-
-## Reflecting
-
-## Community Impact
-
-## Appreciation to Our Partners and Donors
-
