@@ -3,309 +3,42 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:6ded8093-ed8a-4697-a1c7-f77c04fcc466
+UID:30ecdb1e-e4ae-483e-a6e8-4eb3d62688c3
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:Wellness By The Water
-LOCATION:10 Kern River Dr, Kernville, CA 93238, US
-DESCRIPTION:Join us for a free, energizing outdoor workout designed to buil
- d strength, stamina and community. All fitness levels wel
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20250924T000000Z
-DTEND:20250924T010000Z
-ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
-URL:https://events.californiavolunteers.ca.gov/opportunities/BMBKn8FyHy?utm
- _source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:a670c2ba-c8c1-46c3-b046-43960ed678f2
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Hunger Action Month Pantry Stocking
+SUMMARY:Point in Time Count
 LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:Volunteers Needed to Unload Food & Freezer for Hunger Action Mo
- nth
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20250924T210000Z
-DTEND:20250925T000000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://events.kernvalley.us/2025/09/25/hunger-action-month-pantry-stoc
- king
-END:VEVENT
-BEGIN:VEVENT
-UID:36bdbd1a-7bde-4918-9c6a-d494b5f1deb2
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Disaster Readiness Fair - Mt Mesa
-LOCATION:12251 CA-178, Mt Mesa, CA 93240, US
-DESCRIPTION:Disaster Readiness Community Event where local partners and nei
- ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20250925T190000Z
-DTEND:20250925T203000Z
-ORGANIZER;CN=Sierra Shared Spaces:mailto:justin@kernvillecowork.com
-URL:https://x.gldn.io/e/nfBJuuCevWb?utm_source=krv-events&utm_medium=referr
- er
-END:VEVENT
-BEGIN:VEVENT
-UID:27035c96-1837-4a55-8c7f-8aaf030821a3
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Disaster Readiness Fair - Kernville
-LOCATION:14 Sierra Dr, Kernville, CA 93238, US
-DESCRIPTION:Disaster Readiness Community Event where local partners and nei
- ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20250926T003000Z
-DTEND:20250926T020000Z
-ORGANIZER;CN=Riverstone Wellness:mailto:hello@riverstonewellness.org
-URL:https://x.gldn.io/e/VreS2MLevWb?utm_source=krv-events&utm_medium=referr
- er
-END:VEVENT
-BEGIN:VEVENT
-UID:627eae26-3298-4b46-9169-e9aa56084b5b
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Kern River Rock n Blues Fest
-LOCATION:11252 Kernville Rd., Kernville, CA 93238, US
-DESCRIPTION:Tito's Handmade Vodka KERN RIVER ROCK n BLUES FEST presented by
-  Mountain Dog Millworks is Kern County's Rock n Blues Reu
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20250926T030000Z
-DTEND:20250928T210000Z
-ORGANIZER;CN=Notorious Entertainment:mailto:orion.notoriousentertainment@gm
- ail.com
-URL:https://www.facebook.com/events/1275535624050847/?utm_source=krv-events
- &utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:71baa815-1ee3-4a49-82f7-165255fb2f59
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:KRV Movie Night
-LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:It's going to be an \"Ogre-the-Top\" night of fun games, prizes
- , rock painting, popcorn, goodies, and Shrek under the Stars!
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20250927T020000Z
-DTEND:20250927T050000Z
+DESCRIPTION:The Kern River Valley often has few volunteers for this PIT Cou
+ nt and, as a result, the reported number of people experiencing homelessne
+ ss is inaccurate. This event aims to assist with that need and to promote 
+ volunteers in the community.
+DTSTAMP:20260116T210727Z
+LAST-MODIFIED:20260116T210727Z
+DTSTART:20260128T113000Z
+DTEND:20260128T180000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
-URL:https://events.kernvalley.us/2025/09/26/krv-movie-night
+URL:https://bkrhc.org/volunteer-for-the-2026-pit-count/?utm_source=krv-even
+ ts&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:9851a76b-ec78-4538-9941-03f6454f7a64
+UID:3a050915-b632-4f67-a329-ea6fd55cdff7
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:Disaster Readiness Fair - Wofford Heights
-LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
-DESCRIPTION:Disaster Readiness Community Event where local partners and nei
- ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251004T170000Z
-DTEND:20251004T183000Z
-ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
-URL:https://x.gldn.io/e/RbcJA5QevWb?utm_source=krv-events&utm_medium=referr
- er
-END:VEVENT
-BEGIN:VEVENT
-UID:edb3a409-6e60-44bd-9121-bb8c25956c48
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Disaster Readiness Fair - Lake Isabella
-LOCATION:6407 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:Disaster Readiness Community Event where local partners and nei
- ghbors are coming together to keep our community safe and prepared.
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251004T203000Z
-DTEND:20251004T220000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://x.gldn.io/e/MslqDfSevWb?utm_source=krv-events&utm_medium=referr
- er
-END:VEVENT
-BEGIN:VEVENT
-UID:cb693a32-6563-4e40-98e8-60d5407c39cc
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:National Night Out
+SUMMARY:KRV Bridge Connection Celebration
 LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:Join your community in celebrating law enforcement and first re
- sponders. Featuring Live Music by Rock Slide.
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251008T010000Z
-DTEND:20251008T030000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://x.gldn.io/e/MthEVgWOoWb?utm_source=krv-events&utm_medium=referr
- er
-END:VEVENT
-BEGIN:VEVENT
-UID:ff2e8aec-bac6-4bf7-ba95-e9f7ee7fae6f
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Business & Organization of the Year Awards
-LOCATION:6303 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:The Awards will be presented at the Chamber's October General M
- embership Meeting, scheduled for October 8th, 12:00 Noon.
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251008T190000Z
-DTEND:20251008T203000Z
-ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:office@kernriverv
- alley.com
-URL:https://www.kernrivervalley.com/businessandorganizationawards?utm_sourc
- e=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:39b43315-4a8d-415e-9ba7-9443a55e7e5e
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:National Good Neighbor Day
-LOCATION:7054 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:Connect with your neighbors at the library for National Good Ne
- ighbor Day! We'll have activities for the whole family!
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251011T200000Z
-DTEND:20251011T220000Z
-ORGANIZER;CN=Sierra Shared Spaces:mailto:justin@sierrashared.space
-URL:https://events.californiavolunteers.ca.gov/opportunities/3Fdkk0sQly?utm
- _source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:8073e967-e485-4fcb-a7c0-f5def42676e4
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Magic Castle Gallery Reception
-LOCATION:6709 Wofford Blvd, Wofford Heights, CA 93285, US
-DESCRIPTION:Magic Castle Themed gallery exhibition on the 2nd Saturday of O
- ctober on the 11th.  4:30pm-7:00pm.  A magician and more!
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251011T233000Z
-DTEND:20251012T020000Z
-ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
-URL:https://events.californiavolunteers.ca.gov/opportunities/cEnCBNabTL?utm
- _source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:64dcde74-b21a-4200-8354-411cba44a795
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Rivernook Campground Beer and Music Festival
-LOCATION:14001 Sierra Way, Kernville, CA 93238, US
-DESCRIPTION:The annual Rivernook Campground Beer & Music Festival is a Non-
- Profit event benefiting our local Dog Rescue
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251018T190000Z
-DTEND:20251019T000000Z
-ORGANIZER;CN=Rivernook Campground:mailto:info@rivernookcampground.com
-URL:https://www.rivernookcampground.com/beerfest?utm_source=krv-events&utm_
- medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:0f729383-92f8-436d-9b62-a6762ec3b1a8
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Tricks for Treats
-LOCATION:4901 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:A Halloween Skate Competition, Costume Contest, and Trunk or Tr
- eat event at the Skate Park
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251025T000000Z
-DTEND:20251025T030000Z
-ORGANIZER;CN=Kern River Skate Park:mailto:sk8thalake@yahoo.com
-URL:https://events.kernvalley.us/2025/10/24/tricks-for-treats
-END:VEVENT
-BEGIN:VEVENT
-UID:0326ee8d-fa07-478c-b68b-890b1a17bab6
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Kernville Fall Festival
-LOCATION:7 Tobias St, Kernville, CA 93238, US
-DESCRIPTION:🍂✨ The Kernville Fall Festival presented by Julie Jones Real E
- state is almost here! ✨🍂
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251025T170000Z
-DTEND:20251027T000000Z
-ORGANIZER;CN=Kernville Chamber of Commerce:mailto:info@gotokernville.com
-URL:https://www.facebook.com/events/s/kernville-fall-festival/1818509632098
- 254/?utm_source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:ba34106f-6cd1-435f-8aaa-4611f8302027
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Kern River Valley 46th Annual Christmas Parade
-LOCATION:Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:Where Cowboy Boots Meet Christmas Magic
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251129T190000Z
-DTEND:20251129T203000Z
-ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:Office@kernriverv
- alley.com
-URL:https://www.kernrivervalley.com/christmas-parade?utm_source=krv-events&
- utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:58f57b70-06f3-466b-9652-a321dc3bc6ea
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:International Volunteer Day
-LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:We will be showing appreciation for volunteers in the community
- , with special recognition for outstanding volunteers
-DTSTAMP:20250918T171550Z
-LAST-MODIFIED:20250918T171550Z
-DTSTART:20251206T013000Z
-DTEND:20251206T033000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://x.gldn.io/e/UXVdiCA1kWb?utm_source=krv-events&utm_medium=referr
- er
+DESCRIPTION:Come join the KRV Community to celebrate our Official Ribbon Cu
+ tting and One Year Anniversary! Help us thank those who made it all possib
+ le.
+DTSTAMP:20260116T210727Z
+LAST-MODIFIED:20260116T210727Z
+DTSTART:20260131T220000Z
+DTEND:20260201T000000Z
+ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
+URL:https://events.kernvalley.us/2026/01/31/krv-bridge-connection-celebrati
+ on
 END:VEVENT
 END:VCALENDAR
