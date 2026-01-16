@@ -63,7 +63,7 @@ followed by an appreciation event and concert to honor those who protected our v
 the pantry provided food for **1,365 neighbors**.
 * **Community Health & Safety:** From hosting the **Point-in-Time Count** and **Disaster Readiness Fairs** to
 celebrating **National Night Out**, we have prioritized a safer, more informed community.
-* **Local Pride:** We’ve led efforts like the **Lake Isabella Blvd Cleanup** and celebrated the spirit of service
+* **Local Pride:** We’ve participated in efforts like the **Lake Isabella Blvd Cleanup** and celebrated the spirit of service
 on **International Volunteer Day**.
 
 ### A Year of Giving Back
