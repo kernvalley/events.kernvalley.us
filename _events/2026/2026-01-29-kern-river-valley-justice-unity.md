@@ -12,7 +12,7 @@ tags:
   - social
   - indoors
 startDate: 2026-01-29T17:30
-endDate: 2026-01-29T16:30
+endDate: 2026-01-29T18:30
 eventAttendanceMode: OfflineEventAttendanceMode
 image: https://i.imgur.com/WjjTyCZh.png
 thumbnail:
