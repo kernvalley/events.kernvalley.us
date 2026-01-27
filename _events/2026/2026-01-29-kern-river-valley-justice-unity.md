@@ -20,7 +20,7 @@ thumbnail:
   width: 1024
   height: 572
 organizer:
-  "@type": Person
+  "@type": Organization
   name: KernValley.US
   email: admin@kernvalley.us
 location:
