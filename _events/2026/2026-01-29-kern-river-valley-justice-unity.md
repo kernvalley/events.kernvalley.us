@@ -4,7 +4,7 @@
 layout: event-page
 date: 2026-01-29
 name: Kern River Valley Unity, Healing, & Justice
-title: Kern River Valley Unity, Healing, & JUstice
+title: Kern River Valley Unity, Healing, & Justice
 description: Strengthening our community through unity, support, and recognizing injustice.
 tags:
   - lake-isabella
@@ -15,6 +15,10 @@ startDate: 2026-01-29T17:00
 endDate: 2026-01-29T16:30
 eventAttendanceMode: OfflineEventAttendanceMode
 image: https://i.imgur.com/WjjTyCZh.png
+thumbnail:
+  url: https://i.imgur.com/WjjTyCZh.png
+  width: 1024
+  height: 572
 organizer:
   "@type": Person
   name: KernValley.US
