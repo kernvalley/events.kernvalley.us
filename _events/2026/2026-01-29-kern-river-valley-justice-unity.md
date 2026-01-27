@@ -11,7 +11,7 @@ tags:
   - relaxed
   - social
   - indoors
-startDate: 2026-01-29T17:00
+startDate: 2026-01-29T17:30
 endDate: 2026-01-29T16:30
 eventAttendanceMode: OfflineEventAttendanceMode
 image: https://i.imgur.com/WjjTyCZh.png
