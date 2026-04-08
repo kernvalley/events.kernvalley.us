@@ -1,6 +1,8 @@
 ---
 "@context": https://schema.org
 "@type": FoodEvent
+layout: redirect
+redirect: https://www.facebook.com/events/2173196953496239/
 layout: event-page
 date: 2026-04-10
 name: April Garden Club Season Prep
