@@ -5,6 +5,7 @@
         class="no-js scroll-smooth background-primary color-default font-main border-box"
         {% if site.service_worker %}data-service-worker="{{ site.service_worker }}"
         data-reload-on-update=""
+		data-service-worker-type="{{ site.service_worker_type | default: 'module' }}"
         data-scope="{{ site.sw_scope | default: '/' }}"{% endif %}{% if page.ads %}
         data-ad-sense-id="{{ site.ad-sense }}"{% endif %}{% if page.pageLevelAds %}
         data-page-level-ads="{{ page.pageLevelAds }}"{% endif %}
