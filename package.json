@@ -52,6 +52,7 @@
     "lint:html": "if [ -f .htmlhintrc ]; then htmlhint ${npm_package_config_dir_html}; fi",
     "fix:css": "stylelint './**.css' --fix",
     "fix:js": "eslint. --fix",
+    "update:importmap": "npx --package @shgysk8zer0/importmap importmap-utils -i _data/importmap.json -o _data/importmap.json",
     "build": "npm run build:icons && npm run build:css && npm run build:js && npm run build:js:create",
     "build:site": "JEKYLL_ENV=production bundle exec jekyll build --future",
     "build:site:dev": "bundle exec jekyll build --drafts --unpublished --future --profile --trace --strict_front_matter",
