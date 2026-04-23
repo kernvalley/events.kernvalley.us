@@ -1,7 +1,8 @@
 ---
 "@context": https://schema.org
 "@type": Event
-layout: event-page
+layout: redirect
+redirect: /2026/05/08/kfhc-mobile-health-unit
 eventStatus: EventRescheduled
 date: 2026-04-24
 name: KFHC Mobile Health Unit
@@ -43,7 +44,7 @@ location:
     longitude: -118.4758657
     url: https://maps.app.goo.gl/EmNUpSPX5fjP43Ry5
 ---
-**This event has been rescheduled for [Fri. May 7th](s/2026/05/07/kfhc-mobile-health-unit)**
+**This event has been rescheduled for [Fri. May 8th](/2026/05/08/kfhc-mobile-health-unit)**
 
 Kern Family Health Care will be bringing its Mobile Health Unit to support community members during Salvation Army Choice Pantry
 hours this Friday, offering convenient access to a range of essential health services in one stop.
