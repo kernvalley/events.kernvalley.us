@@ -2,7 +2,7 @@
 "@context": https://schema.org
 "@type": Event
 layout: event-page
-date: 2026-05-07
+date: 2026-05-08
 name: KFHC Mobile Health Unit
 title: KFHC Mobile Health Unit
 description: Mobile Health Unit from Kern Family Health Care available
@@ -17,10 +17,10 @@ tags:
   - health
   - nonprofit
   - krv-bridge
-startDate: 2026-05-07T09:00
-endDate: 2026-05-07T16:00
+startDate: 2026-05-08T09:00
+endDate: 2026-05-08T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/Z9EChIRh.webp
+image: https://i.imgur.com/zo5vMu5h.webp
 organizer:
   "@type": Organization
   name: KRV Bridge Connection
