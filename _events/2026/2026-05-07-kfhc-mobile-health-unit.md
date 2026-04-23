@@ -20,7 +20,7 @@ tags:
 startDate: 2026-05-07T09:00
 endDate: 2026-05-07T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/cb1ObqDh.webp
+image: https://i.imgur.com/Z9EChIRh.webp
 organizer:
   "@type": Organization
   name: KRV Bridge Connection
