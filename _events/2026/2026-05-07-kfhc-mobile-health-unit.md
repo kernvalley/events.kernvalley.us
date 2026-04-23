@@ -2,8 +2,7 @@
 "@context": https://schema.org
 "@type": Event
 layout: event-page
-eventStatus: EventRescheduled
-date: 2026-04-24
+date: 2026-05-07
 name: KFHC Mobile Health Unit
 title: KFHC Mobile Health Unit
 description: Mobile Health Unit from Kern Family Health Care available
@@ -18,10 +17,10 @@ tags:
   - health
   - nonprofit
   - krv-bridge
-startDate: 2026-04-24T09:00
-endDate: 2026-04-24T16:00
+startDate: 2026-05-07T09:00
+endDate: 2026-05-07T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/cb1ObqDh.webp
+image: https://i.imgur.com/Z9EChIRh.webp
 organizer:
   "@type": Organization
   name: KRV Bridge Connection
@@ -43,8 +42,6 @@ location:
     longitude: -118.4758657
     url: https://maps.app.goo.gl/EmNUpSPX5fjP43Ry5
 ---
-**This event has been rescheduled for [Fri. May 7th](s/2026/05/07/kfhc-mobile-health-unit)**
-
 Kern Family Health Care will be bringing its Mobile Health Unit to support community members during Salvation Army Choice Pantry
 hours this Friday, offering convenient access to a range of essential health services in one stop.
 
