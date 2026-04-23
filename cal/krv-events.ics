@@ -3,42 +3,36 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:30ecdb1e-e4ae-483e-a6e8-4eb3d62688c3
+UID:5d08289c-da9f-4405-a4d2-bbcd41b9b024
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:Point in Time Count
-LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:The Kern River Valley often has few volunteers for this PIT Cou
- nt and, as a result, the reported number of people experiencing homelessne
- ss is inaccurate. This event aims to assist with that need and to promote 
- volunteers in the community.
-DTSTAMP:20260116T210727Z
-LAST-MODIFIED:20260116T210727Z
-DTSTART:20260128T113000Z
-DTEND:20260128T180000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
-URL:https://bkrhc.org/volunteer-for-the-2026-pit-count/?utm_source=krv-even
- ts&utm_medium=referrer
+SUMMARY:Earth Day Garden Planting
+LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:For Earth Day, let’s plant the seeds for the future we want to 
+ see in our valley—neighbors helping neighbors.
+DTSTAMP:20260423T164319Z
+LAST-MODIFIED:20260423T164319Z
+DTSTART:20260425T150000Z
+DTEND:20260425T190000Z
+ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
+URL:https://events.kernvalley.us/2026/04/25/earth-day-garden-planting
 END:VEVENT
 BEGIN:VEVENT
-UID:3a050915-b632-4f67-a329-ea6fd55cdff7
+UID:79b6ddcd-d59d-49f8-8318-fb58213e195e
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:KRV Bridge Connection Celebration
-LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:Come join the KRV Community to celebrate our Official Ribbon Cu
- tting and One Year Anniversary! Help us thank those who made it all possib
- le.
-DTSTAMP:20260116T210727Z
-LAST-MODIFIED:20260116T210727Z
-DTSTART:20260131T220000Z
-DTEND:20260201T000000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:admin@krvbridge.org
-URL:https://events.kernvalley.us/2026/01/31/krv-bridge-connection-celebrati
- on
+SUMMARY:KFHC Mobile Health Unit
+LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:Mobile Health Unit from Kern Family Health Care available
+DTSTAMP:20260423T164319Z
+LAST-MODIFIED:20260423T164319Z
+DTSTART:20260508T160000Z
+DTEND:20260508T230000Z
+ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
+URL:https://events.kernvalley.us/2026/05/08/kfhc-mobile-health-unit
 END:VEVENT
 END:VCALENDAR
