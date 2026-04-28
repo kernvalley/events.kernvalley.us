@@ -16,6 +16,7 @@ tags:
   - health
   - nonprofit
   - outdoors
+  - gardening
   - krv-bridge
 startDate: 2026-04-25T08:00
 endDate: 2026-04-25T12:00
