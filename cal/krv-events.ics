@@ -3,24 +3,7 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:5d08289c-da9f-4405-a4d2-bbcd41b9b024
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Earth Day Garden Planting
-LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:For Earth Day, let’s plant the seeds for the future we want to 
- see in our valley—neighbors helping neighbors.
-DTSTAMP:20260423T164319Z
-LAST-MODIFIED:20260423T164319Z
-DTSTART:20260425T150000Z
-DTEND:20260425T190000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://events.kernvalley.us/2026/04/25/earth-day-garden-planting
-END:VEVENT
-BEGIN:VEVENT
-UID:79b6ddcd-d59d-49f8-8318-fb58213e195e
+UID:639a7bb9-b16b-41cc-9648-8ba11c2f80f8
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -28,11 +11,29 @@ CLASS:PUBLIC
 SUMMARY:KFHC Mobile Health Unit
 LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
 DESCRIPTION:Mobile Health Unit from Kern Family Health Care available
-DTSTAMP:20260423T164319Z
-LAST-MODIFIED:20260423T164319Z
+DTSTAMP:20260428T182941Z
+LAST-MODIFIED:20260428T182941Z
 DTSTART:20260508T160000Z
 DTEND:20260508T230000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
 URL:https://events.kernvalley.us/2026/05/08/kfhc-mobile-health-unit
+END:VEVENT
+BEGIN:VEVENT
+UID:e609be8c-e79d-4e83-866b-333fdb6fdc09
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Mays Garden Club \"Birds, Bees & Butterflies\"
+LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
+DESCRIPTION:This club meeting will have activities for all ages. Join us in
+  the garden learning about pollinators.
+DTSTAMP:20260428T182941Z
+LAST-MODIFIED:20260428T182941Z
+DTSTART:20260515T230000Z
+DTEND:20260516T010000Z
+ORGANIZER;CN=KRV Garden Club:mailto:contact+garden@krvbridge.org
+URL:https://www.facebook.com/events/1968687507187149?utm_source=krv-events&
+ utm_medium=referrer
 END:VEVENT
 END:VCALENDAR
