@@ -78,7 +78,7 @@
   },
   "devDependencies": {
     "@shgysk8zer0/eslint-config": "^1.0.7",
-    "@shgysk8zer0/importmap": "^1.9.5",
+    "@shgysk8zer0/importmap": "^1.9.10",
     "eslint-plugin-frontmatter2": "^1.0.1"
   }
 }
