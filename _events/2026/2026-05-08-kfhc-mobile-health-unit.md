@@ -6,6 +6,7 @@ date: 2026-05-08
 name: KFHC Mobile Health Unit
 title: KFHC Mobile Health Unit
 description: Mobile Health Unit from Kern Family Health Care available
+eventStatus: EventPostponed
 tags:
   - lake-isabella
   - family
