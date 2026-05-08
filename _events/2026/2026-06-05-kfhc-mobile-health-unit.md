@@ -2,12 +2,10 @@
 "@context": https://schema.org
 "@type": Event
 layout: event-page
-date: 2026-05-08
+date: 2026-06-05
 name: KFHC Mobile Health Unit
 title: KFHC Mobile Health Unit
 description: Mobile Health Unit from Kern Family Health Care available
-eventStatus: EventRescheduled
-redirect: /2026/06/05/kfhc-mobile-health-unit
 tags:
   - lake-isabella
   - family
@@ -19,8 +17,8 @@ tags:
   - health
   - nonprofit
   - krv-bridge
-startDate: 2026-05-08T09:00
-endDate: 2026-05-08T16:00
+startDate: 2026-06-05T09:00
+endDate: 2026-06-05T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
 image: https://i.imgur.com/zo5vMu5h.webp
 organizer:
