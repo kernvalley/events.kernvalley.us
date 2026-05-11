@@ -20,7 +20,7 @@ tags:
 startDate: 2026-06-05T09:00
 endDate: 2026-06-05T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/zo5vMu5h.webp
+image: https://i.imgur.com/w83w5mp.webp
 organizer:
   "@type": Organization
   name: KRV Bridge Connection
@@ -42,8 +42,9 @@ location:
     longitude: -118.4758657
     url: https://maps.app.goo.gl/EmNUpSPX5fjP43Ry5
 ---
-Kern Family Health Care will be bringing its Mobile Health Unit to support community members during Salvation Army Choice Pantry
-hours this Friday, offering convenient access to a range of essential health services in one stop.
+[Kern Family Health Care](https://www.kernfamilyhealthcare.com/) will be bringing its Mobile Health Unit to support
+community members during Salvation Army Choice Pantry hours, offering convenient access to a range of essential health
+services in one stop.
 
 Attendees can receive sick visits for minor illnesses, routine immunizations, annual well visits, and medication refills.
 The mobile team will also be available to provide information and assistance regarding Medi-Cal and Medicare, helping individuals
