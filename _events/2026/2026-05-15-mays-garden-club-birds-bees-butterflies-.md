@@ -30,7 +30,7 @@ image: https://i.imgur.com/0tDrpNi.jpeg
 thumbnail:
   url: https://i.imgur.com/0tDrpNih.png
   width: 1024
-  height: 572
+  height: 485
   type: image/png
 organizer:
   "@type": Organization
