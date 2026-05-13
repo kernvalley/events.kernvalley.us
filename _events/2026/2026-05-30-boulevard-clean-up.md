@@ -16,6 +16,11 @@ startDate: 2026-05-30T11:00
 endDate: 2026-05-30T13:00
 eventAttendanceMode: OfflineEventAttendanceMode
 image: https://i.imgur.com/Vq2aOLV.png
+thumbnail:
+  url: https://i.imgur.com/Vq2aOLVh.png
+  width: 1024
+  height: 572
+  type: image/png
 organizer:
   "@type": Organization
   name: Kern River Valley Chamber of Commerce

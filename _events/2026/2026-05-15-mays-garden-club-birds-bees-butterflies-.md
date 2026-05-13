@@ -27,6 +27,11 @@ startDate: 2026-05-15T16:00
 endDate: 2026-05-15T18:00
 eventAttendanceMode: OfflineEventAttendanceMode
 image: https://i.imgur.com/0tDrpNi.jpeg
+thumbnail:
+  url: https://i.imgur.com/0tDrpNih.png
+  width: 1024
+  height: 572
+  type: image/png
 organizer:
   "@type": Organization
   name: KRV Garden Club

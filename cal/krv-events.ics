@@ -3,23 +3,24 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:639a7bb9-b16b-41cc-9648-8ba11c2f80f8
+UID:6e69377f-2fb9-42b1-9bab-fe58c7dff428
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:KFHC Mobile Health Unit
-LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:Mobile Health Unit from Kern Family Health Care available
-DTSTAMP:20260428T182941Z
-LAST-MODIFIED:20260428T182941Z
-DTSTART:20260508T160000Z
-DTEND:20260508T230000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://events.kernvalley.us/2026/05/08/kfhc-mobile-health-unit
+SUMMARY:CO.STARTERS Kickoff (Virtual)
+LOCATION:CA, US
+DESCRIPTION:Regional Virtual Workshop for Local Entrepreneurs and Aspiring 
+ Business Owners to Explore and Grow Ideas
+DTSTAMP:20260513T163127Z
+LAST-MODIFIED:20260513T163127Z
+DTSTART:20260513T233000Z
+DTEND:20260514T023000Z
+ORGANIZER;CN=KITE:mailto:info@gokite.org
+URL:https://events.kernvalley.us/2026/05/13/co-starters-kickoff
 END:VEVENT
 BEGIN:VEVENT
-UID:e609be8c-e79d-4e83-866b-333fdb6fdc09
+UID:a86094a3-bb6d-443c-abd5-1032d188a237
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
@@ -28,12 +29,29 @@ SUMMARY:Mays Garden Club \"Birds, Bees & Butterflies\"
 LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
 DESCRIPTION:This club meeting will have activities for all ages. Join us in
   the garden learning about pollinators.
-DTSTAMP:20260428T182941Z
-LAST-MODIFIED:20260428T182941Z
+DTSTAMP:20260513T163127Z
+LAST-MODIFIED:20260513T163127Z
 DTSTART:20260515T230000Z
 DTEND:20260516T010000Z
 ORGANIZER;CN=KRV Garden Club:mailto:contact+garden@krvbridge.org
 URL:https://www.facebook.com/events/1968687507187149?utm_source=krv-events&
  utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:1f9ff0c7-b588-40d9-957d-cd34b3bbbbfe
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Boulevard Clean-up
+LOCATION:Lake Isabella Blvd., CA 93240, US
+DESCRIPTION:Let's Keep Kern River Valley Beautiful!
+DTSTAMP:20260513T163127Z
+LAST-MODIFIED:20260513T163127Z
+DTSTART:20260530T180000Z
+DTEND:20260530T200000Z
+ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:office@kernriverv
+ alley.com
+URL:https://events.kernvalley.us/2026/05/30/boulevard-clean-up
 END:VEVENT
 END:VCALENDAR

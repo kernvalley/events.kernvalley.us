@@ -21,6 +21,11 @@ startDate: 2026-05-13T16:30
 endDate: 2026-05-13T19:30
 eventAttendanceMode: OnlineEventAttendanceMode
 image: https://i.imgur.com/ha1pLty.webp
+thumbnail:
+  url: https://i.imgur.com/ha1pLtyh.png
+  width: 1024
+  height: 572
+  type: image/png
 organizer:
   "@type": Organization
   name: KITE
