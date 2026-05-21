@@ -2,12 +2,10 @@
 "@context": https://schema.org
 "@type": Event
 layout: event-page
-date: 2026-05-08
+date: 2026-06-05
 name: KFHC Mobile Health Unit
 title: KFHC Mobile Health Unit
 description: Mobile Health Unit from Kern Family Health Care available
-eventStatus: EventRescheduled
-redirect: /2026/06/05/kfhc-mobile-health-unit
 tags:
   - lake-isabella
   - family
@@ -19,10 +17,16 @@ tags:
   - health
   - nonprofit
   - krv-bridge
-startDate: 2026-05-08T09:00
-endDate: 2026-05-08T16:00
+startDate: 2026-06-05T09:00
+endDate: 2026-06-05T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/zo5vMu5h.webp
+imgur: f4sIcQo
+image: https://i.imgur.com/f4sIcQoh.webp
+thumbnail:
+  url: https://i.imgur.com/f4sIcQoh.png
+  width: 1024
+  height: 541
+  format: image/png
 organizer:
   "@type": Organization
   name: KRV Bridge Connection
@@ -44,8 +48,9 @@ location:
     longitude: -118.4758657
     url: https://maps.app.goo.gl/EmNUpSPX5fjP43Ry5
 ---
-Kern Family Health Care will be bringing its Mobile Health Unit to support community members during Salvation Army Choice Pantry
-hours this Friday, offering convenient access to a range of essential health services in one stop.
+[Kern Family Health Care](https://www.kernfamilyhealthcare.com/) will be bringing its Mobile Health Unit to support
+community members during Salvation Army Choice Pantry hours, offering convenient access to a range of essential health
+services in one stop.
 
 Attendees can receive sick visits for minor illnesses, routine immunizations, annual well visits, and medication refills.
 The mobile team will also be available to provide information and assistance regarding Medi-Cal and Medicare, helping individuals
