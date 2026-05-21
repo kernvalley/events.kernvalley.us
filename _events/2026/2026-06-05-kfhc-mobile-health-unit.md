@@ -20,9 +20,10 @@ tags:
 startDate: 2026-06-05T09:00
 endDate: 2026-06-05T16:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/w83w5mph.webp
+imgur: f4sIcQo
+image: https://i.imgur.com/f4sIcQoh.webp
 thumbnail:
-  url: https://i.imgur.com/w83w5mph.png
+  url: https://i.imgur.com/f4sIcQoh.png
   width: 1024
   height: 541
   format: image/png
