@@ -5,7 +5,7 @@ layout: event-page
 date: 2026-06-17
 name: Diabetic Cooking Class
 title: Diabetic Cooking Class
-description: Need this but waiting on info
+description: Join Kern Family Health Care for a practical, informative diabetic cooking class focused on healthy meal preparation and blood sugar management.
 tags:
   - lake-isabella
   - adults
@@ -47,4 +47,6 @@ location:
     latitude: 35.6239716
     longitude: -118.4758657
 ---
-Testing 1 2 3
+Join us for an informative and practical session focused on healthy, diabetic-friendly meal preparation. This class provides an opportunity to learn strategies for managing blood sugar through nutrition, featuring guidance from the experts at Kern Family Health Care.
+
+Whether you are looking to refine your current cooking habits or are just getting started, this session will offer actionable insights for preparing delicious and balanced meals. Space is limited—please reach out to KRV Bridge Connection for further details or to confirm your attendance.
