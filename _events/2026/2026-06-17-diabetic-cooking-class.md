@@ -21,10 +21,10 @@ tags:
 startDate: 2026-06-17T12:00
 endDate: 2026-06-17T14:30
 eventAttendanceMode: OfflineEventAttendanceMode
-imgur: hvKw1WV
-image: https://i.imgur.com/hvKw1WVh.webp
+imgur: SmOb0Pu
+image: https://i.imgur.com/SmOb0Puh.webp
 thumbnail:
-  url: https://i.imgur.com/hvKw1WVh.png
+  url: https://i.imgur.com/SmOb0Puh.png
   width: 1024
   height: 572
 organizer:
