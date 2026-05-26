@@ -31,8 +31,8 @@ location:
   name: Erskine Creek Rd & Lake Isabella Blvd
   address:
     "@type": PostalAddress
-    streetAddress: ""
-    addressLocality: Lake Isabella Blvd.
+    streetAddress: "Lake Isabella Blvd."
+    addressLocality: Lake Isabella
     addressRegion: CA
     postalCode: 93240
     addressCountry: US
