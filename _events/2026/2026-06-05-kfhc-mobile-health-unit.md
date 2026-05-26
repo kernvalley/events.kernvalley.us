@@ -18,12 +18,12 @@ tags:
   - nonprofit
   - krv-bridge
 startDate: 2026-06-05T09:00
-endDate: 2026-06-05T16:00
+endDate: 2026-06-05T13:00
 eventAttendanceMode: OfflineEventAttendanceMode
-imgur: f4sIcQo
-image: https://i.imgur.com/f4sIcQoh.webp
+imgur: 1m655aA
+image: https://i.imgur.com/1m655aAh.webp
 thumbnail:
-  url: https://i.imgur.com/f4sIcQoh.png
+  url: https://i.imgur.com/1m655aAh.png
   width: 1024
   height: 541
   format: image/png
