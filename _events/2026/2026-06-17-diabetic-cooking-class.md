@@ -18,13 +18,13 @@ tags:
   - nonprofit
   - indoors
   - krv-bridge
-startDate: 2026-06-17T12:00
+startDate: 2026-06-17T13:00
 endDate: 2026-06-17T14:30
 eventAttendanceMode: OfflineEventAttendanceMode
-imgur: SmOb0Pu
-image: https://i.imgur.com/SmOb0Puh.webp
+imgur: nQs5O9c
+image: https://i.imgur.com/nQs5O9ch.webp
 thumbnail:
-  url: https://i.imgur.com/SmOb0Puh.png
+  url: https://i.imgur.com/nQs5O9ch.png
   width: 1024
   height: 572
 organizer:
