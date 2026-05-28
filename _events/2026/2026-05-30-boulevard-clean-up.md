@@ -1,7 +1,8 @@
 ---
 "@context": https://schema.org
 "@type": Event
-layout: event-page
+layout: redirect
+redirect: https://facebook.com/events/s/krv-boulevard-clean-up/4413731875522323/
 date: 2026-05-30
 name: Boulevard Clean-up
 title: Boulevard Clean-up
