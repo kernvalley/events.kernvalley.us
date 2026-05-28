@@ -3,55 +3,90 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:6e69377f-2fb9-42b1-9bab-fe58c7dff428
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:CO.STARTERS Kickoff (Virtual)
-LOCATION:CA, US
-DESCRIPTION:Regional Virtual Workshop for Local Entrepreneurs and Aspiring 
- Business Owners to Explore and Grow Ideas
-DTSTAMP:20260513T163127Z
-LAST-MODIFIED:20260513T163127Z
-DTSTART:20260513T233000Z
-DTEND:20260514T023000Z
-ORGANIZER;CN=KITE:mailto:info@gokite.org
-URL:https://events.kernvalley.us/2026/05/13/co-starters-kickoff
-END:VEVENT
-BEGIN:VEVENT
-UID:a86094a3-bb6d-443c-abd5-1032d188a237
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Mays Garden Club \"Birds, Bees & Butterflies\"
-LOCATION:6069 Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:This club meeting will have activities for all ages. Join us in
-  the garden learning about pollinators.
-DTSTAMP:20260513T163127Z
-LAST-MODIFIED:20260513T163127Z
-DTSTART:20260515T230000Z
-DTEND:20260516T010000Z
-ORGANIZER;CN=KRV Garden Club:mailto:contact+garden@krvbridge.org
-URL:https://www.facebook.com/events/1968687507187149?utm_source=krv-events&
- utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:1f9ff0c7-b588-40d9-957d-cd34b3bbbbfe
+UID:fb3f968c-94b3-4272-a12e-128043ac8fe2
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
 SUMMARY:Boulevard Clean-up
-LOCATION:Lake Isabella Blvd., CA 93240, US
+LOCATION:Lake Isabella Blvd., Lake Isabella, CA 93240, US
 DESCRIPTION:Let's Keep Kern River Valley Beautiful!
-DTSTAMP:20260513T163127Z
-LAST-MODIFIED:20260513T163127Z
+DTSTAMP:20260528T201052Z
+LAST-MODIFIED:20260528T201052Z
 DTSTART:20260530T180000Z
 DTEND:20260530T200000Z
 ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:office@kernriverv
  alley.com
-URL:https://events.kernvalley.us/2026/05/30/boulevard-clean-up
+URL:https://facebook.com/events/s/krv-boulevard-clean-up/4413731875522323/?
+ utm_source=krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:a7a53a7e-2447-41e5-aad4-79baf52cdca7
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:KFHC Mobile Health Unit
+LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:Mobile Health Unit from Kern Family Health Care available
+DTSTAMP:20260528T201052Z
+LAST-MODIFIED:20260528T201052Z
+DTSTART:20260605T160000Z
+DTEND:20260605T200000Z
+ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
+URL:https://events.kernvalley.us/2026/06/05/kfhc-mobile-health-unit
+END:VEVENT
+BEGIN:VEVENT
+UID:2ab9a852-9fc5-43e8-a786-74f2ff3ebc6f
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:KRV Magic Tournament
+LOCATION:6701 Wofford Blvd, Wofford Heights, CA 93285, US
+DESCRIPTION:PHRANXZ TCG & Collectibles and Kern River Valley Art Associatio
+ n are bringing Magic players together for an all-valley event!
+DTSTAMP:20260528T201052Z
+LAST-MODIFIED:20260528T201052Z
+DTSTART:20260614T190000Z
+DTEND:20260614T210000Z
+ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
+URL:https://www.facebook.com/events/s/krv-magic-tournament-valley-wi/216275
+ 8261173140/?utm_source=krv-events&utm_medium=referrer
+END:VEVENT
+BEGIN:VEVENT
+UID:d34aab88-3049-45e5-b6db-baa49c96180a
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:Diabetic Cooking Class
+LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:Join Kern Family Health Care for a practical, informative diabe
+ tic cooking class focused on healthy meal preparation and blood sugar mana
+ gement.
+DTSTAMP:20260528T201052Z
+LAST-MODIFIED:20260528T201052Z
+DTSTART:20260617T200000Z
+DTEND:20260617T213000Z
+ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
+URL:https://events.kernvalley.us/2026/06/17/diabetic-cooking-class
+END:VEVENT
+BEGIN:VEVENT
+UID:4ee4c0d8-16c9-4107-8aa0-7dd312b35460
+SEQUENCE:0
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+CLASS:PUBLIC
+SUMMARY:KVHD Health Fair
+LOCATION:6412 Laurel Ave, Mt. Mesa, CA 93240, US
+DESCRIPTION:Join us for the KVHD Health Fair, where we bring big-city healt
+ h resources directly to you
+DTSTAMP:20260528T201052Z
+LAST-MODIFIED:20260528T201052Z
+DTSTART:20260627T170000Z
+DTEND:20260627T200000Z
+ORGANIZER;CN=Kern Valley Healthcare District:mailto:question@kvhd.org
+URL:https://events.kernvalley.us/2026/06/27/kvhd-health-fair
 END:VEVENT
 END:VCALENDAR
