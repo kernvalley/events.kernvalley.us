@@ -25,6 +25,7 @@ organizer:
   "@type": Organization
   name: Kern River Valley Chamber of Commerce
   email: office@kernrivervalley.com
+  telephone: +1-760-379-5236 
   url: https://www.kernrivervalley.com/
 location:
   "@type": Place
