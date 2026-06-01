@@ -20,10 +20,10 @@ tags:
 startDate: 2026-06-05T09:00
 endDate: 2026-06-05T13:00
 eventAttendanceMode: OfflineEventAttendanceMode
-imgur: 1m655aA
-image: https://i.imgur.com/1m655aAh.webp
+imgur: 0UwzmwJ
+image: https://i.imgur.com/0UwzmwJh.webp
 thumbnail:
-  url: https://i.imgur.com/1m655aAh.png
+  url: https://i.imgur.com/0UwzmwJh.png
   width: 1024
   height: 541
   format: image/png
