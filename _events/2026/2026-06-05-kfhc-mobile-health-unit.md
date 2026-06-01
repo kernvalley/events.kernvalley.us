@@ -3,9 +3,9 @@
 "@type": Event
 layout: event-page
 date: 2026-06-05
-name: KFHC Mobile Health Unit
-title: KFHC Mobile Health Unit
-description: Mobile Health Unit from Kern Family Health Care available
+name: Mobile Health Unit
+title: Mobile Health Unit
+description: Clinica Sierra Vista brings its Mobile Health Unit to the community in partnership with Kern Family Health Care.
 tags:
   - lake-isabella
   - family
@@ -48,19 +48,13 @@ location:
     longitude: -118.4758657
     url: https://maps.app.goo.gl/EmNUpSPX5fjP43Ry5
 ---
-[Kern Family Health Care](https://www.kernfamilyhealthcare.com/) will be bringing its Mobile Health Unit to support
-community members during Salvation Army Choice Pantry hours, offering convenient access to a range of essential health
-services in one stop.
+[Clinica Sierra Vista](https://www.clinicasierravista.org/) will be bringing its Mobile Health Unit to support community members during Salvation Army Choice Pantry hours, offering convenient access to a range of essential health services in one stop. This service is provided in partnership with [Kern Family Health Care](https://www.kernfamilyhealthcare.com/).
 
-Attendees can receive sick visits for minor illnesses, routine immunizations, annual well visits, and medication refills.
-The mobile team will also be available to provide information and assistance regarding Medi-Cal and Medicare, helping individuals
-better understand coverage options and enrollment support.
+Attendees can receive sick visits for minor illnesses, routine immunizations, annual well visits, and medication refills. The mobile team will also be available to provide information and assistance regarding Medi-Cal and Medicare, helping individuals better understand coverage options and enrollment support.
 
-In addition to clinical care and insurance guidance, the visit will include free bags and giveaways for both adults and children,
-designed to support families and encourage engagement with preventive health services.
+In addition to clinical care and insurance guidance, the visit will include free bags and giveaways for both adults and children, designed to support families and encourage engagement with preventive health services.
 
-This outreach effort from [Kern Family Health Care](https://www.kernfamilyhealthcare.com/) is intended to reduce barriers
-to care by bringing services directly into a trusted community setting during established pantry hours.
+This outreach effort from [Clinica Sierra Vista](https://www.clinicasierravista.org/), in partnership with [Kern Family Health Care](https://www.kernfamilyhealthcare.com/), is intended to reduce barriers to care by bringing services directly into a trusted community setting during established pantry hours.
 
 ### Resources Available
 
