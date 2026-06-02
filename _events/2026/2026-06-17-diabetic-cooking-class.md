@@ -5,7 +5,7 @@ layout: event-page
 date: 2026-06-17
 name: Diabetic Cooking Class
 title: Diabetic Cooking Class
-description: Join Kern Family Health Care for a practical, informative diabetic cooking class focused on healthy meal preparation and blood sugar management.
+description: Learn to make a quick, easy 2 bean & corn salad at our diabetic-friendly cooking class with Kern Family Health Care & KRV Bridge Connection!
 tags:
   - lake-isabella
   - adults
@@ -21,10 +21,10 @@ tags:
 startDate: 2026-06-17T13:00
 endDate: 2026-06-17T14:30
 eventAttendanceMode: OfflineEventAttendanceMode
-imgur: nQs5O9c
-image: https://i.imgur.com/nQs5O9ch.webp
+imgur: abU36k3
+image: https://i.imgur.com/abU36k3h.webp
 thumbnail:
-  url: https://i.imgur.com/nQs5O9ch.png
+  url: https://i.imgur.com/abU36k3h.png
   width: 1024
   height: 572
 organizer:
@@ -49,4 +49,6 @@ location:
 ---
 Join us for an informative and practical session focused on healthy, diabetic-friendly meal preparation. This class provides an opportunity to learn strategies for managing blood sugar through nutrition, featuring guidance from the experts at Kern Family Health Care.
 
-Whether you are looking to refine your current cooking habits or are just getting started, this session will offer actionable insights for preparing delicious and balanced meals. Space is limited—please reach out to KRV Bridge Connection for further details or to confirm your attendance.
+{% include common/imgur.html url="M8bHGxj" alt="Two Bean and Corn Salad" %}
+
+During this session, we will feature a 2 bean and corn salad, demonstrating just how quick, simple, and easy it is to whip up a flavorful, nutrient-dense dish. Whether you are looking to refine your current cooking habits or are just getting started, this session will offer actionable insights for preparing balanced meals that support your health goals. Space is limited—please reach out to KRV Bridge Connection for further details or to confirm your attendance.
