@@ -60,15 +60,15 @@
 	</div>
 	<div class="event-location" itemprop="location"
 		itemtype="http://schema.org/{{ include.event.location['@type'] | default: 'Place' }}" itemscope="">
-		{% if event.location.name %}
+		{% if include.event.location.name %}
 			{% if event.location['@type'] == 'VirtualLocation' %}
-				<a href="{{ event.location.url }}" itemprop="url" target="_blank" rel="noopener noreferrer external">
+				<a href="{{ include.event.location.url }}" itemprop="url" target="_blank" rel="noopener noreferrer external">
 					{% include common/icon.html icon="link-external" fill="currentColor" height="16" width="16" %}
 					<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
 				</a>
 			{% else %}
 				{% include common/icon.html icon="location" fill="currentColor" height="16" width="16" %}
-				<b class="event-location-name" itemprop="name">{{ event.location.name }}</b>
+				<b class="event-location-name" itemprop="name">{{ include.event.location.name }}</b>
 			{% endif %}
 		{% endif %}
 		{% if include.event.location.addressRegion %}
@@ -80,7 +80,7 @@
 	<details class="event-details"{% if include.hideDetails %} hidden=""{% endif %}>
 		<summary role="button" class="btn btn-primary">{% include common/icon.html icon="view-more" height=16 width=16 fill="currentColor" %}Event Details</summary>
 		<br />
-		<time class="event-end" itemprop="endDate" datetime="{{ include.event.startDate | date_to_xmlschema }}">
+		<time class="event-end" itemprop="endDate" datetime="{{ include.event.endDate | date_to_xmlschema }}">
 			{% include common/icon.html icon='events' %}
 			<span>Ends:</span>
 			{{ include.event.endDate | date: '%a %b %-d, %Y %l:%M %p' }}
@@ -105,7 +105,7 @@
 		<div class="event-description" itemprop="description">
 			{% include common/icon.html icon='note' %}{{ include.event.description }}
 		</div>
-		{% if include.event.offers %}<div>{% for offer in include.event.offers %}
+		{% if include.event.offers and include.event.offers.size > 0 %}<div>{% for offer in include.event.offers %}
 			<hr />
 			{% if offer.url %}
 				<a href="{{ offer.url }}" role="button" rel="noopener external" class="center btn btn-primary block event-offer-btn" itemprop="offers" itemtype="http://schema.org/Offer" itemscope=""{% if offer.availability and offer.availability != 'InStock' %} title="Unavailable" disabled=""{% endif %}>
@@ -127,7 +127,7 @@
 				</div>
 			{% endif %}
 		{% endfor %}</div>{% else %}
-			<div class="center btn btn-primary block" itemprop="offers" itemtype="http://schema.org/Offer" itemscope="">
+			<div class="center btn btn-primary block" itemprop="offers" itemtype="http://schema.org/Offer" itemscope="" hidden="">
 				<b class="event-price">
 					<span itemprop="name">Admission</span>:
 					<span>Free</span>
@@ -138,7 +138,7 @@
 		{% endif %}
 		{% if include.event.redirect %}
 			{% include common/icon.html icon='link' %}
-			<a href="{{ include.event.redirect }}?utm_souce=krv-events&amp;utm_medium=referrer" rel="noopener referrer external" class="underline" itemprop="url">Click here to learn more</a>
+			<a href="{{ include.event.redirect }}?utm_source=krv-events&amp;utm_medium=referrer" rel="noopener referrer external" class="underline" itemprop="url">Click here to learn more</a>
 		{% elsif include.event.url %}
 			{% include common/icon.html icon='link' %}
 			<a href="{{ include.event.url }}" class="underline" itemprop="url">Click here to learn more</a>
