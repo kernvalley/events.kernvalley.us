@@ -22,6 +22,7 @@ tags:
 startDate: 2026-06-27T10:00
 endDate: 2026-06-27T13:00
 eventAttendanceMode: OfflineEventAttendanceMode
+eventStatus: EventPostponed
 image: https://i.imgur.com/ajdrDkC.png
 organizer:
   "@type": Organization
