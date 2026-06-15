@@ -14,6 +14,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v2.2.0] - 2026-04-15
+
+### Added
+- Add Security policy
+- Add npm config to harden installs
+
+### Changed
+- Update Workflows with permissions
+- Update contributiing guidelines
+- Update to node 26.3.0 & npm 11.16.0
+
 ### Changed
 - Switch to `@aegisjsproject/hermes` for service worker
 
