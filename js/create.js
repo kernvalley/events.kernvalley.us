@@ -120,7 +120,6 @@ document.getElementById('img-upload').addEventListener('change', async ({ target
 			});
 
 			const json = await resp.json();
-			console.log(json);
 
 			if (! json.success) {
 				throw new Error(json?.data?.error ?? 'An unknown error occurred uploading the image.');
@@ -130,7 +129,7 @@ document.getElementById('img-upload').addEventListener('change', async ({ target
 				throw new Error('Image too small. Please use an image that is at least 640 pixels wide.');
 			} else {
 				document.getElementById('event-image').value = json.data.link;
-				document.getElementById('event-image').dispatchEvent(new Event('change'));
+				// document.getElementById('event-image').dispatchEvent(new Event('change'));
 				target.value = null;
 				target.setCustomValidity('');
 			}
@@ -142,6 +141,12 @@ document.getElementById('img-upload').addEventListener('change', async ({ target
 		}
 	}
 });
+
+document.getElementById('event-image').addEventListener('change', () => {
+	const upload = document.getElementById('img-upload');
+	upload.setCustomValidity('');
+	upload.value = null;
+}, { passive: true });
 
 document.getElementById('preview-md').addEventListener('click', async ({ target }) => {
 	try {

@@ -44,7 +44,10 @@ new HermesWorker([
 	}, {
 		name: 'unpkg',
 		strategy: 'cache-first',
-		pattern: new URLPattern({ baseURL: 'https://unpkg.com/', pathname: '/*' }),
+		pattern: new URLPattern({
+			baseURL: 'https://unpkg.com/',
+			pathname: '/*',
+		}),
 	}, {
 		name: 'imgur',
 		strategy: 'cache-first',
