@@ -7,7 +7,7 @@ date: 2026-09-19
 name: Sowing Seeds of Change
 title: Sowing Seeds of Change
 description: Join Us in the Garden for an Unforgettable Evening of Music, Food
-  and Wine Pairings
+  and Wine Pairings [Tickets $50]
 tags:
   - lake-isabella
   - adults
