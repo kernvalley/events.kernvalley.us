@@ -7,7 +7,7 @@ date: 2026-09-19
 name: Sowing Seeds of Change
 title: Sowing Seeds of Change
 description: Join Us in the Garden for an Unforgettable Evening of Music, Food
-  and Wine Pairings
+  and Wine Pairings [Tickets $50]
 tags:
   - lake-isabella
   - adults
@@ -26,7 +26,8 @@ tags:
 startDate: 2026-09-19T17:00
 endDate: 2026-09-19T19:00
 eventAttendanceMode: OfflineEventAttendanceMode
-image: https://i.imgur.com/ngJxxRT.webp
+imgur: ngJxxRT
+image: https://i.imgur.com/ngJxxRTh.webp
 organizer:
   "@type": Organization
   name: KRV Bridge Connection
