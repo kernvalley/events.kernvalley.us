@@ -3,90 +3,73 @@ VERSION:2.0
 METHOD:PUBLISH
 PRODID:-//github.com/shgysk8zer0/kazoo v1.0.0//EN
 BEGIN:VEVENT
-UID:fb3f968c-94b3-4272-a12e-128043ac8fe2
+UID:56597429-7078-46af-b23b-49181c5c2cd8
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:Boulevard Clean-up
-LOCATION:Lake Isabella Blvd., Lake Isabella, CA 93240, US
-DESCRIPTION:Let's Keep Kern River Valley Beautiful!
-DTSTAMP:20260528T201052Z
-LAST-MODIFIED:20260528T201052Z
-DTSTART:20260530T180000Z
-DTEND:20260530T200000Z
-ORGANIZER;CN=Kern River Valley Chamber of Commerce:mailto:office@kernriverv
- alley.com
-URL:https://facebook.com/events/s/krv-boulevard-clean-up/4413731875522323/?
- utm_source=krv-events&utm_medium=referrer
+SUMMARY:Help Co-Create the Lake Isabella Community Hub
+LOCATION:6404 Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:We need the community’s final input on what the Hub should incl
+ ude and how it can best serve the people of the KRV.
+DTSTAMP:20260911T204140Z
+LAST-MODIFIED:20260911T204140Z
+DTSTART:20260917T003000Z
+DTEND:20260917T023000Z
+ORGANIZER;CN=Sierra Shared Spaces:mailto:events@sierrashared.space
+URL:https://luma.com/hsl9ju8z?utm_source=krv-events&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:a7a53a7e-2447-41e5-aad4-79baf52cdca7
+UID:ba8bdbd5-f621-4e7e-8441-79428765b6dd
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:KFHC Mobile Health Unit
-LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:Mobile Health Unit from Kern Family Health Care available
-DTSTAMP:20260528T201052Z
-LAST-MODIFIED:20260528T201052Z
-DTSTART:20260605T160000Z
-DTEND:20260605T200000Z
+SUMMARY:Sowing Seeds of Change
+LOCATION:6069 Lake Isabella Blvd PO Box 1098, Lake Isabella, CA 93240, US
+DESCRIPTION:Join Us in the Garden for an Unforgettable Evening of Music, Fo
+ od and Wine Pairings [Tickets $50]
+DTSTAMP:20260911T204140Z
+LAST-MODIFIED:20260911T204140Z
+DTSTART:20260920T000000Z
+DTEND:20260920T020000Z
 ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://events.kernvalley.us/2026/06/05/kfhc-mobile-health-unit
+URL:https://lp.constantcontactpages.com/ev/reg/n67etcq?utm_source=krv-event
+ s&utm_medium=referrer
 END:VEVENT
 BEGIN:VEVENT
-UID:2ab9a852-9fc5-43e8-a786-74f2ff3ebc6f
+UID:7a90f03b-2235-48a8-80d4-a41d8748d450
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:KRV Magic Tournament
-LOCATION:6701 Wofford Blvd, Wofford Heights, CA 93285, US
-DESCRIPTION:PHRANXZ TCG & Collectibles and Kern River Valley Art Associatio
- n are bringing Magic players together for an all-valley event!
-DTSTAMP:20260528T201052Z
-LAST-MODIFIED:20260528T201052Z
-DTSTART:20260614T190000Z
-DTEND:20260614T210000Z
-ORGANIZER;CN=Kern River Valley Art Association:mailto:info@krvaa.org
-URL:https://www.facebook.com/events/s/krv-magic-tournament-valley-wi/216275
- 8261173140/?utm_source=krv-events&utm_medium=referrer
-END:VEVENT
-BEGIN:VEVENT
-UID:d34aab88-3049-45e5-b6db-baa49c96180a
-SEQUENCE:0
-STATUS:CONFIRMED
-TRANSP:OPAQUE
-CLASS:PUBLIC
-SUMMARY:Diabetic Cooking Class
+SUMMARY:Volunteer Bell Ringing Training
 LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
-DESCRIPTION:Join Kern Family Health Care for a practical, informative diabe
- tic cooking class focused on healthy meal preparation and blood sugar mana
- gement.
-DTSTAMP:20260528T201052Z
-LAST-MODIFIED:20260528T201052Z
-DTSTART:20260617T200000Z
-DTEND:20260617T213000Z
-ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
-URL:https://events.kernvalley.us/2026/06/17/diabetic-cooking-class
+DESCRIPTION:Make a real difference this holiday season. Volunteer Bell Ring
+ er Training prepares you to raise vital funds for local families in need!
+DTSTAMP:20260911T204140Z
+LAST-MODIFIED:20260911T204140Z
+DTSTART:20261001T210000Z
+DTEND:20261001T220000Z
+ORGANIZER;CN=Salvation Army, Lake Isabella Unit:mailto:vol.lake_isabella@us
+ w.salvationarmy.org
+URL:https://events.kernvalley.us/2026/10/01/volunteer-bell-ringing-training
 END:VEVENT
 BEGIN:VEVENT
-UID:4ee4c0d8-16c9-4107-8aa0-7dd312b35460
+UID:ab11e1b1-909b-4f84-9f25-6c70d3da55cd
 SEQUENCE:0
 STATUS:CONFIRMED
 TRANSP:OPAQUE
 CLASS:PUBLIC
-SUMMARY:KVHD Health Fair
-LOCATION:6412 Laurel Ave, Mt. Mesa, CA 93240, US
-DESCRIPTION:Join us for the KVHD Health Fair, where we bring big-city healt
- h resources directly to you
-DTSTAMP:20260528T201052Z
-LAST-MODIFIED:20260528T201052Z
-DTSTART:20260627T170000Z
-DTEND:20260627T200000Z
-ORGANIZER;CN=Kern Valley Healthcare District:mailto:question@kvhd.org
-URL:https://events.kernvalley.us/2026/06/27/kvhd-health-fair
+SUMMARY:National Night Out
+LOCATION:6069 Lake Isabella Blvd, Lake Isabella, CA 93240, US
+DESCRIPTION:Join your community in celebrating law enforcement and first re
+ sponders.
+DTSTAMP:20260911T204140Z
+LAST-MODIFIED:20260911T204140Z
+DTSTART:20261007T003000Z
+DTEND:20261007T023000Z
+ORGANIZER;CN=KRV Bridge Connection:mailto:contact@krvbridge.org
+URL:https://events.kernvalley.us/2026/10/06/national-night-out
 END:VEVENT
 END:VCALENDAR
