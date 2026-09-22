@@ -45,6 +45,22 @@ location:
     latitude: 35.6239716
     longitude: -118.4758657
 ---
-Join the KRV in a celebration of local law enforcement and first responders.
+Join the community on Tuesday, October 6th, 2026, from 5:30 PM to 7:30 PM for a free National Night
+Out event honoring local first responders. The gathering brings together residents, law enforcement,
+and emergency personnel under the theme of community, safety, and staying stronger together.
 
-Come to an evening of fun in our community garden. There will be games, live music, food from vendors, and more!
+## Event Details
+* **Date:** Tuesday, October 6, 2026
+* **Time:** 5:30 PM – 7:30 PM
+* **Location:** KRV Bridge Connection, 6069 Lake Isabella Blvd, Lake Isabella, CA 93240
+* **Admission:** Free
+
+## Activities & Highlights
+* **Family Fun:** Games for kids, music, and activities for all ages.
+* **Honoring First Responders:** Connect with and show appreciation for local emergency personnel and law enforcement.
+* **"Fill the Truck Bed" Candy Drive:** Donate candy to fill the Kern County Sheriff's patrol truck bed to support the upcoming Trunk or Treat event for local youth.
+* **KV SAL Attendance:** Meet with the Kern Valley Sheriff's Activities League to support local youth programs.
+
+## Organizers & Sponsors
+* **Presented By:** KRV Bridge Connection and Lake Isabella & Bodfish Property Owner's Association
+* **Sponsored By:** Red's Marina
